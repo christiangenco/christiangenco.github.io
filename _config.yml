@@ -9,10 +9,12 @@
 title: Christian Genco
 email: christian@gen.co
 description: "Blog and projects of an internet micropreneur, software engineer, mustachian, and stage actor."
+image: http://i.imgur.com/q50cC8s.jpg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://christian.gen.co" # the base hostname & protocol for your site
 twitter_username: cgenco
 github_username:  christiangenco
+
 
 # Build settings
 markdown: kramdown
@@ -28,3 +30,4 @@ defaults:
     values:
       layout: "post"
       author: Christian Genco
+      type: post

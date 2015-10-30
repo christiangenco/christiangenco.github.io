@@ -12,10 +12,11 @@ body {
   }
 }
 
-.nav-pills > li{
-  > a:hover{
-    background-color: rgba(0,0,0,0);
-    text-decoration: underline;
+.navbar{
+  a{
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14pt;
   }
 }
 
@@ -54,7 +55,7 @@ p, li, blockquote {
   letter-spacing: 0.01rem;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 p{

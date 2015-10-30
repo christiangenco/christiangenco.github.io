@@ -1,8 +1,11 @@
 # Next
 
 * migrate posts from old platform
-* set up CNAME: https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+* add global navigation menu
+* add navigation footer
+* create missing pages (eg: projects, posts, now)
 * link to https://github.com/christiangenco/christiangenco.github.io/issues/new to report issues
+* publish by setting up CNAME: https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 
 ---
 

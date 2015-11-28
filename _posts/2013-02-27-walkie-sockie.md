@@ -1,7 +1,8 @@
 ---
 title: The Walkie Sockie
 image: http://i.imgur.com/vmcLabA.jpg
-description: An Arduino project for a walkie talkie you use with your feet.
+image_small: http://i.imgur.com/vmcLabAs.jpg
+excerpt: An Arduino project for a walkie talkie you use with your feet.
 ---
 
 For a wearable computing course I'm taking at SMU, I made a wearable input and output device for your feet: the Walkie Sockie.

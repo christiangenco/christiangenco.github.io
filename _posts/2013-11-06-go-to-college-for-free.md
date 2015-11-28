@@ -1,7 +1,8 @@
 ---
-title: How to go to college for free
+title: Go to college for free
 image: http://i.imgur.com/2F51C7O.png
-description: The average cost of a public university education in the US is right around $130,000. By hacking the system, you can get by for precisely $130,000 cheaper: free.
+image_small: http://i.imgur.com/2F51C7Os.png
+excerpt: The average cost of a public university education in the US is right around $130,000. By hacking the system, you can get by for precisely $130,000 cheaper - free.
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/R9ikWJGpzNw" frameborder="0" allowfullscreen></iframe>
@@ -63,7 +64,7 @@ He tells you all of this in his book about how to become rich because you must u
 * it's become the *default* path: middle school -> high school -> college -> internship -> job -> get married -> pay off student loans -> make money to pay for your kids to go to college -> make money to retire -> retire/die in Florida
 
 ## Reasons people go to college
-  
+
 * to make money/be successful: http://www.mrmoneymustache.com/2013/07/25/50-jobs-over-50000-without-a-degree-part-1/
   * "The average starting salary for 2013 grads earning bachelor’s degrees has risen to $45,000": http://www.forbes.com/sites/susanadams/2013/04/15/college-degrees-with-the-highest-starting-salaries-3/
 * prepare for a career: true for certain careers, but in most cases you'd earn more and be better at most things if you spent 2 years at a trade school, or just *doing* it
@@ -79,7 +80,7 @@ He tells you all of this in his book about how to become rich because you must u
 * to meet people/for the experience: a really expensive way to meet people. Would be more efficient to set aside $20K to travel and throw parties for the next 4 years.
 * to motivate me to learn: an expensive way to motivate yourself. Pay me $60/hour to stand over you with a whip when you're not studying and you'll learn more and come ahead financially
 
-## A waste of money 
+## A waste of money
 
 * Average cost of tuition and fees in 2012-2013 in the U.S. was $22K for a public school, and $43K for a private school (College Board) *every year*
   * only $8K when your parents went to college in the 1980s (http://nces.ed.gov/fastfacts/display.asp?id=76)
@@ -153,7 +154,7 @@ So what are colleges looking for? I sat on the scholarship interview committee f
 * here's a book for $5 with 12 practice tests: http://www.amazon.com/Kaplan-12-Practice-Tests-SAT/dp/1607146649/ref=cm_lmf_tit_3
   * do all of them
 * After you take a test, go back over it and find out why you got each question wrong, then learn enough information that you're confident you'll never get a question like that wrong again
-* really hard at first: 
+* really hard at first:
   * if you get a vocab question wrong, you should go learn all of the SAT vocab words (there's only ~1,000 of them: http://www.majortests.com/sat/wordlist.php) - also a stunning vocab to impress the ladies
   * if you get a trigonometry question wrong because you don't know trig, go to khan academy and watch their 14 videos on Trig: https://www.khanacademy.org/math/trigonometry
 * answer every question
@@ -175,7 +176,7 @@ Same strategy as the SAT. Get a good review book at least a month before, read i
 
 The only time to see **you** in your application.
 
-* I wrote three: 
+* I wrote three:
   * one I started my sophomore year and made it my life story, including all the highlights and important things I'd done. Went over it a bunch of times, sent it out for other people to edit, and declared it "perfect"
   * second was a much better essay about when my school did Phantom of the Opera, how nervous I was for the auditions, and how passionate I was about the show
   * The third, and best essay I wrote (and the one I sent to most schools), was this: (READ ESSAY - unpublished)
@@ -186,7 +187,7 @@ The only time to see **you** in your application.
   * they show something deep and respectable about the person writing them
     * be opinionated, but show understanding for other opinions
     * don't tell me you're hardworking, show me a time you had to work harder than anyone else around you, and then chose to work harder
-* High school english doesn't teach you how to write an interesting body of text. Forget most of the things you learned and have fun. 
+* High school english doesn't teach you how to write an interesting body of text. Forget most of the things you learned and have fun.
 * Be memorable: this is your only time to be a human
 
 ## General Application Tips

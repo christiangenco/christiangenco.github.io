@@ -1,7 +1,8 @@
 ---
 title: Musical Eating
 image: http://i.imgur.com/FEdh56s.png
-description: A useless talent made possible by the MaKey MaKey.
+image_small: http://i.imgur.com/FEdh56ss.png
+excerpt: A useless talent made possible by the MaKey MaKey.
 ---
 
 I won first place at the SMU Family Weekend Talent Show by eating fruit!
@@ -14,7 +15,7 @@ As far as I know, I'm currently the only person in the world to ever perform "mu
 
 I used a magical device called the [MaKey MaKey](http://www.makeymakey.com/) that was [funded on Kickstarter](http://www.kickstarter.com/projects/joylabs/makey-makey-an-invention-kit-for-everyone) in June. It was developed by students at MIT Media Lab to be a device that lets anybody make things:
 
-> We believe that everyone is creative, inventive, and imaginative. We believe that everyone can create the future and change the world. So we have dedicated our lives to making easy-to-use invention kits. We believe that the whole world is a construction kit, if we choose to see it that way. 
+> We believe that everyone is creative, inventive, and imaginative. We believe that everyone can create the future and change the world. So we have dedicated our lives to making easy-to-use invention kits. We believe that the whole world is a construction kit, if we choose to see it that way.
 
 It works by sending keyboard messages to your computer when a connection is made between things it's plugged into:
 
@@ -25,7 +26,7 @@ The power of MaKey MaKey comes from being able to turn *literally anything* into
 The creators of MaKey MaKey held an innovation contest shortly after being funded, and I was lucky enough to be [one of ten winners](http://www.kickstarter.com/projects/joylabs/makey-makey-an-invention-kit-for-everyone/posts/242251) to receive a beta board! I'd wanted to perform something at SMU's annual [Family Weekend Talent Show](http://smu.edu/sf/family%20weekend/FW%20Talent%20Show.asp) since my freshmen year, and I saw this as a perfect opportunity to do something unique.
 
 I attached the most diverse array of foods and drinks I could think of to each of the MaKey MaKey's keys, mapped each key to a MIDI note signal with [MidiKeys](http://www.manyetas.com/creed/midikeys.html), and mapped each signal to a sound with GarageBand. I then wore non-conductive gloves so the connections would only be completed if each thing touched my mouth.
- 
+
 ## Aftermath
 
 I later [sent this video to the MaKey MaKey team](http://www.makeymakey.com/forums/index.php?topic=1241.0) (now encorporated as JoyLabz) and they were so impressed they offered me the first MaKey MaKey "Pro-Maker" sponsorship!

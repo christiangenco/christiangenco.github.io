@@ -1,7 +1,8 @@
 ---
 title: Human Centered Design at SMU
 image: http://i.imgur.com/peXXST4.jpg
-description: I've always cared deeply about design, but I've never felt I was innately good at creating good design. It has, however, been something I've been consciously working on for the last few years, and something I plan on continuing for the rest of my life.
+image_small: http://i.imgur.com/peXXST4s.jpg
+excerpt: I've always cared deeply about design, but I've never felt I was innately good at creating good design. It has, however, been something I've been consciously working on for the last few years, and something I plan on continuing for the rest of my life.
 ---
 
 *author's note: this post was originally written as a class assignment for Human Centered Design at SMU - one of the best courses I took in college - taught by the IDEO and Frog Design alum [Kate Canales](http://www.youtube.com/watch?v=9aYD6fBPC3c)*
@@ -28,7 +29,7 @@ So why am I taking this course? Because I want the things I create to have the s
 
 <figure class="left-overflow"><img src="http://i.imgur.com/gNVhYAa.png" /><figcaption>using BCeSIS every day would give me suicidal thoughts</figcaption></figure>
 
-I found a recent example particularly poignent: the Saanich school district, fed up with shelling out over a million dollars a year to an extortionist software company, decided to [develop their own software in house](http://www.timescolonist.com/news/local/saanich-school-district-builds-own-software-to-handle-student-data-defies-doubters-1.51944). Looking at the software in question, cryptically titled [BCeSIS](https://www.youtube.com/watch?v=fee1zxP83Zo), clearly shows why this needed to be done: it looks like a complete piece of shit. 
+I found a recent example particularly poignent: the Saanich school district, fed up with shelling out over a million dollars a year to an extortionist software company, decided to [develop their own software in house](http://www.timescolonist.com/news/local/saanich-school-district-builds-own-software-to-handle-student-data-defies-doubters-1.51944). Looking at the software in question, cryptically titled [BCeSIS](https://www.youtube.com/watch?v=fee1zxP83Zo), clearly shows why this needed to be done: it looks like a complete piece of shit.
 
 Would you pay $1,000,000 **every year** for this? There is, unsurprisingly, [much documented frustration](https://www.youtube.com/watch?v=8PA4Vrpd5qA) with the embarassingly overprised system.
 

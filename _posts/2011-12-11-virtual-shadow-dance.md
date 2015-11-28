@@ -1,7 +1,8 @@
 ---
 title: Virtual Shadow Dance
 image: http://i.imgur.com/IP5alBm.jpg
-description: A Microsoft Kinect project to manipulate your shadow.
+image_small: http://i.imgur.com/IP5alBms.jpg
+excerpt: A Microsoft Kinect project to manipulate your shadow.
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/WV0vvCz4uFM" frameborder="0" allowfullscreen></iframe>

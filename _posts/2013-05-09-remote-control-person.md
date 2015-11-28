@@ -1,7 +1,8 @@
 ---
 title: The Remote Control Person
 image: http://i.imgur.com/1DXVc3V.jpg
-description: A design for a remote control you can use on people.
+image_small: http://i.imgur.com/1DXVc3Vs.jpg
+excerpt: A design for a remote control you can use on people.
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/_UNwHurfqgg" frameborder="0" allowfullscreen></iframe>
@@ -36,7 +37,7 @@ to Activision's latest graphical feat of producing an "uncanny" recreation of a 
 
 it is not unreasonable to question the point at which reality will be indistinguishable from an immersive video game. This is a concept that has been explored extensively by science fiction writers such as Greg Egan in his novel "Permutation City," and has become all the more relevant in light of emerging virtual reality technologies like the Oculus Rift.
 
-From the technical side, my project features a system for remotely controlling a person designated as the avatar, who wears a vibrating belt that is controlled by a game controller held by the player. 
+From the technical side, my project features a system for remotely controlling a person designated as the avatar, who wears a vibrating belt that is controlled by a game controller held by the player.
 
 <figure class="left"><img src="http://i.imgur.com/Vz4qDBK.png" /><figcaption>The technical setup for the avatar in "The Life Game"</figcaption></figure>
 

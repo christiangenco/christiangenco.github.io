@@ -1,7 +1,8 @@
 ---
 title: MacBook Developer Setup
 image: http://i.imgur.com/tnCchmn.jpg
-description: I've been on Macs since I was 10 years old. I love them obsessively, but my needs for Mac OS X as a developer are more than the operating system comes with by default.
+image_small: http://i.imgur.com/tnCchmns.jpg
+excerpt: I've been on Macs since I was 10 years old. I love them obsessively, but my needs for Mac OS X as a developer are more than the operating system comes with by default.
 ---
 
 I've been on Macs since I was 10 years old. I love them obsessively, but my needs for Mac OS X as a developer are more than the operating system comes with by default.
@@ -42,7 +43,7 @@ Here's a list of my handy git aliases:
     alias gha='git hist --all'
     alias gp='git pull'
     alias gpgp='git pull && git push'
-    
+
 And a fantastic system for marking and jumping to specific folders:
 
     export MARKPATH=$HOME/.marks
@@ -61,7 +62,7 @@ And a fantastic system for marking and jumping to specific folders:
     alias j="jump"
     alias m="mark"
 
-For example, I marked my project directory for [Textbooks Please](http://textbooksplease.com) with: 
+For example, I marked my project directory for [Textbooks Please](http://textbooksplease.com) with:
 
     cd LONG/DIRECTORY/THAT/TAKES/A/LONG/TIME/TO/TYPE/textbooksplease
     m tbp
@@ -69,7 +70,7 @@ For example, I marked my project directory for [Textbooks Please](http://textboo
 And now I can jump to that directory from anywhere with:
 
     j tbp
-    
+
 ### System Tweaks
 
 * Enable hot corners in `System Preferences / Mission Control / Hot Corners`. I like top right for mission control, bottom right for desktop, top left for screensaver, and bottom left for application windows. ![hot corners](http://i.imgur.com/X9pqpAq.png)

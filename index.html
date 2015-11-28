@@ -51,7 +51,7 @@ type: page
       <hr>
 
       <h2>Recent posts <small><a href="/posts">all posts</a></small></h2>
-      {% for post in site.posts %}
+      {% for post in site.posts  %}
         {% if post.tags contains 'top' %}
         {% elsif post.categories contains 'pages' %}
         {% else %}

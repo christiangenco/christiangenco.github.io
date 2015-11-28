@@ -1,7 +1,8 @@
 ---
 title: How would you redesign the wallet?
 image: http://i.imgur.com/ge5TwKO.jpg
-description: Our first design project in Human Centered Design at SMU was to redesign the wallet. This was my personal design process that led to a novel wallet prototype.
+image_small: http://i.imgur.com/ge5TwKOs.jpg
+excerpt: Our first design project in Human Centered Design at SMU was to redesign the wallet. This was my personal design process that led to a novel wallet prototype.
 ---
 
 *author's note: this post was originally written as a class assignment for Human Centered Design at SMU - one of the best courses I took in college - taught by the IDEO and Frog Design alum [Kate Canales](http://www.youtube.com/watch?v=9aYD6fBPC3c)*

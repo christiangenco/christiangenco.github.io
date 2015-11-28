@@ -1,0 +1,32 @@
+---
+layout: default
+type: page
+---
+
+<style>
+  small{
+    font-family: monospace;
+    font-size: 12pt;
+    color: #ccc;
+  }
+</style>
+
+<div class="wrapper">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h1>Book Reviews</h1>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.categories contains 'books' %}
+            <li>
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                {{post.title}}
+              </a>
+              <small class="pull-right">{{post.date | date: "%Y-%m-%d"}}</small>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

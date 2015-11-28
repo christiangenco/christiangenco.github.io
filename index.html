@@ -3,6 +3,18 @@ layout: default
 type: page
 ---
 
+<style>
+  .post-image{
+    max-width: 50px;
+  }
+
+  @media (min-width: 768px) {
+    .post-image{
+      max-width: 200px;
+    }
+  }
+</style>
+
 <div class="wrapper">
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
@@ -10,7 +22,9 @@ type: page
         <img src="http://i.imgur.com/bMwFJSpl.png" class="img-rounded" width="128px" title="Christian Genco" style="display: inline; margin-right: 20px;" />
       </a>
       <p class="media-body">
-        Hi! I'm Christian Genco. Blah blah blah.
+        Hi! I'm Christian Genco. I <a href="/college">went to college for free</a> at SMU to study computer science and started <a href="/projects">making cool stuff</a> instead of getting a job after I graduated in 2013. <a href="/projects">My projects</a> make more money than I spend, and I'm on track to financially retire before I'm 30, so <a href="http://gogo.gen.co/">I live in an RV traveling with my wife</a>.
+        <br><br>
+        I like <a href="/now">spending my time</a> solving problems that help people, and <a href="/you-should-learn-to-program">helping people solve problems</a>. If you have a cool project, or if you just want to say hey, <a href="/contact">send me an email</a>!
       </p>
 
       <hr>
@@ -18,9 +32,9 @@ type: page
       <h2>Top posts <small><a href="/posts">all posts</a></small></h2>
       {% for post in site.tags.top limit:5 %}
         <div class="media">
-          <div class="media-right">
+          <div class="media-left">
             <a href="{{ post.url | prepend: site.baseurl }}">
-              <img src="{{post.image_small}}" class="img-rounded img-responsive media-object" />
+              <img src="{{post.image_small}}" class="img-rounded post-image" />
             </a>
           </div>
           <div class="media-body">
@@ -44,7 +58,7 @@ type: page
           <div class="media">
             <div class="media-left">
               <a href="{{ post.url | prepend: site.baseurl }}">
-                <img src="{{post.image_small}}" class="img-rounded img-responsive media-object" />
+                <img src="{{post.image_small}}" class="img-rounded post-image" />
               </a>
             </div>
             <div class="media-body">

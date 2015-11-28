@@ -13,14 +13,6 @@ After getting my degree at SMU in Computer Science in 2013, I spent a year worki
 
 <hr>
 
-### Notable Projects
-
-* [DBinbox](https://dbinbox.com): an easy way to receive large files
-* [textbooks please](http://textbooksplease.com): a textbook search engine
-* [email tip bot](http://emailtipbot.com): an email-based bitcoin wallet
-
-<hr>
-
 ### Contact
 
 * <i class="fa fa-envelope"></i> [christian@gen.co](mailto:christian@gen.co)

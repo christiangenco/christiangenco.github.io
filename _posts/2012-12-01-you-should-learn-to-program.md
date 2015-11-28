@@ -1,7 +1,9 @@
 ---
 title: You Should Learn to Program
 image: http://i.imgur.com/q50cC8s.jpg
-description: Why? It makes you smarter, computers are improving faster than you are, and - if you're like me - you want to maximize your laziness.
+image_small: http://i.imgur.com/q50cC8s.jpg
+excerpt: Why? It makes you smarter, computers are improving faster than you are, and - if you're like me - you want to maximize your laziness.
+tags: top
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/xfBWk4nw440" frameborder="0" allowfullscreen></iframe>

@@ -13,7 +13,13 @@ I read [a blog post by Derek Sivers](https://sivers.org/nowff) that talks about 
 > (If I’m doing something that’s not on my list, is it something I want to add, or something I want to stop?)
 > It helps me say no, too. When I decline invitations, I point them to [that page](https://sivers.org/now) to let them know it’s not personal.
 
-That sounds like something that could help me! Here's what I'm focused on this month, and what I plan to focus on for the next few months:
+That sounds like something that could help me!
+
+---
+
+Right now I'm continuing to work on [my own projects](/projects) - mostly [dbinbox](https://dbinbox.com) - and not doing any consulting work. Most of my time is spent [traveling with my wife around the country in our RV tiny house](http://gogo.gen.co), reading, learning, and cobbling together some productive habits in my unstructured lifestyle.
+
+Here's what I'm focused on this month, and what I plan to focus on for the next few months:
 
 <style>td:nth-child(1) {white-space: nowrap;}</style>
 

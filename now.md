@@ -27,31 +27,39 @@ Here's what I'm focused on this month, and what I plan to focus on for the next 
   <tbody>
     <tr class="success">
       <td>2015-11</td>
-      <td>$5k</td>
+      <td>$X</td>
+      <td></td>
+      <td></td>
+      <td>christian.gen.co (this website), <a href="https://profileflags.parseapp.com/">Profile Flags</a></td>
+      <td></td>
+    </tr>
+    <tr class="active">
+      <td>2015-12</td>
+      <td>$X</td>
       <td>Getting Things Done</td>
       <td>Evaluating Risk</td>
-      <td>christian.gen.co</td>
+      <td></td>
       <td>Memorize a Deck of Cards</td>
     </tr>
-    <tr>
-      <td>2015-12</td>
-      <td>$5k</td>
+    <tr class="">
+      <td>2016-01</td>
+      <td>$X</td>
       <td>A Random Walk Down Wallstreet</td>
       <td>Mental Math</td>
       <td>Textbooks Please chrome extension</td>
       <td>Mental addition and subtraction for numbers &lt;12</td>
     </tr>
-    <tr>
-      <td>2016-01</td>
-      <td>$5k</td>
+    <tr class="">
+      <td>2016-02</td>
+      <td>$X</td>
       <td>Start Small, Stay Small</td>
       <td>Mnemonic Major system for memorizing numbers</td>
       <td>mailto.io</td>
       <td>Mental addition and subtraction for numbers &lt;12</td>
     </tr>
-    <tr>
-      <td>2016-02</td>
-      <td>$5k</td>
+    <tr class="">
+      <td>2016-03</td>
+      <td>$X</td>
       <td>The Single Founder's Handbook</td>
       <td>inbox zero</td>
       <td>winbox0</td>

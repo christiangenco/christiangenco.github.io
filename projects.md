@@ -11,6 +11,7 @@ Here's a list of things I've made that you can use:
 
 * [dbinbox](https://dbinbox.com): receive large files on your website
 * [textbooks please](http://textbooksplease.com): textbook search engine
+* [Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email
 * [Export History](https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US): Chrome plugin to export your history
 * [Profile Flags](https://profileflags.parseapp.com/): add a country flag over your Facebook profile picture
 * [autorunner](https://github.com/christiangenco/autorunner): command line tool to run a command when a file is saved

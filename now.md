@@ -33,37 +33,37 @@ Here's what I'm focused on this month, and what I plan to focus on for the next 
       <td>christian.gen.co (this website), <a href="https://profileflags.parseapp.com/">Profile Flags</a></td>
       <td></td>
     </tr>
-    <tr class="active">
+    <tr class="success">
       <td>2015-12</td>
       <td>$X</td>
-      <td>Getting Things Done</td>
-      <td>Evaluating Risk</td>
       <td></td>
-      <td>Memorize a Deck of Cards</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
-    <tr class="">
+    <tr class="success">
       <td>2016-01</td>
-      <td>$X</td>
-      <td>A Random Walk Down Wallstreet</td>
-      <td>Mental Math</td>
-      <td>Textbooks Please chrome extension</td>
-      <td>Mental addition and subtraction for numbers &lt;12</td>
+      <td></td>
+      <td></td>
+      <td>[MCT oil vs. Coconut Oil for Ketogenic Diets](/mct)</td>
+      <td></td>
+      <td></td>
     </tr>
-    <tr class="">
+    <tr class="active ">
       <td>2016-02</td>
       <td>$X</td>
-      <td>Start Small, Stay Small</td>
-      <td>Mnemonic Major system for memorizing numbers</td>
-      <td>mailto.io</td>
-      <td>Mental addition and subtraction for numbers &lt;12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr class="">
       <td>2016-03</td>
       <td>$X</td>
-      <td>The Single Founder's Handbook</td>
-      <td>inbox zero</td>
-      <td>winbox0</td>
-      <td>Mental addition and subtraction for numbers &lt;12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
@@ -83,3 +83,30 @@ I read [a blog post by Derek Sivers](https://sivers.org/nowff) that talks about 
 That sounds like something that could help me!
 
 For a list of more /now pages, visit [nownownow.com](http://nownownow.com/).
+
+---
+
+## Book summaries todo
+
+* Getting Things Done
+* A Random Walk Down Wallstreet
+* Start Small, Stay Small
+* The Single Founder's Handbook
+
+## Blog posts todo
+
+* Evaluating Risk
+* Mental Math
+* Mnemonic Major system for memorizing numbers
+* inbox zero
+
+## Apps todo
+
+* Textbooks Please chrome extension
+* mailto.io
+* winbox0
+
+## Superpowers todo
+
+* Memorize a Deck of Cards
+* Mental addition and subtraction for numbers &lt;12

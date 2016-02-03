@@ -45,7 +45,7 @@ Here's what I'm focused on this month, and what I plan to focus on for the next 
       <td>2016-01</td>
       <td></td>
       <td></td>
-      <td>[MCT oil vs. Coconut Oil for Ketogenic Diets](/mct)</td>
+      <td>[MCT oil vs. Coconut Oil for Ketogenic Diets](/mct), (How to: Free Website Hosting + Custom Domain with Github Pages)[https://www.youtube.com/watch?v=CJLb8UUIJPg]</td>
       <td></td>
       <td></td>
     </tr>

@@ -80,3 +80,5 @@ And now I can jump to that directory from anywhere with:
 * faster expose and mission control animations: `defaults write com.apple.dock expose-animation-duration -float 0.1 && killall Dock`
 
 I hope this helps to make you as productive as possible on your Mac!
+
+**2016-02-09 Update**: If you enjoyed this list, check out this [similar compilation of developer tools by hacker Samy Kamkar(http://samy.pl/tools). [Samy's website](http://samy.pl/) also has some neat stuff.

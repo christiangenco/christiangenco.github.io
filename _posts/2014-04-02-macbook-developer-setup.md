@@ -82,3 +82,7 @@ And now I can jump to that directory from anywhere with:
 I hope this helps to make you as productive as possible on your Mac!
 
 **2016-02-09 Update**: If you enjoyed this list, check out this [similar compilation of developer tools by hacker Samy Kamkar(http://samy.pl/tools). [Samy's website](http://samy.pl/) also has some neat stuff.
+
+---
+
+If you're more command line inclined, I recommend [this 2012 article about using tmux, vim, and zsh together](http://www.drbunsen.org/the-text-triumvirate/).

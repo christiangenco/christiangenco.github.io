@@ -7,68 +7,9 @@ layout: page
 type: page
 ---
 
-Right now I'm continuing to work on [my own projects](/projects) - mostly [dbinbox](https://dbinbox.com) - and not doing any consulting work. Most of my time is spent [traveling with my wife around the country in our RV tiny house](http://gogo.gen.co), reading, learning, and cobbling together some productive habits in my unstructured lifestyle.
+I'm working on systemizing how I get things done. This includes things like ranking [my personal projects](/projects) in the best order to finish them, using time more effectively by [working in poms](http://cirillocompany.de/pages/pomodoro-technique/), and making it easy for my future lazy self to be productive (even when he doesn't want to).
 
-Here's what I'm focused on this month, and what I plan to focus on for the next few months:
-
-<style>td:nth-child(1) {white-space: nowrap;}</style>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>Month</th>
-      <th>Save</th>
-      <th>Book Summary</th>
-      <th>Blog Post</th>
-      <th>App</th>
-      <th>Superpower</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="success">
-      <td>2015-11</td>
-      <td>$X</td>
-      <td></td>
-      <td></td>
-      <td>christian.gen.co (this website), <a href="https://profileflags.parseapp.com/">Profile Flags</a></td>
-      <td></td>
-    </tr>
-    <tr class="success">
-      <td>2015-12</td>
-      <td>$X</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="success">
-      <td>2016-01</td>
-      <td></td>
-      <td></td>
-      <td>[MCT oil vs. Coconut Oil for Ketogenic Diets](/mct), (How to: Free Website Hosting + Custom Domain with Github Pages)[https://www.youtube.com/watch?v=CJLb8UUIJPg]</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="active ">
-      <td>2016-02</td>
-      <td>$X</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr class="">
-      <td>2016-03</td>
-      <td>$X</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-All the [book summaries](/books) and [blog posts](/posts) I've written are on this website. You can check out all of the apps I've made, and want to eventually make, on [my projects page](/projects).
+I'm experimenting with doing consulting work again. It's a nice break from working on my own projects (though they still make most of the money). If you have an interesting project you'd like to work on together, [let me know!](/contact)
 
 ---
 
@@ -84,6 +25,7 @@ That sounds like something that could help me!
 
 For a list of more /now pages, visit [nownownow.com](http://nownownow.com/).
 
+<!--
 ---
 
 ## Book summaries todo
@@ -110,3 +52,4 @@ For a list of more /now pages, visit [nownownow.com](http://nownownow.com/).
 
 * Memorize a Deck of Cards
 * Mental addition and subtraction for numbers &lt;12
+-->

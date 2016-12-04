@@ -1,0 +1,322 @@
+%PDF-1.3
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Outlines /Count 0 >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+15 0 R
+]
+/Count 2
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 8 0 R
+/F2 9 0 R
+/F3 10 0 R
+>>
+/XObject << 
+/I1 13 0 R
+/I2 14 0 R
+>>
+>>
+/MediaBox [0.000 0.000 612.000 792.000]
+ >>
+endobj
+4 0 obj
+[/PDF /Text /ImageC ]
+endobj
+5 0 obj
+<<
+/Creator (DOMPDF)
+/CreationDate (D:20160706004042-04'00')
+/ModDate (D:20160706004042-04'00')
+/Author (NewsBank, Inc.)
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Annots [ 11 0 R ]
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 6607 >>
+stream
+
+1.000 1.000 1.000 rg
+7.500 7.500 597.000 777.000 re f
+0.600 0.600 0.600 rg
+0.600 0.600 0.600 RG
+7.500 743.250 m 604.500 743.250 l 603.750 742.500 l 8.250 742.500 l  f
+604.500 743.250 m 604.500 7.668 l 603.750 7.668 l 603.750 742.500 l  f
+7.500 743.250 m 7.500 7.668 l 8.250 7.668 l 8.250 742.500 l  f
+0.000 0.000 0.000 rg
+BT 12.000 726.052 Td /F1 12.0 Tf  [(SMU grad creates program to find cheap textbooks)] TJ ET
+0.298 0.361 0.361 rg
+BT 12.000 713.687 Td /F2 8.6 Tf  [(Fort Worth Star-Telegram \(TX\) - July 18, 2013)] TJ ET
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+6.640 704.388 m 
+6.640 704.827 6.459 705.264 6.148 705.575 c
+5.837 705.887 5.400 706.068 4.960 706.068 c
+4.520 706.068 4.083 705.887 3.772 705.575 c
+3.461 705.264 3.280 704.827 3.280 704.388 c
+3.280 703.948 3.461 703.511 3.772 703.200 c
+4.083 702.889 4.520 702.708 4.960 702.708 c
+5.400 702.708 5.837 702.889 6.148 703.200 c
+6.459 703.511 6.640 703.948 6.640 704.388 c f
+BT 12.000 701.450 Td /F3 9.6 Tf  [(Author/Byline: )] TJ ET
+BT 77.098 701.450 Td /F3 9.6 Tf  [(Diane Smith, dianesmith@star-telegram.com)] TJ ET
+6.640 692.666 m 
+6.640 693.106 6.459 693.543 6.148 693.854 c
+5.837 694.165 5.400 694.346 4.960 694.346 c
+4.520 694.346 4.083 694.165 3.772 693.854 c
+3.461 693.543 3.280 693.106 3.280 692.666 c
+3.280 692.226 3.461 691.789 3.772 691.478 c
+4.083 691.167 4.520 690.986 4.960 690.986 c
+5.400 690.986 5.837 691.167 6.148 691.478 c
+6.459 691.789 6.640 692.226 6.640 692.666 c f
+BT 12.000 689.729 Td /F3 9.6 Tf  [(Readability: )] TJ ET
+BT 67.488 689.729 Td /F3 9.6 Tf  [(8-9 grade level \(Lexile: 1090\))] TJ ET
+0.600 0.600 0.600 rg
+0.600 0.600 0.600 RG
+12.000 687.384 m 600.000 687.384 l 600.000 686.634 l 12.000 686.634 l  f
+0.000 0.000 0.000 rg
+BT 12.000 673.507 Td /F3 9.6 Tf  [(Christian Genco paid about $1,200 for college textbooks one semester and decided heíd had enough.)] TJ ET
+BT 12.000 650.265 Td /F3 9.6 Tf  [(ìIt was ridiculous,î said Genco, 21.)] TJ ET
+BT 12.000 627.024 Td /F3 9.6 Tf  [(The next semester, Genco decided to shop online and after a couple of days of searching, he found books for between $800 and $900.)] TJ ET
+BT 12.000 603.782 Td /F3 9.6 Tf  [(Genco liked the fact that the books were cheaper online, but was dismayed that it took two days to find the best deals.)] TJ ET
+BT 12.000 580.541 Td /F3 9.6 Tf  [(Genco, then a student at SMU, went to work. Using computer coding and information already available on the Internet, he created a )] TJ ET
+BT 12.000 568.819 Td /F3 9.6 Tf  [(program that automatically searched for the lowest priced textbooks he needed.)] TJ ET
+BT 12.000 545.577 Td /F3 9.6 Tf  [(ìI did that for myself,î he said.)] TJ ET
+BT 12.000 522.336 Td /F3 9.6 Tf  [(Genco said he introduced the program to his friends at SMU, who loved it. After graduating in May, he continued to fine tune the program, )] TJ ET
+BT 12.000 510.614 Td /F3 9.6 Tf  [(which has evolved into a free service for college students called textbooksplease.com .)] TJ ET
+BT 12.000 487.373 Td /F3 9.6 Tf  [(Gencoís website offers college students a chance to compare prices for textbooks with a series of computer clicks. It also exemplifies a )] TJ ET
+BT 12.000 475.651 Td /F3 9.6 Tf  [(theme Genco has been promoting ó that with knowledge of computer coding, people can solve a multitude of everyday issues.)] TJ ET
+BT 12.000 452.409 Td /F3 9.6 Tf  [(ìItís tremendous the power you can get from computers,î Genco said.)] TJ ET
+BT 12.000 429.168 Td /F3 9.6 Tf  [(The program relies on information that is already available online so he didnít need to get permission from universities to do the searches, )] TJ ET
+BT 12.000 417.446 Td /F3 9.6 Tf  [(Genco said. It simply automates that search for books and provides students a list to work from, he said.)] TJ ET
+BT 12.000 394.205 Td /F3 9.6 Tf  [(The program pulls books from a variety of retailers or shopping sites such as amazon.com.)] TJ ET
+BT 12.000 370.963 Td /F3 9.6 Tf  [(Genco said he said he gets an ìaffiliateís feeî from the retailers to help maintain the website.)] TJ ET
+BT 12.000 347.721 Td /F3 9.6 Tf  [(The latest version of Gencoís program went live about three weeks ago ó just in time for the upcoming college textbook shopping season.)] TJ ET
+BT 12.000 324.480 Td /F3 9.6 Tf  [(Between 100 to 200 students already used earlier versions of the program, Genco said.)] TJ ET
+BT 12.000 301.238 Td /F3 9.6 Tf  [(Esther Liu, graduate student at SMU studying operations research, said she has used Gencoís program for about three years ó as it )] TJ ET
+BT 12.000 289.517 Td /F3 9.6 Tf  [(evolved with improvements.)] TJ ET
+BT 12.000 266.275 Td /F3 9.6 Tf  [(ìItís changed quite a bit,î Liu said.ìItís saved me hundreds of dollars each semester.î)] TJ ET
+BT 12.000 243.033 Td /F3 9.6 Tf  [(Liu, 21, estimates she has saved about $300 to $400 every time she used the program.)] TJ ET
+BT 12.000 219.792 Td /F3 9.6 Tf  [(Liu said the engineering textbooks sheís had to purchase are expensive, ranging from $100 to $300 each. But sheís been able to find )] TJ ET
+BT 12.000 208.070 Td /F3 9.6 Tf  [(cheaper prices on textbookplease.com.)] TJ ET
+BT 12.000 184.829 Td /F3 9.6 Tf  [(Lui said the program shows how college students today find their own solutions to problems .)] TJ ET
+BT 12.000 161.587 Td /F3 9.6 Tf  [(ìThe Internet has opened the possibilities of solving problems on our own,î she said, adding that Genco saw the answer to a pocketbook )] TJ ET
+BT 12.000 149.865 Td /F3 9.6 Tf  [(issue many college students complain about.)] TJ ET
+BT 12.000 126.624 Td /F3 9.6 Tf  [(The cost of books and supplies for the average student at a four-year public college is estimated to be $1,200 per year, according to the )] TJ ET
+BT 12.000 114.902 Td /F3 9.6 Tf  [(College Board .)] TJ ET
+BT 12.000 91.661 Td /F3 9.6 Tf  [(Textbook costs has been an ongoing issue in higher education. In 2008, lawmakers passed the federal Higher Education Opportunity Act, )] TJ ET
+BT 12.000 79.939 Td /F3 9.6 Tf  [(which aimed to lessen student costs, offer more transparency and protect college students as consumers of textbooks.)] TJ ET
+BT 12.000 56.697 Td /F3 9.6 Tf  [(At SMU, Genco majored in computer programming with a pre-medical specialization. He is currently working with his father to create an )] TJ ET
+BT 12.000 44.976 Td /F3 9.6 Tf  [(medical app that helps doctors document patient visits with an electronic health record.)] TJ ET
+BT 12.000 21.734 Td /F3 9.6 Tf  [(Genco is no stranger to being in the news. In June 2009, he was featured in reports about Southlake Carroll High Schoolís medical )] TJ ET
+q
+164.250 0 0 37.500 7.500 747.000 cm /I2 Do
+Q
+endstream
+endobj
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Helvetica-Oblique
+/Encoding /WinAnsiEncoding
+>>
+endobj
+10 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+11 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 12 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 7.5000 747.0000 604.5000 784.5000 ]
+>>
+endobj
+12 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://infoweb.newsbank.com/)
+>>
+endobj
+13 0 obj
+<<
+/Type /XObject
+/Subtype /Image
+/Width 219
+/Height 50
+/Filter /FlateDecode
+/DecodeParms << /Predictor 15 /Colors 1 /Columns 219 /BitsPerComponent 8>>
+/ColorSpace /DeviceGray
+/BitsPerComponent 8
+/Length 1324>>
+stream
+hÅ›ZkµÛ*EêÄ$ 	H@A$ 	Hà$ !ÎÚöÅê¥=π_z∫zˆèÆÑfˆºx§Ñ‹°≠è[EF“õ«ˇòˆ€N~Z≠UÎëXuü˙¥nˇfs g§®T(ÄùÁUÓü¿l>≈Ì∫—ãÍ˜ï∫ôôWäÜjÏÃØ™tLåñ=yÆkŸ‘ø•œ}‡k4/Í<ØEF˝ä>7¬lÀÎårëΩ_ù¡Vœ~“ØíÛo÷ÊVà”yôñúÔTÊ^(ˇÛï¯.«ŸKïo…‰ÿõTπÀµµFâJÛUÓ∆£π˙!≤„÷∑®Úy∞îüV‚]Xø´R^ÇI‹˛¿^Ó‚{ä…e–èq3à^ 4›#"œﬁfÇ˛ªV.~ÿ_ÿ˚Êp]˛NSÚ‡ós‘˙È2«“@ásU˙9Œπ]ﬁ¸ÔQk›Èqê[T"_vï≈9qª®÷¥z∞>ö≥˛j'¨—æw-qqª8£ÉZvﬂ,ñpÓ7∑V¢RŒæ™dø®7,ﬂ∞!∑63°KΩÕ¿¨K/LqÙ◊uPBõàTnòƒÅ‘NI-“—ûn&Ÿd»ï;ﬂ≥e8}t¢ΩC`ÎYÌœãY#˝/ë)Ê¡[ΩZÜPnLãêwÛ‘O>óÓÜb∫¥õ«IO‹JTÇn…˜¬Oœ-qf∞Bßy8`N[Ωn¿b^9åOLú˙gÛBáÒô¢M¢⁄£g'6†h¿1$°˝rôß—@y3D	´ŒÃJ?yll:“≥iÕO7Én‡Ñ51Oœ5p‡*RP%†dü√–—¢ŒÌ*Z¡(˘0∂∏<x´0ƒFÑ|˙á¨d(v3{πEhËª“6ﬁã˘˝¬Ù0Ñ—jÇÁTå.jy(ﬂ£§nfı€!GS™πRxù+rCì÷So√«.Ä¸ß‘∞™ÆÑã3 4¨>«n∂kZ√•€ÑUSB≠ ≥@Ë≈Ô"3 9$ÕzHègÒHˆ≈^ÃÔ>tj%≤˚ŒÄˆ¨\≤ìzîe°ˆPJ6=÷C,C}°cyŒÕB?:∆Ás¯—´n2pPaWªÉ(	eX‘k@VCÚP–∑¯îKM®©f·≠#ÜµSeHÌ&z~7õç≈ÚÛÈ4ª°ˆÈ»·[}b®•$ú/‹¶â~_z™ç}c :7ÃƒÈΩŒ-OV"◊FEZK Eç¶WŸ4
+ﬂ†w!—◊¡òadHçå
+ó≈#‘¬9kk#
+Î%txwW´Z I° ÆRNuˇ⁄°:º^Ûón*[ØHèa⁄‘Eí,-N–áHR>éÿYN+˘e„I¬j\“Ä¶ü4˝Í1O1+á®åÑù(≤âÅO*ªÎ≥i,ru“ö°éîa1Ìs¿’1»	ªÑÕ=÷R&Áó#k∂<)õ^‘w¿ù‰9ìkﬂ§,®›y÷/5~õaÈIÈÃX˘¥îY∏ sc“‡E…Yúˇ2OM|^´MÒ‚$YŒOCÔË∂Ã·Àv?ê6õ®ÅN≥|*m˙ˆ¿ô∂n7zoÀ‡›ñá«
+ãz±]5í©e%’A£ñK"h=îà°ºËÈ†$m>Ôÿﬂ‘∂∫©l u_¸‘‡ºÀ€ïb	≠ò1À§¡Î‰™Q∏ñ–ZÖÚÆπQÑôÑ*È‘#€Ûwæ‘∫ıØ¸ÖÊ ø¯?œAøˆØ·Ãß5x¥}›ÁK!ˇ.5˛bÚ≈`ó˝Ë?ù˛•Q¡a
+endstream
+endobj
+14 0 obj
+<<
+/Type /XObject
+/Subtype /Image
+/Width 219
+/Height 50
+/SMask 13 0 R
+/Filter /FlateDecode
+/DecodeParms << /Predictor 15 /Colors 3 /Columns 219 /BitsPerComponent 8>>
+/ColorSpace /DeviceRGB
+/BitsPerComponent 8
+/Length 1072>>
+stream
+xúÌúÕj1ÄsØ?T¡B±V[ºh° E‹∏q!H›
+ﬁÌ›J√G(ÖnªÌ∫›¯Ó|ã>Öàb«≈î8&ô‰‰‰‰g2Á[ÈùI&”|sÚ;3iöFåÜŸÊñoíØﬂø≈(	”«§z#Í∞ó…®÷HÿÀTh§”E],/}ŸÀ®TedüXæ!úf®®ƒH£C·ﬁX‘d)#QÉëä7‰ÆPÖ^¬∞çåÌbﬂÖ\q¥ÿ»Æ%	Ã`)”p3w0$vQ^(∆å£0º)µ»ú"°…4w¸»´c∆Îéá!≈»V«ú–#e	•™É¡ƒ»rtd¢2#K”±úí‘«0∆⁄l¿xFå,Â!·â!*ÿH¶,ÿH¶,ÿH¶,ÃÛë!GµÉKﬁÏˆÀwÁwﬂ rhNÁ§%¢a≤8Î;ª¿Ü…ùtÕ“*.·dqf©˛Çú˝ômn€åc≤8+'XR=!G«'Úﬂá˚¿T¯~$À◊Â«ç˚πãP	™ëÒ<´ØŸÂÁ‰vÓ"§ »ª“ã†5•ÌFÿ‹-A∂äŸœ±ﬂÇÂ°˙|µ¶ˇ®‘¢5t&Å_¢=≥ÔôèW!ùπ!¯œHúR‰o˙	‘Æ3ØliEˇÚ˙„ßªóêÙ0pN8%∞gÈ»vOpﬁqTH4Ÿ÷‚lsÀWz¬^UVÚ.dÜwV6ú©ÏUàQ¸Å9 3ﬁÇùmòt÷7Zàê‡óÜ_KÖió)∞ÇÌÌ)ú≥HQ]ºæÑú!œX©!Ø∞@“"ÚóAíÁÂÎèB G6T:ÊÖpÍ*Ûn4Ÿ's–G§
+ﬂ%˛Ï≈€K¨é®îçß>ÌL*»»xØ·hRSl…ˇ˛æ736Ÿ^X$≈õ~'œ˘zd3∂/›Ñ‹N˜oµº≤ˆ©	z®§pÌ¿"jDﬂ¿£’ÆÊÖe¬ßk}gÔãˆ£6ú3/TÂ©Ä©ôÆ‡ùT•ÁäC˛≈.¶€er—úŒÀYıV–ß£„ÙÇç»8≤¡≠ ÿ3Ñ˜=HÇ˝ˆ´∆1aÃop7Ÿ]u/ª”Ê Qy»a§nU€M€ÄXŒ√á¸À+kÁ∑v¡ƒìΩMw“çÎ=∆0yt|rx∞o9$Ñò∆˚X<ISõ∏ü _UZﬂŸCœA¬)DG_∫±`øoE±=§çªäË°˙$›Gô¸¡∆Ïb˙<$ëd˜8aì)-§˚(œë"*©l≠∂•Ú‡m7Æïá{„•cxë⁄ÑûºWæ¸C÷ns:œIPn];ΩŸ˛ÇŸÿÎ’8BGÔı
+Ib<ﬁ_‘wª≠Æ?2Ó=sb3Œ^z≠%<£õÏæ`Ÿ
+jÒÈKTŸ…˛e∂1¿o«Ba”¿FÇ`ì¡Fz¿:&ÄçtS⁄∑ÎÜçt¿:&Üç¥¡:¶áçÏÖuÃiÜuÃ≈_8Eo
+endstream
+endobj
+15 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 3498 >>
+stream
+
+0.000 0.000 0.000 rg
+0.600 0.600 0.600 RG
+1.000 1.000 1.000 rg
+7.500 7.500 597.000 777.000 re f
+0.600 0.600 0.600 rg
+7.500 628.085 m 604.500 628.085 l 603.750 628.835 l 8.250 628.835 l  f
+604.500 784.500 m 604.500 628.085 l 603.750 628.835 l 603.750 784.500 l  f
+7.500 784.500 m 7.500 628.085 l 8.250 628.835 l 8.250 784.500 l  f
+12.000 686.832 m 600.000 686.832 l 600.000 687.582 l 12.000 687.582 l  f
+0.000 0.000 0.000 rg
+BT 12.000 775.123 Td /F3 9.6 Tf  [(academy.)] TJ ET
+BT 12.000 751.881 Td /F3 9.6 Tf  [(Natalie Genco, Christianís mother, said she thought the idea for a textbook shopping program was ìbrilliant.î Later, when her son finished, )] TJ ET
+BT 12.000 740.160 Td /F3 9.6 Tf  [(she was impressed.)] TJ ET
+BT 12.000 716.918 Td /F3 9.6 Tf  [(ìWe were like, ëWow. Awesome.íî she said.)] TJ ET
+BT 12.000 693.676 Td /F3 9.6 Tf  [(This report includes material from the Star-Telegram archives.)] TJ ET
+0.298 0.361 0.361 rg
+0.298 0.361 0.361 RG
+6.976 680.386 m 
+6.976 680.782 6.813 681.175 6.533 681.455 c
+6.253 681.735 5.860 681.898 5.464 681.898 c
+5.068 681.898 4.675 681.735 4.395 681.455 c
+4.115 681.175 3.952 680.782 3.952 680.386 c
+3.952 679.990 4.115 679.597 4.395 679.317 c
+4.675 679.037 5.068 678.874 5.464 678.874 c
+5.860 678.874 6.253 679.037 6.533 679.317 c
+6.813 679.597 6.976 679.990 6.976 680.386 c f
+BT 12.000 677.642 Td /F2 8.6 Tf  [(Provided By: )] TJ ET
+BT 65.784 677.642 Td /F2 8.6 Tf  [(The McClatchy Company)] TJ ET
+6.976 669.837 m 
+6.976 670.232 6.813 670.626 6.533 670.906 c
+6.253 671.186 5.860 671.349 5.464 671.349 c
+5.068 671.349 4.675 671.186 4.395 670.906 c
+4.115 670.626 3.952 670.232 3.952 669.837 c
+3.952 669.441 4.115 669.047 4.395 668.767 c
+4.675 668.488 5.068 668.325 5.464 668.325 c
+5.860 668.325 6.253 668.488 6.533 668.767 c
+6.813 669.047 6.976 669.441 6.976 669.837 c f
+BT 12.000 667.093 Td /F2 8.6 Tf  [(Index terms: )] TJ ET
+BT 64.341 667.093 Td /F2 8.6 Tf  [(SMU; Star-Telegram)] TJ ET
+6.976 659.287 m 
+6.976 659.683 6.813 660.076 6.533 660.356 c
+6.253 660.636 5.860 660.799 5.464 660.799 c
+5.068 660.799 4.675 660.636 4.395 660.356 c
+4.115 660.076 3.952 659.683 3.952 659.287 c
+3.952 658.891 4.115 658.498 4.395 658.218 c
+4.675 657.938 5.068 657.775 5.464 657.775 c
+5.860 657.775 6.253 657.938 6.533 658.218 c
+6.813 658.498 6.976 658.891 6.976 659.287 c f
+BT 12.000 656.544 Td /F2 8.6 Tf  [(Personal names: )] TJ ET
+BT 81.630 656.544 Td /F2 8.6 Tf  [(Christian Genco; Esther Liu; Natalie Genco)] TJ ET
+6.976 648.738 m 
+6.976 649.134 6.813 649.527 6.533 649.807 c
+6.253 650.087 5.860 650.250 5.464 650.250 c
+5.068 650.250 4.675 650.087 4.395 649.807 c
+4.115 649.527 3.952 649.134 3.952 648.738 c
+3.952 648.342 4.115 647.948 4.395 647.669 c
+4.675 647.389 5.068 647.226 5.464 647.226 c
+5.860 647.226 6.253 647.389 6.533 647.669 c
+6.813 647.948 6.976 648.342 6.976 648.738 c f
+BT 12.000 645.994 Td /F2 8.6 Tf  [(Record: )] TJ ET
+BT 47.052 645.994 Td /F2 8.6 Tf  [(201307181649KNRIDDERTXFRTWRS_092933f8b45b3f7c407d3f6a4d33eaa0)] TJ ET
+6.976 638.188 m 
+6.976 638.584 6.813 638.977 6.533 639.257 c
+6.253 639.537 5.860 639.700 5.464 639.700 c
+5.068 639.700 4.675 639.537 4.395 639.257 c
+4.115 638.977 3.952 638.584 3.952 638.188 c
+3.952 637.792 4.115 637.399 4.395 637.119 c
+4.675 636.839 5.068 636.676 5.464 636.676 c
+5.860 636.676 6.253 636.839 6.533 637.119 c
+6.813 637.399 6.976 637.792 6.976 638.188 c f
+BT 12.000 635.445 Td /F2 8.6 Tf  [(Copyright: )] TJ ET
+BT 56.176 635.445 Td /F2 8.6 Tf  [(Copyright \(c\) 2013 Fort Worth Star-Telegram)] TJ ET
+endstream
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000009 00000 n 
+0000000074 00000 n 
+0000000120 00000 n 
+0000000340 00000 n 
+0000000377 00000 n 
+0000000516 00000 n 
+0000000598 00000 n 
+0000007257 00000 n 
+0000007369 00000 n 
+0000007484 00000 n 
+0000007592 00000 n 
+0000007718 00000 n 
+0000007798 00000 n 
+0000009367 00000 n 
+0000010697 00000 n 
+0000010762 00000 n 
+trailer
+<<
+/Size 17
+/Root 1 0 R
+/Info 5 0 R
+>>
+startxref
+14313
+%%EOF

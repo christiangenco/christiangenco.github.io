@@ -31,3 +31,16 @@ defaults:
       layout: "post"
       author: Christian Genco
       type: post
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "books"
+    values:
+      layout: "post"
+      author: Christian Genco
+
+collections:
+  books:
+    foo: bar
+    output: true
+    permalink: /books/:slug/

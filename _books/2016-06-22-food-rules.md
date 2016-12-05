@@ -1,12 +1,10 @@
 ---
 title: Food Rules - An Eater's Manual
-image:
-image_small:
+image: http://ecx.images-amazon.com/images/I/41Dh74zDcoL.jpg
+image_small: http://ecx.images-amazon.com/images/I/41Dh74zDcoL.jpg
 isbn:
 summary: eat food, mostly plants, not too much.
 ---
-
-# Christian's Review
 
 Most books go on far too long for the information they contain. Some have useful information, so it's worth the time to wade through the muck to pick out the gold nuggets of wisdom.
 

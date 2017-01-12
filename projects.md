@@ -13,6 +13,7 @@ Here's a list of things I've made that you can use:
 * [textbooks please](http://textbooksplease.com): textbook search engine
 * [Dr. Dog](https://www.alexaskillstore.com/Dr-Dog/39678): ask your Amazon Echo if it's safe for your dog to eat certain foods
 * [Export History](https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US): Chrome plugin to export your history
+* [Timecard App](https://timecardapp.com): timecard calculator ([a rewrite of my oldest useful program](/timecardapp))
 * [Profile Flags](https://profileflags.parseapp.com/): add a country flag over your Facebook profile picture
 * [autorunner](https://github.com/christiangenco/autorunner): command line tool to run a command when a file is saved
 * [Markdown to MLA](http://markdowntomla.com/) and [Markdown to APA](http://markdowntoapa.com/): generate perfect MLA and APA documents from plain text markdown

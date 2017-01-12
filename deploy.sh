@@ -1,2 +1,1 @@
-# jekyll server
 git push

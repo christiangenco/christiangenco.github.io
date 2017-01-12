@@ -16,13 +16,6 @@ Since then I've given talks at the opening of the Perot Museum, Highland Park Hi
 
 I'm in the process of writing a book on the topic (if you'd like an early copy, <a href="http://signup.youshouldlearntoprogram.com/">let me know</a>!), but in the meanwhile, here are some reasources I recommend for beginner programmers:
 
-### Learn Code the Hard Way
-
-* **URL:** [learncodethehardway.org](http://learncodethehardway.org)
-* **Price:** free
-* **Difficulty:** moderate
-* **Computer Languages:** Ruby, Python, C
-
 ### Khan Academy
 
 * **URL:** [khanacademy.org/cs](http://khanacademy.org/cs)
@@ -36,6 +29,13 @@ I'm in the process of writing a book on the topic (if you'd like an early copy, 
 * **Price:** free
 * **Difficulty:** beginner
 * **Computer Languages:** javascript
+
+### Learn Code the Hard Way
+
+* **URL:** [learncodethehardway.org](http://learncodethehardway.org)
+* **Price:** free
+* **Difficulty:** moderate
+* **Computer Languages:** Ruby, Python, C
 
 ### Coursera
 
@@ -74,7 +74,8 @@ I'm in the process of writing a book on the topic (if you'd like an early copy, 
 
 ### Others
 
-*   [MIT Open Courseware](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/) (advanced)
-*   [Udacity](http://www.udacity.com/) (moderate to advanced)
-*   [Google Code University](http://code.google.com/edu/) (advanced)
-*   [Programr](http://www.programr.com/) (beginner to advanced; courses for Android, iOS, Processing, C++, Java, and many others)
+* [MIT Open Courseware](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/) (advanced)
+* [Udacity](http://www.udacity.com/) (moderate to advanced)
+* [Google Code University](http://code.google.com/edu/) (advanced)
+* [Programr](http://www.programr.com/) (beginner to advanced; courses for Android, iOS, Processing, C++, Java, and many others)
+* Once you learn your first language, it's easy to pick up more with [Learn X in Y minutes](https://learnxinyminutes.com/)

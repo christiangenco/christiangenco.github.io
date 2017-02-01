@@ -11,6 +11,8 @@ I'm working on systemizing how I get things done. This includes things like rank
 
 I'm experimenting with doing consulting work again. It's a nice break from working on my own projects (though they still make most of the money). If you have an interesting project you'd like to work on together, [let me know!](/contact)
 
+To scratch my performing itch, I've been doing improv comedy at the [Dallas Comedy House](http://dallascomedyhouse.com/) - it's my favorite part of stage acting condensed and done over and over. I love it.
+
 ---
 
 <h2>What is this?</h2>

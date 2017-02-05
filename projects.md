@@ -21,6 +21,8 @@ Here's a list of things I've made that you can use:
 * [t_time_tracker](https://github.com/christiangenco/t_time_tracker): simple command line time tracking
 * <strike>[Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email</strike>
 
+<br><br>
+
 Here are the projects I'm working on next, in order:
 
 * a browser plugin for [textbooks please](http://textbooksplease.com) to make it easier to automatically find better book prices

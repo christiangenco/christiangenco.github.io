@@ -12,4 +12,5 @@ type: page
   <li><i class="fa fa-github"></i> <a href="https://github.com/christiangenco">github.com/christiangenco</a></li>
   <li><i class="fa fa-linkedin"></i> <a href="http://www.linkedin.com/in/cgenco">linkedin.com/in/cgenco</a></li>
   <li><img src="http://i.imgur.com/SEbaajC.png" style="display: inline; width: 21px" /> <a href="https://news.ycombinator.com/user?id=christiangenco">HN/christiangenco</a></li>
+  <li><i class="fa fa-paypal"></i> <a href="https://paypal.me/cgenco">paypal.me/cgenco</a></li>
 </ul>

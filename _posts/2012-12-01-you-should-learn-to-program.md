@@ -14,7 +14,7 @@ The talk was extremely well received there, and I was invited to give it again a
 
 Since then I've given talks at the opening of the Perot Museum, Highland Park High School, and Ursuline Academy's STEM day.
 
-I'm in the process of writing a book on the topic (if you'd like an early copy, <a href="http://signup.youshouldlearntoprogram.com/">let me know</a>!), but in the meanwhile, here are some reasources I recommend for beginner programmers:
+I'm in the process of writing a book on the topic (if you'd like an early copy, <a href="http://signup.youshouldlearntoprogram.com/">let me know</a>!), but in the meanwhile, here are some resources I recommend for beginner programmers:
 
 ### Khan Academy
 

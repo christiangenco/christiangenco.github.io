@@ -14,3 +14,6 @@ type: page
   <li><img src="http://i.imgur.com/SEbaajC.png" style="display: inline; width: 21px" /> <a href="https://news.ycombinator.com/user?id=christiangenco">HN/christiangenco</a></li>
   <li><i class="fa fa-paypal"></i> <a href="https://paypal.me/cgenco">paypal.me/cgenco</a></li>
 </ul>
+
+<a href="https://mailto.io/christian@gen.co">christian@gen.co</a>
+<script type="text/javascript" src="https://mailto.io/embed.js"></script>

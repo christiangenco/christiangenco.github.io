@@ -7,15 +7,13 @@ layout: page
 type: page
 ---
 
-Here's a list of things I've made:
-
 * [dbinbox](https://dbinbox.com): receive large files on your website
 * [textbooks please](http://textbooksplease.com): textbook search engine
 * [Dr. Dog](https://www.alexaskillstore.com/Dr-Dog/39678): ask your Amazon Echo if it's safe for your dog to eat certain foods
 * [PastCam](https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8): iOS app to take "then and now" style pictures
 * [Export History](https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US): Chrome plugin to export your history
 
-Here are some smaller experiments:
+## Experiments
 
 * [HumanSort](http://gen.co/humansort/): sort a list based on whatever you want by comparing two things at a time
 * [Markdown to MLA](http://markdowntomla.com/) and [Markdown to APA](http://markdowntoapa.com/): generate perfect MLA and APA documents from plain text markdown
@@ -26,9 +24,7 @@ Here are some smaller experiments:
 * [t_time_tracker](https://github.com/christiangenco/t_time_tracker): simple command line time tracking
 * <strike>[Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email</strike>
 
-<br><br>
-
-Here are the projects I'm working on next, in order:
+## Up Next
 
 * a CRM for your facebook friends
 * improvements to PastCam

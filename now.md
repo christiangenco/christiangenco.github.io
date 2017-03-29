@@ -15,17 +15,7 @@ To scratch my performing itch, I've been doing improv comedy at the [Dallas Come
 
 ---
 
-<h2>What is this?</h2>
-
-I read [a blog post by Derek Sivers](https://sivers.org/nowff) that talks about his idea to keep track of [what he's doing right now](https://sivers.org/now) on his website:
-
-> It’s a nice reminder for myself, when I’m feeling unfocused. A public declaration of priorities.
-> (If I’m doing something that’s not on my list, is it something I want to add, or something I want to stop?)
-> It helps me say no, too. When I decline invitations, I point them to [that page](https://sivers.org/now) to let them know it’s not personal.
-
-That sounds like something that could help me!
-
-For a list of more /now pages, visit [nownownow.com](http://nownownow.com/).
+[What's a "now" page?](https://sivers.org/nowff) [More /now pages](http://nownownow.com/)
 
 <!--
 ---
@@ -43,12 +33,6 @@ For a list of more /now pages, visit [nownownow.com](http://nownownow.com/).
 * Mental Math
 * Mnemonic Major system for memorizing numbers
 * inbox zero
-
-## Apps todo
-
-* Textbooks Please chrome extension
-* mailto.io
-* winbox0
 
 ## Superpowers todo
 

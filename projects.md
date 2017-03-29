@@ -7,17 +7,21 @@ layout: page
 type: page
 ---
 
-Here's a list of things I've made that you can use:
+Here's a list of things I've made:
 
 * [dbinbox](https://dbinbox.com): receive large files on your website
 * [textbooks please](http://textbooksplease.com): textbook search engine
 * [Dr. Dog](https://www.alexaskillstore.com/Dr-Dog/39678): ask your Amazon Echo if it's safe for your dog to eat certain foods
 * [PastCam](https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8): iOS app to take "then and now" style pictures
 * [Export History](https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US): Chrome plugin to export your history
+
+Here are some smaller experiments:
+
+* [HumanSort](http://gen.co/humansort/): sort a list based on whatever you want by comparing two things at a time
+* [Markdown to MLA](http://markdowntomla.com/) and [Markdown to APA](http://markdowntoapa.com/): generate perfect MLA and APA documents from plain text markdown
 * [Timecard App](https://timecardapp.com): timecard calculator ([a rewrite of my oldest useful program](/timecardapp))
 * [Icon Dice](http://gen.co/icondice/): a ~900 sided dice with [icons](https://material.io/icons/) instead of numbers
 * [Profile Flags](https://profileflags.parseapp.com/): add a country flag over your Facebook profile picture
-* [Markdown to MLA](http://markdowntomla.com/) and [Markdown to APA](http://markdowntoapa.com/): generate perfect MLA and APA documents from plain text markdown
 * [autorunner](https://github.com/christiangenco/autorunner): command line tool to run a command when a file is saved
 * [t_time_tracker](https://github.com/christiangenco/t_time_tracker): simple command line time tracking
 * <strike>[Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email</strike>
@@ -26,21 +30,22 @@ Here's a list of things I've made that you can use:
 
 Here are the projects I'm working on next, in order:
 
-* a browser plugin for [textbooks please](http://textbooksplease.com) to make it easier to automatically find better book prices
-* Broccoli Phone: let customers send SMS messages to your business number
-* mailto.io: super easy contact forms for your website
-* label template maker: mailmerge + google docs
-* business handbook: keep all of your business operations in one place so your office doesn't explode when someone gets sick
-* 3d rings: create your own 3D-printed wedding band in silver, gold, or platinum
-* Personal CRM: keep track of everyone you know, get reminded when you haven't talked to interesting friends in a while, and get a good tl;dr of a friend's life before you talk to them again so you can ask relevant questions
-* beats for iOS: the iOS Clock app in [internet time](http://www.wnyc.org/story/15-internet-time/)
-* Weasley Clock: mobile app to log my location and show it [like in Harry Potter](http://harrypotter.wikia.com/wiki/Weasley_Clock)
-* a better [Markdown to MLA](http://markdowntomla.com/) that works more like Google Docs (ex: lets you save documents and document versions, send papers to other people for feedback and to see their changes)
-* fileinbox: DBinbox for SalesForce. Receive files from clients in a secure file upload portal.
-* offstage club: make it as easy to see a local theatre show as it is to see a movie
-* whiteboard js: a web app that makes it easy to make Khan Academy-style drawings
-* Urgent Practice: practice management software for small medical offices.
-* tabletop js: play any board game with anyone on the internet in real time. No rules are enforced, so you can play any game (and even cheat or (╯°□°）╯︵ ┻━┻)
-* foft: mobile app to measure how tall a building is based on how long it takes for a pebble to drop to the ground
+* a CRM for your facebook friends
+* improvements to PastCam
+* super easy contact forms for your website
+* custom 3D-printed wedding bands
+* super easy file upload portal
+* let people text your business number (also schedule texts and do sms blasts)
+* a photo camera that records audio (like for recording class lectures - take pictures of the board, and listen to the audio around when you took the picture)
+* a reading list that sorts recommendations by the number of times they've been recommended
+* the iOS clock app, but in units of [beats](http://www.wnyc.org/story/15-internet-time/)
+* a better way to view time-series data (like Art History pieces)
+* vet management software
+* urgent practice management software
+* a way to make it as easy to see a local theatre show as it is to see a movie
+* play any board game with anyone on the internet in real time. No rules are enforced, so you can play any game (and even cheat or (╯°□°）╯︵ ┻━┻) - also functions as a Khan Academy style whiteboard
+* mailmerge + google docs (for making labels or namecards)
+* mobile app to measure how tall a building is based on how long it takes for a pebble to drop to the ground, or how far away something is based on how long it takes sound to travel
+* a way to keep all of your business operations in one place so your office doesn't explode when someone gets sick or leaves
 
 Do you need one of these to exist? [Let me know](/contact) and I'll bump it up the list!

@@ -133,7 +133,7 @@ My typical shopping list looks roughly like this:
 * [**A Bidet**](http://amzn.to/2oiDY0s): link is to the one I own, but the model doesn't matter. What matters is not cleaning your butthole like a barbarian. You wouldn't wash your dishes with a paper towel.
 * [**Burt's Bees Lip Balm**](http://amzn.to/2pai9zn): the most effective lip balm I've used. Depending on the weather, biking often dries out my lips.
 * **Shaving Stuff**: a [badger hair brush](http://amzn.to/2pUmkAe), [avocado shaving cream](http://amzn.to/2pavrMq), a [safety razor](http://amzn.to/2pavqbc), and [razor blades](http://amzn.to/2paEsox). Way cheaper than the Gillette Refills, and you shave with a factory sharp razor every time. The pack of razor blades I bought has lasted me over three years and counting.
-* [**Harperton Nail Clipper Set**](http://amzn.to/2pawpIu): the best nail clippers I've ever used. The first time I used them I was reminded of the first time I used a freshly sharpened knife after I'd been using a knife that had been getting subtley duller.
+* [**Harperton Nail Clipper Set**](http://amzn.to/2pawpIu): the best nail clippers I've ever used. The first time I used them I was reminded of the first time I used a freshly sharpened knife after I'd been using a knife that had been getting subtly duller.
 * [**Washcloths**](http://amzn.to/2oENoiR): showering every day with soap and shampoo dries out your skin, and strips away healthy bacteria that protect you from infection. I've also found it made my hair greasy and my skin break out more, so I stopped showering. Instead, [I clean my face, hair, and parts of skin that normally touch other skin daily with a wet wash cloth](http://gogo.gen.co/hygiene). People never believe I haven't taken a shower in close to two years.
 
 ## Exercise
@@ -164,7 +164,7 @@ My typical shopping list looks roughly like this:
 ## Notably Absent
 
 * **A Car**: Everywhere I need to go is accessable by bike or public transportaiton. My wife owns a car she uses to commute to work, which I'll borrow maybe once every two weeks to drive home and visit my family, and we'll use for road trips about once every three months. If self driving cars make Uber cheaper, we could probably sell it.
-* **A TV**: I'll sporatically use a TV if it happens to be in the place I'm living to watch a movie, but I haven't *watched TV* as an activity since high school. Frees up a lot of time to do more interesting things, and there are plenty of ways to watch good TV shows on your computer.
+* **A TV**: I'll sporadically use a TV if it happens to be in the place I'm living to watch a movie, but I haven't *watched TV* as an activity since high school. Frees up a lot of time to do more interesting things, and there are plenty of ways to watch good TV shows on your computer.
 * **A wallet**: All you really need is a credit card, a driver's license, and some emergency cash, all of which can fit in my iPhone case. This practice makes it much harder to lose stuff.
 * **Bread**: wheat probably isn't good for you, and we probably eat it because the agriculture revolution enabled societies that grew and ate grains to support a denser population. Individuals lived shorter and less healthy lives, but their society could then support an army that could quash remaining hunter-gatherer nomads (see [Sapiens](http://amzn.to/2q7iVur)).
 * **Processed or Packaged Foods**: no cereals, nothing made by Kraft, and no pre-packaged meals. These foods [break a lot of rules](/books/food-rules).

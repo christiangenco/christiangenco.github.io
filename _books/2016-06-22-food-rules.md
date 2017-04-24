@@ -52,7 +52,7 @@ tl;dr: don't eat food made in a factory because it kills you faster than eating 
 5. **Avoid foods that have some form of sugar (or sweetener) listed among the top three ingredients**: types include barley malt, beet sugar, brown rice syrup, cane juice, corn sweetener, dextrin, dextrose, fructo-oligosaccharides, fruit juice concentrate, glucose, sucrose, invert sugar, polydextrose, sucrose, turbinado sugar, organic sugar, etc.
 6. **Avoid foods products that contain more than five ingredients**: though short ingredients isn't necessarily good (ex: icecream); doesn't apply to recipies
 7. **Avoid food products containing ingredients that a third-grader cannot pronounce**
-8. **Avoid food products that make health claims**: (ex: margarine turned out to have transfats that induced heart attacks); actual good food doesn't need to make claims
+8. **Avoid food products that make health claims**: ex: margarine turned out to have transfats that induced heart attacks; actual good food doesn't need to make claims
 9. **Avoid food products with the wordoid "lite" or the terms "low-fat" or "nonfat" in their names**: removing fat doesn't make food nonfattening; low fat often means high sugar and carbohydrate, which is more fattening
 10. **Avoid foods pretending to be something they aren't**: (ex: margarine, soy-based mock meats, artificial sweeteners, fake fats and starches)
 11. **Avoid foods you see advertised on television**: you'll automatically be avoiding edible food-like substances; sometimes whole foods advertise too, but that's an exception
@@ -111,8 +111,7 @@ tl;dr: don't eat food made in a factory because it kills you faster than eating 
 54. **Breakfast like a king, lunch like a prince, dinner like a pauper**: eating close to bedtime might be bad (elevated triglycerides); front-loading calories might cause you to eat less because you won't be as hungry
 55. **Eat meals**: mindless snacking makes you eat more (~500 calories/day more than in 1980s)
 56. **Limit your snacks to unprocessed plant foods**: if you're going to snack, eat food
-57. ****Don't get your fuel from
-58. **the same place your car does**: gas stations usually don't sell food
+57. ****Don't get your fuel from the same place your car does**: gas stations usually don't sell food
 58. **Do all your eating at a table**: multitasking makes it harder to eat mindfully
 59. **Try not to eat alone**: you'll take longer to eat and likely won't over stuff yourself when others are watching (cg: I feel like I eat more around other people)
 60. **Treat treats as treats**: treats are life's great pleasures as long as you don't have it every day (ex: fried chicken, french fries, pastries, ice cream); S-policy: no snacks, seconds, or sweets except on days that start with S

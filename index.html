@@ -38,7 +38,7 @@ type: page
         <div class="media">
           <div class="media-left">
             <a href="{{ post.url | prepend: site.baseurl }}">
-              <img src="{{post.image_small}}" class="img-rounded post-image" />
+              <img src="{{post.image_small}}" class="img-rounded post-image" width="90px" />
             </a>
           </div>
           <div class="media-body">
@@ -50,31 +50,6 @@ type: page
             <p>{{post.excerpt}} <a href="{{ post.url | prepend: site.baseurl }}">more...</a></p>
           </div>
         </div>
-      {% endfor %}
-
-      <hr>
-
-      <h2>Recent posts <small><a href="/posts">all posts</a></small></h2>
-      {% for post in site.posts  %}
-        {% if post.tags contains 'top' %}
-        {% elsif post.categories contains 'pages' %}
-        {% else %}
-          <div class="media">
-            <div class="media-left">
-              <a href="{{ post.url | prepend: site.baseurl }}">
-                <img src="{{post.image_small}}" class="img-rounded post-image" />
-              </a>
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                  {{post.title}}
-                </a>
-              </h3>
-              <p>{{post.excerpt}} <a href="{{ post.url | prepend: site.baseurl }}">more...</a></p>
-            </div>
-          </div>
-        {% endif %}
       {% endfor %}
 
     </div>

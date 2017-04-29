@@ -3,6 +3,7 @@ title: Go to college for free
 image: http://i.imgur.com/2F51C7O.png
 image_small: http://i.imgur.com/2F51C7Os.png
 excerpt: The average cost of a public university education in the US is right around $130,000. By hacking the system, you can get by for precisely $130,000 cheaper - free.
+tags: top
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/R9ikWJGpzNw" frameborder="0" allowfullscreen></iframe>

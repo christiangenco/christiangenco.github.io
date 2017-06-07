@@ -15,6 +15,10 @@
 * AI is progressing faster than you think: https://www.youtube.com/watch?v=mQO2PcEW9BY
 * The Dark side of the Singularity: https://www.youtube.com/watch?v=bJ6QmZ48jY4
 
+# Future planning
+
+* How to get a Lamborghini: https://www.youtube.com/watch?v=ZEW_dq_5XxI
+
 ---
 
 # Inbox

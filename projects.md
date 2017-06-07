@@ -15,6 +15,7 @@ type: page
 
 ## Experiments
 
+* [Mosaic Web Dev](http://mosaic.apps.gen.co): a platform for hosting lessons that students can go through at their own pace. A solution to teaching technical summer camps where half the class got left behind and half the class felt bored (and my voice got tired).
 * [HumanSort](http://gen.co/humansort/): sort a list based on whatever you want by comparing two things at a time
 * [Markdown to MLA](http://markdowntomla.com/) and [Markdown to APA](http://markdowntoapa.com/): generate perfect MLA and APA documents from plain text markdown
 * [Timecard App](https://timecardapp.com): timecard calculator ([a rewrite of my oldest useful program](/timecardapp))

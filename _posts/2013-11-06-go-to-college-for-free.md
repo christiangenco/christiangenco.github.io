@@ -129,7 +129,7 @@ So what are colleges looking for? I sat on the scholarship interview committee f
     * volunteering
 * if your score is above a certain number, you get scholarship money, and get considered for more with an interview
 
-## Maxamize cirriculum and GPA
+## Maximize cirriculum and GPA
 
 * No-brainer
 * if you love learning in a classroom **so much** that you're preparing to spend the next 4 years paying $50/class/day to keep doing it, you better be making the most of your high school classes while they're free
@@ -224,5 +224,5 @@ Here's a list I found googling for a bunch of [small texas scholarships](http://
 
 * life isn't LIFE: you don't *need* college to be happy, successful, or rich
 * if you're going to college, it's your full time job to pay for it. The easiest way is with academic scholarships
-* to make colleges want you, maxamize your gpa/cirriculum, test scores, and do interesting things
+* to make colleges want you, maximize your gpa/cirriculum, test scores, and do interesting things
 * hack the system by applying for more scholarships than anyone else

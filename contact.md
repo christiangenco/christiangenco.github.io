@@ -17,3 +17,5 @@ type: page
 
 <a href="https://mailto.io/christian@gen.co">christian@gen.co</a>
 <script type="text/javascript" src="https://mailto.io/embed.js"></script>
+
+<a href="https://dbinbox.com/cgenco" class="dbinbox">Upload Files through dbinbox.com</a><script type="text/javascript" src="https://dbinbox.com/embed.js"></script>

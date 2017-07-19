@@ -7,11 +7,15 @@ layout: page
 type: page
 ---
 
-I'm working on systemizing how I get things done. This includes things like ranking [my personal projects](/projects) in the best order to finish them, using time more effectively by [working in poms](http://cirillocompany.de/pages/pomodoro-technique/), and making it easy for my future lazy self to be productive (even when he doesn't want to).
+I'm making enough money from passive income to live a comfortable life and save for full financial retirement (25x my yearly expenses), so I spend a lot of time hunting for enjoyable ways to spend my time and improve my life.
 
-I'm experimenting with doing consulting work again. It's a nice break from working on my own projects (though they still make most of the money). If you have an interesting project you'd like to work on together, [let me know!](/contact)
+Day to day, this looks like:
 
-To scratch my performing itch, I've been doing improv comedy at the [Dallas Comedy House](http://dallascomedyhouse.com/) - it's my favorite part of stage acting condensed and done over and over. I love it.
+* **traveling** and [documenting my trips with Snap Spectacles and DJI drones](https://youtu.be/uRk64UlQtA8?list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O) (which is a fun exercise in building interesting stories). I especially like traveling to [MicroConf](http://www.microconf.com/), [Bacon Biz](http://baconbiz.com/), and [The World Domination Summit](https://worlddominationsummit.com/) (it's a fun excuse to meet cool people while exploring a new city)
+* doing **improv comedy** at [The Dallas Comedy House](http://dallascomedyhouse.com/). It's the best parts of stage acting with less time commitment and it never gets boring.
+* **rock climbing** outside, which is a completely different game than in a gym. It's like running in a stuffy warehouse on a tredmil vs. hiking outdoors.
+* **biking** instead of driving: default exercise, and a much more fun and mentally stimulating way to get places
+* **building stuff**, especially with other people (if you have a cool project, [let me know!](/contact)). Check out [the stuff I'm building right now](/projects).
 
 ---
 

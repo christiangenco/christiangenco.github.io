@@ -13,6 +13,7 @@ Here's a list of everything that I own that [sparks joy](http://amzn.to/2oYyCpQ)
 
 * [13-inch **MacBook Pro** with touchbar, 3.1 GHz Intel Core i5, 16 GB 2133 MHz LPDDR3 ram](https://www.apple.com/macbook-pro/): my most essential tool in writing software and keeping organized. I love Touch ID, USB-C, and the new keyboard and trackpad (both my favorite of any MacBook I've ever owned), but am indifferent about the touch bar. It might be more useful if I did more video editing.
 * [**iPhone 6s**](https://www.apple.com/shop/buy-iphone/iphone6s): smartphone innovation has been stagnating, so I've gone from upgrading every other iPhone to every third iPhone.
+* [10.5-inch **iPad Pro**](https://www.apple.com/ipad-pro/): I held out for a while on getting an iPad, but [iOS 11](https://www.apple.com/ios/ios-11-preview/) finally made it a useful machine (multitasking is on point). Invaluable for consuming media (like my watch-later YouTube playlist, or [WesBos courses](http://wesbos.com/courses/)), fun to learn drawing on, and novel to push everyday computing tasks to (like messaging and triaging email).
 * [**Apple Watch** Series 1, Space Gray Aluminum](https://www.apple.com/watch/): I turn notifications and bluetooth off and use it as a really good watch. The core feature I need that I haven't found in any other watch is being able to set a timer with a silent alarm (it's also easy to calculate how long the alarm should be by spinning the digital crown to the time I need to leave).
 * [**Amazon Alexa**](http://amzn.to/2oogDuf): On paper, you wouldn't think a voice-enabled assistant for your kitchen/living room would be any better than just talking to Siri on your phone, but it absolutely is. Alexa makes it easier to add things to your shopping list at the moment you notice them missing from your fridge, set timers, play songs and news to listen to while cooking, and [check if it's okay for your dog to eat what you're cooking](https://www.echoskillstore.com/Dr-Dog/39678). Functionally the same as a [Google Home](https://madeby.google.com/home/), which are both becoming [operating systems for your house](https://stratechery.com/2017/amazons-operating-system/).
 
@@ -26,11 +27,13 @@ Here's a list of everything that I own that [sparks joy](http://amzn.to/2oYyCpQ)
 
 I'm a coder (check out [my projects](/projects)), so most of my tools are programming specific or custom command line scripts I wrote to do very specific things (like adding something to my GTD inbox). I spend a lot of time on my computer, so I've invested a lot in finding the best tools to make me most effective.
 
-* [**Amethist**](https://github.com/ianyh/Amethyst): a tiling window manager for OS X. I can't believe this isn't more popular. I never have to waste time dragging windows around; they just rearrange themselves.
+* [**Amethist**](https://github.com/ianyh/Amethyst): a tiling window manager for OS X. I can't believe this isn't more popular. I never have to waste time dragging windows around; they just rearrange themselves. Hacker News frequently discusses [tiling window managers](https://app.hackerwebapp.com/#/item/14381795) and their cooresponding productivity boost.
 * [**aText**](http://www.trankynam.com/atext/): custom keyboard text expanding. `gmye/` expands to my email address, `addr/` is my address, `dt/` is the current date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), etc.
 * [**Better Touch Tool**](https://www.boastr.net/): custom trackpad shortcuts and gestures. I use ones for going to the next/previous tab, and closing tabs most often. I can't use a computer that doesn't have this installed. I used to use [jitouch](https://www.jitouch.com/) for the same purpose, but it doesn't work as well on the new MacBooks.
 * [**Atom**](https://atom.io/): plain text code editor. This only recently got fast enough to be usable, but it's a much better plugin system than [Sublime](http://www.sublimetext.com/), which I still use for editing larger files and markdown. I use the [emmet](https://atom.io/packages/emmet), [lines](https://atom.io/packages/lines), [prettier-atom](https://atom.io/packages/prettier-atom), and [vim-mode-plus](https://atom.io/packages/vim-mode-plus) plugins with the Atom Light UI Theme and Solarized Light syntax theme.
 * [**Google Chrome**](https://www.google.com/chrome/index.html): a solid browser to use and develop in, and it syncs with my phone's Chrome.
+  * [**Video Speed Controller**](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk): [the standard pace is for chumps](https://sivers.org/kimo) - watch a 60 minute YouTube video in 20 and you can get through 3x more than everyone else (I do the same thing for downloaded movies with [VLC](http://www.videolan.org/vlc/) - my wife can't stand it)
+  * [**Spreed** - speed read the web](https://chrome.google.com/webstore/detail/spreed-speed-read-the-web/ipikiaejjblmdopojhpejjmbedhlibno): [the standard pace is for chumps](https://sivers.org/kimo) - push your reading speed forward
 * [**iTerm**](https://iterm2.com/): a better terminal than the one built in. I set it up to pop up with a keyboard shortcut, CMD+`, so a lot of the software I use can be command line programs.
 * [**Homebrew**](https://brew.sh/): makes it easy to install other programs from the command line, like [imagemagick](http://www.imagemagick.org/script/index.php).
 * [**f.lux**](https://justgetflux.com/): color shifts your screen to take out the blue light at night, which may be bad for your sleep cycle. Also, it's just easier on the eyes.
@@ -41,7 +44,7 @@ I'm a coder (check out [my projects](/projects)), so most of my tools are progra
 
 * [**Spark**](https://itunes.apple.com/us/app/spark-love-your-email-again/id997102246?mt=8): I follow the [inbox 0](https://www.youtube.com/watch?v=Y3o9DR8X-V0) philosophy to triage my inbox from my phone. It takes about 3 minutes with Spark to get through 100 emails, beacuse it's really good at clustering them together and performing group actions (ie: I've scanned through all my notifications emails and starred any that require an action, so now they can all be deleted.)
 * [**Clear**](https://itunes.apple.com/us/app/clear-tasks-reminders-to-do-lists/id493136154?mt=8): the best app to keep lists. I use it to keep checklists for packing and other various activities (a la [The Checklist Manifesto](http://amzn.to/2oiQ9Kz)), like shopping lists, daily tasks, things I need to do at a specific places (like things I need to pick up from my parent's house), and [projects list](/projects) prioritization.
-* [**MP3 Books**](https://itunes.apple.com/us/app/mp3-audiobook-player-pro-listen-audiobooks/id889580711?mt=8): not a well designed app, but the best one I've found for listening to mp3 audiobooks, if you don't like [Audible](https://itunes.apple.com/us/app/audible-audio-books-original-series-podcasts/id379693831?mt=8).
+* [**MP3 Books**](https://itunes.apple.com/us/app/mp3-audiobook-player-pro-listen-audiobooks/id889580711?mt=8): not a well designed app, but the best one I've found for listening to mp3 audiobooks, if you don't like [Audible](https://itunes.apple.com/us/app/audible-audio-books-original-series-podcasts/id379693831?mt=8). Pretty good speed control so you can listen to books at 3x the normal speed ([the standard pace is for chumps](https://sivers.org/kimo)).
 * [**Google Maps**](https://itunes.apple.com/us/app/google-maps-navigation-transit/id585027354?mt=8): better than apple maps and it syncs with the web app, though the iOS integration isn't as good.
 * [**Overcast**](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8): the best podcast app: well designed, and a joy to use.
 * [**Google Photos**](https://itunes.apple.com/us/app/google-photos-free-photo-and-video-storage/id962194608?mt=8): the magic solution I've been waiting for to what to do with all the pictures I take on my phone. I've forcibly installed this on all my family's phones, and it's already saved hundreds of pictures.
@@ -50,7 +53,7 @@ I'm a coder (check out [my projects](/projects)), so most of my tools are progra
 * [**Google Calendar**](https://itunes.apple.com/us/app/google-calendar-make-the-most-of-every-day/id909319292?mt=8): better than the native calendar.
 * [**Spotify**](https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8): I've recently rediscovered the joy of listening to music. This service lets you listen to any song and create infinite playlists without taking up storage on your phone (unless you want it to). I have playlists for male vocal sing-alongs and working, and I can automaticly generated new playlists with pop songs so I can stay hip with the new pop music.
 * [**Facebook Messenger**](https://itunes.apple.com/us/app/messenger/id454638411?mt=8): the messaging platform of choice for most people I interact with.
-* [**Snapchat**](https://itunes.apple.com/us/app/snapchat/id447188370?mt=8): it's what the cool kids are using these days. Helps me stay relevant.
+* [**Snapchat**](https://itunes.apple.com/us/app/snapchat/id447188370?mt=8): it's what the cool kids are using these days. Helps me stay relevant (and necessary for importing Snap Spectacles videos, unfortunately - a process that needs to happen with my phone in the fridge to finish)
 * [**Launch Center**](https://itunes.apple.com/us/app/launch-center-pro-shortcut-launcher-workflows/id532016360?mt=8): on iPhone models 6S and up you can force touch on the icon in your dock and run a shortcut of your choice. I have shortcuts to enable voice recording and launch Google Maps with directions back to my house.
 * [**Google Chrome**](https://itunes.apple.com/us/app/google-chrome-the-fast-and-secure-web-browser/id535886823?mt=8): syncs with the desktop Google Chrome. An objectively better browser than Safari.
 * [**Amazon**](https://itunes.apple.com/us/app/amazon-app-shop-scan-compare-and-read-reviews/id297606951?mt=8): anytime I think of something I need or want I can just search for it right from my phone, which is usually on me, and it shows up on my doorstep a day or two later, thereby allowing me to avoid shopping trips. One of the strongest benefits of [modernity](https://en.wikipedia.org/wiki/Modernity).
@@ -69,9 +72,12 @@ My current practice is to date a new page (in [ISO 8601](https://en.wikipedia.or
 
 ## Clothing
 
+* [Woolly Clothing Co. Men's **Merino Wool Short Sleeve V-Neck** (190 GSM)](http://amzn.to/2tgkQyJ): my secret weapon when traveling - Merino Wool is magical. Two of these can get me through any trip of any duration in a backpack.
+* [**Merino Wool Socks**](http://amzn.to/2ubNd3T): comes in a three pack, but you could get by with only packing two pairs (see above).
+* [Woolly Clothing Co. Men's **Merino Wool Long Drop Boxer Brief** (190 GSM)](http://amzn.to/2uB2kF8): two pairs (one packed, one you wear) and you've got all the underwear you need for a month of backpacking across Europe (see above).
 * [Express Slim Fit **Flex Stretch Khaki Chino Pant**](http://www.express.com/clothing/men/slim-fit-flex-stretch-khaki-chino-pant/pro/3082633/cat1830015): express clothing fits me well, and the flexable material makes these really versitile. I wear them in any situation wherein I need long pants.
-* [Express Flex Stretch Textured **V-Neck Tee**](http://www.express.com/clothing/men/flex-stretch-textured-vtoneck-tee/pro/5051597/cat1920001): ditto on fit and flexible material. I have about eight of these in different colors.
-* A custom-made cashmere wool black suit: when my wife and I were studying abroad in Vietnam, one of the local attractions was a row of tailors that could make anything you wanted in any fabric to your exact size. I got a perfectly fitting suit with two silk shirts for about $100. We plan to fly back with empty suitcases and get new wardrobes made.
+* [Express Flex Stretch Textured **V-Neck Tee**](http://www.express.com/clothing/men/flex-stretch-textured-vtoneck-tee/pro/5051597/cat1920001): ditto on fit and flexible material. I have about eight of these in different colors, though I'm slowly replacing them with Merino Wool.
+* A custom-made cashmere wool **black suit**: when my wife and I were studying abroad in Vietnam, one of the local attractions was a row of tailors that could make anything you wanted in any fabric to your exact size. I got a perfectly fitting suit with two silk shirts for about $100. We plan to fly back with empty suitcases and get new wardrobes made.
 * A half dozen basketball shorts, branded tshirts, socks, and boxer briefs: easily replacable, and not particularly notable. Worth putting more thought into.
 
 ### Shoes
@@ -107,7 +113,7 @@ My typical shopping list looks roughly like this:
 * [**Avocado Mayo**](http://amzn.to/2paylkl): [might be better for you](http://www.marksdailyapple.com/healthy-oils/) than canola oil based mayo; tastes way better.
 * [**90% Cocoa Chocolate**](http://amzn.to/2pTLTOY): mmmm, chocolate.
 * **Local, Organic, Pasture Raised, Soy-Free eggs**: I eat at least two eggs a day, so I felt compelled to do a lot of research into [what all the confusing terms mean](http://www.marksdailyapple.com/egg-purchasing-guide/). Local, organic, pasture raised, and soy-free is my heuristic for picking a carton out of a wall of choices, in that order (ie: local and non-organic beats organic; organic and pasture raised beats organic and soy-free).
-* **Goat Milk**, yogurt, and butter, when I can find it: when I have bovine milk products my skin breaks out, I have worse seasonal allergies, and I get itchy hives on my hands that can make my skin peal. Goat milk products don't do that.
+* <strike>**Goat Milk**, yogurt, and butter, when I can find it: when I have bovine milk products my skin breaks out, I have worse seasonal allergies, and I get itchy hives on my hands that can make my skin peal. Goat milk products don't do that.</strike> Whole30 recommends cutting out all dairy except clarified butter, so I'm experimenting with that.
 * **Ground lamb**: tastes really good, and is usually raised better by default than beef (ie: grass fed).
 * [**Partanna Extra Virgin Olive Oil**](http://amzn.to/2oj7Cmc): strong, floral flavor.
 * **Avocado Oil**: better for cooking than olive oil because it has a higher smoke point, so it won't denature when cooked, and better than coconut oil beacuse of the milder flavor.
@@ -121,6 +127,7 @@ My typical shopping list looks roughly like this:
 * [**Ninja Blender with blender cups**](http://amzn.to/2pTwDBO): this is a newer model than I have, but same idea. I use it to mostly to blend coconut oil in tea or coffee in the morning, and the occasional smoothie.
 * **Handmade mug**: purchased from the craftsman that made it. Aesthetically satisfying. Will be hard to replace.
 * [**Cast Iron Skillet**](http://amzn.to/2pawThI): brand doesn't matter; maybe better for you than teflon.
+* [**Vintage Meat Grinder**](https://www.ebay.com/sch/items/?_nkw=vintage+meat+grinder&_sacat=&_ex_kw=&_mPrRngCbx=1&_udlo=&_udhi=&_sop=12&_fpos=&_fspt=1&_sadis=&LH_CAds=&rmvSB=true): [raw meat is way better for your pet than kibble](http://www.petfooled.com/), and is simple to make with a meat grinder. Mine is older than both of my parents and cost ~$20 (vs. ~$600 for a fancy electric one that doesn't work as well).
 
 ## Bedroom
 
@@ -135,6 +142,8 @@ My typical shopping list looks roughly like this:
 * **Shaving Stuff**: a [badger hair brush](http://amzn.to/2pUmkAe), [avocado shaving cream](http://amzn.to/2pavrMq), a [safety razor](http://amzn.to/2pavqbc), and [razor blades](http://amzn.to/2paEsox). Way cheaper than the Gillette Refills, and you shave with a factory sharp razor every time. The pack of razor blades I bought has lasted me over three years and counting.
 * [**Harperton Nail Clipper Set**](http://amzn.to/2pawpIu): the best nail clippers I've ever used. The first time I used them I was reminded of the first time I used a freshly sharpened knife after I'd been using a knife that had been getting subtly duller.
 * [**Washcloths**](http://amzn.to/2oENoiR): showering every day with soap and shampoo dries out your skin, and strips away healthy bacteria that protect you from infection. I've also found it made my hair greasy and my skin break out more, so I stopped showering. Instead, [I clean my face, hair, and parts of skin that normally touch other skin daily with a wet wash cloth](http://gogo.gen.co/hygiene). People never believe I haven't taken a shower in close to two years.
+* **Regular ol' toothbrush**: nothing fancy
+* [**Primal Pit Paste**](http://amzn.to/2tgKpQc): when you eat well and don't shower, you don't need industrial strength deoderant (which [might be super bad for you](http://www.webmd.com/skin-problems-and-treatments/features/antiperspirant-facts-safety))
 
 ## Exercise
 
@@ -151,8 +160,17 @@ My typical shopping list looks roughly like this:
 
 ## Travel
 
-* [**KAMASHI 15000mAh portable battery bank**](http://amzn.to/2pah5LX): cheapest mAh per dollar on Amazon; I get 3-5 solid full charges for my phone.
+<figure class="right"><img src="http://i.imgur.com/7Hi5mmH.jpg" /><figcaption>2.5 weeks of stuff in 1 backpack</figcaption></figure>
+
 * [**Swiss Gear Backpack**](http://amzn.to/2oBB8iu): I've had an older version of this backpack for about five years and it shows no signs of wear. It's the perfect size to make sure I don't overpack for trips, and has just the right number of pockets in the right places.
+* [**KAMASHI 15000mAh portable battery bank**](http://amzn.to/2pah5LX): cheapest mAh per dollar on Amazon; I get 3-5 solid full charges for my phone, which becomes my most valuable asset when backpacking in a foreign country.
+* [**Snap Spectacles**](https://www.spectacles.com/): the best vlogging/life logging camera I've used to date (though I have a lot of gripes about the software - Snap Inc. doesn't make it easy to use your videos for things that aren't Snapchat)
+* [DJI Spark **Drone**](http://www.dji.com/spark): super tiny and light weight. Gives an entire new dimension to travel, and makes [travel vlogs](https://youtu.be/uRk64UlQtA8?list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O) way more fun by giving context. I also have a [mavic](http://www.dji.com/mavic), and I can't decide which to get rid of.
+* [CamelBack **Hydration Bladder**](http://amzn.to/2uc1Jsx): brand doesn't matter. This takes up almost no space or weight when empty, and can carry several times the water of a bottle when full. It's also easier to drink from while on the go.
+* [Syncwire **USB Wall Charger** with EU/UK adapters](http://amzn.to/2uEd852): makes getting all my USB stuff charged (power bank, spectacles, drone, phone, iPad) much simpler.
+* [**Eye mask**](http://amzn.to/2vkyUZf): sleeping in absolute darkness [ups your melatonin](http://www.webmd.com/sleep-disorders/news/20110119/light-exposure-may-cut-production-of-melatonin), which helps you sleep better.
+* [ridiculous **travel pillow**](http://amzn.to/2vknkgN): not perfect, and not justifiable on flights shorter than ~6 hours, but oh baby does it make a difference in the sleep I can get on a plane.
+* [**Epic Meat Bar** emergency snack](http://amzn.to/2tgsBVd): can save me from a ~$20 emergency meal (like on a plane). Shop around for the best flavor (lamb and buffalo are the best).
 
 ## Toys
 

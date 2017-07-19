@@ -1,8 +1,5 @@
 # Next
 
-* add navigation footer
-  * link to https://github.com/christiangenco/christiangenco.github.io/issues/new to report issues
-
 ---
 
 # Notes

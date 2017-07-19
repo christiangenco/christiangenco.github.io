@@ -1,5 +1,5 @@
 ---
-title: Things
+title: Christian Genco's Things
 image:
 image_small:
 excerpt: everything I own that sparks joy in my life, and that I would replace if stolen
@@ -159,6 +159,8 @@ My typical shopping list looks roughly like this:
 * [**Slackline**](http://amzn.to/2ozUZ2l): training line makes it much easier to learn. Currently no place for it in the backyard, so I can only use it at parks or while camping. I'd love to figure out a way to set it up in the backyard without trees.
 
 ## Travel
+
+I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-edition/) style posts, so here's what I travel with. Lots of the stuff photographed is mentioned in other sections, so not included here.
 
 <figure class="right"><img src="http://i.imgur.com/7Hi5mmH.jpg" /><figcaption>2.5 weeks of stuff in 1 backpack</figcaption></figure>
 

@@ -195,3 +195,5 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 What am I missing? What mistakes have I made? What advice do you have? [Let me know!](/contact)
 
 <!-- TODO: https://autolinkmaker.itunes.apple.com/ -->
+
+Like this post? Check out [Pieter Levels 100 Thing Challenge](https://levels.io/the-100-thing-challenge/) and his [How to pack for world travel with just a carry-on bag followup](https://levels.io/carry-on-world-travel/).

@@ -192,6 +192,14 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 
 ---
 
+## Lists like this
+
+* [my-mac-os](https://github.com/nikitavoloboev/my-mac-os/) and [my-ios](https://github.com/nikitavoloboev/my-ios) by nikitavoloboev: lots of MacOS/iOS specific developer tools and workflows
+* [Works for me](https://works-for-me.github.io/): collection of developer toolkits
+* [uses this](https://usesthis.com/): interviews of the tools productive people use
+
+---
+
 What am I missing? What mistakes have I made? What advice do you have? [Let me know!](/contact)
 
 <!-- TODO: https://autolinkmaker.itunes.apple.com/ -->

@@ -16,7 +16,7 @@ excerpt: How much money is enough?
     If you can put your money in an asset that earns <span data-var="interestRate" class="TKAdjustableNumber" data-min="1" data-max="12">%</span> interest, you need <span data-var="indefiniteMultiplier">x</span> your expenses (<b>$<span data-var="savingsTarget">k</span></b>) to live indefinitely on interest. At the rate you're saving and earning interest, it will take about <span data-var="yearsToRetirement"> years</span> to save $<span data-var="savingsTarget">k</span><!--(vs. <span data-var="yearsToRetirementNoInterest"> years</span> with no interest)--><!-- (if you currently have $<span data-var="alreadySaved" class="TKAdjustableNumber" data-min="0" data-max="1000">k</span> saved)-->.
   </p>
   <p>
-    Alternatively, if you start a business that makes $<span data-var="customerCharge" class="TKAdjustableNumber" data-min="1" data-max="500"></span> profit per customer per month, you'll only need <b><span data-var="neededCustomers"> customers</span></b> to cover your living expenses.
+    Alternatively, if you start a business that makes $<span data-var="customerCharge" class="TKAdjustableNumber" data-min="1" data-max="500"></span> profit per customer per month, you'll only need <b><span data-var="neededCustomers"> customers</span></b> to cover your living expenses!
   </p>
 </div>
 

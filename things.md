@@ -1,52 +1,56 @@
 ---
 title: Christian Genco's Things
-image:
-image_small:
+image: http://i.imgur.com/7Hi5mmH.jpg
+image_small: http://i.imgur.com/7Hi5mmHm.jpg
 excerpt: everything I own that sparks joy in my life, and that I would replace if stolen
-layout: page
+layout: post
 type: page
 ---
 
 Here's a list of everything that I own that [sparks joy](https://www.amazon.com/Life-Changing-Magic-Tidying-Decluttering-Organizing/dp/1607747308?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1607747308) in my life, and that I would replace if stolen. Anything not on this list should be discarded.
 
-## Hardware
+<nav class="sidebarX"><ul class="nav" id="thingsnav"></ul></nav>
+
+## <a name="hardware"></a>Hardware
 
 * [13-inch **MacBook Pro** with touchbar, 3.1 GHz Intel Core i5, 16 GB 2133 MHz LPDDR3 ram](https://www.apple.com/macbook-pro/): my most essential tool in writing software and keeping organized. I love Touch ID, USB-C, and the new keyboard and trackpad (both my favorite of any MacBook I've ever owned), but am indifferent about the touch bar. It might be more useful if I did more video editing.
-* [**iPhone 6s**](https://www.apple.com/shop/buy-iphone/iphone6s): smartphone innovation has been stagnating, so I've gone from upgrading every other iPhone to every third iPhone.
+* [**iPhone 6s**](https://www.apple.com/shop/buy-iphone/iphone6s): smartphone innovation has been stagnating, so I've gone from upgrading every other iPhone to every third iPhone. I might switch to android for more customizability.
 * [10.5-inch **iPad Pro**](https://www.apple.com/ipad-pro/): I held out for a while on getting an iPad, but [iOS 11](https://www.apple.com/ios/ios-11-preview/) finally made it a useful machine (multitasking is on point). Invaluable for consuming media (like my watch-later YouTube playlist, or [WesBos courses](http://wesbos.com/courses/)), fun to learn drawing on, and novel to push everyday computing tasks to (like messaging and triaging email).
-* [**Apple Watch** Series 1, Space Gray Aluminum](https://www.apple.com/watch/): I turn notifications and bluetooth off and use it as a really good watch. The core feature I need that I haven't found in any other watch is being able to set a timer with a silent alarm (it's also easy to calculate how long the alarm should be by spinning the digital crown to the time I need to leave).
+* [**Apple Watch** Series 1, Space Gray Aluminum](https://www.apple.com/watch/): I turn notifications and bluetooth off and use it as a really good watch. The core feature I need that I haven't found in any other watch is being able to set a timer with a silent alarm (it's also easy to calculate how long the alarm should be by spinning the digital crown to the time I need to leave). I've found myself using it less and less.
 * [**Amazon Alexa**](https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00X4WHP5E): On paper, you wouldn't think a voice-enabled assistant for your kitchen/living room would be any better than just talking to Siri on your phone, but it absolutely is. Alexa makes it easier to add things to your shopping list at the moment you notice them missing from your fridge, set timers, play songs and news to listen to while cooking, and [check if it's okay for your dog to eat what you're cooking](https://www.echoskillstore.com/Dr-Dog/39678). Functionally the same as a [Google Home](https://madeby.google.com/home/), which are both becoming [operating systems for your house](https://stratechery.com/2017/amazons-operating-system/).
 
-### Gaming <small>things specifically purchased and used so I could play [Overwatch](https://playoverwatch.com/en-us/)</small>
+### <a name="hardware-gaming"></a>Gaming
+
+These things were specifically purchased and used so I could play [Overwatch](https://playoverwatch.com/en-us/).
 
 * [**Tecknet bluetooth mouse**](https://www.amazon.com/Portable-Wireless-Receiver-Notebook-Adjustment/dp/B001DHECXA?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001DHECXA): one of the cheapest bluetooth mice on Amazon. It works just fine, and one of the side buttons works as a melee attack by default.
 * [**Samsung T3 SSD**](https://www.amazon.com/Samsung-T3-Portable-SSD-MU-PT500B/dp/B01AVF6UQQ?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01AVF6UQQ): I install windows on this external drive to free up internal drive space, and for the psychological barrier. Am I deciding right now to play video games? That means I need to go get the hard drive and plug it in. This gives me enough opportunity to decide if I actually should be playing video games. Also, this drive is super tiny, which is nice.
 * [Belkin 3.1 **USB-C to USB-C cable**](http://www.belkin.com/us/p/P-F2CU030/): for connecting the Samsung hard drive to my MacBook without adapters. Doubles as the only cable that [can do Disk Mode between two USB-C macbooks](Thunderbolt 3 ).
 
-## Software
+## <a name="software"></a>Software
 
 I'm a coder (check out [my projects](/projects)), so most of my tools are programming specific or custom command line scripts I wrote to do very specific things (like adding something to my GTD inbox). I spend a lot of time on my computer, so I've invested a lot in finding the best tools to make me most effective.
 
 * [**Amethist**](https://github.com/ianyh/Amethyst): a tiling window manager for OS X. I can't believe this isn't more popular. I never have to waste time dragging windows around; they just rearrange themselves. Hacker News frequently discusses [tiling window managers](https://app.hackerwebapp.com/#/item/14381795) and their cooresponding productivity boost.
 * [**aText**](http://www.trankynam.com/atext/): custom keyboard text expanding. `gmye/` expands to my email address, `addr/` is my address, `dt/` is the current date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), etc.
 * [**Better Touch Tool**](https://www.boastr.net/): custom trackpad shortcuts and gestures. I use ones for going to the next/previous tab, and closing tabs most often. I can't use a computer that doesn't have this installed. I used to use [jitouch](https://www.jitouch.com/) for the same purpose, but it doesn't work as well on the new MacBooks.
-* [**Atom**](https://atom.io/): plain text code editor. This only recently got fast enough to be usable, but it's a much better plugin system than [Sublime](http://www.sublimetext.com/), which I still use for editing larger files and markdown. I use the [emmet](https://atom.io/packages/emmet), [lines](https://atom.io/packages/lines), [prettier-atom](https://atom.io/packages/prettier-atom), and [vim-mode-plus](https://atom.io/packages/vim-mode-plus) plugins with the Atom Light UI Theme and Solarized Light syntax theme.
+* [**Atom**](https://atom.io/): plain text code editor. This only recently got fast enough to be usable, but it's a much better plugin system than [Sublime](http://www.sublimetext.com/), which I still use for editing larger files and markdown. I use the [emmet](https://atom.io/packages/emmet), [lines](https://atom.io/packages/lines), [prettier-atom](https://atom.io/packages/prettier-atom), and [vim-mode-plus](https://atom.io/packages/vim-mode-plus) plugins with the Atom Light UI Theme and Solarized Light syntax theme. [VS Code](https://code.visualstudio.com/) might be better.
 * [**Google Chrome**](https://www.google.com/chrome/index.html): a solid browser to use and develop in, and it syncs with my phone's Chrome.
   * [**Video Speed Controller**](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk): [the standard pace is for chumps](https://sivers.org/kimo) - watch a 60 minute YouTube video in 20 and you can get through 3x more than everyone else (I do the same thing for downloaded movies with [VLC](http://www.videolan.org/vlc/) - my wife can't stand it)
   * [**Spreed** - speed read the web](https://chrome.google.com/webstore/detail/spreed-speed-read-the-web/ipikiaejjblmdopojhpejjmbedhlibno): [the standard pace is for chumps](https://sivers.org/kimo) - push your reading speed forward
-* [**iTerm**](https://iterm2.com/): a better terminal than the one built in. I set it up to pop up with a keyboard shortcut, CMD+`, so a lot of the software I use can be command line programs.
+* [**iTerm**](https://iterm2.com/): a better terminal than the one built in. I set it up to pop up with a keyboard shortcut, CMD+\`, so a lot of the software I use can be command line programs.
 * [**Homebrew**](https://brew.sh/): makes it easy to install other programs from the command line, like [imagemagick](http://www.imagemagick.org/script/index.php).
 * [**f.lux**](https://justgetflux.com/): color shifts your screen to take out the blue light at night, which may be bad for your sleep cycle. Also, it's just easier on the eyes.
 * [**Final Cut Pro**](https://www.apple.com/final-cut-pro/): for editing video. Not sure it's the best choice now, but I've already learned it and don't need to edit video very frequently.
 * [**Backblaze**](https://www.backblaze.com/): $5/month data insurance for if your computer ever breaks.
 
-### Apps
+### <a name="software-apps"></a>Apps
 
-* [**Spark**](https://itunes.apple.com/us/app/spark-love-your-email-again/id997102246?mt=8): I follow the [inbox 0](https://www.youtube.com/watch?v=Y3o9DR8X-V0) philosophy to triage my inbox from my phone. It takes about 3 minutes with Spark to get through 100 emails, beacuse it's really good at clustering them together and performing group actions (ie: I've scanned through all my notifications emails and starred any that require an action, so now they can all be deleted.)
+* [**Spark**](https://itunes.apple.com/us/app/spark-love-your-email-again/id997102246?mt=8): I follow the [inbox 0](https://www.youtube.com/watch?v=Y3o9DR8X-V0) philosophy to triage my inbox from my phone. It takes about 3 minutes with Spark to get through 100 emails, beacuse it's really good at clustering them together and performing group actions (ie: I've scanned through all my notifications emails and starred any that require an action, so now they can all be deleted). Doesn't natively let you star emails, so I wrote [a google apps script to turn labels into stars](/gmail-log).
 * [**Clear**](https://itunes.apple.com/us/app/clear-tasks-reminders-to-do-lists/id493136154?mt=8): the best app to keep lists. I use it to keep checklists for packing and other various activities (a la [The Checklist Manifesto](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0312430000)), like shopping lists, daily tasks, things I need to do at a specific places (like things I need to pick up from my parent's house), and [projects list](/projects) prioritization.
 * [**MP3 Books**](https://itunes.apple.com/us/app/mp3-audiobook-player-pro-listen-audiobooks/id889580711?mt=8): not a well designed app, but the best one I've found for listening to mp3 audiobooks, if you don't like [Audible](https://itunes.apple.com/us/app/audible-audio-books-original-series-podcasts/id379693831?mt=8). Pretty good speed control so you can listen to books at 3x the normal speed ([the standard pace is for chumps](https://sivers.org/kimo)).
 * [**Google Maps**](https://itunes.apple.com/us/app/google-maps-navigation-transit/id585027354?mt=8): better than apple maps and it syncs with the web app, though the iOS integration isn't as good.
-* [**Overcast**](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8): the best podcast app: well designed, and a joy to use.
+* [**Overcast**](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857?mt=8): the best podcast app: well designed, and a joy to use. Not sure what I'll use for this on Android.
 * [**Google Photos**](https://itunes.apple.com/us/app/google-photos-free-photo-and-video-storage/id962194608?mt=8): the magic solution I've been waiting for to what to do with all the pictures I take on my phone. I've forcibly installed this on all my family's phones, and it's already saved hundreds of pictures.
 * [**Streaks**](https://itunes.apple.com/us/app/streaks/id963034692?mt=8): helps install new habits, a la [The Power of Habit](https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=081298160X).
 * [**Gmail**](https://itunes.apple.com/us/app/gmail-email-by-google-secure-fast-organized/id422689480?mt=8): better than the native mail client, especially for when I need to search for a specific email (like a boarding pass).
@@ -61,7 +65,7 @@ I'm a coder (check out [my projects](/projects)), so most of my tools are progra
 * [**Ink Cards**](https://itunes.apple.com/us/app/ink-cards-send-photo-greeting-cards-in-the-mail/id477296657?mt=8): helps the habit of expressing gratitude. You can send people cards with a custom photo and note. Great for saying thank you after staying at someone's house with a picture you took of the both of you having fun on your trip.
 * [**PastCam**](https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8): an app I needed, so I made it. Lets you align "before and after" or "then and now" pictures.
 
-## Journaling
+## <a name="journaling"></a>Journaling
 
 I've tried several journaling methods ([The Bullet Journal](http://bulletjournal.com/), [The Five Minute Journal](https://www.intelligentchange.com/products/the-five-minute-journal), and [The Productivity Planner](https://www.intelligentchange.com/collections/all/products/the-productivity-planner)), and kept the parts from each that I felt were worthwhile.
 
@@ -70,7 +74,7 @@ My current practice is to date a new page (in [ISO 8601](https://en.wikipedia.or
 * [**Pilot Precise V5 RT**](https://www.amazon.com/Pilot-Precise-Retractable-Rolling-Extra/dp/B01CDW4BZW?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01CDW4BZW): hands down the best pens I've ever used, and I've tried a lot of pens. I buy them in packs of 24 and use them all.
 * [Baron Fig Vanguard Flagship **notebooks with dot grid**](https://www.baronfig.com/pages/Vanguard): the best notebooks in the best size. Super easy to travel with.
 
-## Clothing
+## <a name="clothing"></a>Clothing
 
 * [Woolly Clothing Co. Men's **Merino Wool Short Sleeve V-Neck** (190 GSM)](https://www.amazon.com/Woolly-Clothing-Merino-Sleeve-V-Neck/dp/B00N8MT0HQ?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00N8MT0HQ): my secret weapon when traveling - Merino Wool is magical. Two of these can get me through any trip of any duration in a backpack.
 * [**Merino Wool Socks**](https://www.amazon.com/Omni-Wool-Endurance-Show-Large/dp/B01CT7B0YQ?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01CT7B0YQ): comes in a three pack, but you could get by with only packing two pairs (see above).
@@ -78,14 +82,24 @@ My current practice is to date a new page (in [ISO 8601](https://en.wikipedia.or
 * [Express Slim Fit **Flex Stretch Khaki Chino Pant**](http://www.express.com/clothing/men/slim-fit-flex-stretch-khaki-chino-pant/pro/3082633/cat1830015): express clothing fits me well, and the flexable material makes these really versitile. I wear them in any situation wherein I need long pants.
 * [Express Flex Stretch Textured **V-Neck Tee**](http://www.express.com/clothing/men/flex-stretch-textured-vtoneck-tee/pro/5051597/cat1920001): ditto on fit and flexible material. I have about eight of these in different colors, though I'm slowly replacing them with Merino Wool.
 * A custom-made cashmere wool **black suit**: when my wife and I were studying abroad in Vietnam, one of the local attractions was a row of tailors that could make anything you wanted in any fabric to your exact size. I got a perfectly fitting suit with two silk shirts for about $100. We plan to fly back with empty suitcases and get new wardrobes made.
-* A half dozen basketball shorts, branded tshirts, socks, and boxer briefs: easily replacable, and not particularly notable. Worth putting more thought into.
+* A half dozen basketball shorts, branded tshirts, socks, and boxer briefs: easily replacable, and not particularly notable. Worth putting more thought into - they're comfortable, but I don't look very good in them.
 
-### Shoes
+### <a name="clothing-shoes"></a>Shoes
 
-* [**Trail Freak Vivo Barefoot shoes**](https://www.amazon.com/Vivobarefoot-Trail-Freak-Winterproof-Running/dp/B00TRPWDL8?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00TRPWDL8): my default biking/walking/hiking shoes for if I don't need to look super nice. Zero-drop and lots of room for my toes, which is hard to find.
-* [**Ra II WH Vivo Barefoot shoes**](https://www.vivobarefoot.com/us/mens/everyday/ra-ii-wild-hide-mens?colour=Black): good looking zero-drop shoes. Surprisingly hard to find.
+Shoes should be minimalist and as close to barefoot walking as possible. That means they should be flexible (to let your feet move), zero-drop (so you don't prop up your heel, which prevents [forefoot strikes](https://well.blogs.nytimes.com/2012/10/15/myths-of-running-forefoot-barefoot-and-otherwise/?_r=0) and misaligns your knees, hips, and back), and have a wide toe box (scrunching up your toes is a modern style, but deforms your foot akin to [Foot Binding](https://en.wikipedia.org/wiki/Foot_binding)). For more, check out the book [Born to Run](http://amzn.to/2zvjPWO) and [These Shoes are Killing Me!](http://freakonomics.com/podcast/shoes/) on freakonomics radio.
 
-## Every Day Carry
+I've only found three places to get shoes that fit these heuristics:
+
+1. [Vibram](http://vibram.com): weird toe shoes people at Whole Foods wear
+2. [Vivo Barefoot Shoes](https://www.vivobarefoot.com/us): like vibrams with a normal (but still wide) toe box
+3. [Xero](https://xeroshoes.com): newer company specializing in minimalist sandals, but now branching out into close toed shoes
+
+At any point in time I like to have one primary pair of shoes (that I wear for 80% of things I need shoes for), and a nicer pair of shoes (for dressing up an outfit). Right now those are:
+
+* [**Trail Freak Vivo Barefoot shoes**](https://www.amazon.com/Vivobarefoot-Trail-Freak-Winterproof-Running/dp/B00TRPWDL8?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00TRPWDL8)
+* [**Ra II WH Vivo Barefoot shoes**](https://www.vivobarefoot.com/us/mens/everyday/ra-ii-wild-hide-mens?colour=Black)
+
+## <a name="edc"></a>Every Day Carry
 
 * [**A 3D-printed silver wedding band**](/ring): I went through a few versions of thickness and width before I settled on one I liked. Printed through [i.materialise](https://i.materialise.com/) for like $30, and it's exactly what I want. This easily would've been $500 from a jewlery store.
 * [**Rimless Rectangular Glasses from Zenni Optical**](http://www.zennioptical.com/glasses/Rimless/Classic-Rimless-Eyeglasses?product.category=cat99068&Prescription=Single-Vision&Gender=Men): I re-buy these from either Zenni or [Eye Buy Direct](https://www.eyebuydirect.com/) every 1-2 years. It's usually $40 with shipping.
@@ -93,14 +107,13 @@ My current practice is to date a new page (in [ISO 8601](https://en.wikipedia.or
 * [**Silicone Stick Credit Card Holder**](https://www.amazon.com/DDLBiz-Silicone-Stick-Credit-Holder/dp/B01MY6UBCW?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01MY6UBCW): I'd love to find a loop case with a wallet, but this is a good substitute until one is made. I used to have [a stretchy wallet case](https://www.amazon.com/AOG-DESIGN-Adhesive-Smartphones-Burgundy/dp/B01K4HUMXI?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01K4HUMXI), but it didn't prop up the phone. I store my driver's license and credit card in this, with an emergency $50 bill in the back of my case, and I don't need to carry a wallet.
 * [**A Carabiner**](https://www.amazon.com/CaseBuy-Assorted-Aluminum-Carabiner-Traveling/dp/B01E1CMYJ2?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01E1CMYJ2): brand doesn't matter. The best way I've found to carry my keys so far is clipping them to my belt loop, then tucking them in my back pocket. It holds a dog tag from Walmart with my phone number and the phrase ["do the right thing"](https://www.youtube.com/watch?v=Uan9DWR2n0Q), a car key, and a house key. I'd love a way to not have to carry keys.
 
-### Most Day Carry
+### <a name="edc-mdc"></a>Most Day Carry
 
 * [**Symphonized NRG 3.0 Earbuds**](https://www.amazon.com/Symphonized-Earbuds-Noise-isolating-Headphones-Control/dp/B01D3QZB2Y?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01D3QZB2Y): volume control and play/pause buttons that work with the iPhone are hard to find. These come with a clip for your shirt so they don't pull out of your ears as easily.
-* [**Ello 20-oz glass water bottle**](https://www.amazon.com/Ello-Syndicate-BPA-Free-Glass-Bottle/dp/B00BUTN4V2?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00BUTN4V2): glass might be better for you than plastic, and it makes a really satisfying popping noise when you open it. It's a little heavy, but I haven't found a lighter non-plastic water bottle with a non-twist top to replace it.
 * [**Power Card Bank**](https://www.amazon.com/Ultra-Slim-Ultra-Portable-Ultra-Safe-External-Lightning/dp/B00Z24G06M?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00Z24G06M): easy to slip in a pocket, and it gives you at least a full extra charge for your phone.
 * [**Cotten Hankerchiefs**](https://www.amazon.com/Geoffrey-Beene-Fine-Handkerchiefs-White/dp/B013H3RO00?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B013H3RO00): easier to carry than a bunch of tissues, can be used multiple times, and easier on the skin, especially if I haven't been spending enough time outside exposing myself to allergins. Some days I'll need to blow my noise every three minutes to stay functional.
 
-## Food
+## <a name="food"></a>Food
 
 I've thought a lot about food. My current diet is a mix of things learned from [Food Rules](/books/food-rules/), [Primal Blueprint](https://www.amazon.com/New-Primal-Blueprint-Reprogram-Effortless/dp/1939563305?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1939563305), and [the Ketogenic Diet](http://www.ketogenic-diet-resource.com/). I try not to eat any grains, very low carbs, and very low sugar, replacing calories lost from carbs with fat from oils.
 
@@ -111,54 +124,58 @@ My typical shopping list looks roughly like this:
 * **Assorted Veggies**: it's probably not possible to eat too much avocado (when reasonably priced), organic spring mix, cauliflower, garlic, mushrooms, organic tomatoes, zucchini, or whatever local seasonal veggies are at a good prices. Eat starchy veggies (sweet potato, carrots, potatoes) in moderation.
 * **Wild Berries**: lower glycemic index and fructose per fiber than other fruits. Probably consisted of a lot of our pre-agriculture diet as humans.
 * [**Avocado Mayo**](https://www.amazon.com/Primal-Kitchen-Avocado-Mayonnaise-Whole30/dp/B00ZAD36ZS?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00ZAD36ZS): [might be better for you](http://www.marksdailyapple.com/healthy-oils/) than canola oil based mayo; tastes way better.
-* [**90% Cocoa Chocolate**](https://www.amazon.com/Lindt-Excellence-Chocolate-3-5-Ounce-Packages/dp/B002RBOCZE?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B002RBOCZE): mmmm, chocolate.
+* [**90% Cocoa Chocolate**](https://www.amazon.com/Lindt-Excellence-Chocolate-3-5-Ounce-Packages/dp/B002RBOCZE?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B002RBOCZE): mmmm, chocolate. Cocoa might have health benefits, and sugar is definitely bad for you, so 90% or higher is the way to go.
 * **Local, Organic, Pasture Raised, Soy-Free eggs**: I eat at least two eggs a day, so I felt compelled to do a lot of research into [what all the confusing terms mean](http://www.marksdailyapple.com/egg-purchasing-guide/). Local, organic, pasture raised, and soy-free is my heuristic for picking a carton out of a wall of choices, in that order (ie: local and non-organic beats organic; organic and pasture raised beats organic and soy-free).
-* <strike>**Goat Milk**, yogurt, and butter, when I can find it: when I have bovine milk products my skin breaks out, I have worse seasonal allergies, and I get itchy hives on my hands that can make my skin peal. Goat milk products don't do that.</strike> Whole30 recommends cutting out all dairy except clarified butter, so I'm experimenting with that.
-* **Ground lamb**: tastes really good, and is usually raised better by default than beef (ie: grass fed).
+* **Meat**: lamb, grass fed beef or buffalo, well-raised poultry, and small oily fish. Organ meat and bones are probably things humans evolved eating, so I try to mix those in too.
 * [**Partanna Extra Virgin Olive Oil**](https://www.amazon.com/Partanna-Extra-Virgin-Olive-34-Ounce/dp/B0044B6ZBO?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B0044B6ZBO): strong, floral flavor.
 * **Avocado Oil**: better for cooking than olive oil because it has a higher smoke point, so it won't denature when cooked, and better than coconut oil beacuse of the milder flavor.
 * **Coconut Oil**: might be [one of the best sources of calories](http://www.marksdailyapple.com/coconut-oil-health-benefits/). Refined [MCT oil](/mct) is commonly used for the ketogenic diet in [bulletproof coffee](https://blog.bulletproof.com/how-to-make-your-coffee-bulletproof-and-your-morning-too/), but coconut oil is probably better for you.
-* **Almond Butter**: peanuts are legumes, which may be bad for you.
+* **Almond Butter**: peanuts are legumes, which may be bad for you, but fatty nuts are great.
 * **[Himalayan Sea Salt](https://www.amazon.com/Spice-Lab-Himalayan-Fine-Ground/dp/B005MER0RA?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B005MER0RA)**: might be better than sea salt because it has [extra minerals](https://en.wikipedia.org/wiki/Himalayan_salt). Probably a fad - it's difficult to test.
 
-## Kitchen
+## <a name="kitchen"></a>Kitchen
 
 * [**Reverse Osmosis Water Filter**](https://www.amazon.com/APEC-5-Stage-Reverse-Drinking-Water/dp/B00I0ZGOZM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00I0ZGOZM): model doesn't matter. Fluoride might be bad for you, and chlorine makes water taste weird.
 * [**Ninja Blender with blender cups**](https://www.amazon.com/Ninja-Professional-Blender-Nutri-BL660/dp/B00939FV8K?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00939FV8K): this is a newer model than I have, but same idea. I use it to mostly to blend coconut oil in tea or coffee in the morning, and the occasional smoothie.
 * **Handmade mug**: purchased from the craftsman that made it. Aesthetically satisfying. Will be hard to replace.
 * [**Cast Iron Skillet**](https://www.amazon.com/Seasoned-Cast-Skillet-Utopia-Kitchen/dp/B00X4WQMAS?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00X4WQMAS): brand doesn't matter; maybe better for you than teflon.
 * [**Vintage Meat Grinder**](https://www.ebay.com/sch/items/?_nkw=vintage+meat+grinder&_sacat=&_ex_kw=&_mPrRngCbx=1&_udlo=&_udhi=&_sop=12&_fpos=&_fspt=1&_sadis=&LH_CAds=&rmvSB=true): [raw meat is way better for your pet than kibble](http://www.petfooled.com/), and is simple to make with a meat grinder. Mine is older than both of my parents and cost ~$20 (vs. ~$600 for a fancy electric one that doesn't work as well).
+* [**Egg Cooker**](http://amzn.to/2xLCxrc): oh baby does this work well for cooking eggs. I know you're not supposed to have mono devices in your kitchen, but this makes eggs so perfectly and with such minimal effort it absolutely justifies itself.
 
-## Bedroom
+## <a name="bedroom"></a>Bedroom
 
 * **An ultrasonic humidifier**: I have [one designed like this](https://www.amazon.com/Purasense-Ultrasonic-Cool-Mist-Humidifier/dp/B01MTWEI96?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01MTWEI96) and don't love it. Lots of nooks for slimy mold to grow in that makes it hard to clean, and takes practice to put it on the base without pinching your fingers. As a thing though, a humidifier can save you days of being sick in the winter months when central heating dries out your air.
 * [**Green Tea Foam Mattress**](https://www.amazon.com/Zinus-Memory-Green-Mattress-Queen/dp/B00Q7EPSHI?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00Q7EPSHI): super cheap, super comfy. People who spend more money than they have on a mattress (ie: financing) are dumb. Sleep on a hammock if you don't have enough money.
 * [**Zinus SmartBase Mattress Foundation**](https://www.amazon.com/Zinus-SmartBase-Foundation-Replacement-Noise-Free/dp/B006MIUM20?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B006MIUM20): minimal and lightweight, and therefore easy to move, way to reclaim some storage from under your mattress. If you don't need the storage a mattress on the ground is a perfectly fine solution.
 
-## Toiletries/Bathroom
+## <a name="bathroom"></a>Toiletries/Bathroom
 
 * [**A Bidet**](https://www.amazon.com/Luxe-Bidet-Neo-120-Non-Electric/dp/B00JG2DETM?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00JG2DETM): link is to the one I own, but the model doesn't matter. What matters is not cleaning your butthole like a barbarian. You wouldn't wash your dishes with a paper towel.
 * [**Burt's Bees Lip Balm**](https://www.amazon.com/Burts-Bees-Natural-Moisturizing-Beeswax/dp/B0054LHI5A/): the most effective lip balm I've used. Depending on the weather, biking often dries out my lips.
-* **Shaving Stuff**: a [badger hair brush](https://www.amazon.com/Shaveory-Badger-Shaving-Handle-Perfect/dp/B01BW1GLVC?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01BW1GLVC), [avocado shaving cream](https://www.amazon.com/Taylor-Old-Bond-Street-5-3-Ounce/dp/B00432GALY?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00432GALY), a [safety razor](https://www.amazon.com/WEISHI-Handle-Version-Butterfly-Double/dp/B00PKHIDRA?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00PKHIDRA), and [razor blades](https://www.amazon.com/Astra-Platinum-Double-Safety-Blades/dp/B001QY8QXM?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001QY8QXM). Way cheaper than the Gillette Refills, and you shave with a factory sharp razor every time. The pack of razor blades I bought has lasted me over three years and counting.
+* **Shaving Stuff**: a [badger hair brush](https://www.amazon.com/Shaveory-Badger-Shaving-Handle-Perfect/dp/B01BW1GLVC?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01BW1GLVC), [saldalwood shaving cream](http://amzn.to/2yuPCce), a [safety razor](https://www.amazon.com/WEISHI-Handle-Version-Butterfly-Double/dp/B00PKHIDRA?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00PKHIDRA), and [razor blades](https://www.amazon.com/Astra-Platinum-Double-Safety-Blades/dp/B001QY8QXM?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001QY8QXM). Way cheaper than the Gillette Refills, and you shave with a factory sharp razor every time. The pack of razor blades I bought has lasted me over three years and counting.
 * [**Harperton Nail Clipper Set**](https://www.amazon.com/Harperton-Nail-Clipper-Fingernail-Toenail/dp/B00TKS5Y3Q?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00TKS5Y3Q): the best nail clippers I've ever used. The first time I used them I was reminded of the first time I used a freshly sharpened knife after I'd been using a knife that had been getting subtly duller.
 * [**Washcloths**](https://www.amazon.com/Washcloth-Towels-Percent-Cotton-Seafoam/dp/B016P3JRE0?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B016P3JRE0): showering every day with soap and shampoo dries out your skin, and strips away healthy bacteria that protect you from infection. I've also found it made my hair greasy and my skin break out more, so I stopped showering. Instead, [I clean my face, hair, and parts of skin that normally touch other skin daily with a wet wash cloth](http://gogo.gen.co/hygiene). People never believe I haven't taken a shower in close to two years.
 * **Regular ol' toothbrush**: nothing fancy
 * [**Primal Pit Paste**](https://www.amazon.com/Primal-Pit-Paste-Deodorant-Fragrances/dp/B00O59LG0A?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00O59LG0A): when you eat well and don't shower, you don't need industrial strength deoderant (which [might be super bad for you](http://www.webmd.com/skin-problems-and-treatments/features/antiperspirant-facts-safety))
 
-## Exercise
+## <a name="exercise"></a>Exercise
 
-* [**A Pullup Bar**](https://www.amazon.com/Iron-Gym-Total-Upper-Workout/dp/B001EJMS6K?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001EJMS6K): strategically placed in a doorway I go through a lot, so I make it a habit to do half my max reps every time I walk through the doorway (max is around 22, so I do 11-13 in a set). The single biggest non-edible contributer to my strength and physique.
+* [**A Pullup Bar**](https://www.amazon.com/Iron-Gym-Total-Upper-Workout/dp/B001EJMS6K?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001EJMS6K) and a [**rock climbing hangboard**](http://amzn.to/2xLIPXT): strategically placed in a doorway I go through a lot, so I make it a habit to do half my max reps every time I walk through the doorway (max is around 22, so I do 11-13 in a set). The single biggest non-edible contributer to my strength and physique.
 * [**Adjustable Kettlebell**](https://www.amazon.com/Titan-Fitness-Adjustable-Kettlebell-Workout/dp/B01B6RZSH0?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01B6RZSH0): the most cost effective way to get those [kettlebell swings](https://joshkaufman.net/strength-training-for-non-athletes/) in. I try to do ~40 every day, with a few more each day.
 * [**Perfect Pushups**](https://www.amazon.com/Perfect-Fitness-Pushup-Elite/dp/B008DNAJ5M?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B008DNAJ5M): bought at a yard sale. Not strictly necessary, but a good reminder to do some pushups when you see them on the floor.
-* [**Olympic wooden rings**](https://www.amazon.com/Diameter-Gymnastics-Rings-Buckle-Straps/dp/B00SAEPY72?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00SAEPY72): also strategically placed in the backyard, so I'm reminded to use them whenever I'm outside. Working towards an [iron cross](https://en.wikipedia.org/wiki/Rings_(gymnastics)#/media/File:Example2ofironcross.jpg).
 
-## Outdoors
+## <a name="outdoors"></a>Outdoors
 
 * **a bicycle**: bought off of Craig's list for $100 several years ago. I use it instead of a car, which is a great move if you're interested in [not working your entire life and not being fat and unhealthy](http://www.mrmoneymustache.com/2011/04/18/get-rich-with-bikes/). Buy one that's good enough to use, but not too nice that you're afraid to lock it up outside (and so never use it). Make sure to have a helmet and bike lights.
 * [**ENO Doublenest Hammock**](https://www.amazon.com/ENO-Eagles-Nest-Outfitters-DoubleNest/dp/B001DDPGNO?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001DDPGNO): super easy setup, and super comfortable. Semi-perminantly mounted in my backyard for comfy lounging. [Hennessy Hammocks](https://hennessyhammock.com/) are better for camping for multiple days at a time, but harder to set up.
 * [**Slackline**](https://www.amazon.com/Slackline-Training-Protectors-Instruction-Complete/dp/B01LZWDIPM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01LZWDIPM): training line makes it much easier to learn. Currently no place for it in the backyard, so I can only use it at parks or while camping. I'd love to figure out a way to set it up in the backyard without trees.
 
-## Travel
+### <a name="outdoors-climbing"></a>Rock Climbing
+
+* [Black Diamond Momentum **Climbing Harness**](http://amzn.to/2zvlKe8)
+* [Black Diamond **ATC Belay Device**](http://amzn.to/2zw7h1x)
+
+## <a name="travel"></a>Travel
 
 I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-edition/) style posts, so here's what I travel with. Lots of the stuff photographed is mentioned in other sections, so not included here.
 
@@ -167,26 +184,27 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 * [**Swiss Gear Backpack**](https://www.amazon.com/SwissGear-1900-Scansmart-Laptop-Backpack/dp/B00ESKY9FU?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00ESKY9FU): I've had an older version of this backpack for about five years and it shows no signs of wear. It's the perfect size to make sure I don't overpack for trips, and has just the right number of pockets in the right places.
 * [**KAMASHI 15000mAh portable battery bank**](https://www.amazon.com/KMASHI-15000mAh-Portable-Power-Output/dp/B00JP8MZGK?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00JP8MZGK): cheapest mAh per dollar on Amazon; I get 3-5 solid full charges for my phone, which becomes my most valuable asset when backpacking in a foreign country.
 * [**Snap Spectacles**](https://www.spectacles.com/): the best vlogging/life logging camera I've used to date (though I have a lot of gripes about the software - Snap Inc. doesn't make it easy to use your videos for things that aren't Snapchat)
-* [DJI Spark **Drone**](http://www.dji.com/spark): super tiny and light weight. Gives an entire new dimension to travel, and makes [travel vlogs](https://youtu.be/uRk64UlQtA8?list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O) way more fun by giving context. I also have a [mavic](http://www.dji.com/mavic), and I can't decide which to get rid of.
+* [DJI Mavic **Drone**](http://www.dji.com/mavic): literally fly wherever you travel. Makes some *incredible* [context shots for vacation videos](https://youtu.be/uRk64UlQtA8?list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O). Gives an entire new dimension to travel. The gigantic batteries can also be used to charge your phone in a pinch. I tried the Spark and liked the Mavic better.
 * [CamelBack **Hydration Bladder**](http://amzn.to/2uVWDBE): brand doesn't matter. This takes up almost no space or weight when empty, and can carry several times the water of a bottle when full. It's also easier to drink from while on the go.
 * [Syncwire **USB Wall Charger** with EU/UK adapters](https://www.amazon.com/Charger-Syncwire-Adapter-Samsung-more-White/dp/B011KPRE1G?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B011KPRE1G): makes getting all my USB stuff charged (power bank, spectacles, drone, phone, iPad) much simpler.
 * [**Eye mask**](https://www.amazon.com/ALASKA-BEAR%C2%AE-Natural-blindfold-super-smooth/dp/B00GSO1D9O?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00GSO1D9O): sleeping in absolute darkness [ups your melatonin](http://www.webmd.com/sleep-disorders/news/20110119/light-exposure-may-cut-production-of-melatonin), which helps you sleep better.
 * [ridiculous **travel pillow**](https://www.amazon.com/Inflatable-Koncle-Airplane-Ergonomic-Portable/dp/B072QWHTMC?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B072QWHTMC): not perfect, and not justifiable on flights shorter than ~6 hours, but oh baby does it make a difference in the sleep I can get on a plane.
 * [**Epic Meat Bar** emergency snack](https://www.amazon.com/Epic-Bars-Variety-Pack-Flavors/dp/B01FR3YVQI?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01FR3YVQI): can save me from a ~$20 emergency meal (like on a plane). Shop around for the best flavor (lamb and buffalo are the best).
 
-## Toys
+## <a name="toys"></a>Toys
 
 * [**Swagtron T5 Hoverboard**](https://swagtron.com/product/swagtron-t5-hoverboard/): received as a Christmas gift from my in-laws. My exclusive indoor method of transportation. Makes cooking, laundry, and putting away dishes so much more fun.
 * [**TYZEST Fidget Spinner**](https://www.amazon.com/TYZEST-Spinner-Durable-Precision-material/dp/B01NAPTIZQ?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01NAPTIZQ): spins for like five minutes, and feels really satisfying. Useful when I need to focus on something else.
 
 ---
 
-## Notably Absent
+## <a name="absent"></a>Notably Absent
 
 * **A Car**: Everywhere I need to go is accessable by bike or public transportaiton. My wife owns a car she uses to commute to work, which I'll borrow maybe once every two weeks to drive home and visit my family, and we'll use for road trips about once every three months. If self driving cars make Uber cheaper, we could probably sell it.
 * **A TV**: I'll sporadically use a TV if it happens to be in the place I'm living to watch a movie, but I haven't *watched TV* as an activity since high school. Frees up a lot of time to do more interesting things, and there are plenty of ways to watch good TV shows on your computer.
 * **A wallet**: All you really need is a credit card, a driver's license, and some emergency cash, all of which can fit in my iPhone case. This practice makes it much harder to lose stuff.
 * **Bread**: wheat probably isn't good for you, and we probably eat it because the agriculture revolution enabled societies that grew and ate grains to support a denser population. Individuals lived shorter and less healthy lives, but their society could then support an army that could quash remaining hunter-gatherer nomads (see [Sapiens](https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0062316095)).
+* **Dairy**: dairy might not be good for anyone, and definitely isn't good for me. My skin breaks out and I get weird rashes on my palms. Effective for weight gain, if that's your thing.
 * **Processed or Packaged Foods**: no cereals, nothing made by Kraft, and no pre-packaged meals. These foods [break a lot of rules](/books/food-rules).
 * **Books**: I'll own a few dozen books at a time, but the goal is to extract their information and get rid of them. I haven't had any notable exceptions to this yet.
 
@@ -205,3 +223,22 @@ What am I missing? What mistakes have I made? What advice do you have? [Let me k
 <!-- TODO: https://autolinkmaker.itunes.apple.com/ -->
 
 Like this post? Check out [Pieter Levels 100 Thing Challenge](https://levels.io/the-100-thing-challenge/) and his [How to pack for world travel with just a carry-on bag followup](https://levels.io/carry-on-world-travel/).
+
+<script>
+const nav = document.getElementById("thingsnav");
+nav.innerHTML = [...document.querySelectorAll("a[name]")].map(a => {
+  const h = a.parentNode;
+  return `<li><a href="#${a.name}">${h.innerText}</a></li>`;
+}).join('')
+</script>
+
+<style>
+.sidebar{
+  width: 263px;
+  position: fixed;
+  top: 20;
+}
+#thingsnav a{
+  padding: 0;
+}
+</style>

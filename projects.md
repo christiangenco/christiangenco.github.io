@@ -7,6 +7,8 @@ layout: page
 type: page
 ---
 
+These are things I've made that make money.
+
 * [dbinbox](https://dbinbox.com): receive large files on your website
 * [textbooks please](http://textbooksplease.com): textbook search engine
 * [Dr. Dog](https://www.alexaskillstore.com/Dr-Dog/39678): ask your Amazon Echo if it's safe for your dog to eat certain foods
@@ -15,8 +17,9 @@ type: page
 
 ## Experiments
 
-* [Mosaic Web Dev](http://mosaic.apps.gen.co): a platform for hosting lessons that students can go through at their own pace. A solution to teaching technical summer camps where half the class got left behind and half the class felt bored (and my voice got tired).
+* [QR reader/writer](https://gen.co/qr/): it's pretty easy to make a malicious QR code reader, so I made my own. Works offline, like on an air gapped computer.
 * [Secrets](http://christian.gen.co/secrets/): split up a secret into N pieces so you can recover it with any M of the pieces
+* [Mosaic Web Dev](http://mosaic.apps.gen.co): a platform for hosting lessons that students can go through at their own pace. A solution to teaching technical summer camps where half the class got left behind and half the class felt bored (and my voice got tired).
 * [HumanSort](http://gen.co/humansort/): sort a list based on whatever you want by comparing two things at a time
 * [Markdown to MLA](http://markdowntomla.com/) and [Markdown to APA](http://markdowntoapa.com/): generate perfect MLA and APA documents from plain text markdown
 * [Timecard App](https://timecardapp.com): timecard calculator ([a rewrite of my oldest useful program](/timecardapp))
@@ -26,7 +29,7 @@ type: page
 * [Profile Flags](https://profileflags.parseapp.com/): add a country flag over your Facebook profile picture
 * [autorunner](https://github.com/christiangenco/autorunner): command line tool to run a command when a file is saved
 * [t_time_tracker](https://github.com/christiangenco/t_time_tracker): simple command line time tracking
-* <strike>[Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email</strike>
+* [Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email. Shut down (and coins returned) in 2017.
 
 ## Up Next
 

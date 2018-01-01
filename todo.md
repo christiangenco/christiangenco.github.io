@@ -1,5 +1,7 @@
 # Next
 
+* copy call to action contact bar from https://youtu.be/9z61670MVQo?t=1982
+
 ---
 
 # Notes

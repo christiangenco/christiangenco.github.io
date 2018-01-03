@@ -21,3 +21,6 @@
 ---
 
 # Inbox
+
+* better google analytics: https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/
+* add facebook tracking pixel: https://www.facebook.com/business/help/952192354843755

@@ -111,6 +111,8 @@ Love should be a nurturing attempt by two people to reach their full potential.
 
 ## 10. Pessimism
 
+Problem-free relationships don't exist. We are all, in diverse ways, damaged and insane. The only people you think are normal are ones you don't know very well yet, though "normal" relationships are how you set expectations for your own.
+
 High expectations set you up to be disappointed and frustrated. The grass always looks greener when you haven't discovered the downsides of the other grass yet.
 
 Your picture of a perfect relationship probably looks like:
@@ -121,9 +123,19 @@ When disappointed that these expectations don't live up to reality, we get mad, 
 
 > It wouldn't be like this with another person, the one we saw at the conference. They looked nice and we had a brief chat about the theme of the keynote speaker. Partly because of the slope of their neck and a lilt in their accent, we reached an overwhelming conclusion: with them it would be easier. **There could be a better life waiting round the corner.**
 
-A healthier philosophy is one of **pessimism**. Assume your partner won't understand you very well, and you won't understand them. The few ways you do understand eachother will be exceptions to be celebrated, and a more comprehensive understanding will need to be demandingly worked towards.
+A healthier philosophy is one of **pessimism**. Assume your partner won't understand you very well, and you won't understand them. The few ways you do understand eachother will be exceptions to be celebrated, and a more comprehensive understanding will need to be demandingly worked towards. Disagreements should be celebrated as learning more about someone close up across the full range of their life.
+
+Dealing with other people is hard and complicated; long term relationships work differently than honeymoon periods. Understanding other people are entities separate from us is something we have to learn (babies think their mothers are an extension of themselves and get frustrated when their needs aren't intuited).
 
 ## 11. Blame and Love
+
+Humans blame their partners for things the world does to them because their partner has taken the place of their parents, and they know their partner will tolerate it.
+
+Your partner being responsible for everything that happens to you is blatently irrational, but it's an easy trap to fall into when looking for someone to blame. Most of the time there isn't anyone to blame: bad things happen with no malicious actor (["Never attribute to malice that which is adequately explained by carelessness."](https://en.wikipedia.org/wiki/Hanlon%27s_razor)), so you blame the person you know you can use as a punching bag.
+
+This is an echo of how you used to think of your parents: somehow everything, good or bad, that happened to you as a child was caused by your parents. If there was an unjustice in the world, throwing a big enough fit to your parents could fix the problem with a wave of their gigantic omnipotent fingers.
+
+If you find your partner getting angry at you, be flattered that they've attributed this much power and
 
 ## 12. Politeness and Secrets
 

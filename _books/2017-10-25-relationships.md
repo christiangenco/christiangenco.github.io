@@ -20,17 +20,17 @@ In the context of this study, "relationships" means several things: your sex lif
 
 Particularly, a big unstated focus on this book is on developing a deeper relationship with yourself. "Relationships" does a great job of forcing you to confront and accept your own imperfections.
 
-Summary: Romanticism - our society's script of how love and relationships are supposted to work - is wrong, unhelpful, misleading, and distructive. We need to tell ourselves more accurate stories about relationships that normalize what romanticism says is weird. The best long term partner is one who is good at disagreement.
+Summary: Romanticism - our society's script of how love and relationships are supposed to work - is wrong, unhelpful, misleading, and destructive. We need to tell ourselves more accurate stories about relationships that normalize what romanticism says is weird. The best long term partner is one who is good at disagreement.
 
 ## 1. Post-Romanticism
 
 Here's the script Western culture in 2017 gives you for how love is supposed to work:
 
 * True love means loving every part of the one right person over all other people. If there's something you don't like about your partner - if they need to change - it's a sign they're not the right person.
-* The right partner is your "soulmate, best friend, co-parent, co-chauffeur, accountant, household manager and spiritual guide"
-* Finding the right parter is all about following your feelings (and therefore marrying for pragmatic reasons is heartless and terrible). You'll inately know when you've found the right person without instruction.
+* The right partner is your "soul mate, best friend, co-parent, co-chauffeur, accountant, household manager and spiritual guide"
+* Finding the right parter is all about following your feelings (and therefore marrying for pragmatic reasons is heartless and terrible). You'll innately know when you've found the right person without instruction.
 * Long-term marriage is the goal of love
-* Sex is the supreme expression of love (and therefore infrequent sex and adultery are love catastrophies). When you've found your soul mate, sex is great forever (even with kids and work), and you should never be attracted to anyone else.
+* Sex is the supreme expression of love (and therefore infrequent sex and adultery are love catastrophes). When you've found your soul mate, sex is great forever (even with kids and work), and you should never be attracted to anyone else.
 * The right partner intuitively understands you without trying.
 * Relationships driven by practicalities (like having similar bathroom etiquette) or money are sinister ("gold-digger", "social climber")
 
@@ -49,7 +49,7 @@ The Classical model, this book proposes, is better. Classical love has the attit
 
 ## 2. Object Choice
 
-Romanticism would say humans choose who to fall in love with based on an inate sense that guides us to a partner that's perfect for us. Humans probably fall in love with people that love them in **familiar ways** - the ways their parents cared for them as children - which isn't necessarily correct or positive (as all heuristics are).
+Romanticism would say humans choose who to fall in love with based on an innate sense that guides us to a partner that's perfect for us. Humans probably fall in love with people that love them in **familiar ways** - the ways their parents cared for them as children - which isn't necessarily correct or positive (as all heuristics are).
 
 Humans may have negative patterns of what they think they want from a partner that were created when they were too young to understand them.
 
@@ -103,7 +103,7 @@ Nurture your partner's inner child, even though sympathy comes easier to a liter
 
 ## 7. Loving and Being Loved
 
-As a child, you only really learned how to *be* loved, and so you expect and want unconditional unreciprocated from your partner now. As an adult, to get love, you need to learn to give love.
+As a child, you only really learned how to *be* loved, and so you expect and want unconditional un-reciprocated from your partner now. As an adult, to get love, you need to learn to give love.
 
 The love a parent has for a child is unsustainable. Parents hide their moments of rage, despair, and indifference and don't expect children to ask how their day was.
 
@@ -111,13 +111,13 @@ It's not uncommon for a couple to seem like two small children who have been lef
 
 ## 8. The Dignity of Ironing
 
-Domestic details aren't prestigeous, but are packed with emotional significance (though you wouldn't know that reading Romantic writers). The practicalities of living together don't make for very exciting narrative arcs, but they've very important in real-world relationships.
+Domestic details aren't prestigious, but are packed with emotional significance (though you wouldn't know that reading Romantic writers). The practicalities of living together don't make for very exciting narrative arcs, but they've very important in real-world relationships.
 
 ## 9. Teaching and Learning
 
 Don't be insulted by your partner suggesting change. No one is perfect, so you can't get closer to your ideal self if you meet change with resentment.
 
-Loving someone doesn't mean accepting and loving every part of them - it's normal to only like most of someone. Be careful to present suggestions for improvement in a palitable package: it's easy to sound like you're complaining or insulting instead of teaching.
+Loving someone doesn't mean accepting and loving every part of them - it's normal to only like most of someone. Be careful to present suggestions for improvement in a palatable package: it's easy to sound like you're complaining or insulting instead of teaching.
 
 Likewise, be open to your partner's suggestions for improvement (even if clumsily communicated). Your partner suggesting change for you is one of the highest benefits of love. Who else is close enough to you to notice subtle ways you can improve yourself? Who else do you trust more to give you useful information?
 
@@ -139,7 +139,7 @@ When disappointed that these expectations don't live up to reality, we get mad, 
 
 (more about crushes in chapter 15)
 
-A healthier philosophy is one of **pessimism**. Assume your partner won't understand you very well, and you won't understand them. The few ways you do understand eachother will be exceptions to be celebrated, and a more comprehensive understanding will need to be demandingly worked towards. Disagreements should be celebrated as learning more about someone close up across the full range of their life.
+A healthier philosophy is one of **pessimism**. Assume your partner won't understand you very well, and you won't understand them. The few ways you do understand each other will be exceptions to be celebrated, and a more comprehensive understanding will need to be demandingly worked towards. Disagreements should be celebrated as learning more about someone close up across the full range of their life.
 
 Dealing with other people is hard and complicated; long term relationships work differently than honeymoon periods. Understanding other people are entities separate from us is something we have to learn (babies think their mothers are an extension of themselves and get frustrated when their needs aren't intuited).
 
@@ -147,9 +147,9 @@ Dealing with other people is hard and complicated; long term relationships work 
 
 Humans blame their partners for things the world does to them because their partner has taken the place of their parents, and they know their partner will tolerate it.
 
-Your partner being responsible for everything that happens to you is blatently irrational, but it's an easy trap to fall into when looking for someone to blame. Most of the time there isn't anyone to blame: bad things happen with no malicious actor (["Never attribute to malice that which is adequately explained by carelessness."](https://en.wikipedia.org/wiki/Hanlon%27s_razor)), so you blame the person you know you can use as a punching bag.
+Your partner being responsible for everything that happens to you is blatantly irrational, but it's an easy trap to fall into when looking for someone to blame. Most of the time there isn't anyone to blame: bad things happen with no malicious actor (["Never attribute to malice that which is adequately explained by carelessness."](https://en.wikipedia.org/wiki/Hanlon%27s_razor)), so you blame the person you know you can use as a punching bag.
 
-This is an echo of how you used to think of your parents: somehow everything, good or bad, that happened to you as a child was caused by your parents. If there was an unjustice in the world, throwing a big enough fit to your parents could fix the problem with a wave of their gigantic omnipotent fingers.
+This is an echo of how you used to think of your parents: somehow everything, good or bad, that happened to you as a child was caused by your parents. If there was an injustice in the world, throwing a big enough fit to your parents could fix the problem with a wave of their gigantic omnipotent fingers.
 
 This is, of course, not a fair thing to do to your partner. It's not their fault you're late for your flight - being late is a thing that has happened, and you can now work together to come to solve the present situation.
 
@@ -182,8 +182,8 @@ Try these artificial (but useful) conversation starters:
 * Which of your flaws do you want to be treated more generously?
 * What would you tell your younger self about love?
 * What do you think I get wrong about you?
-* What is one incident you'd like me to apologise for?
-* Can I ask you to apologise for an incident too?
+* What is one incident you'd like me to apologize for?
+* Can I ask you to apologize for an incident too?
 * How have I let you down?
 * What would you want to change about me?
 * If I was magically offered a chance to change something about you, what do you guess it would be?
@@ -215,17 +215,17 @@ Humand tend to fill in the gaps and assume an attractive person is perfect, but 
 
 The idea that you could bump into a person that's perfect for you, like most harmful and incorrect ideas discussed in this book, comes from Romanticism: the "love at first sight" trope.
 
-Humans evolved to make quick decisions about things and other humans on limited information. These snap judgements are sometimes useful, but always an inaccurate approximation. You can't possibly know anything about them that's not visually apparant.
+Humans evolved to make quick decisions about things and other humans on limited information. These snap judgments are sometimes useful, but always an inaccurate approximation. You can't possibly know anything about them that's not visually apparent.
 
 That beautiful stranger on the sidewalk isn't a complete answer to everything wrong in your life, because that's impossible: everyone has something very substantially wrong with them. They're just very pretty.
 
 > How can one be so sure [that everyone is flawed]? Because the facts of life have deformed all of our natures. No one among us has come through unscathed. There is too much to fear: mortality, loss, dependency, abandonment, ruin, humiliation, subjection. We are, all of us, desperately fragile, ill-equipped to meet with the challenges to our mental integrity: we lack courage, preparation, confidence, intelligence...we were (necessarily) imperfectly parented...The chances of a perfectly good human emerging from the perilous facts of life are non-existent.
 
-Crushes probably aren't worth persuing, but are useful for teaching us about the qualities we admire and need more of in our lives.
+Crushes probably aren't worth perusing, but are useful for teaching us about the qualities we admire and need more of in our lives.
 
 ## 16. Sexual Non-Liberation
 
-True sexual liberation hasn't happened yet. There are still truths in sexuality thatare uncomfortable to jive with contemporary "normalcy".
+True sexual liberation hasn't happened yet. There are still truths in sexuality that are uncomfortable to jive with contemporary "normalcy".
 
 Romanticism teaches that we're in sexually enlightened times compared to people of the past: that people thought their hands would fall off if they masturbated, that Victorian prudes could be burned in a vat of oil for ogling someone's ankle, and that everyone was clueless in the bedroom. Americans invented bikinis, porn, and Tindr and now nobody has sexual hangups anymore! Sex came to be perceived as useful refreshing exercise (like tennis).
 
@@ -250,7 +250,7 @@ Currently, there are two tropes of people in monogamy:
 
 Both of these are kinda right, and kinda catastrophic. Monogamy really is at times maddening and suffocating, and a functioning relationship is hard to build treating sex partners as tennis partners. The right answer is probably somewhere between them:
 
-> Marry, and you will regret it; don't marry, you will also regret it; marry or don't marry, you will regret it either way...whether you hang yourself or do not hang yourself, you will regret both. This, gentlemen, is the essence of all philosophy - Soren kierkegaard
+> Marry, and you will regret it; don't marry, you will also regret it; marry or don't marry, you will regret it either way...whether you hang yourself or do not hang yourself, you will regret both. This, gentlemen, is the essence of all philosophy - Soren Kierkegaard
 
 If you choose pure fidelity, couple it with celebration at the stoic generosity of two partners managing not to sleep around or kill each other.
 
@@ -272,7 +272,7 @@ Short term relationships mean:
 * differences can be easily forgiven (vs. being driven mad thinking you'll have to deal with your partner's annoying quirks for the rest of your life)
 * you have your own space (vs. differences in bathroom and kitchen habits being a constant source of conflict)
 * the relationship is focused on fun (vs. being focused on administrative tasks, accounting, visiting in-laws, cleaning, and child-raising)
-* clean endings are possible (vs. relationships only ending by being visciously or pathologically killed)
+* clean endings are possible (vs. relationships only ending by being viscously killed)
 
 If the societal narrative is that long term relationships are normal and expected to last forever, anything short of forever would need to be described as a horrifying failure. Nothing lasts forever, so don't pretend it does (even, and especially, if you hope it does).
 
@@ -281,11 +281,11 @@ If the societal narrative is that long term relationships are normal and expecte
 Romantics are proudly irrational ("love is too abstract"); classicists are skeptics who believe anything can be broken down and analyzed.
 
 1. **Intuition vs. Analysis**: Romantics believe love comes naturally and defies rational explanation, and that attempts to study it will destroy it. Classicists are skeptical of their feelings and think breaking love down to its basic components means you can improve it.
-2. **Spontaneity vs. Education**: Romantics encourage following your impulses. You can't learn or force what comes naturally. Classicists belive that training is vital to any kind of success, though the current state of education may be imperfect. Even basic needs can be better satisfied by being studied.
+2. **Spontaneity vs. Education**: Romantics encourage following your impulses. You can't learn or force what comes naturally. Classicists believe that training is vital to any kind of success, though the current state of education may be imperfect. Even basic needs can be better satisfied by being studied.
 3. **Honesty vs. Politeness**: Romantics believe authenticity is vital, and try to fully express what they truly feel. Classicists believe a polite filter is important to suppress rude impulsive fleeting thoughts that might destroy relationships.
 4. **Idealism vs. Realism**: Romantics are idealists and see the potential of the best their relationship could be, which leaves them disappointed in the present. Classicists are realists and see their relationships could be a lot worse, which helps them appreciate how things are in the moment.
 5. **Earnestness vs. Irony**: Romantics try to be earnestly ideal. Admission through irony that them or their partner is messed up is seen as defeatist. Classicists see cheerful ironic humor as a good starting point to cope in an imperfect world.
-6. **The Rare vs. The Everyday**: Romantics seek the exotic and rare. They like thinking of every part of their relationship as special and uniquely amazing. Classicists welcome routine as a defence against chaos. They see the charm of doing the laundry.
+6. **The Rare vs. The Everyday**: Romantics seek the exotic and rare. They like thinking of every part of their relationship as special and uniquely amazing. Classicists welcome routine as a defense against chaos. They see the charm of doing the laundry.
 7. **Purity vs. Ambivalence**: Romantics believe partners should love everything about each other or break up without compromising. Classicists don't believe things can be either entirely good or entirely bad.
 
 > Both Romantic and Classical orientations have important truths to impart. Neither is wholly right or wrong. They need to be balanced. And none of us are in any case ever simply one or the other...at this point in history, it might be the Classical attitude whose distinctive claims and wisdom we need to listen to the most intently.
@@ -294,9 +294,9 @@ Romantics are proudly irrational ("love is too abstract"); classicists are skept
 
 ## 20. Better Love Stories
 
-The best long-term romantic partner is one you can beurocratically disagree with.
+The best long-term romantic partner is one you can bureaucratically disagree with.
 
-Culture's stories (in films, songs, novels, and ads) shape it's humans' sense of what's normal. The stories our culture is telling us right now about love leave us unprepared to deal adquately with the tensions of relationships.
+Culture's stories (in films, songs, novels, and ads) shape it's humans' sense of what's normal. The stories our culture is telling us right now about love leave us unprepared to deal adequately with the tensions of relationships.
 
 The Romantic love story constructs a devilish template of expectations of what relationships are supposed to be like, but it's nothing like real relationships, which leaves everyone dissatisfied.
 
@@ -316,7 +316,7 @@ In the Classical story, work is a huge part of life and shapes our relationships
 
 ### Children
 
-In the Romantic story, children are incidental symbols of mutual love, and (because of their innoscence) are in many ways wiser than studied adults.
+In the Romantic story, children are incidental symbols of mutual love, and (because of their innocence) are in many ways wiser than studied adults.
 
 In the Classical story, children place the couple under unbearable strains, and can kill the passion that made them possible.
 
@@ -344,6 +344,6 @@ In the Classical story, no one ever completely understands anyone else, and comp
 
 1. give up on perfection: every human (including you) is flawed, so "good enough" is actually the best one can achieve
 2. accept you will never be fully understood: humans are complicated and aren't good at communicating, so no one can fully understand anyone else
-3. realize you are crazy: study the ways your brain tricks itself. If you don't think you trick yourself, and don't regularly discover embarrassing mistakes in thinking you've made, you're diluding yourself
+3. realize you are crazy: study the ways your brain tricks itself. If you don't think you trick yourself, and don't regularly discover embarrassing mistakes in thinking you've made, you're deluding yourself
 4. be happy to be taught and calm when teaching: your partner will be better than you at things, and you should want to learn from them. At the same time, be a kind teacher
-5. realize you aren't compatible: romanticism teaches that the right person is someone that shares your tastes, interests, and general attitudes to life. This works for short term relationships, but becomes irrelevant over time. **The best long term partner is one who can negotiate differences in taste intelligently and wisely; the person who is good at disagreement.** It is the capacity to tolerate difference that is the true marer of the 'right' person. **Compatibility is an achievement of love, not a precondition.**
+5. realize you aren't compatible: romanticism teaches that the right person is someone that shares your tastes, interests, and general attitudes to life. This works for short term relationships, but becomes irrelevant over time. **The best long term partner is one who can negotiate differences in taste intelligently and wisely; the person who is good at disagreement.** It is the capacity to tolerate difference that is the true marker of the 'right' person. **Compatibility is an achievement of love, not a precondition.**

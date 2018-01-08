@@ -1,12 +1,26 @@
 ---
 title: Relationships
-image: https://i.imgur.com/Q26DoE7.jpg
-image_small: https://i.imgur.com/Q26DoE7m.jpg
+image: https://i.imgur.com/tTZ3QJl.jpg
+image_small: https://i.imgur.com/tTZ3QJlm.jpg
 isbn: 978-0993538742
 summary:
 ---
 
-[Relationships by The School of Life](http://amzn.to/2i5S53e)
+I got turned onto this book - [Relationships by The School of Life](http://amzn.to/2i5S53e) - by [their YouTube channel](https://www.youtube.com/user/schooloflifechannel). I spent a lot of time in 2017 thinking about relationships and watching videos from this channel after noticing the huge impact relationships have on my quality of life, and my relative ignorance on how to improve it.
+
+Humans spend a lot of time studying how to make money, but very little on things that actually bring them life satisfaction:
+
+![Sleep quality, sex life, job security, health of close relatives, chatting to neighbors, support network, child at home, and relationship status impact quality of life in that order](https://i.imgur.com/lo3fuw9.png)
+
+Source: [Oxford Economics, the National Centre for Social Research](https://www.about.sainsburys.co.uk/~/media/Files/S/Sainsburys/living-well-index/sainsburys-living-well-index.PDF)
+
+If you have enough money (defined by this study as spending within your means and not being stressed about debts), efforts to improve your life should be focused on sleep, relationships, and exercise. More money won't improve your life as effectively.
+
+In the context of this study, "relationships" means several things: your sex life, weak network ties, people you hang out with, your support network, the health of people close to you. "Relationships" (the book) focuses on the kind of one-on-one life partner relationships that would only impact the "sex life" portion of this study, but the information in it can be applied to all types of relationships.
+
+Particularly, a big unstated focus on this book is on developing a deeper relationship with yourself. "Relationships" does a great job of forcing you to confront and accept your own imperfections.
+
+Summary: Romanticism - our society's script of how love and relationships are supposted to work - is wrong, unhelpful, misleading, and distructive. We need to tell ourselves more accurate stories about relationships that normalize what romanticism says is weird. The best long term partner is one who is good at disagreement.
 
 ## 1. Post-Romanticism
 
@@ -244,8 +258,92 @@ If you choose pure fidelity, couple it with celebration at the stoic generosity 
 
 Romanticizing long-term relationships is a fallacy; a series of short ones can be just as good (or better).
 
-Romanticism discredits celibacy (willingly foregoing a long-term love relationship), but there are a lot of personality traits that might make long term relationships unideal: loving demanding work (like St Hilda of Whitby), hating children, enjoying solitude, or liking to express oneself sexually outside of a loving union.
+Romanticism discredits celibacy (willingly foregoing a long-term love relationship), but there are a lot of personality traits that might make long term relationships unideal: loving demanding work (like [St Hilda of Whitby](https://en.wikipedia.org/wiki/Hilda_of_Whitby)), hating children, enjoying solitude, or "liking to express oneself sexually outside of a loving union" (wanting to have sex with lots of people).
+
+> Only once singlehood has completely equal prestige with its alternative can we ensure that people will be free in their choices and hence join couples for the right reasons: because they love another person, rather than because they are terrified of remaining single.
+
+In other words: if you can't be single, you won't be able to be in a relationship either.
+
+Choosing not to live with someone could prevent "scratchy familiarity, contempt and ingratitude" that spoils the "admir[ation], praise, [and] nurtur[ing]" that happens when relationships are new. You can still enjoy and respect a relationship when you know it's going to end.
+
+Short term relationships mean:
+
+* partners need to earn each other's respect daily (vs. leaning on the legal difficulty of separating for their partner to stay)
+* differences can be easily forgiven (vs. being driven mad thinking you'll have to deal with your partner's annoying quirks for the rest of your life)
+* you have your own space (vs. differences in bathroom and kitchen habits being a constant source of conflict)
+* the relationship is focused on fun (vs. being focused on administrative tasks, accounting, visiting in-laws, cleaning, and child-raising)
+* clean endings are possible (vs. relationships only ending by being visciously or pathologically killed)
+
+If the societal narrative is that long term relationships are normal and expected to last forever, anything short of forever would need to be described as a horrifying failure. Nothing lasts forever, so don't pretend it does (even, and especially, if you hope it does).
 
 ## 19. Classical vs Romantic
 
+Romantics are proudly irrational ("love is too abstract"); classicists are skeptics who believe anything can be broken down and analyzed.
+
+1. **Intuition vs. Analysis**: Romantics believe love comes naturally and defies rational explanation, and that attempts to study it will destroy it. Classicists are skeptical of their feelings and think breaking love down to its basic components means you can improve it.
+2. **Spontaneity vs. Education**: Romantics encourage following your impulses. You can't learn or force what comes naturally. Classicists belive that training is vital to any kind of success, though the current state of education may be imperfect. Even basic needs can be better satisfied by being studied.
+3. **Honesty vs. Politeness**: Romantics believe authenticity is vital, and try to fully express what they truly feel. Classicists believe a polite filter is important to suppress rude impulsive fleeting thoughts that might destroy relationships.
+4. **Idealism vs. Realism**: Romantics are idealists and see the potential of the best their relationship could be, which leaves them disappointed in the present. Classicists are realists and see their relationships could be a lot worse, which helps them appreciate how things are in the moment.
+5. **Earnestness vs. Irony**: Romantics try to be earnestly ideal. Admission through irony that them or their partner is messed up is seen as defeatist. Classicists see cheerful ironic humor as a good starting point to cope in an imperfect world.
+6. **The Rare vs. The Everyday**: Romantics seek the exotic and rare. They like thinking of every part of their relationship as special and uniquely amazing. Classicists welcome routine as a defence against chaos. They see the charm of doing the laundry.
+7. **Purity vs. Ambivalence**: Romantics believe partners should love everything about each other or break up without compromising. Classicists don't believe things can be either entirely good or entirely bad.
+
+> Both Romantic and Classical orientations have important truths to impart. Neither is wholly right or wrong. They need to be balanced. And none of us are in any case ever simply one or the other...at this point in history, it might be the Classical attitude whose distinctive claims and wisdom we need to listen to the most intently.
+
+...really? I've been with this book so far, but what in those descriptions of Romanticism was an "important truth to impart"?
+
 ## 20. Better Love Stories
+
+The best long-term romantic partner is one you can beurocratically disagree with.
+
+Culture's stories (in films, songs, novels, and ads) shape it's humans' sense of what's normal. The stories our culture is telling us right now about love leave us unprepared to deal adquately with the tensions of relationships.
+
+The Romantic love story constructs a devilish template of expectations of what relationships are supposed to be like, but it's nothing like real relationships, which leaves everyone dissatisfied.
+
+### The Plot
+
+![](https://i.imgur.com/LIGKShd.jpg)
+
+The archetypal Romantic plot is that all sorts of obstacles are placed in the way of love's birth (misunderstandings, bad luck, prejudice, war, a rival, a fear of intimacy, shyness, or an evil conjurer).
+
+In the Classical story, the real problem isn't finding a partner, but tolerating them. Getting together is only the beginning of the story. Don't write the hard, interesting part as living "happily ever after".
+
+### Work
+
+In the Romantic story, work goes on somewhere else and isn't relevant to love.
+
+In the Classical story, work is a huge part of life and shapes our relationships.
+
+### Children
+
+In the Romantic story, children are incidental symbols of mutual love, and (because of their innoscence) are in many ways wiser than studied adults.
+
+In the Classical story, children place the couple under unbearable strains, and can kill the passion that made them possible.
+
+> There are toys in the living room, pieces of chicken under the table, and no time to talk. Everyone is always tired. This too is love.
+
+### Practicalities
+
+In the Romantic story, housework doesn't matter.
+
+In the Classical story, housework is the core of two people functioning together, and is therefore super important.
+
+### Sex
+
+In the Romantic story, sex and love are tightly coupled. Adultery is therefore fatal: if you were with the right person it would be easy to be faithful.
+
+In the Classical story, long-term love and sex are distinct, and at times divergent.
+
+### Compatibility
+
+In the Romantic story, love is about finding your spiritual twin - your "other half" - so that compatibility will come easily and naturally.
+
+In the Classical story, no one ever completely understands anyone else, and compatibility is hard work.
+
+### Requirements for successful relationships
+
+1. give up on perfection: every human (including you) is flawed, so "good enough" is actually the best one can achieve
+2. accept you will never be fully understood: humans are complicated and aren't good at communicating, so no one can fully understand anyone else
+3. realize you are crazy: study the ways your brain tricks itself. If you don't think you trick yourself, and don't regularly discover embarrassing mistakes in thinking you've made, you're diluding yourself
+4. be happy to be taught and calm when teaching: your partner will be better than you at things, and you should want to learn from them. At the same time, be a kind teacher
+5. realize you aren't compatible: romanticism teaches that the right person is someone that shares your tastes, interests, and general attitudes to life. This works for short term relationships, but becomes irrelevant over time. **The best long term partner is one who can negotiate differences in taste intelligently and wisely; the person who is good at disagreement.** It is the capacity to tolerate difference that is the true marer of the 'right' person. **Compatibility is an achievement of love, not a precondition.**

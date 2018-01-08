@@ -123,6 +123,8 @@ When disappointed that these expectations don't live up to reality, we get mad, 
 
 > It wouldn't be like this with another person, the one we saw at the conference. They looked nice and we had a brief chat about the theme of the keynote speaker. Partly because of the slope of their neck and a lilt in their accent, we reached an overwhelming conclusion: with them it would be easier. **There could be a better life waiting round the corner.**
 
+(more about crushes in chapter 15)
+
 A healthier philosophy is one of **pessimism**. Assume your partner won't understand you very well, and you won't understand them. The few ways you do understand eachother will be exceptions to be celebrated, and a more comprehensive understanding will need to be demandingly worked towards. Disagreements should be celebrated as learning more about someone close up across the full range of their life.
 
 Dealing with other people is hard and complicated; long term relationships work differently than honeymoon periods. Understanding other people are entities separate from us is something we have to learn (babies think their mothers are an extension of themselves and get frustrated when their needs aren't intuited).
@@ -135,21 +137,114 @@ Your partner being responsible for everything that happens to you is blatently i
 
 This is an echo of how you used to think of your parents: somehow everything, good or bad, that happened to you as a child was caused by your parents. If there was an unjustice in the world, throwing a big enough fit to your parents could fix the problem with a wave of their gigantic omnipotent fingers.
 
-If you find your partner getting angry at you, be flattered that they've attributed this much power and
+This is, of course, not a fair thing to do to your partner. It's not their fault you're late for your flight - being late is a thing that has happened, and you can now work together to come to solve the present situation.
+
+If you find your partner getting angry at you, be flattered that they've attributed this much power and closeness to you. To them, you've become the person that loves them as only their parents could have.
 
 ## 12. Politeness and Secrets
 
+Sometimes it's more polite and wise to not be completely honest.
+
+Romanticism teaches that if two people truly love one another, they must always tell each other the truth about everything.
+
+In reality, editing raw brutal truths can be kinder and counterintuitively foster stronger relationships.
+
 ## 13. Explaining One's Madness
+
+People are complicated and don't make sense, so you should expect a strong relationship to be coupled with a lot of explaining. Strangeness from a life of traumas, excitements, fears, influences, opportunities, misfortunes, talents, and weaknesses isn't something to hide or suppress, but to be laid out and explained.
+
+Everyone has shitty qualities. Accept people as lovable fools instead of irritating idiots and everyone will have a better time.
+
+> In a more enlightened society than ours, one of the first questions that partners would be expected to ask one another...would simply be: "And how are you bad?"
 
 ## 14. Artificial Conversations
 
+More structured talks can reveal more truth than natural ones. Romanticism teaches that if you can just find the right person you'll finally be understood. Understanding another human takes a lot of work and commitment to trying to explain yourself, and trying to understand.
+
+Try these artificial (but useful) conversation starters:
+
+* What would you most like to be complimented on in the relationship?
+* Where do you think you're especially good as a person?
+* Which of your flaws do you want to be treated more generously?
+* What would you tell your younger self about love?
+* What do you think I get wrong about you?
+* What is one incident you'd like me to apologise for?
+* Can I ask you to apologise for an incident too?
+* How have I let you down?
+* What would you want to change about me?
+* If I was magically offered a chance to change something about you, what do you guess it would be?
+* If you could write an instruction manual for yourself in bed, what would you put in it?
+
+and these sentence stems:
+
+* I resent...
+* I am puzzled by...
+* I am hurt by...
+* I regret...
+* I am afraid that...
+* I am frustrated by...
+* I am happier when...
+* I want...
+* I appreciate...
+* I hope...
+* I would so like you to understand...
+* When I am anxious in our relationship, I tend to...
+* You tend to respond by..., which makes me...
+* When we argue, on the surface I show..., but inside I feel...
+* The more I..., the more you..., and then the more I...
+
+Getting close to someone can be awkward and uncomfortable, so decide before you start that that's going to be okay.
+
 ## 15. Crushes
+
+Humand tend to fill in the gaps and assume an attractive person is perfect, but there's no such thing. The grass is always greener. Notice what you like about your crushes to gain insight into what you're missing.
+
+The idea that you could bump into a person that's perfect for you, like most harmful and incorrect ideas discussed in this book, comes from Romanticism: the "love at first sight" trope.
+
+Humans evolved to make quick decisions about things and other humans on limited information. These snap judgements are sometimes useful, but always an inaccurate approximation. You can't possibly know anything about them that's not visually apparant.
+
+That beautiful stranger on the sidewalk isn't a complete answer to everything wrong in your life, because that's impossible: everyone has something very substantially wrong with them. They're just very pretty.
+
+> How can one be so sure [that everyone is flawed]? Because the facts of life have deformed all of our natures. No one among us has come through unscathed. There is too much to fear: mortality, loss, dependency, abandonment, ruin, humiliation, subjection. We are, all of us, desperately fragile, ill-equipped to meet with the challenges to our mental integrity: we lack courage, preparation, confidence, intelligence...we were (necessarily) imperfectly parented...The chances of a perfectly good human emerging from the perilous facts of life are non-existent.
+
+Crushes probably aren't worth persuing, but are useful for teaching us about the qualities we admire and need more of in our lives.
 
 ## 16. Sexual Non-Liberation
 
+True sexual liberation hasn't happened yet. There are still truths in sexuality thatare uncomfortable to jive with contemporary "normalcy".
+
+Romanticism teaches that we're in sexually enlightened times compared to people of the past: that people thought their hands would fall off if they masturbated, that Victorian prudes could be burned in a vat of oil for ogling someone's ankle, and that everyone was clueless in the bedroom. Americans invented bikinis, porn, and Tindr and now nobody has sexual hangups anymore! Sex came to be perceived as useful refreshing exercise (like tennis).
+
+In reality, people are still really hung up on sex, and ashamed to explore what they want. Here are some unpalatable realities:
+
+* it's rare to maintain sexual interest in only one person
+* it's possible to love someone and want to have sex with strangers
+* a human can be well adjusted and a functional and productive member of society, and also have degrading sexual habits
+* it's normal to have bisexual and incestuous fantasies, among countless other taboos
+* it may be easier to be excited by someone you don't like than someone you love
+
+This is all super normal, and you should talk more about it with people.
+
 ## 17. The Loyalist and the Libertine
 
+Both pure fidelity and pure infidelity are naive and incomplete. The ideal solution includes an understanding of both.
+
+Currently, there are two tropes of people in monogamy:
+
+* The Loyalist (romantic): love is intimately tied to sex, so it's impossible to love someone and want to have sex with someone else. Sex isn't like tennis, it's tied with a deep emotional connection you can't decouple.
+* The Libertine (anti-romantic): sex and love are completely decoupled. There are much worse ways of betraying a person than sleeping with a third party, like ignoring your partner
+
+Both of these are kinda right, and kinda catastrophic. Monogamy really is at times maddening and suffocating, and a functioning relationship is hard to build treating sex partners as tennis partners. The right answer is probably somewhere between them:
+
+> Marry, and you will regret it; don't marry, you will also regret it; marry or don't marry, you will regret it either way...whether you hang yourself or do not hang yourself, you will regret both. This, gentlemen, is the essence of all philosophy - Soren kierkegaard
+
+If you choose pure fidelity, couple it with celebration at the stoic generosity of two partners managing not to sleep around or kill each other.
+
 ## 18. Celibacy and Endings
+
+Romanticizing long-term relationships is a fallacy; a series of short ones can be just as good (or better).
+
+Romanticism discredits celibacy (willingly foregoing a long-term love relationship), but there are a lot of personality traits that might make long term relationships unideal: loving demanding work (like St Hilda of Whitby), hating children, enjoying solitude, or liking to express oneself sexually outside of a loving union.
 
 ## 19. Classical vs Romantic
 

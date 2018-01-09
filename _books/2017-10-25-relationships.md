@@ -165,6 +165,8 @@ Romanticism teaches that if two people truly love one another they must always t
 
 In reality, editing raw brutal truths can be kinder and counterintuitively foster stronger relationships.
 
+*Note from Christian: I interpret this to mean "brutal honesty is brutal"*
+
 ## 13. Explaining One's Madness
 
 People are complicated and don't make sense, so you should expect a strong relationship to be coupled with a lot of explaining. Strangeness from a life of traumas, excitements, fears, influences, opportunities, misfortunes, talents, and weaknesses isn't something to hide or suppress, but to be laid out and explained.

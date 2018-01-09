@@ -16,7 +16,7 @@ Source: [Oxford Economics, the National Centre for Social Research](https://www.
 
 If you have enough money (defined by this study as spending within your means and not being stressed about debts), efforts to improve your life should be focused on sleep, relationships, and exercise. More money won't improve your life as effectively.
 
-In the context of this study, "relationships" means several things: your sex life, weak network ties, people you hang out with, your support network, the health of people close to you. "Relationships" (the book) focuses on the kind of one-on-one life partner relationships that would only impact the "sex life" portion of this study, but the information in it can be applied to all types of relationships.
+In the context of this study, "relationships" means several things: your sex life, weak network ties, people you hang out with, your support network, the health of people close to you. <u>Relationships</u> (the book) focuses on the kind of one-on-one life partner relationships that would only impact the "sex life" portion of this study, but the information in it can be applied to all types of relationships.
 
 Particularly, a big unstated focus on this book is on developing a deeper relationship with yourself. "Relationships" does a great job of forcing you to confront and accept your own imperfections.
 

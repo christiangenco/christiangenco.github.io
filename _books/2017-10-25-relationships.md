@@ -10,7 +10,7 @@ I got turned onto this book - [Relationships by The School of Life](http://amzn.
 
 Humans spend a lot of time studying how to make money, but very little on things that actually bring them life satisfaction:
 
-![Sleep quality, sex life, job security, health of close relatives, chatting to neighbors, support network, child at home, and relationship status impact quality of life in that order](https://i.imgur.com/lo3fuw9.png)
+<img src="https://i.imgur.com/lo3fuw9.png" alt="Sleep quality, sex life, job security, health of close relatives, chatting to neighbors, support network, child at home, and relationship status impact quality of life in that order" style="max-width: 100%" />
 
 Source: [Oxford Economics, the National Centre for Social Research](https://www.about.sainsburys.co.uk/~/media/Files/S/Sainsburys/living-well-index/sainsburys-living-well-index.PDF)
 

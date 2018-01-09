@@ -165,7 +165,7 @@ Romanticism teaches that if two people truly love one another they must always t
 
 In reality, editing raw brutal truths can be kinder and counterintuitively foster stronger relationships.
 
-*Note from Christian: I interpret this to mean "brutal honesty is brutal"*
+*Note from Christian: I interpret this to mean "brutal honesty is brutal so have a filter on what you say so you're not an asshole", but the book doesn't explicitly say this*
 
 ## 13. Explaining One's Madness
 

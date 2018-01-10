@@ -13,15 +13,15 @@ Here's a list of everything that I own that [sparks joy](https://www.amazon.com/
 
 ## <a name="hardware"></a>Hardware
 
-* [13-inch **MacBook Pro** with touchbar, 3.1 GHz Intel Core i5, 16 GB 2133 MHz LPDDR3 ram](https://www.apple.com/macbook-pro/): my most essential tool in writing software and keeping organized. I love Touch ID, USB-C, and the new keyboard and trackpad (both my favorite of any MacBook I've ever owned), but am indifferent about the touch bar. It might be more useful if I did more video editing.
-* [**iPhone 6s**](https://www.apple.com/shop/buy-iphone/iphone6s): smartphone innovation has been stagnating, so I've gone from upgrading every other iPhone to every third iPhone. I might switch to android for more customizability.
-* [10.5-inch **iPad Pro**](https://www.apple.com/ipad-pro/): I held out for a while on getting an iPad, but [iOS 11](https://www.apple.com/ios/ios-11-preview/) finally made it a useful machine (multitasking is on point). Invaluable for consuming media (like my watch-later YouTube playlist, or [WesBos courses](http://wesbos.com/courses/)), fun to learn drawing on, and novel to push everyday computing tasks to (like messaging and triaging email).
-* [**Apple Watch** Series 1, Space Gray Aluminum](https://www.apple.com/watch/): I turn notifications and bluetooth off and use it as a really good watch. The core feature I need that I haven't found in any other watch is being able to set a timer with a silent alarm (it's also easy to calculate how long the alarm should be by spinning the digital crown to the time I need to leave). I've found myself using it less and less.
-* [**Amazon Alexa**](https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00X4WHP5E): On paper, you wouldn't think a voice-enabled assistant for your kitchen/living room would be any better than just talking to Siri on your phone, but it absolutely is. Alexa makes it easier to add things to your shopping list at the moment you notice them missing from your fridge, set timers, play songs and news to listen to while cooking, and [check if it's okay for your dog to eat what you're cooking](https://www.echoskillstore.com/Dr-Dog/39678). Functionally the same as a [Google Home](https://madeby.google.com/home/), which are both becoming [operating systems for your house](https://stratechery.com/2017/amazons-operating-system/).
+* [13-inch **MacBook Pro** with touchbar, 3.1 GHz Intel Core i5, 16 GB 2133 MHz LPDDR3 ram](https://www.apple.com/macbook-pro/): my most essential tool in writing software and keeping organized. I love Touch ID, USB-C, and the new keyboard and trackpad (both my favorite of any MacBook I've ever owned), but am indifferent about the gimmicky touch bar.
+* [**Google Pixel 2**](https://store.google.com/product/pixel_2): the best camera and smartphone I've ever used, and my first Android phone. I should've switched earlier; Android as an operating system fits my use cases for a phone much more than iPhones do.
+* [10.5-inch **iPad Pro**](https://www.apple.com/ipad-pro/): I held out for a while on getting an iPad, but [iOS 11](https://www.apple.com/ios/ios-11-preview/) finally made it a useful machine (multitasking is on point). Invaluable for consuming media (like my watch-later YouTube playlist, or [WesBos courses](http://wesbos.com/courses/)), fun to learn drawing on, and novel to push everyday computing tasks to (like messaging and triaging email). I find myself using it less.
+* [**fitbit** flex 2](https://www.fitbit.com/flex2): sleep tracking. I should switch to one that can measure heart rate for higher accuracy.
+* [**Google Home Mini**](https://store.google.com/product/google_home_mini): On paper, you wouldn't think a voice-enabled assistant for your kitchen/living room would be any better than just talking to Siri on your phone, but it absolutely is. Google Home makes it easier to add things to your shopping list at the moment you notice them missing from your fridge, set timers, play songs and news to listen to while cooking, and [check if it's okay for your dog to eat what you're cooking](https://www.echoskillstore.com/Dr-Dog/39678). Functionally the same as a [Amazon Alexa](http://amzn.to/2CPqpIY), which are both becoming [operating systems for your house](https://stratechery.com/2017/amazons-operating-system/).
 
 ### <a name="hardware-gaming"></a>Gaming
 
-These things were specifically purchased and used so I could play [Overwatch](https://playoverwatch.com/en-us/).
+These things were specifically purchased and used so I could play [Overwatch](https://playoverwatch.com/en-us/) and [Starcraft](http://us.blizzard.com/en-us/games/sc/).
 
 * [**Tecknet bluetooth mouse**](https://www.amazon.com/Portable-Wireless-Receiver-Notebook-Adjustment/dp/B001DHECXA?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001DHECXA): one of the cheapest bluetooth mice on Amazon. It works just fine, and one of the side buttons works as a melee attack by default.
 * [**Samsung T3 SSD**](https://www.amazon.com/Samsung-T3-Portable-SSD-MU-PT500B/dp/B01AVF6UQQ?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01AVF6UQQ): I install windows on this external drive to free up internal drive space, and for the psychological barrier. Am I deciding right now to play video games? That means I need to go get the hard drive and plug it in. This gives me enough opportunity to decide if I actually should be playing video games. Also, this drive is super tiny, which is nice.
@@ -43,8 +43,11 @@ I'm a coder (check out [my projects](/projects)), so most of my tools are progra
 * [**f.lux**](https://justgetflux.com/): color shifts your screen to take out the blue light at night, which may be bad for your sleep cycle. Also, it's just easier on the eyes.
 * [**Final Cut Pro**](https://www.apple.com/final-cut-pro/): for editing video. Not sure it's the best choice now, but I've already learned it and don't need to edit video very frequently.
 * [**Backblaze**](https://www.backblaze.com/): $5/month data insurance for if your computer ever breaks.
+* [**Deckset**](https://www.decksetapp.com/): markdown presentations
 
 ### <a name="software-apps"></a>Apps
+
+#### iOS
 
 * [**Spark**](https://itunes.apple.com/us/app/spark-love-your-email-again/id997102246?mt=8): I follow the [inbox 0](https://www.youtube.com/watch?v=Y3o9DR8X-V0) philosophy to triage my inbox from my phone. It takes about 3 minutes with Spark to get through 100 emails, beacuse it's really good at clustering them together and performing group actions (ie: I've scanned through all my notifications emails and starred any that require an action, so now they can all be deleted). Doesn't natively let you star emails, so I wrote [a google apps script to turn labels into stars](/gmail-log).
 * [**Clear**](https://itunes.apple.com/us/app/clear-tasks-reminders-to-do-lists/id493136154?mt=8): the best app to keep lists. I use it to keep checklists for packing and other various activities (a la [The Checklist Manifesto](https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0312430000)), like shopping lists, daily tasks, things I need to do at a specific places (like things I need to pick up from my parent's house), and [projects list](/projects) prioritization.
@@ -65,12 +68,17 @@ I'm a coder (check out [my projects](/projects)), so most of my tools are progra
 * [**Ink Cards**](https://itunes.apple.com/us/app/ink-cards-send-photo-greeting-cards-in-the-mail/id477296657?mt=8): helps the habit of expressing gratitude. You can send people cards with a custom photo and note. Great for saying thank you after staying at someone's house with a picture you took of the both of you having fun on your trip.
 * [**PastCam**](https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8): an app I needed, so I made it. Lets you align "before and after" or "then and now" pictures.
 
+#### Android
+
+*coming soon - mostly the same as iOS*
+
 ## <a name="journaling"></a>Journaling
 
 I've tried several journaling methods ([The Bullet Journal](http://bulletjournal.com/), [The Five Minute Journal](https://www.intelligentchange.com/products/the-five-minute-journal), and [The Productivity Planner](https://www.intelligentchange.com/collections/all/products/the-productivity-planner)), and kept the parts from each that I felt were worthwhile.
 
 My current practice is to date a new page (in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) in the top left, write three things I'm grateful for, three things that would make today great, and [10 ideas](http://www.jamesaltucher.com/2012/04/how-to-have-great-ideas/).
 
+* [Pilot MR Metropolitan **Fountain Pen**](http://pilotpen.us/categories/fountain-pens/mr-metropolitan-fountain-pen/): writes the same as the V5 RT, but looks and feels way fancier
 * [**Pilot Precise V5 RT**](https://www.amazon.com/Pilot-Precise-Retractable-Rolling-Extra/dp/B01CDW4BZW?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01CDW4BZW): hands down the best pens I've ever used, and I've tried a lot of pens. I buy them in packs of 24 and use them all.
 * [Baron Fig Vanguard Flagship **notebooks with dot grid**](https://www.baronfig.com/pages/Vanguard): the best notebooks in the best size. Super easy to travel with.
 
@@ -96,21 +104,18 @@ I've only found three places to get shoes that fit these heuristics:
 
 At any point in time I like to have one primary pair of shoes (that I wear for 80% of things I need shoes for), and a nicer pair of shoes (for dressing up an outfit). Right now those are:
 
-* [**Trail Freak Vivo Barefoot shoes**](https://www.amazon.com/Vivobarefoot-Trail-Freak-Winterproof-Running/dp/B00TRPWDL8?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00TRPWDL8)
-* [**Ra II WH Vivo Barefoot shoes**](https://www.vivobarefoot.com/us/mens/everyday/ra-ii-wild-hide-mens?colour=Black)
+* [Ipari Hana - Casual Canvas Comfort **Xero Shoes**](https://xeroshoes.com/shop/closed-toe-shoes/hana/)
+* [Ra II WH **Vivo Barefoot shoes**](https://www.vivobarefoot.com/us/mens/everyday/ra-ii-wild-hide-mens?colour=Black)
 
 ## <a name="edc"></a>Every Day Carry
 
-* [**A 3D-printed silver wedding band**](/ring): I went through a few versions of thickness and width before I settled on one I liked. Printed through [i.materialise](https://i.materialise.com/) for like $30, and it's exactly what I want. This easily would've been $500 from a jewlery store.
 * [**Rimless Metal Frame Glasses**](http://www.zennioptical.com/413112-rimless-metal-frame-with-designer-temples.html): I re-buy these from either Zenni or [Eye Buy Direct](https://www.eyebuydirect.com/) every 1-2 years. It's usually $40 with shipping. [DiscountGlasses.com](http://DiscountGlasses.com) looks similar, but I haven't used them yet.
-* [**Black Silicon iPhone case**](https://www.amazon.com/Yesker-iPhone-6s-plus-Case/dp/B01B1K19TS?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01B1K19TS): I've had a version of this case since my first iPhone, and I've never cracked a screen. Makes your phone sticky enough to stay on your knee without slipping off, and has just enough protection for when you drop it.
-* [**Silicone Stick Credit Card Holder**](https://www.amazon.com/DDLBiz-Silicone-Stick-Credit-Holder/dp/B01MY6UBCW?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01MY6UBCW): I'd love to find a loop case with a wallet, but this is a good substitute until one is made. I used to have [a stretchy wallet case](https://www.amazon.com/AOG-DESIGN-Adhesive-Smartphones-Burgundy/dp/B01K4HUMXI?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01K4HUMXI), but it didn't prop up the phone. I store my driver's license and credit card in this, with an emergency $50 bill in the back of my case, and I don't need to carry a wallet.
+* [a stretchy wallet phone case sticker](https://www.amazon.com/AOG-DESIGN-Adhesive-Smartphones-Burgundy/dp/B01K4HUMXI?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01K4HUMXI): I store my driver's license and credit card in this, with an emergency $50 bill in the back of my case, and I don't need to carry a wallet.
 * [**A Carabiner**](https://www.amazon.com/CaseBuy-Assorted-Aluminum-Carabiner-Traveling/dp/B01E1CMYJ2?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01E1CMYJ2): brand doesn't matter. The best way I've found to carry my keys so far is clipping them to my belt loop, then tucking them in my back pocket. It holds a dog tag from Walmart with my phone number and the phrase ["do the right thing"](https://www.youtube.com/watch?v=Uan9DWR2n0Q), a car key, and a house key. I'd love a way to not have to carry keys.
 
 ### <a name="edc-mdc"></a>Most Day Carry
 
 * [**Symphonized NRG 3.0 Earbuds**](https://www.amazon.com/Symphonized-Earbuds-Noise-isolating-Headphones-Control/dp/B01D3QZB2Y?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01D3QZB2Y): volume control and play/pause buttons that work with the iPhone are hard to find. These come with a clip for your shirt so they don't pull out of your ears as easily.
-* [**Power Card Bank**](https://www.amazon.com/Ultra-Slim-Ultra-Portable-Ultra-Safe-External-Lightning/dp/B00Z24G06M?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00Z24G06M): easy to slip in a pocket, and it gives you at least a full extra charge for your phone.
 * [**Cotten Hankerchiefs**](https://www.amazon.com/Geoffrey-Beene-Fine-Handkerchiefs-White/dp/B013H3RO00?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B013H3RO00): easier to carry than a bunch of tissues, can be used multiple times, and easier on the skin, especially if I haven't been spending enough time outside exposing myself to allergins. Some days I'll need to blow my noise every three minutes to stay functional.
 
 ## <a name="food"></a>Food
@@ -126,8 +131,9 @@ My typical shopping list looks roughly like this:
 * [**Avocado Mayo**](https://www.amazon.com/Primal-Kitchen-Avocado-Mayonnaise-Whole30/dp/B00ZAD36ZS?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00ZAD36ZS): [might be better for you](http://www.marksdailyapple.com/healthy-oils/) than canola oil based mayo; tastes way better.
 * [**90% Cocoa Chocolate**](https://www.amazon.com/Lindt-Excellence-Chocolate-3-5-Ounce-Packages/dp/B002RBOCZE?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B002RBOCZE): mmmm, chocolate. Cocoa might have health benefits, and sugar is definitely bad for you, so 90% or higher is the way to go.
 * **Local, Organic, Pasture Raised, Soy-Free eggs**: I eat at least two eggs a day, so I felt compelled to do a lot of research into [what all the confusing terms mean](http://www.marksdailyapple.com/egg-purchasing-guide/). Local (laid by chickens you've seen owned by people you know), organic, pasture raised, and soy-free is my heuristic for picking a carton out of a wall of choices, in that order (ie: local and non-organic beats organic; organic and pasture raised beats organic and soy-free).
-* **Meat**: lamb, grass fed beef or buffalo, well-raised poultry. Organ meat and bones are probably things humans evolved eating, so I try to mix those in too.
+* **Meat**: lamb, grass fed beef or buffalo, well-raised poultry. Organ meat and bones are probably things humans evolved eating, so I try to mix those in too. Pre-cooked sausage is the most convenient source of meat I've found.
 * **Small Oily Fish**: limit tuna, salmon, and other fish higher up on the food chain, because they concentrate mercury. Be careful eating raw fish that hasn't been flash frozen, since it might contain parasites. [Flash freezing doesn't really affect taste](https://medium.com/torodex/the-sushi-you-eat-isnt-fresh-f3478c99eb2).
+* [**Coconut Milk**](http://amzn.to/2FnxUbT): makes a great dessert mixed with berries
 * [**Partanna Extra Virgin Olive Oil**](https://www.amazon.com/Partanna-Extra-Virgin-Olive-34-Ounce/dp/B0044B6ZBO?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B0044B6ZBO): strong, floral flavor.
 * **Avocado Oil**: better for cooking than olive oil because it has a higher smoke point, so it won't denature when cooked, and better than coconut oil beacuse of the milder flavor.
 * **Coconut Oil**: might be [one of the best sources of calories](http://www.marksdailyapple.com/coconut-oil-health-benefits/). Refined [MCT oil](/mct) is commonly used for the ketogenic diet in [bulletproof coffee](https://blog.bulletproof.com/how-to-make-your-coffee-bulletproof-and-your-morning-too/), but coconut oil is probably better for you.
@@ -138,11 +144,10 @@ My typical shopping list looks roughly like this:
 
 <figure class="right"><img src="https://i.imgur.com/1GrgBmP.jpg" /><figcaption>handmade mug and bowl</figcaption></figure>
 
-* [**Reverse Osmosis Water Filter**](https://www.amazon.com/APEC-5-Stage-Reverse-Drinking-Water/dp/B00I0ZGOZM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00I0ZGOZM): model doesn't matter. Fluoride might be bad for you, and chlorine makes water taste weird.
-* [**Ninja Blender with blender cups**](https://www.amazon.com/Ninja-Professional-Blender-Nutri-BL660/dp/B00939FV8K?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00939FV8K): this is a newer model than I have, but same idea. I use it to mostly to blend coconut oil in tea or coffee in the morning, and the occasional smoothie.
+<!-- * [**Reverse Osmosis Water Filter**](https://www.amazon.com/APEC-5-Stage-Reverse-Drinking-Water/dp/B00I0ZGOZM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00I0ZGOZM): model doesn't matter. Fluoride might be bad for you, and chlorine makes water taste weird. -->
+<!-- * [**Ninja Blender with blender cups**](https://www.amazon.com/Ninja-Professional-Blender-Nutri-BL660/dp/B00939FV8K?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00939FV8K): this is a newer model than I have, but same idea. I use it to mostly to blend coconut oil in tea or coffee in the morning, and the occasional smoothie. -->
 * **Handmade mug and bowl**: purchased from the craftsmen that made them. Aesthetically satisfying. Will be hard to replace.
-* [**Cast Iron Skillet**](https://www.amazon.com/Seasoned-Cast-Skillet-Utopia-Kitchen/dp/B00X4WQMAS?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00X4WQMAS): brand doesn't matter; maybe better for you than teflon.
-* [**Vintage Meat Grinder**](https://www.ebay.com/sch/items/?_nkw=vintage+meat+grinder&_sacat=&_ex_kw=&_mPrRngCbx=1&_udlo=&_udhi=&_sop=12&_fpos=&_fspt=1&_sadis=&LH_CAds=&rmvSB=true): [raw meat is way better for your pet than kibble](http://www.petfooled.com/), and is simple to make with a meat grinder. Mine is older than both of my parents and cost ~$20 (vs. ~$600 for a fancy electric one that doesn't work as well).
+* [**Cast Iron Skillet**](https://www.amazon.com/Seasoned-Cast-Skillet-Utopia-Kitchen/dp/B00X4WQMAS?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00X4WQMAS): brand doesn't matter; maybe better for you than teflon. Clean it with [copper wool](http://amzn.to/2CZYTvD) (not soap).
 * [**Egg Cooker**](http://amzn.to/2xLCxrc): oh baby does this work well for cooking eggs. I know you're not supposed to have mono devices in your kitchen, but this makes eggs so perfectly and with such minimal effort it absolutely justifies itself.
 
 ## <a name="bedroom"></a>Bedroom
@@ -167,14 +172,16 @@ My typical shopping list looks roughly like this:
 
 ## <a name="outdoors"></a>Outdoors
 
-* **a bicycle**: bought off of Craig's list for $100 several years ago. I use it instead of a car, which is a great move if you're interested in [not working your entire life and not being fat and unhealthy](http://www.mrmoneymustache.com/2011/04/18/get-rich-with-bikes/). Buy one that's good enough to use, but not too nice that you're afraid to lock it up outside (and so never use it). Make sure to have a helmet and bike lights.
-* [**ENO Doublenest Hammock**](https://www.amazon.com/ENO-Eagles-Nest-Outfitters-DoubleNest/dp/B001DDPGNO?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001DDPGNO): super easy setup, and super comfortable. Semi-perminantly mounted in my backyard for comfy lounging. [Hennessy Hammocks](https://hennessyhammock.com/) are better for camping for multiple days at a time, but harder to set up.
-* [**Slackline**](https://www.amazon.com/Slackline-Training-Protectors-Instruction-Complete/dp/B01LZWDIPM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01LZWDIPM): training line makes it much easier to learn. Currently no place for it in the backyard, so I can only use it at parks or while camping. I'd love to figure out a way to set it up in the backyard without trees.
+* [TREK DS 2 17.5 **bicycle**](https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/dual-sport-bikes/ds-series/ds-2/p/2325600-2018/?colorCode=black): my $100 craigslist bike got stolen, so I upgraded. I'd planned to buy another Craigslist bike, but after reading that [Mr. Money Mustache bought a $900 bike and calculated it to be a good investment](http://www.mrmoneymustache.com/2012/05/07/what-do-you-mean-you-dont-have-a-bike/) I upped my budget. I use it more than my car so the cost-per-ride will be reasonably low. If you don't own a bicycle, [get one now](http://www.mrmoneymustache.com/2012/05/07/what-do-you-mean-you-dont-have-a-bike/) if you don't want to [work your entire life and be fat and unhealthy](ttp://www.mrmoneymustache.com/2011/04/18/get-rich-with-bikes/).
+* [**ENO Doublenest Hammock**](https://www.amazon.com/ENO-Eagles-Nest-Outfitters-DoubleNest/dp/B001DDPGNO?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001DDPGNO): super easy setup, and super comfortable.
+* [A Hennessy Hammock](https://hennessyhammock.com/): better for camping for multiple days at a time, but harder to set up.
+* [**Slackline**](https://www.amazon.com/Slackline-Training-Protectors-Instruction-Complete/dp/B01LZWDIPM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01LZWDIPM): training line makes it much easier to learn. Currently no place to perminantly hang it, so I can only use it at parks or while camping. I'd love to figure out a way to set it up in the backyard without trees.
 
 ### <a name="outdoors-climbing"></a>Rock Climbing
 
 * [Black Diamond Momentum **Climbing Harness**](http://amzn.to/2zvlKe8)
 * [Black Diamond **ATC Belay Device**](http://amzn.to/2zw7h1x)
+* [Fenix HP25R 1000 Lumen **Headlamp**](http://amzn.to/2AMYesx): I cycled through half a dozen bike lights before finding a pretty good one that got stolen off my bike a few months later. I needed a headlamp for climbing so now I have a super nice one for biking and climbing.
 
 ## <a name="travel"></a>Travel
 
@@ -189,19 +196,17 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 * [CamelBack **Hydration Bladder**](http://amzn.to/2uVWDBE): brand doesn't matter. This takes up almost no space or weight when empty, and can carry several times the water of a bottle when full. It's also easier to drink from while on the go.
 * [Syncwire **USB Wall Charger** with EU/UK adapters](https://www.amazon.com/Charger-Syncwire-Adapter-Samsung-more-White/dp/B011KPRE1G?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B011KPRE1G): makes getting all my USB stuff charged (power bank, spectacles, drone, phone, iPad) much simpler.
 * [**Eye mask**](https://www.amazon.com/ALASKA-BEAR%C2%AE-Natural-blindfold-super-smooth/dp/B00GSO1D9O?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00GSO1D9O): sleeping in absolute darkness [ups your melatonin](http://www.webmd.com/sleep-disorders/news/20110119/light-exposure-may-cut-production-of-melatonin), which helps you sleep better.
-* [ridiculous **travel pillow**](https://www.amazon.com/Inflatable-Koncle-Airplane-Ergonomic-Portable/dp/B072QWHTMC?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B072QWHTMC): not perfect, and not justifiable on flights shorter than ~6 hours, but oh baby does it make a difference in the sleep I can get on a plane.
 * [**Epic Meat Bar** emergency snack](https://www.amazon.com/Epic-Bars-Variety-Pack-Flavors/dp/B01FR3YVQI?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01FR3YVQI): can save me from a ~$20 emergency meal (like on a plane). Shop around for the best flavor (lamb and buffalo are the best).
 
 ## <a name="toys"></a>Toys
 
 * [**Swagtron T5 Hoverboard**](https://swagtron.com/product/swagtron-t5-hoverboard/): received as a Christmas gift from my in-laws. My exclusive indoor method of transportation. Makes cooking, laundry, and putting away dishes so much more fun.
-* [**TYZEST Fidget Spinner**](https://www.amazon.com/TYZEST-Spinner-Durable-Precision-material/dp/B01NAPTIZQ?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01NAPTIZQ): spins for like five minutes, and feels really satisfying. Useful when I need to focus on something else.
 
 ---
 
 ## <a name="absent"></a>Notably Absent
 
-* **A Car**: Everywhere I need to go is accessable by bike or public transportaiton. My wife owns a car she uses to commute to work, which I'll borrow maybe once every two weeks to drive home and visit my family, and we'll use for road trips about once every three months. If self driving cars make Uber cheaper, we could probably sell it.
+* **A Car**: I own a car but wish I didn't. Right now it's only used to drive home about once a month.
 * **A TV**: I'll sporadically use a TV if it happens to be in the place I'm living to watch a movie, but I haven't *watched TV* as an activity since high school. Frees up a lot of time to do more interesting things, and there are plenty of ways to watch good TV shows on your computer.
 * **A wallet**: All you really need is a credit card, a driver's license, and some emergency cash, all of which can fit in my iPhone case. This practice makes it much harder to lose stuff.
 * **Bread**: wheat probably isn't good for you, and we probably eat it because the agriculture revolution enabled societies that grew and ate grains to support a denser population. Individuals lived shorter and less healthy lives, but their society could then support an army that could quash remaining hunter-gatherer nomads (see [Sapiens](https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0062316095)).
@@ -217,6 +222,10 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 * [my-mac-os](https://github.com/nikitavoloboev/my-mac-os/) and [my-ios](https://github.com/nikitavoloboev/my-ios) by nikitavoloboev: lots of MacOS/iOS specific developer tools and workflows
 * [Works for me](https://works-for-me.github.io/): collection of developer toolkits
 * [uses this](https://usesthis.com/): interviews of the tools productive people use
+
+---
+
+Updated 2018-01-10
 
 ---
 

@@ -206,3 +206,4 @@ Resources:
 
 * [react-redux](https://github.com/reactjs/react-redux)
 * https://egghead.io/lessons/javascript-redux-displaying-error-messages
+* http://www.penta-code.com/how-to-add-redux-to-create-react-app/

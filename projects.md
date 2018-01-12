@@ -31,6 +31,8 @@ These are things I've made that make money.
 * [t_time_tracker](https://github.com/christiangenco/t_time_tracker): simple command line time tracking
 * [Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email. Shut down (and coins returned) in 2017.
 
+
+<!--
 ## Up Next
 
 1. a CRM for your facebook friends
@@ -52,3 +54,4 @@ These are things I've made that make money.
 1. a way to keep all of your business operations in one place so your office doesn't explode when someone gets sick or leaves
 
 Do you need one of these to exist? [Let me know](/contact) and I'll bump it up the list!
+ -->

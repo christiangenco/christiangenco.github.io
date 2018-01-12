@@ -205,3 +205,4 @@ generates component, redux actions, firebase connections, tests, and [storybook]
 Resources:
 
 * [react-redux](https://github.com/reactjs/react-redux)
+* https://egghead.io/lessons/javascript-redux-displaying-error-messages

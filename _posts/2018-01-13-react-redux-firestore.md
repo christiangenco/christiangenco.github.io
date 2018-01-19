@@ -73,6 +73,7 @@ generates component, redux actions, firebase connections, tests, and [storybook]
 
 ## Generators
 
+https://github.com/react-boilerplate/react-boilerplate has generaters baked in
 https://github.com/amwmedia/plop
 https://github.com/terpiljenya/generator-redux-component
 
@@ -116,3 +117,9 @@ https://github.com/terpiljenya/generator-redux-component
 * https://reactforbeginners.com/
 * https://www.reddit.com/r/reactjs/
 
+---
+
+# Inbox
+
+* embed complicated multi-file examples: https://stackblitz.com/
+* https://www.reactboilerplate.com/

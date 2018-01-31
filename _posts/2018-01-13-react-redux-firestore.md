@@ -101,6 +101,7 @@ https://github.com/terpiljenya/generator-redux-component
 
 # Courses to take
 
+* https://www.leveluptutorials.com/
 * react and firebase: https://frontendmasters.com/courses/firebase-react/connecting-react-to-firebase/#
 * https://howtofirebase.com/
 * https://www.udemy.com/home/my-courses/collections/

@@ -124,3 +124,4 @@ https://github.com/terpiljenya/generator-redux-component
 
 * embed complicated multi-file examples: https://stackblitz.com/
 * https://www.reactboilerplate.com/
+* https://xkcd.com/1946/

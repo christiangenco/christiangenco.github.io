@@ -5,7 +5,7 @@ permalink: /about/
 image: http://i.imgur.com/bMwFJSp.png
 ---
 
-<figure class="right"><img src="http://i.imgur.com/bMwFJSp.png" /><figcaption></figcaption></figure>
+<figure class="right"><img src="https://i.imgur.com/w68yTMY.jpg" /><figcaption></figcaption></figure>
 
 Hi! I'm Christian Genco.
 

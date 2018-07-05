@@ -116,7 +116,7 @@ At any point in time I like to have one primary pair of shoes (that I wear for 8
 ### <a name="edc-mdc"></a>Most Day Carry
 
 * [**Symphonized NRG 3.0 Earbuds**](https://www.amazon.com/Symphonized-Earbuds-Noise-isolating-Headphones-Control/dp/B01D3QZB2Y?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01D3QZB2Y): volume control and play/pause buttons that work with the iPhone are hard to find. These come with a clip for your shirt so they don't pull out of your ears as easily.
-* [**Cotten Hankerchiefs**](https://www.amazon.com/Geoffrey-Beene-Fine-Handkerchiefs-White/dp/B013H3RO00?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B013H3RO00): easier to carry than a bunch of tissues, can be used multiple times, and easier on the skin, especially if I haven't been spending enough time outside exposing myself to allergins. Some days I'll need to blow my noise every three minutes to stay functional.
+* [**Cotten Hankerchiefs**](https://www.amazon.com/Geoffrey-Beene-Fine-Handkerchiefs-White/dp/B013H3RO00?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B013H3RO00): easier to carry than a bunch of tissues, can be used multiple times, and easier on the skin, especially if I haven't been spending enough time outside exposing myself to allergens. Some days I'll need to blow my noise every three minutes to stay functional.
 
 ## <a name="food"></a>Food
 

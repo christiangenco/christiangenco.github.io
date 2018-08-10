@@ -53,7 +53,9 @@ I'm a coder (check out [my projects](/projects)), so most of my tools are progra
 
 ### <a name="software-apps"></a>Apps
 
-I recently met someone who said he finds it useful to think of the apps on his phone as people because it helps him decide if he should be using an app more or less based on if that app would make a good or shitty friend.
+I recently met the host of [the Discomfortable podcast](http://discomfortable.net/) who said he finds it useful to [think of the apps on his phone as people](http://discomfortable.net/artificial-intelligence/) because it helps him decide if he should be using an app more or less based on if that app would make a good or shitty friend.
+
+> Given that you voluntarily spend several hours a day with this person, it’s pretty clear that you are in a relationship with them. Is it a healthy relationship? Or a toxic relationship? Or worse, an abusive one? How do they treat you? Do they really care about you? Or do they take and take and take and never give back? Do they compare you with other people? Do they make you feel bad?
 
 In this vein, I make a conscious effort to cut out dopamine [Skinner's Box](https://www.google.com/search?hl=en&q=skinners%20box) apps like Facebook, Twitter, imgur, reddit, and email and replace them with more productive apps like Headspace, DuoLingo, and Audiobook players. Headspace would make a great friend, and Facebook would be a shit friend.
 

@@ -16,6 +16,7 @@ These are things I've made that make money.
 
 ## Experiments
 
+* [DnDice](https://gen.co/dndice): Dungeons and Dragons dice roller
 * [qgen](https://gen.co/qgen/): query generator for hunting for 30x500 audiences
 * [PastCam](https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8): iOS app to take "then and now" style pictures
 * [QR reader/writer](https://gen.co/qr/): it's pretty easy to make a malicious QR code reader, so I made my own. Works offline, like on an air gapped computer.

@@ -7,13 +7,31 @@ layout: post
 type: page
 ---
 
-*Updated 2018-07-10*
+*Updated 2018-10-25*
 
 Here's a list of everything that I own that [sparks joy](https://www.amazon.com/Life-Changing-Magic-Tidying-Decluttering-Organizing/dp/1607747308?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=1607747308) in my life, and that I would replace if stolen. Anything not on this list should be discarded.
 
 It's important to me to have a strict philosophy on what things I allow in my life because I've seen so many people drown in their stuff. We're nearing a post-scarcity world - if you ever need a thing and don't have it, you can tap a few buttons on your phone and one will be at your front door in two hours. If you're keeping anything to have it around "just in case," I'd argue you're being irrational and should get rid of it. Keep things only if they enable you to do something you want to do, or actively bring you joy.
 
 <nav class="sidebarX"><ul class="nav" id="thingsnav"></ul></nav>
+
+* [Hardware](#hardware)
+* [Software](#software)
+  * [Apps](#software-apps)
+* [Journaling](#journaling)
+* [Clothing](#clothing)
+  * [Shoes](#clothing-shoes)
+* [Every Day Carry](#edc)
+  * [Most Day Carry](#edc-mdc)
+* [Food](#food)
+* [Kitchen](#kitchen)
+* [Bedroom](#bedroom)
+* [Toiletries/Bathroom](#bathroom)
+* [Exercise](#exercise)
+* [Outdoors](#outdoors)
+* [Rock Climbing](#outdoors-climbing)
+* [Travel](#travel)
+* [Notably Absent](#absent)
 
 ## <a name="hardware"></a>Hardware
 
@@ -23,20 +41,12 @@ It's important to me to have a strict philosophy on what things I allow in my li
 * [**fitbit** charge 2](https://www.fitbit.com/charge2): lets me run sleep experiments like seeing how wearing a sleep mask effects how much deep sleep I get.
 * [**Google Home Mini**](https://store.google.com/product/google_home_mini): On paper, you wouldn't think a voice-enabled assistant for your kitchen/living room would be any better than just talking to Siri on your phone, but it absolutely is. Google Home makes it easier to add things to your shopping list at the moment you notice them missing from your fridge, set timers, play songs and news to listen to while cooking, and [check if it's okay for your dog to eat what you're cooking](https://www.echoskillstore.com/Dr-Dog/39678). Functionally the same as a [Amazon Alexa](http://amzn.to/2CPqpIY), which are both becoming [operating systems for your house](https://stratechery.com/2017/amazons-operating-system/).
 
-### <a name="hardware-gaming"></a>Gaming
-
-These things were specifically purchased and used so I could play [Overwatch](https://playoverwatch.com/en-us/) and [Starcraft](http://us.blizzard.com/en-us/games/sc/), though I haven't played either in months.
-
-* [**Tecknet bluetooth mouse**](https://www.amazon.com/Portable-Wireless-Receiver-Notebook-Adjustment/dp/B001DHECXA?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B001DHECXA): one of the cheapest bluetooth mice on Amazon. It works just fine, and one of the side buttons works as a melee attack by default.
-* [**Samsung T3 SSD**](https://www.amazon.com/Samsung-T3-Portable-SSD-MU-PT500B/dp/B01AVF6UQQ?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01AVF6UQQ): I install windows on this external drive to free up internal drive space, and for the psychological barrier. Am I deciding right now to play video games? That means I need to go get the hard drive and plug it in. This gives me enough opportunity to decide if I actually should be playing video games. Also, this drive is super tiny, which is nice.
-* [Belkin 3.1 **USB-C to USB-C cable**](http://www.belkin.com/us/p/P-F2CU030/): for connecting the Samsung hard drive to my MacBook without adapters. Doubles as the only cable that [can do Disk Mode between two USB-C macbooks](Thunderbolt 3 ).
-
 ## <a name="software"></a>Software
 
 I'm a coder (check out [my projects](/projects)), so most of my tools are programming specific or custom command line scripts I wrote to do very specific things (like adding something to my GTD inbox). I spend a lot of time on my computer, so I've invested a lot in finding the best tools to make me most effective.
 
 * [**Amethist**](https://github.com/ianyh/Amethyst): a tiling window manager for OS X. I can't believe this isn't more popular. I never have to waste time dragging windows around; they just rearrange themselves. Hacker News frequently discusses [tiling window managers](https://app.hackerwebapp.com/#/item/14381795) and their cooresponding productivity boost.
-* [**aText**](http://www.trankynam.com/atext/): custom keyboard text expanding. `gmye/` expands to my email address, `addr/` is my address, `dt/` is the current date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), etc.
+* [**aText**](http://www.trankynam.com/atext/): custom keyboard text expanding. `gmye/` expands to my email address, `addr/` is my address, `dt/` is the current date in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), and I have several credit card numbers and alternate shipping addresses saved.
 * [**Better Touch Tool**](https://www.boastr.net/): custom trackpad shortcuts and gestures. I use ones for going to the next/previous tab, and closing tabs most often. I can't use a computer that doesn't have this installed. I used to use [jitouch](https://www.jitouch.com/) for the same purpose, but it doesn't work as well on the new MacBooks. I recently added some [static buttons](https://medium.com/@brendanleglaunec/making-the-macbook-touch-bar-useful-9ec93764fc40) for frequent shortcuts (starting a pomodoro timer, opening my journal) and showing my battery level and date and time, and it's drastically improved the usefulness of the touchbar for me.
 * [**Atom**](https://atom.io/): plain text code editor. This only recently got fast enough to be usable, but it's a much better plugin system than [Sublime](http://www.sublimetext.com/), which I still use for editing larger files and markdown. I use the [emmet](https://atom.io/packages/emmet), [lines](https://atom.io/packages/lines), [prettier-atom](https://atom.io/packages/prettier-atom), and [vim-mode-plus](https://atom.io/packages/vim-mode-plus) plugins with the Atom Light UI Theme and Solarized Light syntax theme. [VS Code](https://code.visualstudio.com/) might be better, but it's unusable for me because [their vim plugin is broken](https://github.com/VSCodeVim/Vim/issues/2410).
 * [**Google Chrome**](https://www.google.com/chrome/index.html): a solid browser to use and develop in, and it syncs with my phone's Chrome.
@@ -56,6 +66,9 @@ I'm a coder (check out [my projects](/projects)), so most of my tools are progra
 I recently met the host of [the Discomfortable podcast](http://discomfortable.net/) who said he finds it useful to [think of the apps on his phone as people](http://discomfortable.net/artificial-intelligence/) because it helps him decide if he should be using an app more or less based on if that app would make a good or shitty friend.
 
 > Given that you voluntarily spend several hours a day with this person, it’s pretty clear that you are in a relationship with them. Is it a healthy relationship? Or a toxic relationship? Or worse, an abusive one? How do they treat you? Do they really care about you? Or do they take and take and take and never give back? Do they compare you with other people? Do they make you feel bad?
+
+
+<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" height="630" src="https://www.youtube.com/embed/ocHExbA8K4Y?start=115" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
 In this vein, I make a conscious effort to cut out dopamine [Skinner's Box](https://www.google.com/search?hl=en&q=skinners%20box) apps like Facebook, Twitter, imgur, reddit, and email and replace them with more productive apps like Headspace, DuoLingo, and Audiobook players. Headspace would make a great friend, and Facebook would be a shit friend.
 
@@ -125,8 +138,14 @@ I've only found three places to get shoes that fit these heuristics:
 
 At any point in time I like to have one primary pair of shoes (that I wear for 80% of things I need shoes for), and a nicer pair of shoes (for dressing up an outfit). Right now those are:
 
+* [Vivo Stealth II](https://www.vivobarefoot.com/us/mens/exercise/stealth-ii-mens)
 * [Ra II WH **Vivo Barefoot shoes**](https://www.vivobarefoot.com/us/mens/everyday/ra-ii-wild-hide-mens?colour=Black)
-* *oh shoot I need to buy a second pair of shoes*
+
+I also have a nicer pair of sandals from Xero for the summer:
+
+* [Xero Z-Trek Lightweight sports sandal](https://xeroshoes.com/shop/feeltrue-products/ztrek-men/)
+
+I've been disappointed in the quality of shoe Xero makes - the last pair I had fell apart a few months after wearing - but they make good sandals.
 
 ## <a name="edc"></a>Every Day Carry
 
@@ -136,6 +155,7 @@ At any point in time I like to have one primary pair of shoes (that I wear for 8
 
 ### <a name="edc-mdc"></a>Most Day Carry
 
+* [**Bose QC35 Series II Noise Canceling Headphones**](https://amzn.to/2ETPCHE): my primary work headphones. The noise canceling is amazing, and this particular model can bluetooth pair with two devices at once, which saves me from the bluetooth pairing dance.
 * [**LG Tone Ultra Bluetooth wireless stereo headset**](https://www.lg.com/us/bluetooth-headsets-headphones/lg-HBS-820-Black-tone-ultra): bought without much research at a Target in Portland after I lost both my regular earphones and my backups. These are quickly becoming my favorite earphones: fantastic multi-day battery life, exceptionally good controls, and pairs with my headphone-jack-less Google Pixel 2 and Macbook without much friction.
 * [**Symphonized NRG 3.0 Earbuds**](https://www.amazon.com/Symphonized-Earbuds-Noise-isolating-Headphones-Control/dp/B01D3QZB2Y?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01D3QZB2Y): volume control and play/pause buttons that work with Apple and iOS devices. Very comfortable. These come with a clip for your shirt so they don't pull out of your ears as easily.
 * [**Cotten Hankerchiefs**](https://www.amazon.com/Geoffrey-Beene-Fine-Handkerchiefs-White/dp/B013H3RO00?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B013H3RO00): easier to carry than a bunch of tissues, can be used multiple times, and easier on the skin, especially if I haven't been spending enough time outside exposing myself to allergens. Some days I'll need to blow my noise every three minutes to stay functional.
@@ -156,11 +176,15 @@ My typical shopping list looks roughly like this:
 * **Meat**: lamb, grass fed beef or buffalo, well-raised poultry. Organ meat and bones are probably things humans evolved eating, so I try to mix those in too. Pre-cooked sausage is the most convenient source of meat I've found, and I'll soon be experimenting with Sous Vide cooking.
 * **Small Oily Fish**: limit tuna, salmon, and other fish higher up on the food chain, because they concentrate mercury. Be careful eating raw fish that hasn't been flash frozen, since it might contain parasites. [Flash freezing doesn't really affect taste](https://medium.com/torodex/the-sushi-you-eat-isnt-fresh-f3478c99eb2).
 * [**Coconut Milk**](http://amzn.to/2FnxUbT): makes a great dessert mixed with berries, especially in a smoothie.
+* Fresh ground Whole Foods Organic **Almond Butter**: peanuts are legumes, which may be bad for you, but fatty nuts in general are great. [Almonds still have the antinutrients phytic acid](https://paleoleap.com/are-nuts-and-seeds-healthy/), which can be reduced by sprouting and soaking in salty water, but I super don't do that and maybe I should. Hmm...
+* **[Himalayan Sea Salt](https://www.amazon.com/Spice-Lab-Himalayan-Fine-Ground/dp/B005MER0RA?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B005MER0RA)**: might be better than sea salt because it has [extra minerals](https://en.wikipedia.org/wiki/Himalayan_salt). Probably a fad - it's difficult to test.
+
+Fats:
+
+* [Grass fed goat ghee](https://mtcapra.com/product/grass-fed-goat-milk-ghee/): I think this might be the best source of calaries in existance.
 * [**Partanna Extra Virgin Olive Oil**](https://www.amazon.com/Partanna-Extra-Virgin-Olive-34-Ounce/dp/B0044B6ZBO?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B0044B6ZBO): strong, floral flavor, and a staple of the Mediterranean Diet, which is one of the few diets that's been experimentally shown to improve health.
 * **Avocado Oil**: better for cooking than olive oil because it has a higher smoke point, so it won't denature when cooked, and better than coconut oil beacuse of the milder flavor.
 * **Coconut Oil**: might be [one of the best sources of calories](http://www.marksdailyapple.com/coconut-oil-health-benefits/). Refined [MCT oil](/mct) is commonly used for the ketogenic diet in [bulletproof coffee](https://blog.bulletproof.com/how-to-make-your-coffee-bulletproof-and-your-morning-too/), but coconut oil is probably better for you.
-* Fresh ground Whole Foods Organic **Almond Butter**: peanuts are legumes, which may be bad for you, but fatty nuts in general are great. [Almonds still have the antinutrients phytic acid](https://paleoleap.com/are-nuts-and-seeds-healthy/), which can be reduced by sprouting and soaking in salty water, but I super don't do that and maybe I should. Hmm...
-* **[Himalayan Sea Salt](https://www.amazon.com/Spice-Lab-Himalayan-Fine-Ground/dp/B005MER0RA?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B005MER0RA)**: might be better than sea salt because it has [extra minerals](https://en.wikipedia.org/wiki/Himalayan_salt). Probably a fad - it's difficult to test.
 
 ## <a name="kitchen"></a>Kitchen
 
@@ -168,13 +192,18 @@ My typical shopping list looks roughly like this:
 
 <!-- * [**Reverse Osmosis Water Filter**](https://www.amazon.com/APEC-5-Stage-Reverse-Drinking-Water/dp/B00I0ZGOZM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00I0ZGOZM): model doesn't matter. Fluoride might be bad for you, and chlorine makes water taste weird. -->
 <!-- * [**Ninja Blender with blender cups**](https://www.amazon.com/Ninja-Professional-Blender-Nutri-BL660/dp/B00939FV8K?psc=1&amp;SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00939FV8K): this is a newer model than I have, but same idea. I use it to mostly to blend coconut oil in tea or coffee in the morning, and the occasional smoothie. -->
+* [Reverse Osmosis Countertop Water Filter](https://amzn.to/2CELoRz): when possible, the [under-sink reverse osmosis water filters](https://www.amazon.com/APEC-5-Stage-Reverse-Drinking-Water/dp/B00I0ZGOZM?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00I0ZGOZM) are objectively better, but this doesn't require any installation so works well when living in a temporary space like an apartment.
 * **Handmade mug and bowl**: purchased from the craftsmen that made them. Aesthetically satisfying. Will be hard to replace.
 * [**Cast Iron Skillet**](https://www.amazon.com/Seasoned-Cast-Skillet-Utopia-Kitchen/dp/B00X4WQMAS?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00X4WQMAS): brand doesn't matter; maybe better for you than teflon. Clean it with [copper wool](http://amzn.to/2CZYTvD) (not soap).
-* [**Egg Cooker**](http://amzn.to/2xLCxrc): oh baby does this work well for cooking eggs. I know you're not supposed to have mono devices in your kitchen, but this makes eggs so perfectly and with such minimal effort it absolutely justifies itself.
+* [**Sous Vide Machine**](https://amzn.to/2CE48Ro): makes cooking perfect medium rare steaks and perfect soft boiled eggs trivially easy. I eat more meat now that it's so much easier to make and meal prep.
+<!-- * [**Egg Cooker**](http://amzn.to/2xLCxrc): oh baby does this work well for cooking eggs. I know you're not supposed to have mono devices in your kitchen, but this makes eggs so perfectly and with such minimal effort it absolutely justifies itself. -->
 
 ## <a name="bedroom"></a>Bedroom
 
-* **An ultrasonic humidifier**: I have [one designed like this](https://www.amazon.com/Purasense-Ultrasonic-Cool-Mist-Humidifier/dp/B01MTWEI96?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01MTWEI96) and don't love it. Lots of nooks for slimy mold to grow in that makes it hard to clean, and takes practice to put it on the base without pinching your fingers. As a thing though, a humidifier can save you days of being sick in the winter months when central heating dries out your air.
+* [Single-sized Chilipad**](https://www.chilitechnology.com/products/chilipad-cube-single-zone-single-split-queen): sleeping with another person in the bed, especially if they're of opposite gender, makes it difficult for both people to be at a comfortable temperature. I found out about the Chilipad from [Tim Ferriss](https://toolsoftitanschilipad.com/), who says an unusually high number of people interviewed for [Tools of Titans](https://amzn.to/2CFIJag) slept with one. I still need to figure out a scientific measurement of sleep quality so I can definitely show how much sleeping with a Chilipad improves my sleep. Anecdotally, I spend much less time moving a leg in and out from under the covers to regulate my temperature, and my fitbit shows I get considerably more deep sleep (the first night I slept with the chilipad, [I got double my average deep sleep](https://twitter.com/cgenco/status/1040618257223503873)). There's a similar cheaper and simpler product called a [Bedjet](https://bedjet.com/) that might have the same effect.
+* **An ultrasonic humidifier**: I have [one designed like this](https://www.amazon.com/Purasense-Ultrasonic-Cool-Mist-Humidifier/dp/B01MTWEI96?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01MTWEI96) and don't love it. Lots of nooks for slimy mold to grow in that makes it hard to clean, and takes practice to put it on the base without pinching your fingers. As a thing though, a humidifier can save you days of being sick in the winter months when central heating dries out your air. I'd love to upgrade to a better one.
+* [**Blackout curtains**](https://amzn.to/2NnwzsB): I sleep considerably better in a totally dark room than I do in a room that lets in some ambient light. I also taped over any LEDs in my bedroom to make it as close to completely dark as I could.
+* [These fancy blue, violet, and green light blocking glasses](https://truedark.com/twilights/): the closer I can get to simulating a natural sunset in your light exposure, the better I sleep
 
 ## <a name="bathroom"></a>Toiletries/Bathroom
 
@@ -224,16 +253,17 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 * [Syncwire **USB Wall Charger** with EU/UK adapters](https://www.amazon.com/Charger-Syncwire-Adapter-Samsung-more-White/dp/B011KPRE1G?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B011KPRE1G): makes getting all my USB stuff charged (power bank, spectacles, drone, phone, iPad) much simpler.
 * [**Eye mask**](https://www.amazon.com/ALASKA-BEAR%C2%AE-Natural-blindfold-super-smooth/dp/B00GSO1D9O?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B00GSO1D9O): sleeping in absolute darkness [ups your melatonin](http://www.webmd.com/sleep-disorders/news/20110119/light-exposure-may-cut-production-of-melatonin), which helps you sleep better.
 * [**Epic Meat Bar** emergency snack](https://www.amazon.com/Epic-Bars-Variety-Pack-Flavors/dp/B01FR3YVQI?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01FR3YVQI): can save me from a ~$20 emergency meal (like on a plane). Shop around for the best flavor (lamb and buffalo are the best).
+* [**Zippered storage bags**](https://amzn.to/2CFw5YT) and [**Packing cubes**](https://amzn.to/2CIUJrs): make it super easy to stay organized and modular on trips. [CGP Grey](http://www.cgpgrey.com/) has a packing rule that only other bags can go in his bag. I don't perfectly conform to that, but I do group toiletries, electronics, and clothing together into single units that are easier to keep track of than their individual pieces.
 
 ---
 
 ## <a name="absent"></a>Notably Absent
 
-* **A Car**: I own a car but am actively trying to get rid of it. Right now it's only used to drive to my parents' house about once a month.
+* **A Car**: I own a car but rent it to my sister. 90% of my trips are done on a bike, which gets me great default exercise.
 * **A TV**: I'll sporadically use a TV if it happens to be in the place I'm living to watch a movie, but I haven't *watched TV* as an activity since high school. Not having the habit of watching TV when you have nothing else to do frees up a lot of time to do more interesting things, and there are plenty of ways to binge watch good TV shows on your computer.
 * **A wallet**: All you really need is a credit card, a driver's license, and some emergency cash, all of which can fit in my iPhone case. This practice makes it much harder to lose stuff.
 * **Bread**: wheat probably isn't good for you, and we probably eat it because the agriculture revolution enabled societies that grew and ate grains to support a denser population. Individuals lived shorter and less healthy lives, but their society could then support an army that could quash remaining hunter-gatherer nomads (see [Sapiens](https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&amp;tag=cgenco-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=0062316095)).
-* **Dairy**: dairy might not be good for anyone, and definitely isn't good for me. My skin breaks out and I get weird rashes on my palms. Effective for weight gain, if that's your thing.
+* **Bovine Dairy**: dairy might not be good for anyone, and definitely isn't good for me. My skin breaks out and I get weird rashes on my palms. Effective for weight gain, if that's your thing.
 * **Processed or Packaged Foods**: no cereals, nothing made by Kraft, and no pre-packaged meals. These foods [break a lot of rules](/books/food-rules).
 * **Books**: I'll own a few dozen books at a time, but the goal is to extract their information and get rid of them. I haven't had any notable exceptions to this yet.
 * **Shower stuff**: shampoo, conditioner, body wash et. al. aren't necessary if you're eating well and regularly clean off with [a wet wash cloth](http://gogo.gen.co/hygiene).
@@ -255,11 +285,15 @@ What am I missing? What mistakes have I made? What advice do you have? [Let me k
 <!-- TODO: https://autolinkmaker.itunes.apple.com/ -->
 
 <script>
-const nav = document.getElementById("thingsnav");
-nav.innerHTML = [...document.querySelectorAll("a[name]")].map(a => {
-  const h = a.parentNode;
-  return `<li><a href="#${a.name}">${h.innerText}</a></li>`;
-}).join('')
+// const nav = document.getElementById("thingsnav");
+// const headings = [...document.querySelectorAll("a[name]")].map(a => {
+//   const h = a.parentNode;
+//   return {name: a.name, text: h.innerText, level: h.tagName}
+// })
+
+// nav.innerHTML =
+// return `<li><a href="#${a.name}">${h.innerText}</a></li>`
+// .join('')
 </script>
 
 <style>

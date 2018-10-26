@@ -3,6 +3,7 @@ title: SMU Sing Song 2013
 image: http://i.imgur.com/F8gdqmN.jpg
 image_small: http://i.imgur.com/F8gdqmNs.jpg
 excerpt: I was part of the winning team for the 2013 Sing Song musical competition at Southern Methodist University.
+hide: true
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/WM_-laDEHcA" frameborder="0" allowfullscreen></iframe>

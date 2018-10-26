@@ -3,13 +3,19 @@
 
   {% include head.html %}
 
+
   <body>
 
-    {% include header.html %}
+    {% comment %}
+      {% include header.html %}
+    {% endcomment %}
 
-    {{ content }}
+    <div class="container">
+      {{ content }}
 
-    {% include footer.html %}
+      {% include footer.html %}
+    </div>
+
 
   </body>
 

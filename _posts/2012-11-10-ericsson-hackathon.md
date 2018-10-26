@@ -3,6 +3,7 @@ title: Ericsson Hackathon
 image: http://i.imgur.com/E6bniTV.jpg
 image_small: http://i.imgur.com/E6bniTVs.jpg
 excerpt: A winning hackathon idea to get immediate feedback from a large group of people over sms and robocalling.
+hide: true
 ---
 
 Another hackathon win! This time with a bigger team of SMU talent for the [Ericsson Technology For Good Hackathon](http://www.cvent.com/events/ericsson-technology-for-good-hackathon/event-summary-e2dbfa4808144aa7adb621277cd498b0.aspx?i=c20dfae8-fd45-4572-b57a-7c5f902273e0) to:

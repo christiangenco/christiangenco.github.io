@@ -1,100 +1,129 @@
---- 
+---
 layout: default
 
-type: page 
+type: page
 ---
 
-<style>
-  .post-image {
-    max-width: 50px;
-  }
+<div class="row" style="margin-top: 40px">
+  <div class="col-sm-10 col-sm-offset-1">
+    <p><i>What is this? Who are you?</i></p>
 
-  @media (min-width: 768px) {
-    .post-image {
-      max-width: 200px;
-    }
-  }
-</style>
+    <p>Hi! I'm Christian Genco, and this is my website.<p>
 
-<div class="wrapper">
-  <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-      <a href="/about" class="media-left hidden-xs">
-        <img src="https://i.imgur.com/w68yTMYl.jpg" class="img-rounded" width="128px" title="Christian Genco" style="display: inline; margin-right: 20px;" />
-      </a>
+    <p><i>Oh, hi! What are you working on?</i></p>
 
-      <p class="media-body">
-        <a href="/about" class="visible-xs-inline" style="float: left">
-          <img src="https://i.imgur.com/w68yTMYl.jpg" class="img-rounded" width="128px" title="Christian Genco" style="display: inline; margin-right: 20px;" />
-        </a> Hi! I'm Christian Genco. I <a href="/go-to-college-for-free">went to college for free</a> at <a href="http://www.smu.edu/Academics/PS">SMU</a> to study computer science and started <a href="/projects">making cool stuff</a> instead
-        of getting a job after I graduated in 2013. <a href="/projects">My projects</a> make more money than I spend (I don't need a lot of <a href="/things">things</a>), and I'm on track to financially retire before I'm 30, so <a href="http://gogo.gen.co/">I lived in an RV traveling with my wife for a year</a>,
-        and <a href="/now">now</a> live in Dallas TX exploring <a href="/now">the best ways to spend my time</a>.
-        <br><br> I especially like solving problems that help people, and <a href="/you-should-learn-to-program">helping people solve problems</a>. If you have a cool project, or if you just want to say hey, <a href="/contact">send me a message</a>!
-      </p>
+    <p>I make tiny software businesses, so I'm working on improving the way I make them. I'm focused on taking React courses so I can build stuff better, and taking business courses to build better stuff. Scroll down to <a href="#projects">Projects</a> for a list of stuff I've made!</p>
 
-      <hr>
+    <p><i>Neat! What are you excited about right now?</i></p>
 
-      <h2>Top posts <small><a href="/posts">all posts</a></small></h2> {% for post in site.tags.top limit:5 %}
-      <div class="media">
-        <div class="media-left">
-          <a href="{{ post.url | prepend: site.baseurl }}">
-              <img src="{{post.image_small}}" class="img-rounded post-image" width="90px" />
-            </a>
-        </div>
-        <div class="media-body">
-          <h3 class="media-heading">
-              <a href="{{ post.url | prepend: site.baseurl }}">
-                {{post.title}}
-              </a>
-            </h3>
-          <p>{{post.excerpt}} <a href="{{ post.url | prepend: site.baseurl }}">more...</a></p>
-        </div>
+    <p>I tried doing standup comedy for the first time and it was a blast. I'm really excited about trying it more and improving my set! I'm also excited about launching the <a target="_blank" href="https://microconf.gen.co">Microconf Recap Ebook</a>, planning some outdoor rock climbing trips, and <a target="_blank" href="https://www.fantasticbeasts.com/">the new Fantastic Beasts movie</a>.</p>
+
+    <p><i>Cool, cool. What else should I know about you?</i></p>
+
+    <p>I'm pretty into minimalism (I keep a list of <a href="/things">everything I own</a>), I hate driving so I try to bike most places I need to go, I'm a <a href="https://mrmoneymustache.com" target="_blank">mustachian</a>, I publish <a target="_blank" href="https://www.youtube.com/watch?v=O6Bd7bvU1MA&list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O">vlogs every once in a while</a> as an excuse to fly my drone more, and I publish <a href="#books">detailed notes on the most valuable books I read</a>.</p>
+    <p>If you're in the mood to learn everything about me you could listen to some of the <a href="#podcasts">Podcasts</a> I've been on!</p>
+
+    <p><i>Dude you seem pretty cool. How can we make this official? Like, how could I have a real conversation with you instead of just reading this conversation you've already typed out for us?</i></p>
+
+    <p>Boom:</p>
+
+    <ul>
+      <li><!--<i class="fa fa-envelope"></i>--><a href="mailto:christian@gen.co">christian@gen.co</a></li>
+      <li><i class="fa fa-facebook"></i> <a href="http://www.facebook.com/cgenco">facebook.com/cgenco</a></li>
+      <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/cgenco">twitter.com/cgenco</a></li>
+      <li><i class="fa fa-github"></i> <a href="https://github.com/christiangenco">github.com/christiangenco</a></li>
+      <li><i class="fa fa-linkedin"></i> <a href="http://www.linkedin.com/in/cgenco">linkedin.com/in/cgenco</a></li>
+      <li><img src="http://i.imgur.com/SEbaajC.png" style="display: inline; width: 21px" /> <a href="https://news.ycombinator.com/user?id=christiangenco">HN/christiangenco</a></li>
+    </ul>
+
+    <hr>
+
+    <h2><a id="projects" name="projects"></a>Projects</h2>
+
+    <ul>
+      <li><a target="_blank" href="https://dbinbox.com">dbinbox</a>: receive files from your clients to your Dropbox</li>
+      <li><a target="_blank" href="http://textbooksplease.com">textbooks please</a>: textbook search engine</li>
+      <li><a target="_blank" href="https://www.alexaskillstore.com/Dr-Dog/39678">Dr. Dog</a>: ask your Amazon Echo or Google Home if it's safe for your dog to eat certain foods</li>
+      <li><a target="_blank" href="https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US">Export History</a>: Chrome plugin to export your history</li>
+      <li><a target="_blank" href="https://gen.co/dndice">DnDice</a>: Dungeons and Dragons dice roller</li>
+      <li><a target="_blank" href="https://gen.co/qgen/">qgen</a>: query generator for hunting for 30x500 audiences</li>
+      <li><a target="_blank" href="https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8">PastCam</a>: iOS app to take "then and now" style pictures</li>
+      <li><a target="_blank" href="https://gen.co/qr/">QR reader/writer</a>: it's pretty easy to make a malicious QR code reader, so I made my own. Works offline, like on an air gapped computer.</li>
+      <li><a target="_blank" href="http://christian.gen.co/secrets/">Secrets</a>: split up a secret into N pieces so you can recover it with any M of the pieces</li>
+      <li><a target="_blank" href="http://mosaic.apps.gen.co">Mosaic Web Dev</a>: a platform for hosting lessons that students can go through at their own pace. A solution to teaching technical summer camps where half the class got left behind and half the class felt bored (and my voice got tired).</li>
+      <li><a target="_blank" href="http://gen.co/humansort/">HumanSort</a>: sort a list based on whatever you want by comparing two things at a time</li>
+      <li><a target="_blank" href="http://markdowntomla.com/">Markdown to MLA</a> and <a href="http://markdowntoapa.com/">Markdown to APA</a>: generate perfect MLA and APA documents from plain text markdown</li>
+      <li><a target="_blank" href="https://timecardapp.com">Timecard App</a>: timecard calculator (a rewrite of <a href="/timecardapp">my oldest useful program</a>)</li>
+      <li><a target="_blank" href="http://gen.co/timer/">Timer</a>: a simple timer with alarm for teaching in poms</li>
+      <li><a target="_blank" href="http://gen.co/icondice/">Icon Dice</a>: a ~900 sided dice with [icons](https://material.io/icons/) instead of numbers</li>
+      <li><a target="_blank" href="http://gen.co/clear/">Clear Decoder</a>: decode links from the [Clear iOS list making app](https://itunes.apple.com/us/app/clear-todos/id493136154?mt=8) to markdown</li>
+      <li><a target="_blank" href="https://profileflags.parseapp.com/">Profile Flags</a>: add a country flag over your Facebook profile picture</li>
+      <li><a target="_blank" href="https://github.com/christiangenco/autorunner">autorunner</a>: command line tool to run a command when a file is saved</li>
+      <li><a target="_blank" href="https://github.com/christiangenco/t_time_tracker">t_time_tracker</a>: simple command line time tracking</li>
+      <li><a target="_blank" href="http://emailtipbot.com">Email Tip Bot</a>: send/receive bitcoin through email. Shut down (and coins returned) in 2017.</li>
+    </ul>
+
+
+    <h2><a id="podcasts" name="podcasts">Podcasts</h2>
+
+    <ul>
+      <li><a href="https://heathandalyssa.com/rve-0011-christian-elisa-genco-plan-retire-30-years-old/">RV Entrepreneur Podcast #0011</a>: How Christian & Elisa Genco Plan to Retire by 30 Years Old<small class="pull-right font-mono">2016-04-07</small></li>
+      <li><a href="http://hellotechpros.com/christian-genco-productivity/">Hello TechPros #58</a>: Get Perfect Memory and Always Know What to Do Next – Productivity Tuesday with Christian Genco<small class="pull-right font-mono">2016-05-31</small></li>
+      <li><a href="http://businessdesignpodcast.com/bdp-10-christian-genco/">The Business Design Podcast #10</a>: "Many people dream of a job where they can travel all over the world while they work remotely. Christian Genco lives this dream."<small class="pull-right font-mono">2018-01-16</small></li>
+    </ul>
+
+    <h2>Videos</h2>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
+        <div class="embed-responsive embed-responsive-16by9 "><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ocHExbA8K4Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
       </div>
-      {% endfor %}
 
-      <h2>Media</h2>
+      <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
+        <div class="embed-responsive embed-responsive-16by9 "><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      </div>
 
-      <h3>TedxSMU: You Should Learn to Program</h3>
+      <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
+        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R9ikWJGpzNw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      </div>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allowfullscreen></iframe>
+      <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
+        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uRk64UlQtA8?list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      </div>
 
-      <h3>Go to College for Free <small>the advice I wish I'd had</small></h3>
+      <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
+        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Uiq0DTCJvy0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      </div>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/R9ikWJGpzNw" frameborder="0" allowfullscreen></iframe>
-
-      <h3>Vlog Experiments <small>recording my life with Snap Spectacles and DJI Mavic + Spark drones</small></h3>
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/uRk64UlQtA8?list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O" frameborder="0" allowfullscreen></iframe>
-
-      <h3>Musical Eating</h3>
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Uiq0DTCJvy0" frameborder="0" allowfullscreen></iframe>
-
-      <h3><a href="http://businessdesignpodcast.com/bdp-10-christian-genco/">2018-01-16 The Business Design Podcast 10</a> <small>"Many people dream of a job where they can travel all over the world while they work remotely. Christian Genco lives this dream."</small></h3>
-
-      <audio controls>
-        <source src="businessdesignpodcast.com/?powerpress_pinw=174-podcast" type="audio/mpeg">
-        <a href="businessdesignpodcast.com/?powerpress_pinw=174-podcast" type="audio/mpeg">BDP10-ChristianGenco.mp3</a>
-      </audio>
-
-      <h3><a href="https://heathandalyssa.com/rve-0011-christian-elisa-genco-plan-retire-30-years-old/">RV Entrepreneur Podcast 0011</a> <small>How Christian & Elisa Genco Plan to Retire by 30 Years Old</small></h3>
-
-      <audio controls>
-        <source src="http://traffic.libsyn.com/therventrepreneur/RVE_0011__How_Christian__Elisa_Genco_Plan_to_Retire_by_30_Years_Old.mp3" type="audio/mpeg">
-        <a href="http://traffic.libsyn.com/therventrepreneur/RVE_0011__How_Christian__Elisa_Genco_Plan_to_Retire_by_30_Years_Old.mp3" type="audio/mpeg">RVE_0011__How_Christian__Elisa_Genco_Plan_to_Retire_by_30_Years_Old.mp3</a>
-      </audio>
-
-      <h3><a href="http://hellotechpros.com/christian-genco-productivity/">Hello TechPros</a> <small>Get Perfect Memory and Always Know What to Do Next – Productivity Tuesday with Christian Genco 2016-05-31</small></h3>
-
-      <audio controls>
-        <source src="http://traffic.libsyn.com/hellotechpros/HTP-58_Christian_Genco_Productivity.mp3" type="audio/mpeg">
-        <a href="http://traffic.libsyn.com/hellotechpros/HTP-58_Christian_Genco_Productivity.mp3" type="audio/mpeg">HTP-58_Christian_Genco_Productivity.mp3</a>
-      </audio>
-
-      <h3>SMU Sing Song Musical Competition 2013</h3>
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/WM_-laDEHcA" frameborder="0" allowfullscreen></iframe>
-
+      <div class="col-sm-12 col-md-6" style="margin-bottom: 30px">
+        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WM_-laDEHcA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      </div>
     </div>
+
+    <h2><a name="books" id="books"></a>Book Notes</h2>
+    <ul>
+      {% for book in site.books %}
+        <li>
+          <a href="{{ book.url | prepend: site.baseurl }}">
+            {{book.title}}
+          </a>
+          <small class="pull-right font-mono">{{book.date | date: "%Y-%m-%d"}}</small>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h2>Posts</h2>
+    <ul>
+      {% for post in site.posts  %}
+        {% if post.categories contains 'pages' %}
+        {% else %}
+          {% if post.hide %}
+          {% else %}
+            <li><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a>: {{post.excerpt}}</li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
   </div>
 </div>

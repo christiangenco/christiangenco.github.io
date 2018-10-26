@@ -3,6 +3,7 @@ title: Jitouch on OS X 10.10 Yosemite
 image: http://i.imgur.com/EZG7fYt.jpg
 image_small: http://i.imgur.com/EZG7fYts.jpg
 excerpt: My fix for the Mac OS X trackpad gesture application, Jitouch, on Yosemite.
+hide: true
 ---
 
 Jitouch has apparently been worked on [since October 18th, 2014](https://twitter.com/macjitouch/status/523551702499459072) for Yosemite compatibility, but as of writing this post it's still broken.

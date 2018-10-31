@@ -6,76 +6,65 @@ excerpt: Why? It makes you smarter, computers are improving faster than you are,
 tags: top
 ---
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/xfBWk4nw440" frameborder="0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9" style="margin-top: 20px; margin-bottom: 20px;"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
-At the first TEDxSMU event just for SMU students, I gave a talk on [the benefits of learning to program](https://www.youtube.com/watch?v=U_IodtNIG_o) - something I'm extremely passionate about.
+Since giving a TEDx talk at [TEDxSMU](http://www.tedxsmu.org/) on why everyone should learn to program, I've gotten some amazing messages from people all over the world inspired to learn to code, but unsure what to do next.
 
-The talk was extremely well received there, and I was invited to give it again at SMU's main TED conference, [TEDxSMU](http://www.tedxsmu.org/), on December 1st, and [TEDxKids](http://www.tedxsmu.org/tedxkids-smu-2012/) on November 30th.
+How do you get started programming? What's the best language to learn? The options can be overwhelming and confusing, especially for beginners.
 
-Since then I've given talks at the opening of the Perot Museum, Highland Park High School, and Ursuline Academy's STEM day.
+Here's what I recommend to get started coding.
 
-I'm in the process of writing a book on the topic (if you'd like an early copy, <a href="http://signup.youshouldlearntoprogram.com/">let me know</a>!), but in the meanwhile, here are some resources I recommend for beginner programmers:
+## What language should I learn first?
 
-### Khan Academy
+There are [_thousands_ of languages](https://en.wikipedia.org/wiki/List_of_programming_languages) you could choose as your first language. Some programmers are very opinionated about what language is the best, and so strongly recommend beginners learn their favorite language first.
 
-* **URL:** [khanacademy.org/cs](http://khanacademy.org/cs)
-* **Price:** free
-* **Difficulty:** beginner
-* **Computer Languages:** javascript
+<!-- If you can take a class that will teach you Java or C++ in person, you'll learn all the basics of coding just fine.  -->
 
-### Code Academy
+Here's the thing, though: **it doesn't matter what language you learn first.** Pick one, and if it turns out it's not the best language for what you want to do, it'll be _way_ easier to learn your next one.
 
-* **URL:** [codeacademy.com](http://codeacademy.com)
-* **Price:** free
-* **Difficulty:** beginner
-* **Computer Languages:** javascript
+Coding languages are very different from human languages. Once you've learned one language, it's really easy to pick up more.
 
-### Learn Code the Hard Way
+For example, here's some Javascript code for doing a super basic calculation (`5 + 10`) and showing the result (`15`) on the screen:
 
-* **URL:** [learncodethehardway.org](http://learncodethehardway.org)
-* **Price:** free
-* **Difficulty:** moderate
-* **Computer Languages:** Ruby, Python, C
+```js
+const a = 5;
+const b = 10;
+console.log(a + b);
+```
 
-### Coursera
+Here's _the exact same program_ in a totally different language, Python:
 
-* **URL:** [coursera.org/category/cs-programming](http://coursera.org/category/cs-programming)
-* **Price:** free
-* **Difficulty:** beginner to advanced
-* **Computer Languages:** many
+```python
+a = 5
+b = 10
+print(a + b)
+```
 
-### "Learn to Program" by Chris Pine
+and the same thing in Ruby:
 
-* **URL:** [pine.fm/LearnToProgram](http://pine.fm/LearnToProgram)
-* **Price:** free (book is $25)
-* **Difficulty:** moderate
-* **Computer Languages:** Ruby
+```python
+a = 5
+b = 10
+puts a + b
+```
 
-### "Learn How to Make Websites" by Mozilla
+and the same thing in Java:
 
-* **URL:** [developer.mozilla.org/en-US/learn](http://developer.mozilla.org/en-US/learn)
-* **Price:** free
-* **Difficulty:** beginner
-* **Computer Languages:** HTML, CSS, Javascript (what you need to learn to make websites)
+```java
+class HelloWorld {
+  public static void main(String args[]){
+    int a = 5;
+    int b = 10;
+    System.out.println(a + b);
+  }
+}
+```
 
-### Processing: Make Art and Video Games
+Alright Java is objectively gross. POINT IS once you understand some basic concepts (in this case: how to add numbers together and print them out), it's super easy to translate those concepts into different languages.
 
-* **URL:** [processing.org](http://processing.org)
-* **Price:** free
-* **Difficulty:** moderate
-* **Computer Languages:** processing (Java-ish)
+> Does this language use semicolons? Do I have to declare what type the variables are? How do I print stuff out? Alright cool I think I've got it.
 
-### Scratch: Make Games
+In fact programmers are so good at learning new languages, it's not unusual for a seasoned programmer to be able to [pick up a new language in just a few minutes](https://learnxinyminutes.com/).
 
-* **URL:** [scratch.mit.edu](http://scratch.mit.edu)
-* **Price:** free
-* **Difficulty:** super easy
-* **Computer Languages:** Scratch (Java-ish)
-
-### Others
-
-* [MIT Open Courseware](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/) (advanced)
-* [Udacity](http://www.udacity.com/) (moderate to advanced)
-* [Google Code University](http://code.google.com/edu/) (advanced)
-* [Programr](http://www.programr.com/) (beginner to advanced; courses for Android, iOS, Processing, C++, Java, and many others)
-* Once you learn your first language, it's easy to pick up more with [Learn X in Y minutes](https://learnxinyminutes.com/)
+<!-- https://i.imgur.com/Z3n8OVc.jpg -->
+<!-- https://i.imgur.com/xH4rGNL.jpg -->

@@ -2,7 +2,7 @@
 title: TI Innovation Competition
 image: http://i.imgur.com/lmAK2pf.jpg
 image_small: http://i.imgur.com/lmAK2pfs.jpg
-excerpt: A winning hackathon idea for a nightstand projector.
+excerpt: A winning hackathon idea for a nightstand projector
 ---
 
 My girlfriend [Elisa Farrell](http://comiccooking.blogspot.com/) and I entered an innovation competition sponsored by Texas Instruments to create an application for a pico projector enabled smartphone. The app we created, NighTech, is an information dashboard that projects key information on your ceiling at night.

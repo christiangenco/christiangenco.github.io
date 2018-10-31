@@ -3,35 +3,37 @@ layout: default
 ---
 
 <style>
-  .navbar{ margin-bottom: 0; }
+  .navbar {
+    margin-bottom: 0;
+  }
 </style>
 
 {% if page.image %}
-  <div class="background-image" style="background-image: url({{page.image}})">
-    <div class="content">
-      <div class="small">
-        <a href="/about"><img src="http://i.imgur.com/bMwFJSps.png" class="img-circle" width="32px" title="Christian Genco" style="display: inline" /></a>
-        by <a href="/about" rel="author">Christian Genco</a>
-        on {{page.date | date: "%Y-%m-%d"}}
-      </div>
-      <div class="vertical-wrapper">
-        <div class="col-sm-10 col-sm-offset-1">
-        <h1 itemprop="name headline">{{page.title}}</h1>
-        </div>
-      </div>
+<div class="background-image" style="background-image: url({{page.image}})">
+  <div class="content">
+    <div class="small">
+      <a href="/"><img src="http://i.imgur.com/bMwFJSps.png" class="img-circle" width="32px" title="Christian Genco" style="display: inline" /></a>
+      by <a href="/" rel="author">Christian Genco</a>
+      <!-- on {{page.date | date: "%Y-%m-%d"}} -->
     </div>
-  </div>
-{% else %}
-  <div class="wrapper">
-    <div class="row">
+    <div class="vertical-wrapper">
       <div class="col-sm-10 col-sm-offset-1">
-        <h1 itemprop="name headline" style="margin-top: 30px">
-          {{page.title}}
-          <span class="small"> by <a href="/about" rel="author">Christian Genco</a></span>
-        </h1>
+        <h1 itemprop="name headline">{{page.title}}</h1>
       </div>
     </div>
   </div>
+</div>
+{% else %}
+<div class="wrapper">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h1 itemprop="name headline" style="margin-top: 30px">
+        {{page.title}}
+        <span class="small"> by <a href="/" rel="author">Christian Genco</a></span>
+      </h1>
+    </div>
+  </div>
+</div>
 {% endif %}
 
 <div class="wrapper">

@@ -2,7 +2,7 @@
 title: The Remote Control Person
 image: http://i.imgur.com/1DXVc3V.jpg
 image_small: http://i.imgur.com/1DXVc3Vs.jpg
-excerpt: A design for a remote control you can use on people.
+excerpt: A design for a remote control you can use on people
 ---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/_UNwHurfqgg" frameborder="0" allowfullscreen></iframe>
@@ -51,12 +51,12 @@ In practice, however, the raspberry pi totally sucked. Its connection to wifi wa
 
 ### Hardware List
 
-* Vibrating belt
-  * Arduino Uno
-  * 4 Vibrating Motors
-  * Stranded core wire
-  * USB Cable
-* iPhone
-* Wiimote
-* USB battery pack
-* iPad to stream video to
+- Vibrating belt
+  - Arduino Uno
+  - 4 Vibrating Motors
+  - Stranded core wire
+  - USB Cable
+- iPhone
+- Wiimote
+- USB battery pack
+- iPad to stream video to

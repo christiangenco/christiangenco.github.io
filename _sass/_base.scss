@@ -2,53 +2,61 @@ body {
   font-family: georgia, garamond, serif;
   // padding-top: 30px;
   // background-color: #FFFCF8;
-  background-color: #B8C2CC;
-  background-image: url(/favicons/pattern.svg);
+  background-color: #b8c2cc;
+  // background-image: url(/favicons/pattern.svg);
 }
 
-.container{
-  background-color: #F8FAFC;
+.container {
+  background-color: #f8fafc;
 }
 
-.wrapper{
+.wrapper {
   overflow-x: hidden;
 
-  & > .row{
+  & > .row {
     margin: 0 20px;
   }
 }
 
-.navbar{
+.navbar {
   // margin-bottom: 0;
 
-  a{
+  a {
     text-decoration: none;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+      Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 14pt;
   }
 }
 
 // post
-h1, h2, h3, h4, h5, h6, a.brand {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a.brand {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 700;
   margin: 0;
   letter-spacing: -0.04em;
   line-height: 1;
 }
 
-h1{
+h1 {
   font-size: 45pt;
   margin-bottom: 30px;
 }
 
-h2{
+h2 {
   font-size: 30pt;
   line-height: 1.2;
   margin-bottom: 10px;
 }
 
-h3{
+h3 {
   font-size: 32px;
   font-weight: 300;
   color: #777;
@@ -56,84 +64,98 @@ h3{
   margin-top: 50px;
 }
 
-p, li, blockquote {
+p,
+li,
+blockquote {
   font-size: 16pt;
   line-height: 25pt;
-  font-family: 'Lora',Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
   letter-spacing: 0.01rem;
   font-weight: 400;
   font-style: normal;
   // margin-bottom: 20px;
 }
 
-p{
+p {
   margin: 0 0 30px 0;
   word-wrap: break-word;
   line-height: 1.5;
 }
 
-blockquote{
-  border-left: 3px solid rgba(0,0,0,0.8);
+blockquote {
+  border-left: 3px solid rgba(0, 0, 0, 0.8);
   padding-left: 20px;
   font-style: italic;
 
-  p{
+  p {
     font-style: italic;
   }
 }
 
-a{
+a {
   color: #444;
   text-decoration: underline;
-  &:hover{
+  &:hover {
     color: #888;
   }
 
-  &.btn{
+  &.btn {
     text-decoration: none;
   }
 }
 
-ul, ol {
+ul,
+ol {
   // margin-left: -20px;
 }
 
-hr{
+hr {
   clear: both;
 }
 
-.background-image{
+.background-image {
   position: relative;
   margin: 0;
   width: 100%;
-  height: 99.5vh;
+  // height: 99.5vh;
+  height: 60vh;
   background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 
-  h1, h2, h3, h4, h5, p, a, li, div, span{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a,
+  li,
+  div,
+  span {
     color: white;
   }
 
-  & > .content{
+  & > .content {
     width: 100%;
     height: 100%;
     display: table;
-    background-color: rgba(0,0,0,0.44);
+    background-color: rgba(0, 0, 0, 0.44);
 
-    & > .small{
+    & > .small {
       position: absolute;
       top: 20px;
       left: 20px;
 
-      &, a{
-        color: rgba(255,255,255,0.8);
+      &,
+      a {
+        color: rgba(255, 255, 255, 0.8);
       }
     }
 
-    & > .vertical-wrapper{
+    & > .vertical-wrapper {
       display: table-cell;
       vertical-align: middle;
       width: 100%;
@@ -141,81 +163,81 @@ hr{
   }
 }
 
-figure{
+figure {
   margin: 10px 30px 10px 0;
 
-  figcaption{
+  figcaption {
     font-style: italic;
     font-size: 11.5pt;
-    color: rgba(0,0,0,0.6);
+    color: rgba(0, 0, 0, 0.6);
     line-height: 1.4;
     // z-index: 300;
     text-align: center;
     margin-top: 10px;
   }
 
-  img{
+  img {
     // margin: 0 auto;
     width: 100%;
   }
 
-  &.left{
+  &.left {
     width: 50%;
     float: left;
   }
 
-  &.left-overflow{
+  &.left-overflow {
     width: 75%;
     float: left;
     margin-left: -12%;
   }
 
-  &.right{
+  &.right {
     width: 50%;
     float: right;
     margin-left: 30px;
     margin-right: 0;
   }
 
-  &.right-overflow{
+  &.right-overflow {
     width: 75%;
     float: right;
     margin-right: -12%;
     margin-left: 30px;
   }
 
-  &.center{
+  &.center {
     margin: 0 auto;
   }
 
-  &.center-overflow{
+  &.center-overflow {
     width: 120%;
     max-width: 120%;
     margin-left: -10%;
   }
 
-  &.fullscreen{
+  &.fullscreen {
     width: 130%;
     max-width: 130%;
     margin-left: -15%;
   }
 }
 
-@media (max-width: 768px){
-  figure.img-left-overflow{
+@media (max-width: 768px) {
+  figure.img-left-overflow {
     float: none;
     margin: 0 auto;
   }
 
-  h1{
+  h1 {
     font-size: 50pt;
   }
 
-  h2{
+  h2 {
     font-size: 18pt;
   }
 
-  h3{
+  h3 {
     font-size: 19pt;
   }
 }

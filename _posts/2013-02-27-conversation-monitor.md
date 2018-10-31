@@ -2,7 +2,7 @@
 title: The Conversation Monitor
 image: http://i.imgur.com/Dw51mer.png
 image_small: http://i.imgur.com/Dw51mers.png
-excerpt: You know that one guy who always talks way more than everyone else? Now you can quantify exactly how much of a jerk he's being.
+excerpt: College project to measure how much each person In a group speaks
 ---
 
 The Conversation Monitor is a quick class project I made for attempting to quantify the level of contribution to a conversation that each individual has. It does this, naievly, by recording the time that each individual is speaking, assuming that only one individual is speaking at a time, and that while they are speaking the microphone closest to them will be the loudest.

@@ -23,6 +23,23 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js" ></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
-<script type="text/javascript" src="/js/main.js" ></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="429426500555082" theme_color="#b8c2cc" logged_in_greeting="Hello! I'm Christian Genco. What's up?" logged_out_greeting="Hello! I'm Christian Genco, and you can chat with me on Facebook Messenger. What's up?">
+</div>

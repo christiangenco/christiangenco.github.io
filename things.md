@@ -168,6 +168,8 @@ I've been disappointed in the quality of shoe Xero makes - the last pair I had f
 
 ## <a name="food"></a>Food
 
+<figure class="right"><img src="https://i.imgur.com/8qACpOr.jpg" /><figcaption>A typical breakfast</figcaption></figure>
+
 I've thought a lot about food. My current diet is a mix of things learned from [Food Rules](/books/food-rules/), [Primal Blueprint](https://www.amazon.com/New-Primal-Blueprint-Reprogram-Effortless/dp/1939563305?SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&tag=cgenco-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=1939563305), and [the Ketogenic Diet](http://www.ketogenic-diet-resource.com/). I try not to eat any grains, very low carbs, and very low sugar, replacing calories lost from carbs with fat from oils.
 
 Eating like this I've noticed more consistent energy levels and general health (ie: I'm slimmer with more muscle mass without working out as much). I've also, strangely, realized that I used to feel physical pain in my stomach when I felt hungry, which I don't feel any more. Now it's closer to the sensation I feel when I'm thirsty (ie: I recognize I could drink water, but don't _need_ to - it's not painful). Because of this, it's easier to fast, which I aim to do for [3 days every month, and 5 days every quarter](http://www.businessinsider.com/intermittent-fasting-how-does-it-work-2017-2), because it may help starve pre-cancerous cells.

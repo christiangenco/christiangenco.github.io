@@ -128,6 +128,13 @@ The core of my wardrobe - effectively every piece of clothing I need to function
 - [Woolly Clothing Co. Men's **Merino Wool Long Drop Boxer Brief** (190 GSM)](https://www.amazon.com/Woolly-Clothing-Merino-Boxer-Charcoal/dp/B01GKJFG7G?psc=1&SubscriptionId=AKIAJCLZCPY4IPXPQMIQ&tag=cgenco-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01GKJFG7G): two pairs (one packed, one you wear) and you've got all the underwear you need for a month of backpacking across Europe (see above).
 - [Express Slim Fit **Flex Stretch Khaki Chino Pant** and jeans](http://www.express.com/clothing/men/slim-fit-flex-stretch-khaki-chino-pant/pro/3082633/cat1830015): express clothing fits me well, and the flexable material makes these really versitile. I wear them in any situation wherein I need long pants. I'd love to get them in a darker color that still looks good with a gray tshirt.
 
+Jackets:
+
+- The North Face, Flux 2 Powerstretch Full Zip C, TNF BLACK, S, Men's: great for running, climbing, or a confortable jacket to wear around the house while coding
+- The North Face, Far Northern Full Zip C, URBAN NAVY, S, Men's: a nicer looking jacket for more professional business trips or traveling
+- Outdoor Research, Panorama Point Jacket C, CHARCOAL HEATHER, S, Men's: hard rain shell for hiking
+- Outdoor Research, Ascendant Hoody C, BALTIC/GLACIER, S, Men's: insulating synthetic down midlayer for hiking
+
 I still keep around several pieces of clothing that I don't _need_ but make it much more convenient when I'm stationary to not have to do laundry every week:
 
 - [Express Flex Stretch Textured **V-Neck Tee**](http://www.express.com/clothing/men/flex-stretch-textured-vtoneck-tee/pro/5051597/cat1920001): ditto on fit and flexible material. I have about eight of these in different colors, though I'm slowly replacing them with Merino Wool.
@@ -258,6 +265,7 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 
 <figure class="right"><img src="http://i.imgur.com/7Hi5mmH.jpg" /><figcaption>2.5 weeks of stuff in 1 backpack</figcaption></figure>
 
+- [Osprey Farpoint 40 Travel Pack - Men's](https://www.rei.com/product/894562/osprey-farpoint-40-travel-pack-mens): the perfect carryon bag
 - [**Snap Spectacles 2**](https://www.spectacles.com/): the best vlogging/life logging camera I've used to date (though I have a lot of gripes about the software - Snap Inc. doesn't make it easy to use your videos for things that aren't Snapchat)
 - [DJI Mavic Air **Drone**](http://www.dji.com/mavic): literally fly wherever you travel. Makes some _incredible_ [context shots for vacation videos](https://youtu.be/uRk64UlQtA8?list=PLNev7VcPIItGNy1wRkDd7lsp9UpP1Be8O). Gives an entire new dimension to travel. The gigantic batteries can also be used to charge your phone in a pinch. I tried the Spark and the Mavic, and the Air's more compact package outweighs the reduced range and battery life for me.
 - [CamelBack **Hydration Bladder**](http://amzn.to/2uVWDBE): brand doesn't matter. This takes up almost no space or weight when empty, and can carry several times the water of a bottle when full. It's also easier to drink from while on the go.

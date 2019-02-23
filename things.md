@@ -284,7 +284,7 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 - **Bovine Dairy**: dairy might not be good for anyone, and definitely isn't good for me. My skin breaks out and I get weird rashes on my palms. Effective for weight gain, if that's your thing.
 - **Processed or Packaged Foods**: no cereals, nothing made by Kraft, and no pre-packaged meals. These foods [break a lot of rules](/books/food-rules).
 - **Books**: I'll own a few dozen books at a time, but the goal is to extract their information and get rid of them. I haven't had any notable exceptions to this yet.
-- **Shower stuff**: shampoo, conditioner, body wash et. al. aren't necessary if you're eating well and regularly clean off with [a wet wash cloth](http://gogo.gen.co/hygiene).
+- **Shower stuff**: shampoo, conditioner, body wash et. al. aren't necessary if you're eating well and regularly clean off with [a wet wash cloth](https://web.archive.org/web/20170831091607/http://gogo.gen.co/hygiene).
 
 ---
 

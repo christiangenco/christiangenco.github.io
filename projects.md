@@ -9,29 +9,31 @@ type: page
 
 These are things I've made that make money.
 
-* [dbinbox](https://dbinbox.com): receive large files on your website
-* [textbooks please](http://textbooksplease.com): textbook search engine
-* [Dr. Dog](https://www.alexaskillstore.com/Dr-Dog/39678): ask your Amazon Echo if it's safe for your dog to eat certain foods
-* [Export History](https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US): Chrome plugin to export your history
-
-## Experiments
-
-* [DnDice](https://gen.co/dndice): Dungeons and Dragons dice roller
-* [qgen](https://gen.co/qgen/): query generator for hunting for 30x500 audiences
-* [PastCam](https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8): iOS app to take "then and now" style pictures
-* [QR reader/writer](https://gen.co/qr/): it's pretty easy to make a malicious QR code reader, so I made my own. Works offline, like on an air gapped computer.
-* [Secrets](http://christian.gen.co/secrets/): split up a secret into N pieces so you can recover it with any M of the pieces
-* [Mosaic Web Dev](http://mosaic.apps.gen.co): a platform for hosting lessons that students can go through at their own pace. A solution to teaching technical summer camps where half the class got left behind and half the class felt bored (and my voice got tired).
-* [HumanSort](http://gen.co/humansort/): sort a list based on whatever you want by comparing two things at a time
-* [Markdown to MLA](http://markdowntomla.com/) and [Markdown to APA](http://markdowntoapa.com/): generate perfect MLA and APA documents from plain text markdown
-* [Timecard App](https://timecardapp.com): timecard calculator ([a rewrite of my oldest useful program](/timecardapp))
-* [Timer](http://gen.co/timer/): a simple timer with alarm for teaching in poms
-* [Icon Dice](http://gen.co/icondice/): a ~900 sided dice with [icons](https://material.io/icons/) instead of numbers
-* [Clear Decoder](http://gen.co/clear/): decode links from the [Clear iOS list making app](https://itunes.apple.com/us/app/clear-todos/id493136154?mt=8) to markdown
-* [Profile Flags](https://profileflags.parseapp.com/): add a country flag over your Facebook profile picture
-* [autorunner](https://github.com/christiangenco/autorunner): command line tool to run a command when a file is saved
-* [t_time_tracker](https://github.com/christiangenco/t_time_tracker): simple command line time tracking
-* [Email Tip Bot](http://emailtipbot.com): send/receive bitcoin through email. Shut down (and coins returned) in 2017.
+<ul>
+<li><a target="_blank" href="https://fileinbox.com">Fileinbox</a> (previously called DBinbox): receive files from your clients to your Dropbox</li>
+<li><a target="_blank" href="http://textbooksplease.com">textbooks please</a>: textbook search engine</li>
+<li><a target="_blank" href="https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US">Export History</a>: Chrome plugin to export your history</li>
+<li><a target="_blank" href="https://gen.co/pixels/?c=IzAwMCwjZmZmLCNmZmYsI2ZmZiwjZmZmLCNmZmYsI2ZmZiwjMDAwIC8vIGRyYXcgY29sb3JlZCBwaXhlbHMgb25lIGF0IGEgdGltZQoyIzAwMCw0I2ZmZiwyIzAwMCAvLyByZXBlYXQgY29sb3JzIHdpdGggbnVtYmVycwozYiwydywzYiAvLyBjb21tb24gY29sb3JzIGhhdmUgc2luZ2xlLWxldHRlciBzdWJzdGl0dXRlcwo4YjsgOGIgLy8gc2VtaWNvbG9ucyBvciBuZXcgbGluZXMgbWFrZSBhIG5ldyByb3cKYiwydywyYiwydyxiOwpiLDJ3LDJiLDJ3LGI7CjhiOwpiLDYjZmViLGI7CncsYiw0I2ZlYixiLHc7CjJ3LDRiLDJ3Ow==">Pixel Art Creator</a>: a simple programming IDE to draw pixel art</li>
+<li><a target="_blank" href="https://gen.co/birthdays">Bonus Birthdays</a>: Calculate your bonus birthdays, like when you turn 20,000 days old, or when you're the same age George Washington was when he became president.</li>
+<li><a target="_blank" href="https://www.alexaskillstore.com/Dr-Dog/39678">Dr. Dog</a>: ask your Amazon Echo or Google Home if it's safe for your dog to eat certain foods</li>
+<li><a target="_blank" href="https://gen.co/edraft">Email Drafter</a>: a markdown email editor that renders as plaintext and HTML</li>
+<li><a target="_blank" href="https://gen.co/dndice">DnDice</a>: Dungeons and Dragons dice roller</li>
+<li><a target="_blank" href="https://gen.co/qgen/">qgen</a>: query generator for hunting for 30x500 audiences</li>
+<li><a target="_blank" href="https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8">PastCam</a>: iOS app to take "then and now" style pictures</li>
+<li><a target="_blank" href="https://gen.co/qr/">QR reader/writer</a>: QR code reader that works offline, like on an air gapped computer</li>
+<li><a target="_blank" href="http://christian.gen.co/secrets/">Secrets</a>: split up a secret into N pieces so you can recover it with any M of the pieces</li>
+<li><a target="_blank" href="http://mosaic.apps.gen.co">Mosaic Web Dev</a>: a platform for hosting lessons that students can go through at their own pace</li>
+<li><a target="_blank" href="http://gen.co/humansort/">HumanSort</a>: sort a list based on whatever you want by comparing two things at a time</li>
+<li><a target="_blank" href="http://markdowntomla.com/">Markdown to MLA</a> and <a href="http://markdowntoapa.com/">Markdown to APA</a>: generate perfect MLA and APA documents from plain text markdown</li>
+<li><a target="_blank" href="https://timecardapp.com">Timecard App</a>: timecard calculator (a rewrite of <a href="/timecardapp">my oldest useful program</a>)</li>
+<li><a target="_blank" href="http://gen.co/timer/">Timer</a>: a simple timer with alarm for teaching in poms</li>
+<li><a target="_blank" href="http://gen.co/icondice/">Icon Dice</a>: a ~900 sided dice with <a href="https://material.io/icons/" target="_blank">icons</a> instead of numbers</li>
+<li><a target="_blank" href="http://gen.co/clear/">Clear Decoder</a>: decode links from the <a target="_blank" href="https://itunes.apple.com/us/app/clear-todos/id493136154?mt=8">Clear iOS list making app</a> to markdown</li>
+<li><a target="_blank" href="https://profileflags.parseapp.com/">Profile Flags</a>: add a country flag over your Facebook profile picture</li>
+<li><a target="_blank" href="https://github.com/christiangenco/autorunner">autorunner</a>: command line tool to run a command when a file is saved</li>
+<li><a target="_blank" href="https://github.com/christiangenco/t_time_tracker">t_time_tracker</a>: simple command line time tracking</li>
+<li><a target="_blank" href="http://emailtipbot.com">Email Tip Bot</a>: send/receive bitcoin through email. Shut down (and coins returned) in 2017.</li>
+</ul>
 
 <!--
 ## Up Next

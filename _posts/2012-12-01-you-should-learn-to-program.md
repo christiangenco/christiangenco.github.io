@@ -75,6 +75,8 @@ If you like working on a laptop, I recommend:
 - [Khan Academy's Intro to JS: Drawing & Animation](https://www.khanacademy.org/computing/computer-programming/programming)
 - [Khan Academy's Intro to HTML/CSS: Making webpages](https://www.khanacademy.org/computing/computer-programming/html-css)
 - [Codecademy](https://www.codecademy.com/)
+- [Javascript 30 by Wes Bos](https://javascript30.com)
+- [Code Sandbox](http://codesandbox.io) or [Codepen](http://codepen.io) to just play around
 
 If you're on an iPad, I love [Swift Playgrounds](https://www.apple.com/swift/playgrounds/) - you learn to code while playing a game!
 
@@ -84,6 +86,7 @@ Are you old school and like books? Check out:
 
 - [Learn to Program by Chris Pine](https://www.amazon.com/Learn-Program-Second-Facets-Ruby/dp/1934356360/ref=as_li_ss_tl?ie=UTF8&qid=1541024550&sr=8-1&keywords=learn+to+program+chris+pine&linkCode=sl1&tag=cgenco-20&linkId=920f1526f371bca45d1466fb275c3da4&language=en_US)
 - [Learn Python the hard way by Zed Shaw](https://www.amazon.com/Learn-Python-Hard-Way-Introduction/dp/0134692888/ref=as_li_ss_tl?ie=UTF8&qid=1541024583&sr=8-2&keywords=learn+the+hard+way&linkCode=sl1&tag=cgenco-20&linkId=ff1ea55d6869e69eff53dee22c60c3af&language=en_US)
+- [Elloquent Javascript](https://eloquentjavascript.net)
 
 ## Then what?
 

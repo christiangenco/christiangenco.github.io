@@ -92,7 +92,7 @@ Are you old school and like books? Check out:
 
 Oh man, the sky's the limit.
 
-If you get stuck, or aren't sure how to reach your goals, feel free to [shoot me a message on facebook messenger](https://www.messenger.com/t/cgenco) or [send me an email](mailto:christian@gen.co)! I read and respond to every message I get, and love helping new programmers :)
+If you get stuck, or aren't sure how to reach your goals, feel free to [shoot me a message on facebook messenger](https://www.messenger.com/t/cgenco) or <a href="mailto:christian@gen.co" target="_blank">send me an email</a>! I read and respond to every message I get, and love helping new programmers :)
 
 <!-- https://i.imgur.com/Z3n8OVc.jpg -->
 <!-- https://i.imgur.com/xH4rGNL.jpg -->

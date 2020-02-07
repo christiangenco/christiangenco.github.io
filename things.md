@@ -295,6 +295,7 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 - [my-mac-os](https://github.com/nikitavoloboev/my-mac-os/) and [my-ios](https://github.com/nikitavoloboev/my-ios) by nikitavoloboev: lots of MacOS/iOS specific developer tools and workflows
 - [Works for me](https://works-for-me.github.io/): collection of developer toolkits
 - [Uses This](https://usesthis.com/): interviews of the tools productive people use
+- [Guzey's Tools and Gear](https://guzey.com/tools-gear/)
 
 ---
 

@@ -77,6 +77,7 @@ If you like working on a laptop, I recommend:
 - [Codecademy](https://www.codecademy.com/)
 - [Javascript 30 by Wes Bos](https://javascript30.com)
 - [Code Sandbox](http://codesandbox.io) or [Codepen](http://codepen.io) to just play around
+- [The Missing Semester of your CS Education](https://missing.csail.mit.edu/) video series, which teaches some very practical hands-on coding skills that will put you above what most Computer Science university graduates can do.
 
 If you're on an iPad, I love [Swift Playgrounds](https://www.apple.com/swift/playgrounds/) - you learn to code while playing a game!
 

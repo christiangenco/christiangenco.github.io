@@ -14,6 +14,11 @@ How do you get started programming? What's the best language to learn? The optio
 
 Here's what I recommend to get started coding.
 
+<div class="alert alert-success" role="alert" style="font-size: 20pt">
+  <strong>🏫 Announcing Genco School</strong> In this crazy post-COVID-19 world, I'm launching my own course on learning how to program! This course is the best way to learn to code if you're interested in learning just enough coding to start your own business.
+  <a href="https://school.gen.co" class="btn btn-success btn-lg btn-block">Start learning to code on Genco School</a>
+</div>
+
 ## What language should I learn first?
 
 There are [_thousands_ of languages](https://en.wikipedia.org/wiki/List_of_programming_languages) you could choose as your first language. Some programmers are very opinionated about what language is the best, and so strongly recommend beginners learn their favorite language first.
@@ -94,6 +99,11 @@ Are you old school and like books? Check out:
 Oh man, the sky's the limit.
 
 If you get stuck, or aren't sure how to reach your goals, feel free to [shoot me a message on facebook messenger](https://www.messenger.com/t/cgenco) or <a href="mailto:christian@gen.co" target="_blank">send me an email</a>! I read and respond to every message I get, and love helping new programmers :)
+
+<div class="alert alert-success" role="alert" style="font-size: 20pt">
+  <strong>🏫 Announcing Genco School</strong> In this crazy post-COVID-19 world, I'm launching my own course on learning how to program! This course is the best way to learn to code if you're interested in learning just enough coding to start your own business.
+  <a href="https://school.gen.co" class="btn btn-success btn-lg btn-block">Start learning to code on Genco School</a>
+</div>
 
 <!-- https://i.imgur.com/Z3n8OVc.jpg -->
 <!-- https://i.imgur.com/xH4rGNL.jpg -->

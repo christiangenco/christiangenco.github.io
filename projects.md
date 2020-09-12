@@ -25,7 +25,7 @@ These are things I've made that make money.
 <li><a target="_blank" href="http://mosaic.apps.gen.co">Mosaic Web Dev</a>: a platform for hosting lessons that students can go through at their own pace</li>
 <li><a target="_blank" href="http://gen.co/humansort/">HumanSort</a>: sort a list based on whatever you want by comparing two things at a time</li>
 <li><a target="_blank" href="http://markdowntomla.com/">Markdown to MLA</a> and <a href="http://markdowntoapa.com/">Markdown to APA</a>: generate perfect MLA and APA documents from plain text markdown</li>
-<li><a target="_blank" href="https://timecardapp.com">Timecard App</a>: timecard calculator (a rewrite of <a href="/timecardapp">my oldest useful program</a>)</li>
+<li><a target="_blank" href="https://timecards.gen.co">Timecard App</a>: timecard calculator (a rewrite of <a href="/timecardapp">my oldest useful program</a>)</li>
 <li><a target="_blank" href="http://gen.co/timer/">Timer</a>: a simple timer with alarm for teaching in poms</li>
 <li><a target="_blank" href="http://gen.co/icondice/">Icon Dice</a>: a ~900 sided dice with <a href="https://material.io/icons/" target="_blank">icons</a> instead of numbers</li>
 <li><a target="_blank" href="http://gen.co/clear/">Clear Decoder</a>: decode links from the <a target="_blank" href="https://itunes.apple.com/us/app/clear-todos/id493136154?mt=8">Clear iOS list making app</a> to markdown</li>

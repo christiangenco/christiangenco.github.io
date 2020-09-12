@@ -55,15 +55,15 @@ Functional, but not the prettiest thing in the world. The main thing I wanted to
 7. Open the .html file
 8. Print it
 
-Web apps make everything easier, and I've been on a [React](https://facebook.github.io/react/) kick recently, so I re-wrote the program as [timecardapp.com](https://timecardapp.com):
+Web apps make everything easier, and I've been on a [React](https://facebook.github.io/react/) kick recently, so I re-wrote the program as [Timecard App](https://timecards.gen.co):
 
-<figure class="center"><img src="http://i.imgur.com/eLfILGN.png" /><figcaption>The new timecardapp.com</figcaption></figure>
+<figure class="center"><img src="http://i.imgur.com/eLfILGN.png" /><figcaption>The new timecards.gen.co</figcaption></figure>
 
 (it was also a nice opportunity to play with [antd](https://ant.design/docs/react/introduce) instead of my go-to [Bootstrap](http://getbootstrap.com/))
 
 In a few hours I had a much more usable workflow:
 
-1. Open timecardapp.com
+1. Open [timecards.gen.co](https://timecards.gen.co)
 2. Type up the timesheet (see it live update as you type to catch errors easier)
 3. Print it
 

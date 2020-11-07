@@ -1,17 +1,17 @@
 ---
 title: Improving Surgery Discharge Instructions
-image: https://res.cloudinary.com/genco/image/upload/v1604717421/c/31xJ.jpg
-image_small: https://res.cloudinary.com/genco/image/upload/v1604717421/c/31xJ.jpg
-excerpt: The instructions my doctor gave me to follow after my surgery were terrible and confusing, so I rewrote them.
+image: https://res.cloudinary.com/genco/image/upload/v1604717961/c/2ChN.png
+image_small: https://res.cloudinary.com/genco/image/upload/v1604717961/c/2ChN.png
+excerpt: My doctor gave me terrible and confusing instructions that I didn't understand, so I rewrote them.
 ---
 
-I was given a sheet of [pre- and post-operative instructions for my wisdom teeth extraction](/pdf_articles/terrible-operative-instructions.pdf) for my wisdom teeth extraction that were terrible and confusing, so I rewrote them to be easier to follow.
+My doctor gave me [terrible and confusing instructions](/pdf_articles/terrible-operative-instructions.pdf) that I didn't understand for a wisdom teeth extraction surgery, so I rewrote them to be easier to follow.
 
-These instructions make a classic mistake of being egocentrically aligned from the doctor's perspective instead of from the patient's perspective.
+My doctor's instructions make the classic mistake of being egocentrically aligned from the doctor's perspective instead of from the patient's perspective.
 
-Hey, I'm not a doctor, this is not medical advice, etc.
+Also before we go on: hey, I'm not a doctor and this is not medical advice, I'm just practicing some human centered design.
 
-Also: oh my god, doctors get your shit together. How are people supposed to follow your logic puzzle discharge instructions _while_ going through surgery? Come on now you can do better.
+Also #2: oh my god doctors get your shit together. How are people supposed to follow your logic puzzle discharge instructions _while_ going through surgery? Come on now you can do better.
 
 ## Before scheduling the surgery
 
@@ -28,21 +28,23 @@ Also: oh my god, doctors get your shit together. How are people supposed to foll
 
 ## The day before
 
-- Don't have any grapefruit because it messes with some medications (specifically, it interferes with drug metabolism via CYP450 enzymes in the liver)
-- Don't eat or drink anything (even water) after midnight. You need to have fasted for at least eight hours before your surgery to minimize the risk that you vomit and then choke on your own vomit while sedated.
-- Mix up a big bottle of salt water to rinse your mouth out for meals (after the first 24 hours)
-- Hey good job taking care of your health! Do something relaxing a few hours before bed.
+- Don't have any grapefruit because it messes with some medications (specifically, it interferes with drug metabolism via CYP450 enzymes in the liver. Weird, right?)
+- Don't eat or drink anything (even water) after midnight. You need to have fasted for at least eight hours before your surgery to minimize the risk that you vomit and then choke on your own vomit while sedated, and what an embarassing way to die that would be.
+- Mix up a big bottle of salt water to rinse your mouth out for meals (but only after the first 24 hours—your mouth is going to be super delicate on the day of your surgery)
 - Plan some relaxing activities you can do while stationary tomorrow. Video games? Netflix binge?
+- Hey good job taking care of your health! Do one of those relaxing activities a few hours before bed.
 
 ## The morning of your surgery
 
 - Hey good job taking care of your health! Remember to breathe.
-- wear short sleeves so the doctors can access your arms to put in an IV for sedation drugs
+- Wear short sleeves so the doctors can access your arms to put in an IV for sedation drugs
 
 ## Immediately after waking up from your surgery
 
-- you might feel uncomfortable, have swelling, bleed, and not be able to open your jaw all the way: that's normal.
-- gently but firmly bite down on the gauze in your mouth to control bleeding
+- **What to expect**:
+  - You might feel uncomfortable, have swelling, bleed, and not be able to open your jaw all the way: that's normal.
+- **Do**:
+  - gently but firmly bite down on the gauze in your mouth to control bleeding
 
 ## On your way home
 

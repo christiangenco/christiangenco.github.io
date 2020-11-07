@@ -2,40 +2,12 @@
 title: Improving Surgery Discharge Instructions
 image: https://res.cloudinary.com/genco/image/upload/v1604717421/c/31xJ.jpg
 image_small: https://res.cloudinary.com/genco/image/upload/v1604717421/c/31xJ.jpg
-excerpt: I was given a sheet of pre- and post-operative instructions for my wisdom teeth extraction that were confusing, so I rewrote them.
+excerpt: The instructions my doctor gave me to follow after my surgery were terrible and confusing, so I rewrote them.
 ---
 
 I was given a sheet of [pre- and post-operative instructions for my wisdom teeth extraction](/pdf_articles/terrible-operative-instructions.pdf) for my wisdom teeth extraction that were terrible and confusing, so I rewrote them to be easier to follow.
 
 These instructions make a classic mistake of being egocentrically aligned from the doctor's perspective instead of from the patient's perspective.
-
-Here's an example of why these instructions are poorly written: say it's been three days since your surgery, you just woke up, you're hungry, and your mouth hurts. You look in the fridge and see some precooked sausages, a carton of milk, bread, eggs, and lettuce. In the pantry is a bag of potato chips, spices, some La Croix sparkling water, and some instant rice.
-
-Given the following snippets of discharge instructions you were given, what do you do next?
-
-> **24 Hour Rule – DO NOT RINSE YOUR MOUTH, SPIT, USE A STRAW, CHEW HARD FOOD, BRUSH YOUR TEETH, OR LOOK IN YOUR MOUTH FOR 24 HOURS.** After 24 hours, rinse your mouth GENTLY with salt water. Rinse for one minute twice a day for seven days. **Do not rinse on day of surgery.** > **-PAIN MEDICATION / ANTIBIOTICS**: Pick up the prescriptions on your way home. Take medication with a cup of liquid or a serving of food. **_Never take medication on an empty stomach._** To avoid nausea while taking pain medication: Eat soft foods, remain in a reclined position and take it easy for the first couple of days.
->
-> 1. Take antibiotic (amoxicillin or clindamycin) as instructed on medicine bottle.
-> 2. Take Medrol Dose Pack as directed on package until completely gone. Do not stop taking unless directed.
-> 3. Only fill and take the prescription for Zofran if needed for nausea. Follow instructions on medicine bottle.
->    -DIET -- Drink a lot of fluids. Avoid all foods that require chewing for the first 2 days: (Ensure, smoothies (no straw), ice cream, yogurt, soup, mashed potatoes, pudding, jello and similar). After 2 days, you should begin eating soft foods that require chewing so your jaw doesn’t get tight and cause pain: (Banana, pancakes, eggs, larger pastas, soft sandwiches, cooked vegetables, and similar). You can also chew gum to prevent tightening of jaw. Remember to rinse your mouth gently with warm salt water after eating. **\*Avoid crunchy and small things (chips, rice, corn, and oatmeal)** until day 7 when you start using syringe. NO STRAWS FOR AT LEAST 7 DAYS.
-
-Compare those instructions with these:
-
-> Day 3:
->
-> - **If you feel pain**:
->   - apply heat
->   - eat or drink something, then take 2 tablets of Ultracet or 1 tablet of Tylenol #3 or 2 over the counter 500mg Tylenol
->   - if you've taken Ultracet or Tylenol and are still in pain 4 hours later, take 800mg Ibuprofen or 2 200mg over the counter Ibuprofen
->   - if you're still in pain 4 hours after that, you can take Ultracet or Tylenol again and keep alternating with Ibuprofen.
-> - **If you feel hungry**:
->   - eat soft foods that require chewing so your jaw doesn't get tight and cause pain: banana, pancakes, eggs, larger pastas, soft sandwiches, cooked veggies, and similar
->   - rinse your mouth gently with warm salt water after eating
-
-Those later instructions are easier to read because they're written from the patient's perspective. In software entrepreneurship we call this technique Human Centered Design.
-
----
 
 Hey, I'm not a doctor, this is not medical advice, etc.
 

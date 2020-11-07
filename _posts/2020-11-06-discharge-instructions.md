@@ -1,11 +1,11 @@
 ---
-title: Wisdom Teeth
-image:
-image_small:
+title: Improving Surgery Discharge Instructions
+image: https://res.cloudinary.com/genco/image/upload/v1604717421/c/31xJ.jpg
+image_small: https://res.cloudinary.com/genco/image/upload/v1604717421/c/31xJ.jpg
 excerpt: I was given a sheet of pre- and post-operative instructions for my wisdom teeth extraction that were confusing, so I rewrote them.
 ---
 
-I was given a sheet of [pre- and post-operative instructions for my wisdom teeth extraction](/pdf_articles/terrible-operative-instructions.pdf) that were terrible and confusing, so I rewrote them to be easier to follow.
+I was given a sheet of [pre- and post-operative instructions for my wisdom teeth extraction](/pdf_articles/terrible-operative-instructions.pdf) for my wisdom teeth extraction that were terrible and confusing, so I rewrote them to be easier to follow.
 
 These instructions make a classic mistake of being egocentrically aligned from the doctor's perspective instead of from the patient's perspective.
 

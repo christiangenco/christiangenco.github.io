@@ -14,6 +14,8 @@ def refresh_chrome
   }
 end
 
+refresh_chrome
+
 listener = Listen.to('src') do |modified, added, removed|
   # puts(modified: modified, added: added, removed: removed)
   modified.each{|path|

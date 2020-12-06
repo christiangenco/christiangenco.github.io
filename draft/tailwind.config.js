@@ -35,10 +35,11 @@ module.exports = {
         DEFAULT: {
           css: {
             "font-family": "triplicate",
+            color: theme("colors.black"),
             a: {
-              color: theme("colors.red.600"),
+              color: theme("colors.red.700"),
               "&:hover": {
-                color: theme("colors.red.500"),
+                color: theme("colors.red.600"),
               },
             },
             h1: {
@@ -58,6 +59,39 @@ module.exports = {
             },
             h6: {
               "font-family": "triplicate-caps",
+            },
+            blockquote: {
+              color: theme("colors.gray.900"),
+              borderLeftWidth: "0.25rem",
+              borderLeftColor: theme("colors.red.700"),
+              "border-bottom-left-radius": "9px 113px",
+              "border-top-left-radius": "5px",
+            },
+            hr: {
+              borderColor: theme("colors.red.700"),
+              borderTopWidth: 2,
+              "border-top-right-radius": "225px 5px",
+              height: 20,
+            },
+            "ol > li::before": {
+              content: "counter(list-counter)",
+              color: theme("colors.red.700"),
+              "line-height": "normal",
+              borderColor: theme("colors.red.700"),
+              borderRadius: "255px 15px 225px 15px/15px 225px 15px 255px",
+              borderWidth: 2,
+              padding: "2px 3px",
+              top: "0.1em",
+            },
+            "ul > li::before": {
+              backgroundColor: theme("colors.red.700"),
+              // borderRadius: "50%",
+              width: "0.75em !important",
+              height: "0.25em !important",
+              top: "0.8em !important",
+              "border-radius": "initial",
+              "border-bottom-right-radius": 7,
+              "border-top-left-radius": 7,
             },
           },
         },

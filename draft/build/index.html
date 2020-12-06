@@ -5,18 +5,27 @@
   <body class="dark:bg-gray-900">
     <main class="container mx-auto px-4">
       <header
-        class="border-b-4 border-red-600 font-mono my-4 md:flex items-center justify-between"
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between"
+        style="border-bottom-right-radius: 225px 8px"
       >
-        <a href=""><h1 class="font-bold text-xl">Christian Genco</h1></a>
+        <h1 class="font-bold text-xl">
+          <a href="" class="hover:bg-gray-50 rounded">Christian Genco</a>
+        </h1>
         <nav>
-          <a href="" class="">Articles</a>
-          <a href="" class="ml-4">Projects </a>
-          <a href="" class="ml-4">Newsletter</a>
-          <a href="" class="ml-4">About</a>
+          <a href="/articles" class="hover:bg-gray-50 rounded">Articles</a>
+          <a href="/projects" class="ml-4 hover:bg-gray-50 rounded"
+            >Projects
+          </a>
+          <!-- <a href="" class="ml-4 hover:bg-gray-50 rounded">Notes</a> -->
+          <a href="/newsletter" class="ml-4 hover:bg-gray-50 rounded"
+            >Newsletter</a
+          >
         </nav>
       </header>
 
-      <h1 class="font-mono-caps text-6xl mb-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12"
+      >
         Garlic bread with cheese: What the science tells us
       </h1>
       <article class="prose lg:prose-xl dark-mode:prose-dark">
@@ -27,6 +36,7 @@
           children, with the food earning such an iconic status in our culture
           that kids will often dress up as warm, cheesy loaf for Halloween.
         </p>
+        <hr />
         <p>
           But <a href="https://gen.co">a recent study</a> shows that the
           celebrated appetizer may be linked to a series of rabies cases
@@ -39,6 +49,28 @@
             lose all the other base styles too?
           </p>
         </blockquote>
+
+        <ol>
+          <li>We want everything to look good out of the box.</li>
+          <li>
+            Really just the first reason, that's the whole point of the plugin.
+          </li>
+          <li>
+            Here's a third pretend reason though a list with three items looks
+            more realistic than a list with two items.
+          </li>
+        </ol>
+
+        <p>
+          Now I'm going to show you an example of an unordered list to make sure
+          that looks good, too:
+        </p>
+
+        <ul>
+          <li>So here is the first item in this list.</li>
+          <li>In this example we're keeping the items short.</li>
+          <li>Later, we'll use longer, more complex list items.</li>
+        </ul>
 
         <figure>
           <img
@@ -64,21 +96,44 @@
     </main>
     <div class="bg-gray-100 border-t border-gray-300 mt-6">
       <div class="container mx-auto px-4">
-        <footer class="py-4 font-mono text-center md:text-left">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
           <img
             src="images/profile.square.small.jpg"
             alt="Christian Genco profile photo"
-            class="rounded-full w-16 h-16 block mx-auto md:inline"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
           />
-          <a href="https://twitter.com/cgenco">Twitter</a>
-          <a href="https://youtube.com/cgenco">YouTube</a>
-          <a href="https://facebook.com/cgenco">Facebook</a>
-          <a href="https://instagram.com/cgenco">Instagram</a>
-          <a href="https://github.com/christiangenco">GitHub</a>
-          <a href="http://www.linkedin.com/in/cgenco">LinkedIn</a>
-          <a href="mailto:christian@gen.co">Email</a>
-          <!-- RSS -->
-          <div class="clearfix"></div>
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              >Twitter</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              >YouTube</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              >Facebook</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              >Instagram</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              >GitHub</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              >LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">•</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
         </footer>
       </div>
     </div>

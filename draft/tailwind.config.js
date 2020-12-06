@@ -1,3 +1,11 @@
+const round = num =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, "$1")
+    .replace(/\.0$/, "");
+const rem = px => `${round(px / 16)}rem`;
+const em = (px, base) => `${round(px / base)}em`;
+
 module.exports = {
   purge: ["./src/**/*.html"],
   darkMode: "media", // false, 'media' or 'class'
@@ -40,6 +48,14 @@ module.exports = {
               color: theme("colors.red.700"),
               "&:hover": {
                 color: theme("colors.red.600"),
+              },
+            },
+            "a.anchor": {
+              color: theme("colors.gray.100"),
+              textDecoration: "none",
+              marginLeft: rem(2),
+              "&:hover": {
+                color: theme("colors.gray.300"),
               },
             },
             h1: {
@@ -92,6 +108,9 @@ module.exports = {
               "border-radius": "initial",
               "border-bottom-right-radius": 7,
               "border-top-left-radius": 7,
+            },
+            img: {
+              borderRadius: "0.5rem",
             },
           },
         },

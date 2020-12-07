@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <!-- TODO: meta tags -->
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="" class="hover:bg-gray-50 rounded">Christian Genco</a>
+        </h1>
+        <nav>
+          <a href="/articles" class="hover:bg-gray-50 rounded">Articles</a>
+          <a href="/projects" class="ml-4 hover:bg-gray-50 rounded"
+            >Projects
+          </a>
+          <a href="/notes" class="ml-4 hover:bg-gray-50 rounded">Notes </a>
+          <a href="/newsletter" class="ml-4 hover:bg-gray-50 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4"><% yield %></main>
+
+    <div class="bg-gray-100 border-t border-gray-300 mt-6">
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              >Twitter</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              >YouTube</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              >Facebook</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              >Instagram</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              >GitHub</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              >LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">•</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">•</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

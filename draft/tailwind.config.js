@@ -6,6 +6,11 @@ const round = num =>
 const rem = px => `${round(px / 16)}rem`;
 const em = (px, base) => `${round(px / base)}em`;
 
+// comment
+function foo(arg) {
+  console.log(`hello ${arg}`);
+}
+
 module.exports = {
   purge: ["./src/**/*.html"],
   darkMode: "media", // false, 'media' or 'class'
@@ -109,6 +114,21 @@ module.exports = {
               "border-bottom-right-radius": 7,
               "border-top-left-radius": 7,
             },
+            "li:nth-child(5n+0)::before": {
+              transform: "rotate(3deg)",
+            },
+            "li:nth-child(5n+1)::before": {
+              transform: "rotate(-2deg)",
+            },
+            "li:nth-child(5n+2)::before": {
+              transform: "rotate(2deg)",
+            },
+            "li:nth-child(5n+3)::before": {
+              transform: "rotate(-3deg)",
+            },
+            "li:nth-child(5n+4)::before": {
+              transform: "rotate(1deg)",
+            },
             img: {
               borderRadius: "0.5rem",
             },
@@ -123,7 +143,9 @@ module.exports = {
                 color: theme("colors.red.300"),
               },
             },
-
+            blockquote: {
+              color: theme("colors.gray.300"),
+            },
             h1: {
               color: theme("colors.gray.300"),
             },

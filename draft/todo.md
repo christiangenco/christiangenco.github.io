@@ -1,4 +1,3 @@
-- render markdown articles
 - articles page
 - home page: https://stefanzweifel.io/
 - add # link to headings
@@ -8,6 +7,7 @@
 - newsletter page
 - about page
 - latex
+- rotate `li`s with `transform: rotate(1-10deg);`
 
 ---
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'listen'
 require 'shellwords'
+# require 'erb'
 
 def osascript script
   system 'osascript', *script.split(/\n/).map { |line| ['-e', line] }.flatten

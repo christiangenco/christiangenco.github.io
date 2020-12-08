@@ -1,13 +1,12 @@
+- render articles
 - articles page
 - home page: https://stefanzweifel.io/
-- add # link to headings
-- highlight.js or prismjs for code highlighting
-- lists, hr, blockquote dark mode colors
 - projects page
 - newsletter page
-- about page
+- head metadata
+- favicon
+- publish on github
 - latex
-- rotate `li`s with `transform: rotate(1-10deg);`
 
 ---
 
@@ -16,3 +15,16 @@
 Inspiration:
 
 - https://www.nateliason.com/
+
+---
+
+# done
+
+- add # link to headings
+- rotate `li`s with `transform: rotate(1-10deg);`
+- highlight.js or prismjs for code highlighting
+- support emoji
+- support quotes with sources
+- support markdown in image alt
+- lists, hr, blockquote dark mode colors
+- notes page (books)

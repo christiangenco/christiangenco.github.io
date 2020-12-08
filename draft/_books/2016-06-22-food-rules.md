@@ -2,7 +2,6 @@
 title: Food Rules - An Eater's Manual
 image: http://ecx.images-amazon.com/images/I/41Dh74zDcoL.jpg
 image_small: http://ecx.images-amazon.com/images/I/41Dh74zDcoL.jpg
-isbn:
 summary: eat food, mostly plants, not too much.
 ---
 
@@ -20,24 +19,24 @@ The book won't take you much longer to read than this outline.
 
 ## Introduction
 
-* "For all the scientific and pseudoscientific food baggage we've taken on in recent years, we *still* don't know what we should be eating."
-* usually digging to the bottom of an issue like "what should I be eating" it becomes clear that the root issues are complicated, but Pollan's research on food landed on simple conclusions
-* "science knows a lot less about nutrition than you'd expect...[it's] a very young science"
+- "For all the scientific and pseudoscientific food baggage we've taken on in recent years, we _still_ don't know what we should be eating."
+- usually digging to the bottom of an issue like "what should I be eating" it becomes clear that the root issues are complicated, but Pollan's research on food landed on simple conclusions
+- "science knows a lot less about nutrition than you'd expect...[it's] a very young science"
 
 Two simple facts no one disputes:
 
 1. Western diets make you sick (obesity, type 2 diabetes, cardiovascular disease, and 1/3 of cancer are strongly linked to processed diets with added sugar and fat and low fruits/vegetables). "People who get off the Western diet see dramatic improvements in their health" (like 70-90% reduced risk improvements; see Pollen's other book, "In Defense of Food", for science of why)
 2. There's not a single ideal human diet (Inuit in Greenland eat mostly seal fat; Central American Indians eat mostly carbs from maize and beans; Masai African tribesmen eat mostly protein from blood, meat, and milk)
 
-* people want to keep eating Western diets, and food manufacturers want to keep selling them, so they try to figure out the single thing causing the most evil and just make food without that (ex: "fat free", "sugar free", dairy, whatever the latest finding says is the real killer)
-* "In Defense of Food" had a really simple conclusion: Eat food. Not too much. Mostly plants.
-* this book relies as much on science as on "other sources of wisdom", like readers, conference audiences, folklorists, anthropologists, doctors, nurses, nutritionists, dietitians, mothers, grandmothers, and great-grandmothers
-* where this advice intersects is probably what you should do (ex: tomatoes with olive oil dissolves the lycopene in the tomatoes so you can digest it better)
-* most of the rules are heuristics to avoid heavily processed foods ("edible foodlike substances")
-* "taken together, these rules comprise a kind of choral voice of popular food wisdom" (see "The Wisdom of Crowds")
-* these rules are redundant to maximize stickiness
-* they're more guidelines than rules
-* "think of these food policies as little algorithms designed to simplify your eating life. Adopt whichever ones stick and work best for you"
+- people want to keep eating Western diets, and food manufacturers want to keep selling them, so they try to figure out the single thing causing the most evil and just make food without that (ex: "fat free", "sugar free", dairy, whatever the latest finding says is the real killer)
+- "In Defense of Food" had a really simple conclusion: Eat food. Not too much. Mostly plants.
+- this book relies as much on science as on "other sources of wisdom", like readers, conference audiences, folklorists, anthropologists, doctors, nurses, nutritionists, dietitians, mothers, grandmothers, and great-grandmothers
+- where this advice intersects is probably what you should do (ex: tomatoes with olive oil dissolves the lycopene in the tomatoes so you can digest it better)
+- most of the rules are heuristics to avoid heavily processed foods ("edible foodlike substances")
+- "taken together, these rules comprise a kind of choral voice of popular food wisdom" (see "The Wisdom of Crowds")
+- these rules are redundant to maximize stickiness
+- they're more guidelines than rules
+- "think of these food policies as little algorithms designed to simplify your eating life. Adopt whichever ones stick and work best for you"
 
 ## Part 1: What should I eat? (eat food)
 
@@ -77,11 +76,11 @@ tl;dr: don't eat food made in a factory because it kills you faster than eating 
 25. **Eat your colors**: "the colors of many vegetables reflect the different antioxidant phytochemicals they contain - anthocycanins, polyphenols, flavonoids, carotenoids"
 26. **Drink the spinach water**: it's rich in vitamins and other plant chemicals (cg: except Kale has a toxin that can be steamed out so maybe not for kale?); make soup with it
 27. **Eat animals that have themselves eaten well**: the industrial food chain feeds corn to ruminants that evolved to eat grass, which makes less healthy animal products; pay more for wild game
-28. **If you have the space, buy a freezer**: you can buy a quarter of a steer or a whole hog if you know they've been healthily pastured; you can also buy fruits and vegetables at the height of season and store them for later; *freezing does not significantly diminish the nutritional value of produce*
+28. **If you have the space, buy a freezer**: you can buy a quarter of a steer or a whole hog if you know they've been healthily pastured; you can also buy fruits and vegetables at the height of season and store them for later; _freezing does not significantly diminish the nutritional value of produce_
 29. **Eat like an omnivore**: most things at the supermarket are the same handful of species; branch out whenever you can to cover your nutritional bases (cg: wild chimps eat like 100 different fruit species; the typical store has <20)
 30. **Eat well-grown food from healthy soil**: soils rich in organic matter make better food; local is better because nutritional quality deteriorates with time
 31. **Eat wild foods when you can**: two of the most nutritious plants in the world - lamb's quarters and purslane - are weeds; wild greens have higher phytochemicals than domesticated cousins because they have to be their own pesticides; we breed crops for sweetness, but defensive compounds (cg: and antioxidants!) are bitter; we breed for shelf life, but omega-3 has short shelf life
-32. **Don't overlook the oily little fishes**: "wild wfish are among the healthiest things you can eat"; fish on the top of the marine food chain (tuna, swordfish, shark) are endangered and concentrate toxins (like mercury), so *eat mackerel, sardines, and anchovies*
+32. **Don't overlook the oily little fishes**: "wild wfish are among the healthiest things you can eat"; fish on the top of the marine food chain (tuna, swordfish, shark) are endangered and concentrate toxins (like mercury), so _eat mackerel, sardines, and anchovies_
 33. **Eat some foods that have been predigested by bacteria or fungi**: (ex: yogurt, sauerkraut, soy sauce, kimchi, sourdough bread); bacteria produce B12 - which isn't made by plants - and the bacteria can live in your gut which helps with digestion and immune response (allergies and inflammation)
 34. **Sweeten and salt your food yourself**: food prepared by corporations has too much
 35. **Eat sweet foods as you find them in nature**: eating the fruit rather than just the juice doesn't fill you as fast, so you eat too much; never drink soda
@@ -111,7 +110,7 @@ tl;dr: don't eat food made in a factory because it kills you faster than eating 
 54. **Breakfast like a king, lunch like a prince, dinner like a pauper**: eating close to bedtime might be bad (elevated triglycerides); front-loading calories might cause you to eat less because you won't be as hungry
 55. **Eat meals**: mindless snacking makes you eat more (~500 calories/day more than in 1980s)
 56. **Limit your snacks to unprocessed plant foods**: if you're going to snack, eat food
-57. ****Don't get your fuel from the same place your car does**: gas stations usually don't sell food
+57. \***\*Don't get your fuel from the same place your car does**: gas stations usually don't sell food
 58. **Do all your eating at a table**: multitasking makes it harder to eat mindfully
 59. **Try not to eat alone**: you'll take longer to eat and likely won't over stuff yourself when others are watching (cg: I feel like I eat more around other people)
 60. **Treat treats as treats**: treats are life's great pleasures as long as you don't have it every day (ex: fried chicken, french fries, pastries, ice cream); S-policy: no snacks, seconds, or sweets except on days that start with S

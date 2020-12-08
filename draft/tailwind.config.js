@@ -12,7 +12,7 @@ function foo(arg) {
 }
 
 module.exports = {
-  purge: ["./src/**/*.html"],
+  purge: ["./src/**/*.html.ejs", "./build/**/*.html"],
   darkMode: "media", // false, 'media' or 'class'
   theme: {
     fontFamily: {
@@ -54,13 +54,13 @@ module.exports = {
               "&:hover": {
                 color: theme("colors.red.600"),
               },
-            },
-            "a.anchor": {
-              color: theme("colors.gray.100"),
-              textDecoration: "none",
-              marginLeft: rem(2),
-              "&:hover": {
-                color: theme("colors.gray.300"),
+              "&.anchor": {
+                color: theme("colors.gray.100"),
+                textDecoration: "none",
+                marginLeft: rem(2),
+                "&:hover": {
+                  color: theme("colors.gray.300"),
+                },
               },
             },
             h1: {
@@ -138,10 +138,16 @@ module.exports = {
           css: {
             color: theme("colors.gray.300"),
             a: {
-              color: theme("colors.red.400"),
+              color: theme("colors.red.600"),
               "&:hover": {
-                color: theme("colors.red.300"),
+                color: theme("colors.red.500"),
               },
+              // "&.anchor": {
+              //   color: theme("colors.gray.800"),
+              //   "&:hover": {
+              //     color: theme("colors.gray.700"),
+              //   },
+              // },
             },
             blockquote: {
               color: theme("colors.gray.300"),

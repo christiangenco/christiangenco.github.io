@@ -10,13 +10,11 @@ I got turned onto this book - [Relationships by The School of Life](http://amzn.
 
 Humans spend a lot of time studying how to make money, but very little on things that actually bring them life satisfaction:
 
-<img src="https://i.imgur.com/lo3fuw9.png" alt="Sleep quality, sex life, job security, health of close relatives, chatting to neighbors, support network, child at home, and relationship status impact quality of life in that order" style="max-width: 100%" />
-
-Source: [Oxford Economics, the National Centre for Social Research](https://www.about.sainsburys.co.uk/~/media/Files/S/Sainsburys/living-well-index/sainsburys-living-well-index.PDF)
+![Sleep quality, sex life, job security, health of close relatives, chatting to neighbors, having a support network, having children at home, and relationship status impact quality of life in that order. Source: <a href="https://www.about.sainsburys.co.uk/~/media/Files/S/Sainsburys/living-well-index/sainsburys-living-well-index.PDF">Oxford Economics, the National Centre for Social Research</a>](https://i.imgur.com/lo3fuw9.png)
 
 If you have enough money (defined by this study as spending within your means and not being stressed about debts), efforts to improve your life should be focused on sleep, relationships, and exercise. More money won't improve your life as effectively.
 
-In the context of this study, "relationships" means several things: your sex life, weak network ties, people you hang out with, your support network, the health of people close to you. <u>Relationships</u> (the book) focuses on the kind of one-on-one life partner relationships that would only impact the "sex life" portion of this study, but the information in it can be applied to all types of relationships.
+In the context of this study, "relationship" means several things: your sex life, weak network ties, people you hang out with, your support network, the health of people close to you. Relationships the book focuses on the kind of one-on-one life partner relationships that would only impact the "sex life" portion of this study, but the information in it can be applied to all types of relationships.
 
 Particularly, a big unstated focus on this book is on developing a deeper relationship with yourself. "Relationships" does a great job of forcing you to confront and accept your own imperfections.
 
@@ -26,13 +24,13 @@ Summary: Romanticism - our society's script of how love and relationships are su
 
 Here's the script Western culture in 2017 gives you for how love is supposed to work:
 
-* True love means loving every part of the one right person over all other people. If there's something you don't like about your partner - if they need to change - it's a sign they're not the right person.
-* The right partner is your "soul mate, best friend, co-parent, co-chauffeur, accountant, household manager and spiritual guide"
-* Finding the right parter is all about following your feelings (and therefore marrying for pragmatic reasons is heartless and terrible). You'll innately know when you've found the right person without instruction.
-* Long-term marriage is the goal of love
-* Sex is the supreme expression of love (and therefore infrequent sex and adultery are love catastrophes). When you've found your soul mate, sex is great forever (even with kids and work), and you should never be attracted to anyone else.
-* The right partner intuitively understands you without trying.
-* Relationships driven by practicalities (like having similar bathroom etiquette) or money are sinister ("gold-digger"; "social climber")
+- True love means loving every part of the one right person over all other people. If there's something you don't like about your partner - if they need to change - it's a sign they're not the right person.
+- The right partner is your "soul mate, best friend, co-parent, co-chauffeur, accountant, household manager and spiritual guide"
+- Finding the right parter is all about following your feelings (and therefore marrying for pragmatic reasons is heartless and terrible). You'll innately know when you've found the right person without instruction.
+- Long-term marriage is the goal of love
+- Sex is the supreme expression of love (and therefore infrequent sex and adultery are love catastrophes). When you've found your soul mate, sex is great forever (even with kids and work), and you should never be attracted to anyone else.
+- The right partner intuitively understands you without trying.
+- Relationships driven by practicalities (like having similar bathroom etiquette) or money are sinister ("gold-digger"; "social climber")
 
 This is how love works in every movie you've ever seen and every book you've ever read.
 
@@ -42,10 +40,10 @@ Romanticism sets unrealistic expectations and sets lovers up for disaster. You'l
 
 This book proposes that the Classical model is better. Classical love teaches:
 
-* love and sex aren't necessarily coupled
-* discussing money and practicalities is necessary for long term relationship success
-* everyone is flawed, and you'll never find everything you want in a single person
-* understanding another person requires immense conscious effort
+- love and sex aren't necessarily coupled
+- discussing money and practicalities is necessary for long term relationship success
+- everyone is flawed, and you'll never find everything you want in a single person
+- understanding another person requires immense conscious effort
 
 ## 2. Object Choice
 
@@ -55,13 +53,13 @@ Humans may have negative patterns of what they think they want from a partner th
 
 It's important to understand what you currently think you want from a partner, and then critically analyze if they're valid. It can be hard to positively spin the things you want, especially if you think they're negative, so finishing these sentence fragments may help:
 
-* If I tell a partner how much I need them, they will...
-* When someone tells me they really need me, I...
-* If someone can't cope, I...
-* When someone tells me to get my act together, I...
-* If I were to be frank about my anxieties...
-* If my partner told me not to worry, I'd...
-* When someone blames me unfairly, I...
+- If I tell a partner how much I need them, they will...
+- When someone tells me they really need me, I...
+- If someone can't cope, I...
+- When someone tells me to get my act together, I...
+- If I were to be frank about my anxieties...
+- If my partner told me not to worry, I'd...
+- When someone blames me unfairly, I...
 
 Even if you don't deconstruct the "type" you have in your head, it can be useful to know the qualities you're looking for and explore why you might like those qualities.
 
@@ -71,9 +69,9 @@ Humans tend to emotionally overreact to things they were sensitive to as a child
 
 How can you figure out what you're emotionally sensitive too? Subconscious "transference exercises":
 
-* Rorschach Tests
-* Completing sentence stems ("Men in authority are generally...", "Young women are almost always...")
-* Henry Murray and Christiana Morgan's indeterminate drawing tests
+- Rorschach Tests
+- Completing sentence stems ("Men in authority are generally...", "Young women are almost always...")
+- Henry Murray and Christiana Morgan's indeterminate drawing tests
 
 Note: this is textbook Freudian psychology, which has been criticised as being ["highly unscientific...he mostly studied himself, his patients and only one child"](https://www.simplypsychology.org/Sigmund-Freud.html).
 
@@ -105,7 +103,7 @@ Nurture your partner's inner child even though sympathy comes easier to a litera
 
 ## 7. Loving and Being Loved
 
-As a child, you only really learned how to *be* loved, and so you expect and want unconditional un-reciprocated from your partner now. As an adult, to get love you need to learn to give love.
+As a child, you only really learned how to _be_ loved, and so you expect and want unconditional un-reciprocated from your partner now. As an adult, to get love you need to learn to give love.
 
 The love a parent has for a child is unsustainable. Parents hide their moments of rage, despair, and indifference and don't expect children to ask how their day was.
 
@@ -165,7 +163,7 @@ Romanticism teaches that if two people truly love one another they must always t
 
 In reality, editing raw brutal truths can be kinder and counterintuitively foster stronger relationships.
 
-*Note from Christian: I interpret this to mean "brutal honesty is brutal so have a filter on what you say so you're not an asshole", but the book doesn't explicitly say this*
+_Note from Christian: I interpret this to mean "brutal honesty is brutal so have a filter on what you say so you're not an asshole", but the book doesn't explicitly say this_
 
 ## 13. Explaining One's Madness
 
@@ -181,35 +179,35 @@ Structured talks can reveal more truth than natural ones. Romanticism teaches th
 
 Try these artificial (but useful) conversation starters:
 
-* What would you most like to be complimented on in the relationship?
-* Where do you think you're especially good as a person?
-* Which of your flaws do you want to be treated more generously?
-* What would you tell your younger self about love?
-* What do you think I get wrong about you?
-* What is one incident you'd like me to apologize for?
-* Can I ask you to apologize for an incident too?
-* How have I let you down?
-* What would you want to change about me?
-* If I was magically offered a chance to change something about you, what do you guess it would be?
-* If you could write an instruction manual for yourself in bed, what would you put in it?
+- What would you most like to be complimented on in the relationship?
+- Where do you think you're especially good as a person?
+- Which of your flaws do you want to be treated more generously?
+- What would you tell your younger self about love?
+- What do you think I get wrong about you?
+- What is one incident you'd like me to apologize for?
+- Can I ask you to apologize for an incident too?
+- How have I let you down?
+- What would you want to change about me?
+- If I was magically offered a chance to change something about you, what do you guess it would be?
+- If you could write an instruction manual for yourself in bed, what would you put in it?
 
 and these sentence stems:
 
-* I resent...
-* I am puzzled by...
-* I am hurt by...
-* I regret...
-* I am afraid that...
-* I am frustrated by...
-* I am happier when...
-* I want...
-* I appreciate...
-* I hope...
-* I would so like you to understand...
-* When I am anxious in our relationship, I tend to...
-* You tend to respond by..., which makes me...
-* When we argue, on the surface I show..., but inside I feel...
-* The more I..., the more you..., and then the more I...
+- I resent...
+- I am puzzled by...
+- I am hurt by...
+- I regret...
+- I am afraid that...
+- I am frustrated by...
+- I am happier when...
+- I want...
+- I appreciate...
+- I hope...
+- I would so like you to understand...
+- When I am anxious in our relationship, I tend to...
+- You tend to respond by..., which makes me...
+- When we argue, on the surface I show..., but inside I feel...
+- The more I..., the more you..., and then the more I...
 
 Getting close to someone can be awkward and uncomfortable, so decide before you start that that's going to be okay.
 
@@ -235,11 +233,11 @@ Romanticism teaches that we're in sexually enlightened times compared to people 
 
 In reality, people are still really hung up on sex, and ashamed to explore what they want. Here are some unpalatable realities:
 
-* it's rare to maintain sexual interest in only one person
-* it's possible to love someone and want to have sex with strangers
-* a human can be well adjusted and a functional and productive member of society, and also have degrading sexual habits
-* it's normal to have bisexual and incestuous fantasies, among countless other taboos
-* it may be easier to be excited by someone you don't like than someone you love
+- it's rare to maintain sexual interest in only one person
+- it's possible to love someone and want to have sex with strangers
+- a human can be well adjusted and a functional and productive member of society, and also have degrading sexual habits
+- it's normal to have bisexual and incestuous fantasies, among countless other taboos
+- it may be easier to be excited by someone you don't like than someone you love
 
 This is all super normal, and you should talk more about it with people.
 
@@ -249,8 +247,8 @@ Both pure fidelity and pure infidelity are naive and incomplete. The ideal solut
 
 Currently, there are two tropes of people in monogamy:
 
-* The Loyalist (romantic): love is intimately tied to sex, so it's impossible to love someone and want to have sex with someone else. Sex isn't like tennis, it's tied with a deep emotional connection you can't decouple.
-* The Libertine (anti-romantic): sex and love are completely decoupled. There are much worse ways of betraying a person than sleeping with a third party, like ignoring your partner
+- The Loyalist (romantic): love is intimately tied to sex, so it's impossible to love someone and want to have sex with someone else. Sex isn't like tennis, it's tied with a deep emotional connection you can't decouple.
+- The Libertine (anti-romantic): sex and love are completely decoupled. There are much worse ways of betraying a person than sleeping with a third party, like ignoring your partner
 
 Both of these are kinda right, and kinda catastrophic. Monogamy really is at times maddening and suffocating, and a functioning relationship is hard to build treating sex partners as tennis partners. The right answer is probably somewhere between them:
 
@@ -272,11 +270,11 @@ Choosing not to live with someone could prevent "scratchy familiarity, contempt 
 
 Short term relationships mean:
 
-* partners need to earn each other's respect daily (vs. leaning on the legal difficulty of separating for their partner to stay)
-* differences can be easily forgiven (vs. being driven mad thinking you'll have to deal with your partner's annoying quirks for the rest of your life)
-* you have your own space (vs. differences in bathroom and kitchen habits being a constant source of conflict)
-* the relationship is focused on fun (vs. being focused on administrative tasks, accounting, visiting in-laws, cleaning, and child-raising)
-* clean endings are possible (vs. relationships only ending by being viscously killed)
+- partners need to earn each other's respect daily (vs. leaning on the legal difficulty of separating for their partner to stay)
+- differences can be easily forgiven (vs. being driven mad thinking you'll have to deal with your partner's annoying quirks for the rest of your life)
+- you have your own space (vs. differences in bathroom and kitchen habits being a constant source of conflict)
+- the relationship is focused on fun (vs. being focused on administrative tasks, accounting, visiting in-laws, cleaning, and child-raising)
+- clean endings are possible (vs. relationships only ending by being viscously killed)
 
 If the societal narrative is that long term relationships are normal and expected to last forever, anything short of forever would need to be described as a horrifying failure. Nothing lasts forever, so don't pretend it does (even, and especially, if you hope it does).
 
@@ -294,7 +292,7 @@ Romantics are proudly irrational ("love is too abstract"); classicists are skept
 
 > Both Romantic and Classical orientations have important truths to impart. Neither is wholly right or wrong. They need to be balanced. And none of us are in any case ever simply one or the other...at this point in history, it might be the Classical attitude whose distinctive claims and wisdom we need to listen to the most intently.
 
-*Note from Christian: ...really? I've been with this book so far, but what in those descriptions of Romanticism was an "important truth to impart"?*
+_Note from Christian: ...really? I've been with this book so far, but what in those descriptions of Romanticism was an "important truth to impart"?_
 
 ## 20. Better Love Stories
 
@@ -306,7 +304,7 @@ The Romantic love story constructs a devilish template of expectations of what r
 
 ### The Plot
 
-<img src="https://i.imgur.com/LIGKShd.jpg" alt="Beauty and the Beast is a typical Romantic plot" style="max-width: 100%" />
+![Beauty and the Beast is a typical Romantic plot](https://i.imgur.com/LIGKShd.jpg)
 
 The archetypal Romantic plot is that all sorts of obstacles are placed in the way of love's birth (misunderstandings, bad luck, prejudice, war, a rival, a fear of intimacy, shyness, or an evil conjurer).
 

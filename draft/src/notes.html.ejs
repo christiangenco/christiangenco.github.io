@@ -1,0 +1,15 @@
+---
+title: Notes
+---
+
+<p>Christian's collection of notes on books, conferences, and films.</p>
+
+<h2>Book Notes</h2>
+
+<ul>
+<%
+Object.entries(posts).forEach(function([path, post]){ %>
+  <li><a href="<%= path %>"><%- post.title %></a></li>
+
+<% }) %>
+</ul>

@@ -5,11 +5,15 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/typography": "^0.3.1",
+    "applescript": "^1.0.0",
     "autoprefixer": "^10.0.4",
     "ejs": "^3.1.5",
     "front-matter": "^4.0.2",
     "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
     "marked": "^1.2.5",
+    "mkdirp": "^1.0.4",
+    "node-watch": "^0.7.1",
     "postcss": "^8.1.14",
     "postcss-cli": "^8.3.0",
     "tailwindcss": "^2.0.1"

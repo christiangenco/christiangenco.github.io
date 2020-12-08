@@ -4,6 +4,7 @@ require 'shellwords'
 # require 'erb'
 
 def osascript script
+  # puts *script.split(/\n/).map { |line| ['-e', line] }.flatten
   system 'osascript', *script.split(/\n/).map { |line| ['-e', line] }.flatten
 end
 
@@ -16,6 +17,7 @@ def refresh_chrome
 end
 
 refresh_chrome
+exit
 
 listener = Listen.to('src') do |modified, added, removed|
   # puts(modified: modified, added: added, removed: removed)

@@ -6,15 +6,15 @@ excerpt: Why? It makes you smarter, computers are improving faster than you are,
 tags: top
 ---
 
-<div class="embed-responsive embed-responsive-16by9" style="margin-top: 20px; margin-bottom: 20px;"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-
 Since giving a TEDx talk at [TEDxSMU](http://www.tedxsmu.org/) on why everyone should learn to program, I've gotten some amazing messages from people all over the world inspired to learn to code, but unsure what to do next.
+
+https://youtube.com/watch?v=xfBWk4nw440
 
 How do you get started programming? What's the best language to learn? The options can be overwhelming and confusing, especially for beginners.
 
 Here's what I recommend to get started coding.
 
-<div class="alert alert-success" role="alert" style="font-size: 20pt">
+<div class="bg-green-100">
   <strong>🏫 Announcing Genco School</strong> In this crazy post-COVID-19 world, I'm launching my own course on learning how to program! This course is the best way to learn to code if you're interested in learning just enough coding to start your own business.
   <a href="https://school.gen.co" class="btn btn-success btn-lg btn-block">Start learning to code on Genco School</a>
 </div>
@@ -77,6 +77,7 @@ If you don't need to worry about what language to learn first, how do you pick w
 
 If you like working on a laptop, I recommend:
 
+- [Genco School](https://www.genco.school): my course teaching just enough HTML, CSS, and Javascript to be dangerous
 - [Khan Academy's Intro to JS: Drawing & Animation](https://www.khanacademy.org/computing/computer-programming/programming)
 - [Khan Academy's Intro to HTML/CSS: Making webpages](https://www.khanacademy.org/computing/computer-programming/html-css)
 - [Codecademy](https://www.codecademy.com/)

@@ -1,1 +1,1 @@
-jekyll server
+pushd build && python -m SimpleHTTPServer; popd

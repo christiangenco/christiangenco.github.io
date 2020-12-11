@@ -52,12 +52,14 @@ Also #2: oh my god doctors get your shit together. How are people supposed to fo
   - an antibiotic (amoxicillin or cindamycin)
   - a Medrol Dose Pack (an antiinflamatory steroid)
   - Zofran, but only if you feel nautious
-  - Ultracet or Tylenol and Ibuprofen for pain
+  - Ultracet or Tylenol for pain
+  - Ibuprofen for pain
 
 ## When you get home
 
 - change your gauze and let it stay in your mouth for up to one hour (so you've had gauze in your mouth for about two hours total).
-  - if bleeding is excessive, check that the gauze is as far back in your mouth as possible. You may bite on tea bags to help stop bleeding.
+  - if bleeding is excessive, check that the gauze is as far back in your mouth as possible.
+  - You may bite on a wet tea bag to help stop bleeding: acids in tea help in the clotting process.
 - lay down with your head elevated and take a nap. Blood pressure and bleeding decrease when sleeping.
 - Try not to talk or move excessively.
 - While your driver and post-surgery companion is hanging out in the same room as you for your nap, ask them to write out a schedule with checkboxes for when you're going to take that medication for the next week. Plan to eat or drink something before taking any medication to avoid nausea.
@@ -101,7 +103,7 @@ Also #2: oh my god doctors get your shit together. How are people supposed to fo
   - take your antibiotic (amoxicillin or clindamycin) as instructed on the medicine bottle
   - take your antiinflamatory steroid Medrol Dose Pack as instructed
   - rinse your mouth gently with salt water in the morning and evening
-  - brush your teeth
+  - gently brush your teeth with a soft-bristled toothbrush, avoiding the removal site. Don't spit—just let the water dribble out.
 - **What to expect**:
   - swelling will likely increase from yesterday
   - you might have a little bleeding
@@ -127,7 +129,7 @@ Also #2: oh my god doctors get your shit together. How are people supposed to fo
   - take your antibiotic (amoxicillin or clindamycin) as instructed on the medicine bottle
   - take your antiinflamatory steroid Medrol Dose Pack as instructed
   - rinse your mouth gently with salt water in the morning and evening
-  - brush your teeth
+  - gently brush your teeth with a soft-bristled toothbrush, avoiding the removal site. Don't spit—just let the water dribble out.
 - **What to expect**:
   - you're at peak healing and swelling, so you might feel worse today than you have so far
   - you might not be able to open your jaw all the way
@@ -152,7 +154,7 @@ Also #2: oh my god doctors get your shit together. How are people supposed to fo
   - take your antibiotic (amoxicillin or clindamycin) as instructed on the medicine bottle
   - take your antiinflamatory steroid Medrol Dose Pack as instructed
   - rinse your mouth gently with salt water in the morning and evening
-  - brush your teeth
+  - brush your teeth like normal with extra caution around the removal site
 - **What to expect**:
   - you're at peak healing and swelling, so you might feel worse today than you have so far
   - you might not be able to open your jaw all the way
@@ -177,7 +179,7 @@ Also #2: oh my god doctors get your shit together. How are people supposed to fo
   - take your antibiotic (amoxicillin or clindamycin) as instructed on the medicine bottle
   - take your antiinflamatory steroid Medrol Dose Pack as instructed
   - rinse your mouth gently with salt water in the morning and evening
-  - brush your teeth
+  - brush your teeth like normal with extra caution around the removal site
 - **What to expect**:
   - swelling should start gradually decreasing
   - you might not be able to open your jaw all the way
@@ -202,7 +204,7 @@ Also #2: oh my god doctors get your shit together. How are people supposed to fo
   - take your antibiotic (amoxicillin or clindamycin) as instructed on the medicine bottle
   - take your antiinflamatory steroid Medrol Dose Pack as instructed
   - rinse your mouth gently with salt water in the morning and evening
-  - brush your teeth
+  - brush your teeth like normal with extra caution around the removal site
 - **What to expect**:
   - swelling should be decreasing
   - you might not be able to open your jaw all the way
@@ -226,7 +228,7 @@ Also #2: oh my god doctors get your shit together. How are people supposed to fo
   - take your antibiotic (amoxicillin or clindamycin) as instructed on the medicine bottle
   - take your antiinflamatory steroid Medrol Dose Pack as instructed
   - use the provided syringe filled with warm salt water to keep the extraction site clean once a day at night
-  - brush your teeth
+  - brush your teeth like normal with extra caution around the removal site
 - **What to expect**:
   - swelling should start gradually decreasing
   - you might not be able to open your jaw all the way

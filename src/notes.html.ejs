@@ -17,6 +17,7 @@ posts.filter(({webpath}) => webpath.includes("/books")).forEach(post => { %>
 <h2>Conference and Course Notes</h2>
 
 <ul>
+  <li><a target="_blank" href="https://microconf.gen.co">Microconf Recap</a>: my ongoing summaries of talks at the Bootstrapped software business conference Microconf</li>
 <%
 posts.filter(({webpath}) => webpath.includes("/notes")).forEach(post => { %>
   <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>

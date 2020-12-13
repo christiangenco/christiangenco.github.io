@@ -1,10 +1,8 @@
-- newsletter signup
-- minimal home page with picture, intro, now, and ways I can help: https://stefanzweifel.io/
 - redirects
   - redirect yearly update posts to `/newsletter/2019-review`, etc.
 - head metadata
 - favicon
-- publish on github
+- publish
 
 ---
 
@@ -31,3 +29,5 @@ Inspiration:
 - projects page
 - show recaps and yearly summaries
 - newsletter page:
+- newsletter signup
+- minimal home page with picture, intro, now, and ways I can help: https://stefanzweifel.io/

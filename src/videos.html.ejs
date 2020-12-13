@@ -1,0 +1,24 @@
+---
+title: Videos
+---
+
+<p>Christian's public videos and notable guest appearances on the internet.</p>
+
+<h2>Videos</h2>
+
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/ocHExbA8K4Y" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/uRk64UlQtA8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/R9ikWJGpzNw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/Uiq0DTCJvy0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/WM_-laDEHcA" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+
+<h2>Guest Appearances</h2>
+
+<ul>
+<%
+[{webpath: "https://fileinbox.com", title: "Fileinbox", excerpt: "stuff"}].forEach(post => { %>
+  <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
+
+<% }) %>
+</ul>

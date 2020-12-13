@@ -2,14 +2,24 @@
 title: Notes
 ---
 
-<p>Christian's collection of notes on books, conferences, and films.</p>
+<p>Christian's collection of long-form notes on books, conferences, courses, and films.</p>
 
 <h2>Book Notes</h2>
 
 <ul>
 <%
-Object.entries(posts).forEach(function([path, post]){ %>
-  <li><a href="<%= path %>"><%- post.title %></a></li>
+posts.filter(({webpath}) => webpath.includes("/books")).forEach(post => { %>
+  <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
+
+<% }) %>
+</ul>
+
+<h2>Conference and Course Notes</h2>
+
+<ul>
+<%
+posts.filter(({webpath}) => webpath.includes("/notes")).forEach(post => { %>
+  <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
 
 <% }) %>
 </ul>

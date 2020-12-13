@@ -1,0 +1,17 @@
+---
+title: Projects
+---
+
+<p>Christian's podcasts and software tools that might improve your life.</p>
+
+<h2>Podcasts</h2>
+
+<h2>Software</h2>
+
+<ul>
+<%
+[{webpath: "https://fileinbox.com", title: "Fileinbox", excerpt: "stuff"}].forEach(post => { %>
+  <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
+
+<% }) %>
+</ul>

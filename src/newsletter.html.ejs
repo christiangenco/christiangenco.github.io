@@ -1,0 +1,16 @@
+---
+title: Newsletter
+---
+
+<p>Want ~monthly emails with my most recent thoughts and projects? Slap your email down in this bad boy:</p>
+
+<h2>Past Newsletters</h2>
+
+<ul>
+<%
+posts.filter(({filepath}) => filepath.includes("_newsletter")).forEach(post => { %>
+  <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
+
+<% }) %>
+</ul>
+

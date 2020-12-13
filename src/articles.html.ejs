@@ -1,0 +1,15 @@
+---
+title: Articles
+---
+
+<p>Christian's posts</p>
+
+<h2>Articles</h2>
+
+<ul>
+<%
+posts.filter(({filepath}) => filepath.includes("_posts")).forEach(post => { %>
+  <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
+
+<% }) %>
+</ul>

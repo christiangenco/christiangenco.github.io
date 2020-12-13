@@ -11,7 +11,9 @@ rsync -av assets/images/ build/images/
 
 # NODE_ENV=production node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
 
-echo "style-`md5 -q build/css/style.css`.css" > build/css/latestStyleBasename.txt
+node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
+
+echo "style-`md5 -q build/css/style.css | head -c 4`.css" > build/css/latestStyleBasename.txt
 cp build/css/style.css build/css/`cat build/css/latestStyleBasename.txt`
 
 # node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css

@@ -181,7 +181,6 @@ async function render() {
   const posts = Object.entries(postsByTitle)
     .map(([path, post]) => ({ ...post, webpath: path }))
     .sort((a, b) => (a.filepath < b.filepath ? 1 : -1));
-  console.log(posts);
 
   const pagePaths = await glob("src/*");
   await Promise.all(
@@ -198,20 +197,24 @@ async function render() {
           .replace(".html.ejs", "/index.html")
           .replace("index/index.html", "index.html");
         write(dest, output);
-        console.log({ dest });
+        // console.log({ dest });
       }
     })
   );
 
   await refreshChrome();
+  return posts;
 }
 
 async function main() {
   await render();
 
-  // watch("src", { recursive: true }, (evt, name) => {
-  //   console.log("%s changed.", name);
-  //   render();
-  // });
+  if (process.argv[2] === "--watch") {
+    console.log("watching...");
+    watch("src", { recursive: true }, (evt, name) => {
+      console.log("%s changed.", name);
+      render();
+    });
+  }
 }
 main();

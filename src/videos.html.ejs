@@ -6,18 +6,23 @@ title: Videos
 
 <h2>Videos</h2>
 
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
+<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/Uiq0DTCJvy0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
 <div class="embed mb-2"><iframe src="https://www.youtube.com/embed/ocHExbA8K4Y" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
 <div class="embed mb-2"><iframe src="https://www.youtube.com/embed/uRk64UlQtA8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
 <div class="embed mb-2"><iframe src="https://www.youtube.com/embed/R9ikWJGpzNw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
-<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
-<div class="embed mb-2"><iframe src="https://www.youtube.com/embed/Uiq0DTCJvy0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
 <div class="embed mb-2"><iframe src="https://www.youtube.com/embed/WM_-laDEHcA" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></div>
 
 <h2>Guest Appearances</h2>
 
 <ul>
 <%
-[{webpath: "https://fileinbox.com", title: "Fileinbox", excerpt: "stuff"}].forEach(post => { %>
+[
+  {webpath: "https://okproductive.com/episodes/023-3-hat-productivity-with-christian-genco", title: "OK Productive 023", excerpt: "3 Hat Productivity"},
+  {webpath: "http://businessdesignpodcast.com/bdp-10-christian-genco/", title: "The Business Design Podcast #10", excerpt: "Many people dream of a job where they can travel all over the world while they work remotely. Christian Genco lives this dream."},
+  {webpath: "http://hellotechpros.com/christian-genco-productivity/", title: "Hello TechPros #58", excerpt: "Get Perfect Memory and Always Know What to Do Next – Productivity Tuesday with Christian Genco"},
+  {webpath: "https://heathandalyssa.com/rve-0011-christian-elisa-genco-plan-retire-30-years-old/", title: "RV Entrepreneur Podcast #0011", excerpt: "How Christian & Elisa Genco Plan to Retire by 30 Years Old"}
+].forEach(post => { %>
   <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
 
 <% }) %>

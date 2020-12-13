@@ -6,12 +6,51 @@ title: Projects
 
 <h2>Podcasts</h2>
 
+<ul>
+<%
+[
+  {webpath:"https://makers.dev", title: "Makers.dev", excerpt: "weekly show about building software businesses with my friend <a target='_blank' href='https://chrisachard.com/'>Chris Achard</a>."},
+  {webpath:"https://yourthoughts.fm", title: "Your Thoughts", excerpt: "a very serious podcast experiment in mindfulness"},
+  {webpath:"https://www.youtube.com/channel/UCrc3MWpTojA5MZ2_OAe7h5Q", title: "The Genco Show", excerpt: "interesting conversations I have with friends"},
+  {webpath:"https://pslove.fm", title: "PSLove", excerpt: "interviews with people from my university alumni scholarship group"},
+].forEach(post => { %>
+  <li><a target="_blank" href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
+
+<% }) %>
+</ul>
+
 <h2>Software</h2>
 
 <ul>
 <%
-[{webpath: "https://fileinbox.com", title: "Fileinbox", excerpt: "stuff"}].forEach(post => { %>
-  <li><a href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
+[
+{webpath:"https://fileinbox.com", title: "Fileinbox (previously called DBinbox)", excerpt: "receive files from your clients to your Dropbox"},
+{webpath:"http://textbooksplease.com", title: "textbooks please", excerpt: "textbook search engine"},
+{webpath:"https://www.alexaskillstore.com/Dr-Dog/39678", title: "Dr. Dog", excerpt: 'ask your Amazon Echo or Google Home if it\'s safe for your dog to eat certain foods'},
+{webpath: "https://chrome.google.com/webstore/detail/export-history/hcohnnbbiggngobheobhdipbgmcbelhh?hl=en-US", title: "Export History", excerpt: "Chrome plugin to export your history"},
+{webpath:"https://gen.co/yt", title: "Your Thoughts Script Generator", excerpt: 'a tool for more efficiently making and publishing episodes of my very serious daily podcast <a href="https://yourthoughts.fm">Your Thoughts</a>.'},
+{webpath:"https://gen.co/expenses", title: "Expense Tracker", excerpt: "simple graph of your expenses from an Airtable spreadsheet"},
+{webpath:"https://gen.co/allthemusic/?notes=53325332", title: "All the Music Player", excerpt: 'browse every pop melody that has ever existed and ever will exist'},
+{webpath:"https://gen.co/pixels/", title: "Pixel Art Creator", excerpt: 'a simple programming IDE to draw pixel art'},
+{webpath:"https://gen.co/birthdays", title: "Bonus Birthdays", excerpt: 'Calculate your bonus birthdays, like when you turn 20,000 days old, or when you\'re the same age George Washington was when he became president.'},
+{webpath:"https://gen.co/edraft", title: "Email Drafter", excerpt: 'markdown email editor that renders as plaintext and HTML'},
+{webpath:"https://gen.co/dndice", title: "DnDice", excerpt: 'Dungeons & Dragons dice roller'},
+{webpath:"https://gen.co/qgen/", title: "qgen", excerpt: 'a tool for hunting for 30x500 audiences'},
+{webpath: "https://itunes.apple.com/us/app/pastcam/id1217068871?mt=8", title: "PastCam", excerpt: "iOS app to take \"then and now\" style pictures"},
+{webpath:"https://gen.co/qr/", title: "QR reader/writer", excerpt: 'code reader that works offline, like on an air gapped computer'},
+{webpath:"http://christian.gen.co/secrets/", title: "Secrets", excerpt: 'split up a secret into N pieces so you can recover it with any M of the pieces'},
+{webpath:"http://mosaic.apps.gen.co", title: "Mosaic Web Dev", excerpt: 'a platform for hosting lessons that students can go through at their own pace'},
+{webpath:"http://gen.co/humansort/", title: "HumanSort", excerpt: 'list based on whatever you want by comparing two things at a time'},
+{webpath:"http://markdowntomla.com/", title: "Markdown to MLA", excerpt: 'generate perfect MLA and <a href="http://markdowntoapa.com/">APA</a> documents from plain text markdown'},
+{webpath:"https://timecards.gen.co.com", title: "Timecard App", excerpt: 'timecard calculator (a rewrite of <a href="/timecardapp">my oldest useful program</a>)'},
+{webpath:"http://gen.co/timer/", title: "Timer", excerpt: 'with alarm for teaching in poms'},
+{webpath:"http://gen.co/icondice/", title: "Icon Dice", excerpt: 'sided dice with <a href="https://material.io/icons/" target="_blank">icons</a> instead of numbers'},
+{webpath:"http://gen.co/clear/", title: "Clear Decoder", excerpt: 'links from the <a target="_blank" href="https://itunes.apple.com/us/app/clear-todos/id493136154?mt=8">Clear iOS list making app</a> to markdown'},
+{webpath:"https://profileflags.parseapp.com/", title: "Profile Flags", excerpt: 'facebook app to add a country flag over your Facebook profile picture'},
+{webpath:"https://github.com/christiangenco/autorunner", title: "autorunner", excerpt: 'command line tool to run a command when a file is saved'},
+{webpath: "https://github.com/christiangenco/t_time_tracker", title: "t_time_tracker", excerpt: 'simple command line time tracking'},
+{webpath:"http://emailtipbot.com", title: "Email Tip Bot", excerpt: 'send/receive bitcoin through email. Shut down (and coins returned) in 2017.'}].forEach(post => { %>
+  <li><a target="_blank" href="<%= post.webpath %>"><%- post.title %></a><%- post.excerpt ? ": " + post.excerpt : "" %></li>
 
 <% }) %>
 </ul>

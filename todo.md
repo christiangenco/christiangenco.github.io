@@ -1,8 +1,7 @@
-- articles page
+- newsletter signup
 - minimal home page with picture, intro, now, and ways I can help: https://stefanzweifel.io/
-- projects page
-- newsletter page: show recaps and yearly summaries
-- redirects: redirect yearly update posts to `/newsletter/2019-review`, etc.
+- redirects
+  - redirect yearly update posts to `/newsletter/2019-review`, etc.
 - head metadata
 - favicon
 - publish on github
@@ -28,3 +27,7 @@ Inspiration:
 - lists, hr, blockquote dark mode colors
 - notes page (books)
 - render articles
+- articles page
+- projects page
+- show recaps and yearly summaries
+- newsletter page:

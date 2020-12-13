@@ -60,8 +60,13 @@ const renderer = {
   },
   link(href, title, text) {
     if (href === null) return text;
-    if (title === undefined && href === text && href.includes("youtube.com")) {
-      const match = href.match(/v=([\w-_]+)/);
+    if (
+      title === undefined &&
+      href === text &&
+      (href.includes("youtube.com") || href.includes("youtu.be"))
+    ) {
+      let match = href.match(/v=([\w-_]+)/);
+      if (!match) match = href.match(/youtu\.be\/([\w-_]+)/);
       if (match) {
         const youtubeId = match[1];
         return `
@@ -132,9 +137,16 @@ function renderMarkdown(md) {
   return html;
 }
 
-const templ = fs.readFileSync("src/_template.html.ejs", {
-  encoding: "utf8",
-});
+const latestStyleBasename = fs.readFileSync(
+  "build/css/latestStyleBasename.txt",
+  { encoding: "utf8" }
+);
+const templ = fs
+  .readFileSync("src/_template.html.ejs", {
+    encoding: "utf8",
+  })
+  .replace("/css/style.css", `/css/${latestStyleBasename}`);
+
 function template({ attributes, markdown, html }) {
   const output = ejs.render(templ, {
     head: "",
@@ -147,7 +159,7 @@ function template({ attributes, markdown, html }) {
 }
 
 async function render() {
-  const posts = {};
+  const postsByTitle = {};
 
   const postPaths = await glob("_*/*.md");
   await Promise.all(
@@ -161,11 +173,14 @@ async function render() {
         .replace(".md", "/index.html");
       write(dest, output);
       const webpath = dest.replace("/index.html", "").replace(/^build/, "");
-      posts[webpath] = attributes;
+      postsByTitle[webpath] = { ...attributes, filepath: path };
       // return Promise.resolve()
     })
   );
 
+  const posts = Object.entries(postsByTitle)
+    .map(([path, post]) => ({ ...post, webpath: path }))
+    .sort((a, b) => (a.filepath < b.filepath ? 1 : -1));
   console.log(posts);
 
   const pagePaths = await glob("src/*");

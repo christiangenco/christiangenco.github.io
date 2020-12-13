@@ -1,7 +1,5 @@
 mkdir -p build/css
 
-cp src/index.html build/index.html
-
 mkdir -p build/fonts
 rsync -av assets/fonts/ build/fonts/
 
@@ -11,7 +9,10 @@ rsync -av assets/images/ build/images/
 
 # set NODE_ENV=production to get minified styles
 
-NODE_ENV=production node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
+# NODE_ENV=production node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
+
+echo "style-`md5 -q build/css/style.css`.css" > build/css/latestStyleBasename.txt
+cp build/css/style.css build/css/`cat build/css/latestStyleBasename.txt`
 
 # node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
 

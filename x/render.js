@@ -158,6 +158,33 @@ function template({ attributes, markdown, html }) {
   return output;
 }
 
+async function renderRedirects() {
+  const tmpl = fs.readFileSync("src/_redirect.html.ejs", {
+    encoding: "utf8",
+  });
+
+  const redirects = JSON.parse(
+    fs
+      .readFileSync("redirects.json", {
+        encoding: "utf8",
+      })
+      .replace(/\s+\/\/.*\n/g, "")
+  );
+
+  Object.entries(redirects).forEach(([pathFrom, urlTo]) => {
+    if (!pathFrom.includes("gen.co")) {
+      // console.log({ pathFrom, urlTo });
+      const filePath = Path.join("build", pathFrom, "index.html");
+      ("build");
+      // console.log({ filePath });
+      // const url = urlTo.includes("http") ? urlTo : `https://${urlTo}`;
+      const url = urlTo;
+      const output = ejs.render(tmpl, { url });
+      write(filePath, output);
+    }
+  });
+}
+
 async function render() {
   const postsByTitle = {};
 
@@ -208,12 +235,14 @@ async function render() {
 
 async function main() {
   await render();
+  await renderRedirects();
 
   if (process.argv[2] === "--watch") {
     console.log("watching...");
     watch("src", { recursive: true }, (evt, name) => {
       console.log("%s changed.", name);
       render();
+      renderRedirects();
     });
   }
 }

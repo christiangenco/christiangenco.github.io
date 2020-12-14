@@ -18,5 +18,13 @@
   // "big5": "https://christian.gen.co/big5",
   // "321": "https://jamesclear.com/3-2-1/refer?rh_ref=58c4bf8e",
   // "calendly": "https://calendly.com/cgenco/chat",
-  // "chat": "https://calendly.com/cgenco/chat",
+  "gen.co/chat": "https://calendly.com/cgenco/chat",
+  "2020-08": "/newsletter/2020-08",
+  "2017-review": "/newsletter/2017-review",
+  "2018-review": "/newsletter/2018-review",
+  "2018": "/newsletter/2018",
+  "2019-review": "/newsletter/2019-review",
+  "2020-09": "/newsletter/2020-09",
+  "2020-10": "/newsletter/2020-10",
+  "2020-11": "/newsletter/2020-11"
 }

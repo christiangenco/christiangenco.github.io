@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url=<%- url %>" />
+  <link rel="canonical" href="<%- url %>" />
+  <title>Redirecting to <%- url %>...</title>
+
+  <style type="text/css">
+    body{
+      padding: 5em;
+    }
+    @media (prefers-color-scheme: dark) {
+      html, body, h1{
+        background-color: rgb(17, 24, 39);
+        color: white;
+        font-family: monospace;
+      }
+      a{
+        color: #dc2626;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    This page is now at <a href="<%- url %>"><%- url %></a>. Let's get you there now...
+  </h1>
+</body>
+</html>

@@ -1,8 +1,9 @@
-- redirects
-  - redirect yearly update posts to `/newsletter/2019-review`, etc.
 - head metadata
 - favicon
-- publish
+- make a list of internal redirects to add to redirects.json; prepend existing redirects with gen.co/
+- publish on github
+- redirects
+  - redirect yearly update posts to `/newsletter/2019-review`, etc.
 
 ---
 

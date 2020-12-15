@@ -1,0 +1,202 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-18a7.css
+" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Introducing Timecard App</title>
+    <meta name="title" content="Introducing Timecard App">
+    <meta name="description" content="a rewrite of my oldest useful program">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/timecardapp">
+    <meta property="og:title" content="Introducing Timecard App">
+    <meta property="og:description" content="a rewrite of my oldest useful program">
+    <meta property="og:image" content="http://i.imgur.com/EtyKAZg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/timecardapp">
+    <meta property="twitter:title" content="Introducing Timecard App">
+    <meta property="twitter:description" content="a rewrite of my oldest useful program">
+    <meta property="twitter:image" content="http://i.imgur.com/EtyKAZg.png">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav>
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        Introducing Timecard App
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <img src="http://i.imgur.com/EtyKAZg.png" /><p>When I got an email from my dad&#39;s office saying the program I wrote about 10 years ago stopped working, I had two choices: fix it, or rebuild it from scratch.</p>
+<p>I was shocked to hear they were still using it. Imagine your 10th grade English teacher calling you up asking if you could print another copy of your essay on To Kill a Mockingbird, because the copy she was using got worn out. It&#39;s a cool feeling to know that thoughts I&#39;ve had a decade ago were still being useful out in the world.</p>
+<p>Usually in these cases it&#39;s easier and faster to patch whatever broke and let it limp along, but there were some new technologies I wanted to play with, and I&#39;ve been kicking around ideas for how I would make it better.</p>
+<p>The problem is straightforward (though one of my more ambitious projects of my youth): given the typed-in raw data of a timecard (a sheet of paper office workers use to document when they start and stop working), calculate how many hours the worker has worked for the period (usually two weeks long).</p>
+<p>Here&#39;s the input format I made up from typing in the physical timesheets:</p>
+<pre>
+Harry
+1003+1804
+1014+1252 1322+2000
+1009+1803
+week
+1000+2000
+1000+2000
+
+Ron
+1501+2000
+1000+1530
+week
+1500+1802
+
+Hermione
+1102+1648 1744+1952
+week
+1135+2001
+1706+2000
+1756+1959
+1730+2020
+1129+1803
+</pre>
+
+<p>and what a 14 year old Christian Genco made as output with a 257 line ruby script:</p>
+<figure class="center"><img src="http://i.imgur.com/4wxZa0G.png" /><figcaption>Screenshot of my original ruby program output</figcaption></figure>
+
+<p>Functional, but not the prettiest thing in the world. The main thing I wanted to improve was the way the office manager interacts with the program. Here were the steps to use it:</p>
+<ol>
+<li>open WordPad (it won&#39;t work if you type it up in any other editor)</li>
+<li>Type up the timesheet</li>
+<li>Save the timesheet text file</li>
+<li>Find where you saved it</li>
+<li>Drag and drop it onto a special icon I put on the Desktop</li>
+<li>Find the .html file with the same name as the file you made</li>
+<li>Open the .html file</li>
+<li>Print it</li>
+</ol>
+<p>Web apps make everything easier, and I&#39;ve been on a <a href="https://facebook.github.io/react/">React</a> kick recently, so I re-wrote the program as <a href="https://timecards.gen.co">Timecard App</a>:</p>
+<figure class="center"><img src="http://i.imgur.com/eLfILGN.png" /><figcaption>The new timecards.gen.co</figcaption></figure>
+
+<p>(it was also a nice opportunity to play with <a href="https://ant.design/docs/react/introduce">antd</a> instead of my go-to <a href="http://getbootstrap.com/">Bootstrap</a>)</p>
+<p>In a few hours I had a much more usable workflow:</p>
+<ol>
+<li>Open <a href="https://timecards.gen.co">timecards.gen.co</a></li>
+<li>Type up the timesheet (see it live update as you type to catch errors easier)</li>
+<li>Print it</li>
+</ol>
+<p>Try it out at <a href="https://timecardapp.com">timecardapp.com</a>! If you have ideas for how it could be better, <a href="/contact">I&#39;d love to hear them</a>.</p>
+
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

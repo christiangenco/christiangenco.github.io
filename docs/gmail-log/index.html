@@ -1,0 +1,249 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-18a7.css
+" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Gmail Log</title>
+    <meta name="title" content="Gmail Log">
+    <meta name="description" content="Track how well you do email">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/gmail-log">
+    <meta property="og:title" content="Gmail Log">
+    <meta property="og:description" content="Track how well you do email">
+    <meta property="og:image" content="https://i.imgur.com/EwhsZEV.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/gmail-log">
+    <meta property="twitter:title" content="Gmail Log">
+    <meta property="twitter:description" content="Track how well you do email">
+    <meta property="twitter:image" content="https://i.imgur.com/EwhsZEV.png">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav>
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        Gmail Log
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <img src="https://i.imgur.com/EwhsZEV.png" /><p>I&#39;ve spent a lot of time thinking about how to be more productive, especially around email. The biggest part of improving these kinds of systems is tracking what you want to improve, so I wrote a Google Apps script that shows me how well I&#39;m doing at email.</p>
+<p>This script also fits into my <a href="https://sparkmailapp.com/">Spark</a> email flow by changing emails labeled <code>_star</code> to have an actual star (which is <a href="https://twitter.com/cgenco/status/920294494779641856">the one thing I don&#39;t think Spark can do yet</a>).</p>
+<p>Here&#39;s how to install this tracking in your own Gmail account:</p>
+
+      <h2 id="1-visit-a-href-https-docs-google-com-spreadsheets-u-0-google-sheets-a-and-create-a-new-spreadsheet">
+        1. Visit <a href="https://docs.google.com/spreadsheets/u/0/">Google Sheets</a> and create a new spreadsheet
+        <a href="#1-visit-a-href-https-docs-google-com-spreadsheets-u-0-google-sheets-a-and-create-a-new-spreadsheet" class="anchor">#</a>
+      </h2>
+    <img src="https://i.imgur.com/XMcip4x.png" />
+
+
+      <h2 id="2-name-that-spreadsheet-quot-gmail-log-quot-and-name-the-first-four-cells-in-the-first-row-code-timestamp-code-code-starred-emails-code-code-oldest-code-and-code-inbox-count-code-">
+        2. Name that spreadsheet &quot;Gmail Log&quot;, and name the first four cells in the first row <code>timestamp</code>, <code>starred emails</code>, <code>oldest</code>, and <code>inbox count</code>
+        <a href="#2-name-that-spreadsheet-quot-gmail-log-quot-and-name-the-first-four-cells-in-the-first-row-code-timestamp-code-code-starred-emails-code-code-oldest-code-and-code-inbox-count-code-" class="anchor">#</a>
+      </h2>
+    <figure class="center"><img src="https://i.imgur.com/eDao3b4.png" /><figcaption></figcaption></figure>
+
+
+      <h2 id="3-copy-that-spreadsheet-39-s-url-select-the-url-bar-then-code-edit-copy-code-or-code-cmd-ctrl-c-code-">
+        3. Copy that spreadsheet&#39;s URL (select the URL bar, then <code>Edit / Copy</code> or <code>CMD/CTRL + C</code>)
+        <a href="#3-copy-that-spreadsheet-39-s-url-select-the-url-bar-then-code-edit-copy-code-or-code-cmd-ctrl-c-code-" class="anchor">#</a>
+      </h2>
+    <figure class="center"><img src="https://i.imgur.com/XEgXCCE.png" /><figcaption></figcaption></figure>
+
+
+      <h2 id="4-a-href-https-script-google-com-create-a-new-google-script-a-name-it-quot-gmail-log-quot-and-paste-in-this-code-">
+        4. <a href="https://script.google.com">Create a new Google Script</a>, name it &quot;Gmail Log&quot;, and paste in this code:
+        <a href="#4-a-href-https-script-google-com-create-a-new-google-script-a-name-it-quot-gmail-log-quot-and-paste-in-this-code-" class="anchor">#</a>
+      </h2>
+    <pre><code>function logStarred() {
+  var spreadsheetURL = &quot;YOUR_SPREADSHEET_URL_GOES_HERE&quot;;
+  var spreadsheet = SpreadsheetApp.openByUrl(spreadsheetURL);
+  var sheet = spreadsheet.getSheetByName(&quot;StarredCount&quot;);
+
+  // give any email with the _star label an actual star
+  var _star = GmailApp.getUserLabelByName(&#39;_star&#39;);
+  var threads = _star.getThreads();
+  for(var i in threads){
+    var thread = threads[i];
+    thread.getMessages()[0].star();
+  }
+  // ...then take the _star label away
+  _star.removeFromThreads(threads)
+
+  // mark all starred read threads as unread
+  var starredReadThreads = GmailApp.search(&quot;is:starred is:read&quot;);
+  for(var i=0; i&lt;starredReadThreads.length; i++){
+    starredReadThreads[i].markUnread();
+  }
+
+  // calculate the oldest message age
+  var now = new Date();
+  var starred = GmailApp.getStarredThreads();
+  var oldestStarred = starred[starred.length-1];
+  var oldestStarredDate = (oldestStarred ? oldestStarred.getLastMessageDate() : now);
+  var oldestDaysAgo = (now - oldestStarredDate) / 1000 / 60 / 60 / 24;
+
+  // log it to the spreadsheet
+  sheet.appendRow([new Date(), GmailApp.getStarredUnreadCount(), oldestDaysAgo, GmailApp.getInboxUnreadCount()]);
+}</code></pre>
+
+      <h2 id="5-replace-code-your_spreadsheet_url_goes_here-code-at-the-top-with-the-url-of-the-spreadsheet-you-copied-in-step-3">
+        5. Replace <code>YOUR_SPREADSHEET_URL_GOES_HERE</code> at the top with the URL of the spreadsheet you copied in step 3
+        <a href="#5-replace-code-your_spreadsheet_url_goes_here-code-at-the-top-with-the-url-of-the-spreadsheet-you-copied-in-step-3" class="anchor">#</a>
+      </h2>
+    <figure class="center"><img src="https://i.imgur.com/52t5rkD.png" /><figcaption></figcaption></figure>
+
+
+      <h2 id="6-click-the-play-icon-to-run-your-script-and-make-sure-it-39-s-working-so-far-a-new-row-should-appear-on-your-spreadsheet">
+        6. Click the play icon to run your script and make sure it&#39;s working so far. A new row should appear on your spreadsheet
+        <a href="#6-click-the-play-icon-to-run-your-script-and-make-sure-it-39-s-working-so-far-a-new-row-should-appear-on-your-spreadsheet" class="anchor">#</a>
+      </h2>
+    <figure class="center"><img src="https://i.imgur.com/FQ5alst.png" /><figcaption></figcaption></figure>
+
+
+      <h2 id="7-back-in-your-google-script-set-up-this-function-to-run-automatically-by-opening-code-edit-current-project-39-s-triggers-code-then-add-a-code-time-driven-code-code-hour-timer-code-to-run-every-code-6-hours-code-">
+        7. Back in your Google Script, set up this function to run automatically by opening <code>Edit / Current project&#39;s triggers</code>, then add a <code>Time-driven</code> <code>Hour-timer</code> to run every <code>6 hours</code>
+        <a href="#7-back-in-your-google-script-set-up-this-function-to-run-automatically-by-opening-code-edit-current-project-39-s-triggers-code-then-add-a-code-time-driven-code-code-hour-timer-code-to-run-every-code-6-hours-code-" class="anchor">#</a>
+      </h2>
+    <figure class="center"><img src="https://i.imgur.com/hRZ7jtJ.png" /><figcaption></figcaption></figure>
+
+<figure class="center"><img src="https://i.imgur.com/mfPMHQx.png" /><figcaption></figcaption></figure>
+
+
+      <h2 id="8-back-in-your-google-sheet-select-the-four-columns-at-the-top-click-code-a-code-then-shift-click-code-d-code-so-all-four-columns-turn-blue-then-open-code-insert-chart-code-">
+        8. Back in your Google Sheet, select the four columns at the top (click <code>A</code>, then shift+click <code>D</code> so all four columns turn blue), then open <code>Insert / Chart</code>
+        <a href="#8-back-in-your-google-sheet-select-the-four-columns-at-the-top-click-code-a-code-then-shift-click-code-d-code-so-all-four-columns-turn-blue-then-open-code-insert-chart-code-" class="anchor">#</a>
+      </h2>
+    <figure class="center"><img src="https://i.imgur.com/p6U0hIP.png" /><figcaption></figcaption></figure>
+
+
+      <h2 id="9-change-the-type-to-code-line-chart-code-">
+        9. Change the type to <code>Line chart</code>
+        <a href="#9-change-the-type-to-code-line-chart-code-" class="anchor">#</a>
+      </h2>
+    <figure class="center"><img src="https://i.imgur.com/5NKLGDX.png" /><figcaption></figcaption></figure>
+
+
+      <h2 id="10-done-d">
+        10. Done :D
+        <a href="#10-done-d" class="anchor">#</a>
+      </h2>
+    
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

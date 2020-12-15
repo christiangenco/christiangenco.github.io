@@ -1,0 +1,275 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-18a7.css
+" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <title>MacBook Developer Setup</title>
+    <meta name="title" content="MacBook Developer Setup">
+    <meta name="description" content="My old software productivity setup">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/macbook-developer-setup">
+    <meta property="og:title" content="MacBook Developer Setup">
+    <meta property="og:description" content="My old software productivity setup">
+    <meta property="og:image" content="http://i.imgur.com/tnCchmn.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/macbook-developer-setup">
+    <meta property="twitter:title" content="MacBook Developer Setup">
+    <meta property="twitter:description" content="My old software productivity setup">
+    <meta property="twitter:image" content="http://i.imgur.com/tnCchmn.jpg">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav>
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        MacBook Developer Setup
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <img src="http://i.imgur.com/tnCchmn.jpg" /><p><strong>2018 update</strong>: I keep an updated list of all the things I use (including programming tools) in <a href="/things">my list of things</a>.</p>
+<p>I&#39;ve been on Macs since I was 10 years old. I love them obsessively, but my needs for Mac OS X as a developer are more than the operating system comes with by default.</p>
+<p>Over the years I&#39;ve added layers and layers of tweaks and customizations to make my MacBook a coding and productivity powerhouse. Here&#39;s a list of the things I can no longer live without.</p>
+
+      <h3 id="applications">
+        Applications
+        <a href="#applications" class="anchor">#</a>
+      </h3>
+    <ul>
+<li><a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>: most of my work is in web development. Chrome is the best browser, and it&#39;s lovely syncing all of my user settings and history across all of my computers and devices.</li>
+<li><a href="http://www.iterm2.com/#/section/home">iTerm2</a>: a better terminal for your Mac. I set up a system wide hotkey, <code>⌘ + ~</code>, to get a terminal to cover the left half of my screen at any time. You can set this in <code>iTerm / Preferences / Keys</code> under <code>Hotkey</code>: 
+        <figure>
+          <img
+            src="http://i.imgur.com/cDFT1sV.png"
+            alt="iterm2 hotkey preferences"
+          />
+          <figcaption><p>iterm2 hotkey preferences</p>
+</figcaption>
+        </figure>
+       You can adjust the appearance of this window under <code>Appearance / Hotkey Window</code>: 
+        <figure>
+          <img
+            src="http://i.imgur.com/KcLHjbZ.png"
+            alt="appearance of hotkey window"
+          />
+          <figcaption><p>appearance of hotkey window</p>
+</figcaption>
+        </figure>
+      </li>
+<li><a href="http://www.sublimetext.com/">Sublime Text 2</a>: the best text editor for any language. Be sure to enable <a href="https://www.sublimetext.com/docs/2/vintage.html">Vintage Mode</a> to enable vim keybindings, learn how to use <a href="https://www.youtube.com/watch?v=WXuBgSpLpK4">multiple cursors</a>, install <a href="https://sublime.wbond.net/installation">Package Control</a> (and learn how to install packages, like language packs for syntax highlighting), and install a nice theme and font (I like <a href="https://github.com/buymeasoda/soda-theme/">soda</a> and <a href="http://www.marksimonson.com/fonts/view/anonymous-pro">Anonymous Pro</a>).</li>
+<li><a href="http://www.jitouch.com/">jitouch</a>: customize trackpad gestures. Here&#39;s the configuration I use: 
+        <figure>
+          <img
+            src="http://i.imgur.com/jyx1vks.png"
+            alt="jitouch configuration"
+          />
+          <figcaption><p>jitouch configuration</p>
+</figcaption>
+        </figure>
+       And my iTerm and Sublime specific tweaks: 
+        <figure>
+          <img
+            src="http://i.imgur.com/H2AwxST.png"
+            alt="jitouch tweaks for iTerm and Sublime"
+          />
+          <figcaption><p>jitouch tweaks for iTerm and Sublime</p>
+</figcaption>
+        </figure>
+      </li>
+<li><a href="http://www.ergonis.com/products/typinator/">Typinator</a>: text expand shortcuts. Example: if I type &quot;mye&quot; it expands to my email address, &quot;myph&quot; my full phone number, &quot;mladt&quot; an MLA formatted date for today (like 2 April 2014), &quot;dt&quot; for a sortable date for naming files (like 2014-04-02), &quot;edt&quot; for a unix timestamp (like 1396416206), and &quot;lod&quot; for <code>ಠ_ಠ</code>.</li>
+<li><a href="http://justgetflux.com/">f.lux</a>: adjusts your screen brightness at night so it&#39;s easier on the eyes.</li>
+<li><a href="http://www.backblaze.com/">Backblaze</a>: cheap full hard drive cloud backup service. Use with <a href="http://support.apple.com/kb/ht1427">Time Machine</a> for double safety.</li>
+<li><a href="http://www.alfredapp.com/">Alfred</a>: scriptable application launcher and system shortcut... thing. This can quadrouple your productivity on a mac.</li>
+<li><a href="https://flexibits.com/fantastical">Fantastical</a>: a calendar that understands natural language a system keyboard shortcut away (I use <code>ctrl + space</code>).</li>
+</ul>
+
+      <h3 id="command-line-tools">
+        Command Line Tools
+        <a href="#command-line-tools" class="anchor">#</a>
+      </h3>
+    <ul>
+<li><a href="http://brew.sh/">brew</a>: <code>apt-get</code> for mac.</li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh">zsh</a>: better than bash. Command autocompletion, color-coding, and a more customizable command prompt.</li>
+<li><a href="http://pryrepl.org/">pry</a>: if you use Ruby (which you should - it&#39;s great), it&#39;s a better <code>irb</code>. Stick <code>binding.pry</code> anywhere in your code to go into an interactive REPL.</li>
+</ul>
+
+      <h3 id="zsh-bash-shortcuts">
+        ZSH/bash shortcuts
+        <a href="#zsh-bash-shortcuts" class="anchor">#</a>
+      </h3>
+    <p>Here&#39;s a list of my handy git aliases:</p>
+<pre><code>export GIT_EDITOR=&quot;vim&quot;
+alias gs=&#39;git status &#39;
+alias ga=&#39;git add &#39;
+alias gap=&#39;git add -p&#39; # patch mode
+alias gb=&#39;git branch &#39;
+alias gc=&#39;git commit&#39;
+alias gd=&#39;git diff&#39;
+# alias go=&#39;git checkout &#39; # need this for &quot;go&quot; compiles
+alias gh=&#39;git hist&#39;
+alias gha=&#39;git hist --all&#39;
+alias gp=&#39;git pull&#39;
+alias gpgp=&#39;git pull &amp;&amp; git push&#39;</code></pre>
+<p>And a fantastic system for marking and jumping to specific folders:</p>
+<pre><code>export MARKPATH=$HOME/.marks
+function jump {
+  cd -P $MARKPATH/$1 2&gt;/dev/null || echo &quot;No such mark: $1&quot;
+}
+function mark {
+  mkdir -p $MARKPATH; ln -s $(pwd) $MARKPATH/$1
+}
+function unmark {
+  rm -i $MARKPATH/$1
+}
+function marks {
+  \ls -l $MARKPATH | tail -n +2 | sed &#39;s/  / /g&#39; | cut -d&#39; &#39; -f9- | awk -F &#39; -&gt; &#39; &#39;{printf &quot;%-10s -&gt; %s\n&quot;, $1, $2}&#39;
+}
+alias j=&quot;jump&quot;
+alias m=&quot;mark&quot;</code></pre>
+<p>For example, I marked my project directory for <a href="http://textbooksplease.com">Textbooks Please</a> with:</p>
+<pre><code>cd LONG/DIRECTORY/THAT/TAKES/A/LONG/TIME/TO/TYPE/textbooksplease
+m tbp</code></pre>
+<p>And now I can jump to that directory from anywhere with:</p>
+<pre><code>j tbp</code></pre>
+
+      <h3 id="system-tweaks">
+        System Tweaks
+        <a href="#system-tweaks" class="anchor">#</a>
+      </h3>
+    <ul>
+<li>Enable hot corners in <code>System Preferences / Mission Control / Hot Corners</code>. I like top right for mission control, bottom right for desktop, top left for screensaver, and bottom left for application windows. 
+        <figure>
+          <img
+            src="http://i.imgur.com/X9pqpAq.png"
+            alt="hot corners"
+          />
+          <figcaption><p>hot corners</p>
+</figcaption>
+        </figure>
+      </li>
+<li>Enable tap to click in <code>System Preferences / Trackpad / Point &amp; Click</code>.</li>
+<li><a href="https://pqrs.org/macosx/keyremap4macbook/index.html.en">KeyRemap4MacBook</a>: use it to remap caps lock - the most useless key in prime real estate - to <code>ctrl</code> when held and <code>esc</code> when pressed. Just check <code>Control L to Control L (+ When you type Control L only, send Escape</code> in system preferences after installing. Edit: this functionality was moved to <a href="https://github.com/tekezo/PCKeyboardHack">PCKeyboardHack</a> (thanks <a href="https://twitter.com/Splendor">@Splendor</a>!).</li>
+<li><code>XCode / preferences / Downloads and install Command Line Tools</code> to install missing build tools.</li>
+<li>faster expose and mission control animations: <code>defaults write com.apple.dock expose-animation-duration -float 0.1 &amp;&amp; killall Dock</code></li>
+</ul>
+<p>I hope this helps to make you as productive as possible on your Mac!</p>
+<p>If you&#39;re more command line inclined, I recommend <a href="http://www.drbunsen.org/the-text-triumvirate/">this 2012 article about using tmux, vim, and zsh together</a>.</p>
+<p>If you enjoyed this list, check out this [similar compilation of developer tools by hacker Samy Kamkar(<a href="http://samy.pl/tools">http://samy.pl/tools</a>). <a href="http://samy.pl/">Samy&#39;s website</a> also has some neat stuff.</p>
+
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-18a7.css
+" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Jitouch on OS X 10.10 Yosemite</title>
+    <meta name="title" content="Jitouch on OS X 10.10 Yosemite">
+    <meta name="description" content="My fix for the Mac OS X trackpad gesture application, Jitouch, on Yosemite.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/drafts/jitouch-yosemite">
+    <meta property="og:title" content="Jitouch on OS X 10.10 Yosemite">
+    <meta property="og:description" content="My fix for the Mac OS X trackpad gesture application, Jitouch, on Yosemite.">
+    <meta property="og:image" content="http://i.imgur.com/EZG7fYt.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/drafts/jitouch-yosemite">
+    <meta property="twitter:title" content="Jitouch on OS X 10.10 Yosemite">
+    <meta property="twitter:description" content="My fix for the Mac OS X trackpad gesture application, Jitouch, on Yosemite.">
+    <meta property="twitter:image" content="http://i.imgur.com/EZG7fYt.jpg">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav>
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        Jitouch on OS X 10.10 Yosemite
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <img src="http://i.imgur.com/EZG7fYt.jpg" /><p>Jitouch has apparently been worked on <a href="https://twitter.com/macjitouch/status/523551702499459072">since October 18th, 2014</a> for Yosemite compatibility, but as of writing this post it&#39;s still broken.</p>
+<p>This sucks, because it&#39;s one of the core apps that <a href="http://christian.gen.co/macbook-developer-setup/">makes OS X usable for me</a>. I don&#39;t want to sound melodramatic, but using Yosemite has been a daily struggle without all of my Jitouch muscle-memory UX goodness.</p>
+<p>Here&#39;s how to halfway fix it:</p>
+<p>First, open <code>System Preferences</code>, right click <code>Jitouch</code>, and select &quot;Remove Jitouch Preference Pane&quot;:</p>
+<p>
+        <figure>
+          <img
+            src="http://i.imgur.com/XqyPtnf.png"
+            alt="Remove Jitouch from preferences"
+          />
+          <figcaption><p>Remove Jitouch from preferences</p>
+</figcaption>
+        </figure>
+      </p>
+<p>Next, <a href="http://www.jitouch.com/download/">download the Yosemite beta</a>. Instead of double clicking to install it, you need to manually move it to <code>/System/Library/PreferencePanes</code>. This folder is hidden by default, but you can open it by selecting <code>Go -&gt; Go to Folder</code> in Finder:</p>
+<p>
+        <figure>
+          <img
+            src="http://i.imgur.com/O7CKIbQ.png"
+            alt="Go -&gt; Go to Folder in Finder"
+          />
+          <figcaption><p>Go -&gt; Go to Folder in Finder</p>
+</figcaption>
+        </figure>
+      </p>
+<p>then type <code>/System/Library/PreferencePanes</code> and hit <code>Go</code>:</p>
+<p>
+        <figure>
+          <img
+            src="http://i.imgur.com/DQDSCWE.png"
+            alt="/System/Library/PreferencePanes"
+          />
+          <figcaption><p>/System/Library/PreferencePanes</p>
+</figcaption>
+        </figure>
+      </p>
+<p>Now just drag and drop the <code>Jitouch.prefPane</code> you downloaded before into this window:</p>
+<p>
+        <figure>
+          <img
+            src="http://i.imgur.com/rb1EYk7.png"
+            alt="drag and drop Jitouch.prefPane to /System/Library/PreferencePanes"
+          />
+          <figcaption><p>drag and drop Jitouch.prefPane to /System/Library/PreferencePanes</p>
+</figcaption>
+        </figure>
+      </p>
+<p>Jitouch will now show up in <code>System Preferences -&gt; Security and Privacy</code>, which will re-enable a lot of the broken gestures (like drawing characters).</p>
+<p>
+        <figure>
+          <img
+            src="http://i.imgur.com/RhxGSbX.png"
+            alt="Jitouch now shows up in the Security and Privacy page of System Preferences"
+          />
+          <figcaption><p>Jitouch now shows up in the Security and Privacy page of System Preferences</p>
+</figcaption>
+        </figure>
+      </p>
+<p>I&#39;m still having some quirky trouble, though. Here&#39;s a list of the bugs I&#39;ve noticed:</p>
+<ul>
+<li>next/previous tab is <a href="https://twitter.com/benradler/status/528038108701278208">triggered twice</a>, which is incredibly annoying. <strong>Update</strong>: a day after installing the new Jitouch beta with the abov steps, next/previous tab is only getting triggered once!</li>
+<li>When my laptop has been asleep for a while (long enough to trigger hibernation or safe sleep mode), Jitouch stops working. It seems to work again if I manually put my laptop to sleep and immediately wake it up again.</li>
+<li>The One-Fix One-Slide-Up action is gone, which is what I used to use to resize windows.</li>
+<li><code>Move Window</code> and <code>Resize Window</code> have been merged into a single <code>Move/Resize</code> action. To trigger <code>Resize</code> from <code>Move/Resize</code>, use <code>One-Hold Right-Tap</code>.</li>
+</ul>
+<p>If you notice anything else, let me know <a href="https://twitter.com/cgenco">@cgenco</a> on twitter and I&#39;ll add to this list. The developer has been frustratingly unresponsive <a href="https://twitter.com/macjitouch">@macjitouch</a>.</p>
+
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

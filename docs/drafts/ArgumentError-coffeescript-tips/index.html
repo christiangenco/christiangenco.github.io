@@ -1,0 +1,310 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-18a7.css
+" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Coffeescript Tips</title>
+    <meta name="title" content="Coffeescript Tips">
+    <meta name="description" content="undefined">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/drafts/ArgumentError-coffeescript-tips">
+    <meta property="og:title" content="Coffeescript Tips">
+    <meta property="og:description" content="undefined">
+    <meta property="og:image" content="null">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/drafts/ArgumentError-coffeescript-tips">
+    <meta property="twitter:title" content="Coffeescript Tips">
+    <meta property="twitter:description" content="undefined">
+    <meta property="twitter:image" content="null">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav>
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        Coffeescript Tips
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <p><a href="http://coffeescript.org/">Coffeescript</a> is fantastic. If you write javascript and you don&#39;t use Coffeescript, your quality of life will significantly improve after reading this.</p>
+<p>Coffeescript turns this:</p>
+<pre><code>sum = (a, b) -&gt;
+    a + b
+
+x = 5
+y = 10
+
+alert sum x, y</code></pre>
+<p>Into this:</p>
+<pre><code>var sum, x, y;
+
+sum = function(a, b) {
+  return a + b;
+};
+
+x = 5;
+
+y = 10;
+
+alert(sum(x, y));</code></pre>
+<p>It&#39;s like javascript and Ruby had a beautiful baby.</p>
+<p>Anyway, here are a few things I wish I knew when I started using coffeescript.</p>
+
+      <h4 id="thin-and-fat-arrows">
+        Thin and fat arrows
+        <a href="#thin-and-fat-arrows" class="anchor">#</a>
+      </h4>
+    <p>Functions in vanilla javascript are a pain: </p>
+<pre><code>var lol = function(foo){
+  return foo + &quot; bar&quot;;
+}</code></pre>
+<p>Coffeescript&#39;s arrow syntax is much cleaner:</p>
+<pre><code>lol = (foo) -&gt;
+  foo + &quot; bar&quot;</code></pre>
+<p>But there are actually two different arrows you can use: </p>
+<ul>
+<li>the thin arrow (<code>-&gt;</code>) creates a new local scope</li>
+<li>the fat arrow (<code>=&gt;</code>) keeps the previous scope</li>
+</ul>
+<p>This is especially useful in a class-oriented framework like Backbone or Ember. What that means, practically, is that instead of writing:</p>
+<pre><code>$(&quot;a&quot;).click -&gt;
+  self = this</code></pre>
+
+      <h4 id="the-existential-operator-">
+        The existential operator: ?
+        <a href="#the-existential-operator-" class="anchor">#</a>
+      </h4>
+    <p>I love this feature so much. This alone makes coffeescript my preferred language over ruby (gasp) sometimes.</p>
+<p>Say you&#39;re parsing some JSON:</p>
+<pre><code>people = [
+    {
+        name: &quot;George&quot;,
+        age: 17,
+        address: {
+            street: &quot;123 Mockingbird&quot;,
+            state: &quot;New York&quot;
+        }
+    },
+    {
+        name: &quot;Amy&quot;,
+        age: 17,
+        pets: {
+            dogs: 5,
+            cats: 17
+        }
+    }
+]</code></pre>
+<p>and we want to print out the <code>state</code> of the <code>address</code> of each person if it exists. We could do something like: </p>
+<pre><code>for person in people
+    console.log person.address.state</code></pre>
+<p>But oh no!</p>
+<pre><code>TypeError: Cannot read property &#39;state&#39; of undefined</code></pre>
+<p>If we try to call <code>.address.state</code> on Amy, we end up calling <code>.state</code> on <code>undefined</code>, which is a big no-no. The obvious fix is:</p>
+<pre><code>for person in people
+    if person.address != undefined
+        console.log person.address.state</code></pre>
+<p>Which is fine, but it gets really unweildy when dealing with a lot of nesting, as we&#39;ll see in a moment.</p>
+<p>Here&#39;s coffeescript&#39;s solution:</p>
+<pre><code>for person in people
+    console.log person.address?.state    </code></pre>
+<p>Which compiles into:</p>
+<pre><code>for (_i = 0, _len = people.length; _i &lt; _len; _i++) {
+  person = people[_i];
+  console.log((_ref = person.address) != null ? _ref.state : void 0);
+}</code></pre>
+<p>And you can keep chaining those for as long as you want:</p>
+<pre><code>person.address?.state?.capital?.zip</code></pre>
+<p>Such a small amount of effort to accomplish:</p>
+<pre><code>if ((_ref1 = person.address) != null) {
+  if ((_ref2 = _ref1.state) != null) {
+    if ((_ref3 = _ref2.capital) != null) {
+      _ref3.zip;
+    }
+  }
+}</code></pre>
+<p>Note: you can <em>kind of</em> do the same thing in ruby (but only in Rails) using <code>.try(:method_name)</code>. More on that on <a href="http://apidock.com/rails/Object/try">the apidock for rails</a>.</p>
+<p>console?.log? &#39;enabled&#39;</p>
+<hr>
+<p><code>10 in [1,10]</code></p>
+<ol start="3">
+<li><p>&quot;hello #{foo}!&quot;</p>
+</li>
+<li></li>
+</ol>
+<p>if 321 &lt;= width &lt;= 480</p>
+<p>5.</p>
+<p>do -&gt;</p>
+<p>to solve clojure traps: <a href="http://aseemk.com/talks/intro-to-coffeescript#/32">http://aseemk.com/talks/intro-to-coffeescript#/32</a></p>
+<ol start="6">
+<li><p>[x, y] = coords
+and {count, offset} = opts</p>
+</li>
+<li></li>
+</ol>
+<p>{
+foo
+bar
+baz
+}</p>
+<ol start="8">
+<li><p>x ?= 1</p>
+</li>
+</ol>
+<p>tf and= false
+tf or= true</p>
+<p>fetch = (opts={}) -&gt;
+    {count, offset} = opts
+    count or= 10
+    offset or= 0</p>
+<p>sync = (callback) -&gt;
+    # ...
+    callback? results</p>
+<p>items?[0]</p>
+<p>&quot;/api/#{users?[0].id?}/info&quot;</p>
+<ol start="10">
+<li>Comments in regex</li>
+</ol>
+<p>url.match ///
+    # absolute; SSL optional:
+    https?://</p>
+<pre><code># simplified domain:
+[a-zA-Z0-9-.]+
+
+# simplified path:
+/.*</code></pre>
+<p>///</p>
+<ol start="11">
+<li>map/filter </li>
+</ol>
+<p>names =
+  for u in users when u.isAdmin
+    u.name</p>
+<ol start="12">
+<li>try without catch</li>
+</ol>
+<p>result = try
+    readFromCache()</p>
+<ol start="13">
+<li><p>map = {}
+map[u.id] = u for u in users</p>
+</li>
+</ol>
+
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

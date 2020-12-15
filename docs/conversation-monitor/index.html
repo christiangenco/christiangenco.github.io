@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-18a7.css
+" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <title>The Conversation Monitor</title>
+    <meta name="title" content="The Conversation Monitor">
+    <meta name="description" content="College project to measure how much each person In a group speaks">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/conversation-monitor">
+    <meta property="og:title" content="The Conversation Monitor">
+    <meta property="og:description" content="College project to measure how much each person In a group speaks">
+    <meta property="og:image" content="http://i.imgur.com/Dw51mer.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/conversation-monitor">
+    <meta property="twitter:title" content="The Conversation Monitor">
+    <meta property="twitter:description" content="College project to measure how much each person In a group speaks">
+    <meta property="twitter:image" content="http://i.imgur.com/Dw51mer.png">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav>
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        The Conversation Monitor
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <img src="http://i.imgur.com/Dw51mer.png" /><p>The Conversation Monitor is a quick class project I made for attempting to quantify the level of contribution to a conversation that each individual has. It does this, naievly, by recording the time that each individual is speaking, assuming that only one individual is speaking at a time, and that while they are speaking the microphone closest to them will be the loudest.</p>
+<p>It is theoretically compatible with any device capable of audio level monitoring and TCP network connections, which would lend itself very easily to the world of wearable computing. My initial design intended for each user&#39;s audio monitoring throught their smart phone, but technical limitations got in the way. HTML5&#39;s <a href="http://www.w3.org/TR/html-media-capture/">Media Capture API</a> is still in its beta stages, and is not supported on any mobile browsers. I considered many alternatives, including coding a native iPhone or Mac OS X application, but found that the Processing framework provided all necessary functionality.</p>
+<figure class="left-overflow"><img src=http://i.imgur.com/WZcZ23t.jpg" /><figcaption></figcaption></figure>
+
+<p>The current implementation consists of a Processing script that monitors the current audio level from a computer&#39;s audio input, sends it asynchronously to a TCP server written in Ruby that decides which of its clients is currently the loudest, and sends that data back to the Processing client which draws a pie chart based on the data. Here is <a href="https://www.dropbox.com/s/rgc5jzqqau4k0lv/Christian%20Genco%20Conversation%20Monitor%20Code.zip">the code for this implementation</a>, and here&#39;s the <a href="https://www.dropbox.com/s/raelyk50cn48ucu/conversation_monitor_client.pde">Conversation Monitor Client</a> for an in-class demonstration (be sure to change your name at the top of the code).</p>
+<p>Practical uses include preventing a particular member from dominating the conversation (from the social embarrassment of knowing that everyone can see the percentage they’ve been talking), measuring class participation, and maintaining a balanced group discussion.</p>
+
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

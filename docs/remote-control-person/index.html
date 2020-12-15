@@ -1,0 +1,203 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-18a7.css
+" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <title>The Remote Control Person</title>
+    <meta name="title" content="The Remote Control Person">
+    <meta name="description" content="A design for a remote control you can use on people">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/remote-control-person">
+    <meta property="og:title" content="The Remote Control Person">
+    <meta property="og:description" content="A design for a remote control you can use on people">
+    <meta property="og:image" content="http://i.imgur.com/1DXVc3V.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/remote-control-person">
+    <meta property="twitter:title" content="The Remote Control Person">
+    <meta property="twitter:description" content="A design for a remote control you can use on people">
+    <meta property="twitter:image" content="http://i.imgur.com/1DXVc3V.jpg">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav>
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        The Remote Control Person
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <img src="http://i.imgur.com/1DXVc3V.jpg" /><iframe width="560" height="315" src="//www.youtube.com/embed/_UNwHurfqgg" frameborder="0" allowfullscreen></iframe>
+
+<p>For my final project of my wearable computing course at SMU, I made a wireless belt controlled by a wiimote. The wiimote sends remote commands to the person wearing the belt.</p>
+
+      <h2 id="the-belt">
+        The Belt
+        <a href="#the-belt" class="anchor">#</a>
+      </h2>
+    <p>This belt&#39;s vibration is controlled through a compressed method of serial communication. The arduino sends each discrete directional command in a single byte of information. The first four bits of the byte sends the rotational information (0 to 360 degrees) and the last four bytes send the power (0% to 100%).</p>
+<p>By compressing signals this way, communication between the arduino and the belt happens immediately.</p>
+<figure class="left"><img src="http://i.imgur.com/r4cSfhy.jpg" /><figcaption></figcaption></figure>
+
+<p>This belt can be be incorporated into any project where directional sensing is required. For example, this would make an excellent way for a blind person to sense their way around a new space if coupled with a Kinect or ultrasonic sensor. It could also be used as a general purpose alerting device, such as another way to receive phone notifications to better discern the difference between a facebook alert and a text, or just as a secondary method of vibration that is always on your skin (for women who keep their phone in their purse and can&#39;t feel the vibration). In this case, patterns of vibration could be used to discriminate between different signals (&quot;around my body&quot; could mean a phone call from your significant other, &quot;from the front to the back&quot; could be a facebook alert, etc.).</p>
+<figure class="center"><img src="http://i.imgur.com/5oDnkgo.jpg" /><figcaption>everything hooked up to the Arduino</figcaption></figure>
+
+<p>Here&#39;s a dump of the <a href="https://gist.github.com/christiangenco/6323580">arduino code</a> to get all that done.</p>
+
+      <h2 id="controlling-people">
+        Controlling People
+        <a href="#controlling-people" class="anchor">#</a>
+      </h2>
+    <figure class="left-overflow"><img src="http://i.imgur.com/s0eg7Wa.png" /><figcaption></figcaption></figure>
+
+<p>Conceptually, this piece was a fascinating juxtoposition between the increasingly realistic video games, and the (by definition) realism of the real world. This is an area that has gotten considerably more attention as the immersive power of video games has exponentially increased over the past several years, from PacMan released just three decades ago</p>
+<figure class="center"><img src="http://i.imgur.com/iZl7Iez.jpg" /><figcaption></figcaption></figure>
+
+<p>to Activision&#39;s latest graphical feat of producing an &quot;uncanny&quot; recreation of a human face</p>
+<figure class="center"><img src="http://i.imgur.com/1kB0weY.jpg" /><figcaption>Activision's state-of-the-art animation announced March 27th, 2013</figcaption></figure>
+
+<p>it is not unreasonable to question the point at which reality will be indistinguishable from an immersive video game. This is a concept that has been explored extensively by science fiction writers such as Greg Egan in his novel &quot;Permutation City,&quot; and has become all the more relevant in light of emerging virtual reality technologies like the Oculus Rift.</p>
+<p>From the technical side, my project features a system for remotely controlling a person designated as the avatar, who wears a vibrating belt that is controlled by a game controller held by the player.</p>
+<figure class="left"><img src="http://i.imgur.com/Vz4qDBK.png" /><figcaption>The technical setup for the avatar in "The Life Game"</figcaption></figure>
+
+<p>This setup is technically challenging, as it requires the avatar&#39;s setup to be wireless in both power and two-way communication with the player&#39;s computer so the avatar may be navigated through a wide range of spaces.</p>
+<p>My initial plan was to couple the arduino with a raspberry pi which would power both the arduino and a USB webcam from a battery pack. The Raspberry Pi would have then be responsible for transmitting a live stream of video data back to the player&#39;s computer, and relaying directional commands from the player&#39;s computer to the arduino, which would have - in turn - conveyed them to the avatar through the vibrating belt, and possibly other input devices (like a pair of headphones that can direct the avatar to do more complex actions, like speaking &quot;use item&quot; when the player&#39;s A button is pressed).</p>
+<figure class="center-overflow"><img src="http://i.imgur.com/8pTJWOA.jpg" /><figcaption></figcaption></figure>
+
+<p>In practice, however, the raspberry pi totally sucked. Its connection to wifi was just awful, and there was nothing I could figure out to fix it. I ended up using two Xbee modules for the arduino for relaying the remote control signal (which worked excellently, and over a very long range) and a video streaming app for the iPhone to relay video.</p>
+
+      <h3 id="hardware-list">
+        Hardware List
+        <a href="#hardware-list" class="anchor">#</a>
+      </h3>
+    <ul>
+<li>Vibrating belt<ul>
+<li>Arduino Uno</li>
+<li>4 Vibrating Motors</li>
+<li>Stranded core wire</li>
+<li>USB Cable</li>
+</ul>
+</li>
+<li>iPhone</li>
+<li>Wiimote</li>
+<li>USB battery pack</li>
+<li>iPad to stream video to</li>
+</ul>
+
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

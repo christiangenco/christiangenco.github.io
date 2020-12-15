@@ -1,11 +1,12 @@
 mkdir -p build/css
 
-mkdir -p build/fonts
-rsync -av assets/fonts/ build/fonts/
+# mkdir -p build/fonts
+# rsync -av assets/fonts/ build/fonts/
 
-mkdir -p build/images
-rsync -av assets/images/ build/images/
+# mkdir -p build/images
+# rsync -av assets/images/ build/images/
 
+rsync -av assets/ build/
 
 # set NODE_ENV=production to get minified styles
 

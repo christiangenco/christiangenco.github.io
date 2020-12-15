@@ -1,9 +1,4 @@
-- head metadata
-- favicon
-- make a list of internal redirects to add to redirects.json; prepend existing redirects with gen.co/
 - publish on github
-- redirects
-  - redirect yearly update posts to `/newsletter/2019-review`, etc.
 
 ---
 
@@ -32,3 +27,6 @@ Inspiration:
 - newsletter page:
 - newsletter signup
 - minimal home page with picture, intro, now, and ways I can help: https://stefanzweifel.io/
+- make a list of internal redirects to add to redirects.json; prepend existing redirects with gen.co/
+- head metadata
+- favicon

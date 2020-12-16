@@ -1,7 +1,3 @@
-- publish on github
-
----
-
 - https://github.com/tailwindlabs/tailwindcss-typography/blob/master/src/styles.js
 
 Inspiration:
@@ -30,3 +26,4 @@ Inspiration:
 - make a list of internal redirects to add to redirects.json; prepend existing redirects with gen.co/
 - head metadata
 - favicon
+- publish on github

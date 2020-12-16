@@ -7,10 +7,11 @@ mkdir -p build/css
 # rsync -av assets/images/ build/images/
 
 rsync -av -exclude='.DS_Store' assets/ build/
+cp CNAME build/CNAME
 
 # set NODE_ENV=production to get minified styles
 
-NODE_ENV=production node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
+node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
 
 # node_modules/postcss-cli/bin/postcss assets/css/style.css -o build/css/style.css
 

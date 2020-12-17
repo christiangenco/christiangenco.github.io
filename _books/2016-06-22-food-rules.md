@@ -1,7 +1,7 @@
 ---
 title: Food Rules - An Eater's Manual
-image: http://ecx.images-amazon.com/images/I/41Dh74zDcoL.jpg
-image_small: http://ecx.images-amazon.com/images/I/41Dh74zDcoL.jpg
+image: https://res.cloudinary.com/genco/image/upload/v1608165049/c/XEPT.jpg
+image_small: https://res.cloudinary.com/genco/image/upload/v1608165049/c/XEPT.jpg
 summary: eat food, mostly plants, not too much.
 ---
 

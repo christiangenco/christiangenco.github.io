@@ -137,10 +137,16 @@ function renderMarkdown(md) {
   return html;
 }
 
-const latestStyleBasename = fs.readFileSync(
-  "build/css/latestStyleBasename.txt",
-  { encoding: "utf8" }
-);
+let latestStyleBasename = "style.css";
+
+try {
+  latestStyleBasename = fs.readFileSync("build/css/latestStyleBasename.txt", {
+    encoding: "utf8",
+  });
+} catch (e) {
+  console.log("latestStyleBasename.txt doesn't exist");
+}
+
 const templ = fs
   .readFileSync("src/_template.html.ejs", {
     encoding: "utf8",

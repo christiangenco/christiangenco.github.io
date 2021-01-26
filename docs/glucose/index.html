@@ -7,23 +7,23 @@
 
     
     <!-- Primary Meta Tags -->
-    <title>The Walkie Sockie</title>
-    <meta name="title" content="The Walkie Sockie">
-    <meta name="description" content="An Arduino project for a walkie talkie you use with your feet">
+    <title>Continuous blood glucose monitoring with Levels</title>
+    <meta name="title" content="Continuous blood glucose monitoring with Levels">
+    <meta name="description" content="Rice is apparently very good at spiking my blood sugar.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://christian.gen.co/walkie-sockie">
-    <meta property="og:title" content="The Walkie Sockie">
-    <meta property="og:description" content="An Arduino project for a walkie talkie you use with your feet">
-    <meta property="og:image" content="http://i.imgur.com/vmcLabA.jpg">
+    <meta property="og:url" content="https://christian.gen.co/glucose">
+    <meta property="og:title" content="Continuous blood glucose monitoring with Levels">
+    <meta property="og:description" content="Rice is apparently very good at spiking my blood sugar.">
+    <meta property="og:image" content="https://res.cloudinary.com/genco/image/upload/v1611676267/c/3YTC.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://christian.gen.co/walkie-sockie">
-    <meta property="twitter:title" content="The Walkie Sockie">
-    <meta property="twitter:description" content="An Arduino project for a walkie talkie you use with your feet">
-    <meta property="twitter:image" content="http://i.imgur.com/vmcLabA.jpg">
+    <meta property="twitter:url" content="https://christian.gen.co/glucose">
+    <meta property="twitter:title" content="Continuous blood glucose monitoring with Levels">
+    <meta property="twitter:description" content="Rice is apparently very good at spiking my blood sugar.">
+    <meta property="twitter:image" content="https://res.cloudinary.com/genco/image/upload/v1611676267/c/3YTC.jpg">
   
 
     <!-- Thanks https://realfavicongenerator.net/ :D -->
@@ -87,19 +87,55 @@
       <h1
         class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
       >
-        The Walkie Sockie
+        Continuous blood glucose monitoring with Levels
       </h1>
       <article class="prose lg:prose-xl dark-mode:prose-dark">
-        <img src="http://i.imgur.com/vmcLabA.jpg" /><p>For a wearable computing course I&#39;m taking at SMU, I made a wearable input and output device for your feet: the Walkie Sockie.</p>
-<iframe width="560" height="315" src="//www.youtube.com/embed/AGLWKFxsVvQ" frameborder="0" allowfullscreen></iframe>
-
-<p>The design of the Walkie Sockie is very simple. It consists of an Arduino lilypad sewed in the top of a sock with a pressure sensor by the pinkie toe:</p>
-<figure class="center"><img src="http://i.imgur.com/2nePQXO.jpg" /><figcaption>pressure sensor</figcaption></figure>
-
-<p>And a vibrating motor in the arch of the foot:</p>
-<figure class="center"><img src="http://i.imgur.com/TcAzApw.jpg" /><figcaption>I don't suggest googling "vibrating motor"</figcaption></figure>
-
-<p>Here&#39;s the <a href="https://gist.github.com/christiangenco/9b0b2232e9ccb2f532d7">source code</a> to demonstrate the basic functionality. Upload this to an arduino with a pressure sensor on pin A5 and a vibrating motor on pin 11 and you will get immediate feedback of pressing the button. In the source code is also a ruby script and a web page to demonstrate how the walkie sockie can communicate with a computer through its serial connection.</p>
+        <img src="https://res.cloudinary.com/genco/image/upload/v1611676267/c/3YTC.jpg" /><p>Inspired by <a href="https://twitter.com/nateliason">Nat Eliason</a>, I got a continuous blood glucose monitor: <a href="https://www.levelshealth.com/">Levels</a>.</p>
+<p>
+        <div class="embed">
+          <iframe
+            src="https://www.youtube.com/embed/6Z93nINyMAA"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </p>
+<p>It was spooky putting a needle in my arm, mostly painless for the two weeks it was in. I learned that my normal diet keeps my blood glucose stable and it dips into hypoglycemia at night (which I think is okay).</p>
+<p>
+        <figure>
+          <img
+            src="https://res.cloudinary.com/genco/image/upload/v1611629738/c/L4d2.png"
+            alt="My blood glucose on a typical day was hypoglycemic at night and stayed comfortably and easily under 100"
+          />
+          <figcaption><p>My blood glucose on a typical day was hypoglycemic at night and stayed comfortably and easily under 100</p>
+</figcaption>
+        </figure>
+      </p>
+<p>It was neat to go through the day being able to check on my phone what my blood glucose level was. I got an intuitive sense for what hunger and energy feelings coorelated with roughly what level of blood sugar. I want Levels but for everything a blood test can measure, like <a href="/ldl">LDL</a> and <a href="/d">vitamin D</a>.</p>
+<p>The one day I ate sushi spiked my glucose to 180—easily the highest it was in the entire two week period. My next highest spike was only 121, also from rice.</p>
+<p>
+        <figure>
+          <img
+            src="https://res.cloudinary.com/genco/image/upload/v1611629716/c/zxHB.png"
+            alt="The sushi spike"
+          />
+          <figcaption><p>The sushi spike</p>
+</figcaption>
+        </figure>
+      </p>
+<p>The sushi and data were well worth the momentary spike.</p>
+<p>
+        <figure>
+          <img
+            src="https://res.cloudinary.com/genco/image/upload/v1611629925/c/cdoP.jpg"
+            alt="The delicious offending sushi. It&#39;s sashimi from here on out"
+          />
+          <figcaption><p>The delicious offending sushi. It&#39;s sashimi from here on out</p>
+</figcaption>
+        </figure>
+      </p>
+<p>This data combined with my <a href="/ldl">out of this world LDL levels</a> means, I think, that carbs from white rice are especially bad for me now that I&#39;m fat adapted on the ketogenic diet. Going forward I&#39;ll be especially cautious of this.</p>
 
       </article>
     </main>

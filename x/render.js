@@ -81,6 +81,11 @@ const renderer = {
       `;
       }
     }
+
+    if (title === undefined && href === text && href.includes("twitter.com")) {
+      return `<blockquote class="twitter-tweet"><a href="${href}"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`;
+    }
+
     return `<a href="${href}"${title ? ` title="${title}"` : ""}>${text}</a>`;
   },
   image(href, title, text) {
@@ -274,11 +279,21 @@ async function main() {
 
   if (process.argv[2] === "--watch") {
     console.log("watching...");
-    watch("src", { recursive: true }, (evt, name) => {
-      console.log("%s changed.", name);
-      render();
-      renderRedirects();
-    });
+    watch(
+      "./",
+      {
+        recursive: true,
+        filter: f => {
+          if (/build/.test(f)) return false;
+          return /\.(ejs|html|md)$/;
+        },
+      },
+      (evt, name) => {
+        console.log("%s changed.", name);
+        render();
+        renderRedirects();
+      }
+    );
   }
 }
 main();

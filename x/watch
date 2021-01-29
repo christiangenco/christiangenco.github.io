@@ -1,3 +1,4 @@
+x/buildAssets.sh
 x/render.js --watch
 
 # #!/usr/bin/env ruby

@@ -31,4 +31,8 @@ My favorite part of the book was the philosophical exploration of what gives lif
 
 I enjoyed this book in the same way that I enjoyed [Permutation City](https://en.wikipedia.org/wiki/Permutation_City) for walking through what this sort of post-scarcity post-singularity world might look like. It's interesting to me to think about how this world would play out because it sure seems like that's what we're aimed at.
 
-That said, I don't know that I could recommend this book to anyone that doesn't enjoy violence porn. I think Permutation City does a better job exploring these concepts with better writing and less unnecessary horror.
+I don't like the conclusion either of these books reach: that the only place to go after a universal scale intelligence is to a hard reset to start from the beginning. I'd like to think that this is the only next step that seems reasonable because we just can't imagine what would happen after that.
+
+Ultimately I think I read books like this to think about post-singularity because it's fun to think about. Could a general AI machine be conscious? Is there a metaphysical layer to existence for humans that could be tapped into? Could an extremely intelligent machine be powerful enough to follow [George Hotz advice to hack the matrix](https://youtu.be/ESXOAJRdcwQ)? Is there a matrix to hack out of? Would we want to break out of it if we could?
+
+I don't know that I could recommend "The Metamorphosis of Prime Intellect" to anyone that doesn't enjoy violence porn. I think Permutation City does a better job exploring these concepts with better writing and less unnecessary horror.

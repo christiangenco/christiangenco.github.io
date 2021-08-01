@@ -1,3 +1,5 @@
+nvm use 15
+
 echo "cleaning up..."
 rm -rf build
 rm -rf docs

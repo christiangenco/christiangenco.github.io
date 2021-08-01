@@ -296,6 +296,12 @@ I love the [What's in my Bag?](https://ma.tt/2016/03/whats-in-my-bag-2016-editio
 - [Works for me](https://works-for-me.github.io/): collection of developer toolkits
 - [Uses This](https://usesthis.com/): interviews of the tools productive people use
 - [Guzey's Tools and Gear](https://guzey.com/tools-gear/)
+- Sam Bowman's [Stuff that I recommend you buy](https://medium.com/@s8mb/stuff-that-i-recommend-you-buy-747d7a3bd51e)
+- [Things I recommend you buy and use, second edition](https://medium.com/@s8mb/things-i-recommend-you-buy-and-use-second-edition-457a8e7163f6) by Sam Bowman
+- Rosie Campbell's [Stuff I Recommend You Buy and Use (2019)](https://rosiecampbell.me/stuff-i-recommend-you-buy-and-use/)
+- Arden Koehler's [Stuff he Recommends you Buy and Use](https://www.facebook.com/ardenlk/posts/10156553178262333)
+- [Things I recommend you buy and use, Rob edition](https://medium.com/@robertwiblin/things-i-recommend-you-buy-and-use-rob-edition-1d7b2ce27d68) by Rob Wiblin
+- [14 things I recommend you buy and use -- Arden edition (pt. 2)](https://docs.google.com/document/d/1ZrSzGLuwIEWeQJ_2zL5vpYDyV-LmC-8SBy-Q4WPF318/edit)
 
 ---
 

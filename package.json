@@ -18,7 +18,7 @@
     "marked": "^1.2.5",
     "mkdirp": "^1.0.4",
     "node-watch": "^0.7.1",
-    "postcss": "^8.4.5",
+    "postcss": "^8.2.13",
     "postcss-cli": "^8.3.0",
     "tailwindcss": "^3.0.15"
   }

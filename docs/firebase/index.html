@@ -96,6 +96,19 @@
         <a href="#firestore" class="anchor">#</a>
       </h1>
     
+      <h2 id="batch-writes">
+        Batch writes
+        <a href="#batch-writes" class="anchor">#</a>
+      </h2>
+    <p><a href="https://googleapis.dev/nodejs/firestore/latest/Firestore.html#bulkWriter">https://googleapis.dev/nodejs/firestore/latest/Firestore.html#bulkWriter</a></p>
+
+      <h2 id="recursive-deletes-delete-a-doc-and-its-subcollections-">
+        Recursive deletes (delete a doc and its subcollections)
+        <a href="#recursive-deletes-delete-a-doc-and-its-subcollections-" class="anchor">#</a>
+      </h2>
+    <p>Only works on the backend:</p>
+<pre><code class="language-js">await firestore.recursiveDelete(docRef);</code></pre>
+
       <h1 id="google-cloud-storage">
         Google Cloud Storage
         <a href="#google-cloud-storage" class="anchor">#</a>
@@ -106,37 +119,68 @@
         <a href="#firebase-cloud-functions" class="anchor">#</a>
       </h1>
     
+      <h2 id="set-timeout-and-memory-allocation">
+        Set timeout and memory allocation
+        <a href="#set-timeout-and-memory-allocation" class="anchor">#</a>
+      </h2>
+    <pre><code class="language-js">exports.doSomething = functions
+  .runWith({
+    timeoutSeconds: 9 * 60,
+    memory: &quot;1GB&quot;,
+  })
+  .firestore.document(&quot;collection/{docId}&quot;)
+  .onCreate(doSomething);</code></pre>
+<p>Available options for memory (and accompanying CPU speed) are:</p>
+<ul>
+<li>128MB — 200MHz</li>
+<li>256MB — 400MHz</li>
+<li>512MB — 800MHz</li>
+<li>1GB — 1.4 GHz</li>
+<li>2GB — 2.4 GHz</li>
+<li>4GB — 4.8 GHz</li>
+<li>8GB — 4.8 GHz</li>
+</ul>
+<p>Source: <a href="https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation">https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation</a></p>
+
       <h2 id="environment-variables">
-        Environment variables
+        Environment Variables
         <a href="#environment-variables" class="anchor">#</a>
       </h2>
-    <pre><code># set environment variables
-firebase functions:config:set someservice.key=&quot;THE API KEY&quot; someservice.id=&quot;THE CLIENT ID&quot;
+    <p>Instead of the old way of adding variables to <code>functions.config()</code>, add environment variables to <code>functions/.env</code> and check them into version control:</p>
+<pre><code>DROPBOX_KEY=&quot;foobarbaz&quot;</code></pre>
+<p>Environment variables are synced with firebase when you deploy your firebase cloud functions with <code>firebase deploy --only functions</code>.</p>
 
-# get all environment variables
-firebase functions:config:get</code></pre>
-<p>To read these environment variables from a firebase cloud function, use:</p>
-<pre><code class="language-js">const functions = require(&quot;firebase-functions&quot;);
-
-functions.config().someservice.id;</code></pre>
-<p>To populate environment variables in your local environment (ex: when using ``):</p>
-<pre><code>firebase functions:config:get &gt; .runtimeconfig.json
-echo .runtimeconfig.json &gt;&gt; .gitignore</code></pre>
-<p>Sources:</p>
-<ul>
-<li><a href="https://firebase.google.com/docs/functions/config-env">Environment configuration</a></li>
-<li><a href="https://stackoverflow.com/questions/44766536/how-do-you-setup-local-environment-variables-for-cloud-functions-for-firebase">How do you setup local environment variables for Cloud Functions for Firebase - Stack Overflow</a></li>
-</ul>
-
-      <h2 id="-code-error-forbidden-your-client-does-not-have-permission-to-get-url-twittersave-from-this-server-code-">
-        <code>Error: Forbidden. Your client does not have permission to get URL /twitterSave from this server.</code>
-        <a href="#-code-error-forbidden-your-client-does-not-have-permission-to-get-url-twittersave-from-this-server-code-" class="anchor">#</a>
+      <h2 id="secrets">
+        Secrets
+        <a href="#secrets" class="anchor">#</a>
       </h2>
-    <p>Try explicitly allowing unauthenticated invocation of a function by adding the <code>allUsers</code> member id to the function with the <code>Cloud Functions Invoker</code> role in <a href="https://console.cloud.google.com/functions/">Google Cloud Console</a> with <a href="https://cloud.google.com/functions/docs/securing/managing-access-iam#after_deployment">this guide from Google</a>.</p>
-<p>Sources:</p>
+    <p>Set secrets with <code>firebase functions:secrets:set SECRET_NAME</code>. Destroy them with <code>functions:secrets:destroy SECRET_NAME</code>.</p>
+<p>Access secrets in your functions as regular environment variables: <code>process.env.SECRET_NAME</code></p>
+<p>Make sure to explicitly whitelist the secret name for each function that uses it:</p>
+<pre><code class="language-js">exports.myFunction = functions
+  .runWith({
+    secrets: [&quot;SECRET_NAME&quot;],
+  })
+  .https.onRequest(myFunction);</code></pre>
+
+      <h2 id="remove-cold-start-delay">
+        Remove cold start delay
+        <a href="#remove-cold-start-delay" class="anchor">#</a>
+      </h2>
+    <p>To remove the cold start delay on cloud functions you need an instance running all the time:</p>
+<pre><code class="language-js">exports.foo = functions.runWith({ minInstances: 1 }).https.onRequest(foo);</code></pre>
+<p>You&#39;ll always have an instance running which based on <a href="https://cloud.google.com/functions/pricing">the google cloud pricing</a> will cost no more than:</p>
 <ul>
-<li><a href="https://stackoverflow.com/questions/61018805/firebase-functions-error-forbidden-your-client-does-not-have-permission-to-ge">(firebase functions) Error: Forbidden Your client does not have permission to get URL / - Stack Overflow</a></li>
+<li>128MB — 200MHz: <code>0.000000231 * 10 * 60 * 60 * 24 * 30 =</code> $5.98/month</li>
+<li>256MB — 400MHz: <code>0.000000463 * 10 * 60 * 60 * 24 * 30 =</code> $12.00/month</li>
+<li>512MB — 800MHz: <code>0.000000925 * 10 * 60 * 60 * 24 * 30 =</code> $23.98/month</li>
+<li>1GB — 1.40 GHz: <code>0.000001650 * 10 * 60 * 60 * 24 * 30 =</code> $42.76/month</li>
+<li>2GB — 2.40 GHz: <code>0.000002900 * 10 * 60 * 60 * 24 * 30 =</code> $75.16/month</li>
+<li>4GB — 4.80 GHz: <code>0.000005800 * 10 * 60 * 60 * 24 * 30 =</code> $150.33/month</li>
+<li>8GB — 4.80 GHz: <code>0.000006800 * 10 * 60 * 60 * 24 * 30 =</code> $176.25/month</li>
 </ul>
+<p>There are some free tier and sustained use discounts I don&#39;t totally understand.</p>
+<p>Note that <a href="https://cloud.google.com/functions/docs/locations#tier_1_pricing">functions running in some regions are cheaper than others</a>. <code>us-central1</code> is one of the cheaper Tier 1 regions.</p>
 
       <h1 id="deploying">
         Deploying

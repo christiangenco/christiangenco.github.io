@@ -90,17 +90,27 @@
         How my indoor air made me sick and dumb (and how I fixed it)
       </h1>
       <article class="prose lg:prose-xl dark-mode:prose-dark">
-        <img src="https://res.cloudinary.com/genco/image/upload/v1642094230/c/XvsP.jpg" /><p>Have you ever walked into a room and felt worse in a way you couldn&#39;t quite describe?</p>
-<p>This would happen to me a lot. Some indoor spaces like my parent&#39;s house, some hotel rooms, and my own room in the Spring and Winter would leave me feeling tired, slow, anxious, sneezy, and irritable. I&#39;d find an explanation for why I might be feeling that way in the moment but usually after a few minutes outside I&#39;d go back to feeling great.</p>
-<p>Feeling bad in some indoor spaces is called <a href="https://en.wikipedia.org/wiki/Sick_building_syndrome">sick building syndrome</a> and can have many causes. After years of putting up with my personal sick building syndrome I started diving deep into what specific things might be causing my mental and health problems and what I could do about it.</p>
-<p>What I came to find out is that there are five categories of air quality that can make indoor air feel better or worse: temperature, PM2.5, humidity, CO2, and VOCs. Each of these can have a strong effect on how you feel and your ability to think. For a small amount of initial effort and money each one can be controlled to keep you healthy.</p>
-<p>Here&#39;s what I did for each of those air quality factors to make them as healthy for me as possible.</p>
+        <img src="https://res.cloudinary.com/genco/image/upload/v1642094230/c/XvsP.jpg" /><p>Have you ever felt in a way you couldn&#39;t quite describe and then felt better as soon as you walked outside?</p>
+<p>These mysterious bad feelings would happen to me a lot. Some indoor spaces like my parent&#39;s house, some hotel rooms, and my own room in the Spring and Winter would leave me feeling tired, slow, anxious, sneezy, and irritable. I&#39;d find an explanation for why I might be feeling that way in the moment (like &quot;oh I&#39;m just tired&quot;) but usually after a few minutes outside I&#39;d go back to feeling alert and happy.</p>
+<p>Feeling bad in indoor spaces is called <a href="https://en.wikipedia.org/wiki/Sick_building_syndrome">sick building syndrome</a> and it can have many causes. After years of putting up with my personal sick building syndrome I did deep research into what specific things cause sick building syndrome and what I could do about it.</p>
+<p>What I came to find out is that most of the symptoms of sick building syndrome are caused by poor air quality.</p>
+<p>There are five categories of air quality:</p>
+<ol>
+<li>Temperature</li>
+<li>PM2.5</li>
+<li>Humidity</li>
+<li>CO2</li>
+<li>VOCs</li>
+</ol>
+<p>I came to realize that each of these five categories had a strong effect on how I felt and my ability to think. For a small amount of initial effort and money I was able to control each one to within healthy ranges almost automatically.</p>
+<p>Here&#39;s how I did it.</p>
 
-      <h2 id="measurement">
-        Measurement
-        <a href="#measurement" class="anchor">#</a>
+      <h2 id="0-measurement">
+        0. Measurement
+        <a href="#0-measurement" class="anchor">#</a>
       </h2>
-    <p>It&#39;s hard to improve something if you&#39;re not measuring it. I already had a few ways to measure indoor air temperature but it was harder to find ways to measure other important dimensions of air quality: PM2.5, humidity, CO2, and VOCs. I made do with the <a href="https://amzn.to/3sirLqE">Hydrofarm APCEM2 Autopilot Desktop CO2 Monitor</a> for a while but 1) I couldn&#39;t get the data off of it and 2) it didn&#39;t track VOCs or PM2.5. I&#39;ve been using an <a href="https://www.amazon.com/Awair-Element-Indoor-Quality-Monitor/dp/B082ZF4H37?th=1">Awair Element</a> and even <a href="https://twitter.com/cgenco/status/1341239722123902980">got one for everyone in my family one Christmas</a> but it looks like that company might be shutting down. I think the <a href="https://amzn.to/3qpB1JU">uHoo</a> might be the best one to buy today. For something cheaper check out <a href="https://www.aliexpress.com/item/1005001657249504.html">handheld air quality monitors</a>.</p>
+    <p>It&#39;s hard to improve something if you can&#39;t measure it. For example: what&#39;s the point of buying a humidifier if you don&#39;t know if it&#39;s actually raising humidity?</p>
+<p>I already had thermometers to measure indoor air temperature but it was harder to find ways to measure the other important dimensions of air quality: PM2.5, humidity, CO2, and VOCs. I made do with the <a href="https://amzn.to/3sirLqE">Hydrofarm APCEM2 Autopilot Desktop CO2 Monitor</a> for a while but 1) I couldn&#39;t get the data off of it and 2) it didn&#39;t track VOCs or PM2.5. I&#39;ve been using an <a href="https://www.amazon.com/Awair-Element-Indoor-Quality-Monitor/dp/B082ZF4H37?th=1">Awair Element</a> and even <a href="https://twitter.com/cgenco/status/1341239722123902980">got one for everyone in my family one Christmas</a> but that company might be shutting down. I think the <a href="https://amzn.to/3qpB1JU">uHoo</a> might be the best one to buy today. For something cheaper check out <a href="https://www.aliexpress.com/item/1005001657249504.html">handheld air quality monitors</a>.</p>
 <p>
         <figure>
           <img
@@ -111,25 +121,31 @@
 </figcaption>
         </figure>
       </p>
-<p>For a <em>really</em> cheap option buy the raw electronic <a href="https://www.aliexpress.com/item/4000158815164.html">air sensor components</a> and make your own air quality monitor with an Arduino. The advantage of making your own sensor is that it will make it easier down the road to make smart feedback systems.</p>
+<p>For a <em>really</em> cheap (and probably <a href="https://news.ycombinator.com/item?id=33025995">more reliable</a>) option buy the raw electronic <a href="https://www.aliexpress.com/item/4000158815164.html">air sensor components</a> and make your own air quality monitor with an Arduino. The advantage of making your own sensor is that it will make it easier down the road to make smart feedback systems and you&#39;ll probably get more accurate measurements than with off-the-shelf monitors.</p>
+<p>If you&#39;re comfortable soldering and care more about accuracy and hackability than price then buy the AirGradient <a href="https://www.airgradient.com/open-airgradient/instructions/diy/">DIY air quality monitor kit</a>. It includes top-of-the-line sensors, a PCB to solder them on, open-source software, and assembly instructions.</p>
 
-      <h2 id="temperature">
-        Temperature
-        <a href="#temperature" class="anchor">#</a>
+      <h2 id="1-temperature">
+        1. Temperature
+        <a href="#1-temperature" class="anchor">#</a>
       </h2>
-    <p>This is the only dimension of air quality I was previously controlling for. With the brief exception of a few months I spent living in Australia I&#39;ve lived my entire life with a central air conditioner heating and cooling the indoor spaces I&#39;ve lived in.</p>
-<p>Air that&#39;s too cold can make you sick and if it&#39;s <em>very</em> cold <a href="https://youtu.be/Pp2wbyLoEtM">can kill you</a>. Air that&#39;s too hot is uncomfortable and if it&#39;s <em>very</em> hot can kill you. Neither of these are problems I&#39;ve seriously encountered in my modern life because controlling temperature with an air conditioner is basically a solved problem.</p>
-<p>An interesting thing to note about air conditioners for later is that they also dehumidify the air which becomes a serious problem in the winter.</p>
+    <p>Temperature is the only dimension of air quality I was previously able to control. I&#39;ve lived my entire life with a central air conditioner heating and cooling the indoor spaces I&#39;ve lived in (with the brief exception of a semester studying abroad in Australia).</p>
+<p>Air that&#39;s too cold can make you sick and if it&#39;s <em>very</em> cold <a href="https://youtu.be/Pp2wbyLoEtM">can kill you</a>. Air that&#39;s too hot is uncomfortable and if it&#39;s <em>very</em> hot can kill you. Neither of these are problems I&#39;ve seriously encountered in my modern life because controlling temperature with an air conditioner is a solved problem.</p>
+<p>There are two interesting things to note about air conditioners for later:</p>
+<ol>
+<li>Air conditioners don&#39;t bring in outdoor air—they recirculate indoor air</li>
+<li>Air conditioners dehumidify the air</li>
+</ol>
+<p>Recirculating indoor air has no effect on PM2.5, CO2, and VOCs. Dehumidifying air is helpful in hot humid summers and harmful in cold dry winters.</p>
 
-      <h2 id="pm2-5-dust-dander-and-pollen-">
-        PM2.5 (dust, dander, and pollen)
-        <a href="#pm2-5-dust-dander-and-pollen-" class="anchor">#</a>
+      <h2 id="2-pm2-5-dust-dander-and-pollen-">
+        2. PM2.5 (dust, dander, and pollen)
+        <a href="#2-pm2-5-dust-dander-and-pollen-" class="anchor">#</a>
       </h2>
-    <p>Microscopic dust in the air can cause <a href="https://www.epa.gov/pm-pollution/health-and-environmental-effects-particulate-matter-pm">all kinds of negative health effects</a> including asthma, allergies, cold symptoms, and even heart problems.</p>
-<p>This microscopic dust is called PM 2.5 which is short for &quot;particulate matter 2.5 micrometers big.&quot;</p>
-<p>Dusty air was the easiest part of my air quality to fix. I just needed an air filter, which is a fan attached to a fine mesh.</p>
-<p>A cheap solution I used for a while was a simple box fan duct taped to a HEPA or MERV filter (for a really cheap filter you can use paper towels). You can make a more effective box-fan filter by building a box of filters under the fan into an assembly called a <a href="https://youtu.be/uM7mR-95KUg">comparetto</a>.</p>
-<p>I&#39;ve since upgraded to a <a href="https://amzn.to/3qlfeTI">Molekule Air Mini+</a>. The Molekule senses the amount of dust in the air and spins its fan faster the higher PM2.5 gets. It&#39;s also much quieter than a box fan.</p>
+    <p>PM 2.5 is short for &quot;particulate matter 2.5 micrometers big.&quot; You can think of PM2.5 as microscopic dust.</p>
+<p>Microscopic dust in the air can cause <a href="https://www.epa.gov/pm-pollution/health-and-environmental-effects-particulate-matter-pm">all kinds of negative health effects</a> including asthma, allergies, cold symptoms, and even heart problems. <strong>The ideal level of PM2.5 is zero.</strong></p>
+<p>Dusty air was the easiest part of my air quality to fix. I just needed an air filter and an air filter is just a fan attached to a fine mesh.</p>
+<p>A cheap air filtering solution I used for a while was a simple box fan taped to a HEPA or MERV filter. Paper towels can also work as a cheap filter. You can make a more effective box-fan filter by building a box of filters under the fan into an assembly called a <a href="https://youtu.be/uM7mR-95KUg">comparetto</a>.</p>
+<p>I&#39;ve since upgraded my air filter to a <a href="https://amzn.to/3qlfeTI">Molekule Air Mini+</a>. The Molekule senses the amount of dust in the air and spins its fan faster the higher PM2.5 gets. It&#39;s also much quieter than a box fan. Molekule&#39;s products are stupidly expensive so I&#39;m not happy with this solution.</p>
 <p>
         <figure>
           <img
@@ -142,14 +158,14 @@
       </p>
 <p>If you&#39;re building a house from scratch you can <a href="https://youtu.be/gDkR8qjZ1MQ?t=391">build a whole-house HEPA filter into your Heating, Ventilation, and Air Conditioning (HVAC) system</a>.</p>
 <p>Technically you only need to run a HEPA filter when there&#39;s dust in the air. If you don&#39;t mind spending a little extra on electricity just keep your filter on all the time.</p>
-<p>In the Spring in Dallas running a HEPA filter in my bedroom helped aleviate my seasonal allergies by filtering out grass pollen from the air. At my girlfriend&#39;s house adding a HEPA filter to each room helped reduce my cat allergy symptoms.</p>
+<p>In the Spring in Dallas running a HEPA filter in my bedroom helped aleviate my seasonal allergies by filtering out grass pollen from the air. Adding a HEPA filter to each room in my wife&#39;s house while we were dating helped reduce my cat allergy symptoms when I stayed there.</p>
 
-      <h2 id="humidity">
-        Humidity
-        <a href="#humidity" class="anchor">#</a>
+      <h2 id="3-humidity">
+        3. Humidity
+        <a href="#3-humidity" class="anchor">#</a>
       </h2>
-    <p>Just like temperature, humidity can be either too high or too low. If humidity is too high it can make it easier for mold to grow and can peal the paint off your walls. High humidity makes a hot room feel extra hot and a cold room feel extra cold.</p>
-<p>If humidity is too low it can dry out your nose, throat, eyes, lungs, and skin. When the air is dry it&#39;s easier for viruses and bacteria to stay in the air longer and pets tend to shed more. All of these effects of low humidity can make you sick.</p>
+    <p>Just like temperature, <strong>humidity can be either too high or too low</strong>. If humidity is too high it can peal the paint off your walls and make it easier for mold to grow. High humidity paradoxically makes a hot room feel extra hot and a cold room feel extra cold.</p>
+<p>If humidity is too low it can dry out your nose, throat, eyes, lungs, and skin. When the air is dry, pets tend to shed more and it&#39;s easier for viruses and bacteria to stay in the air longer. All of these effects of low humidity can make you sick.</p>
 <p>Unless you live in an especially hot and humid environment you probably don&#39;t have to worry about dehumidifying. Your air conditioner will take care of dehumidifying as it cools the air. If you live in a humid area you can install <a href="https://youtu.be/aaiq7QzfW2g">a whole-house dehumidifier</a> or <a href="https://amzn.to/34wvDMK">a portable dehumidifier</a>.</p>
 <p>
         <figure>
@@ -161,21 +177,28 @@
 </figcaption>
         </figure>
       </p>
-<p>In the winter when you&#39;re heating your air it&#39;s very important to have a humidifier running as much as possible. Cold air can&#39;t hold as much water as hot air, so when cold dry air gets into your house and your air conditioner heats it up the air gets <em>extra</em> dry. This extra dry air has a high capacity for holding more water so when it contacts moist parts of your body it will dry you out.</p>
+<p>In the winter when you&#39;re heating your air it&#39;s very important to have a humidifier running as much as possible. When it&#39;s cold outside and hot inside it&#39;s almost impossible to create too much indoor humidity.</p>
+<p>Cold air can&#39;t hold as much water as hot air similar to how a squeezed sponge can&#39;t hold as much water as a relaxed sponge. When cold dry air gets into your house and gets heated it gets <em>extra</em> dry. This extra dry air can hold a lot more water. When this extra dry air blows over your eyes, nose, throat, and lungs it will dry them out.</p>
 <p>A simple and cheap humidifier is <a href="https://youtu.be/BF0iQWTnQhs">a wet towel with a fan running through it</a>. You can also run the shower for a few minutes every hour and blow the humid air from the bathroom to the rest of your house or hotel room.</p>
-<p>A more expensive and hassel-free humidifier is an <a href="https://amzn.to/334UzdV">evaporative humidifier</a> which is basically just a fancy paper towel called a wick in a bucket with a fan blowing through it. Evaporative humidifiers are extremely effective. Good humidifiers include their own humidity monitor called a humidistat that automatically turns them off and on so they won&#39;t over humidify your room and start pealing the paint off the walls.</p>
-<p>Ultrasonic humidifiers are alright too but usually have a very small capacity and need to use filtered water so they don&#39;t kick up extra dust into the air from your dirty tap water. I learned most of what I know about humidifiers from <a href="https://youtu.be/oHeehYYgl28">this technology connections YouTube video about them</a>.</p>
+<p>A more expensive and hassel-free humidifier is an <a href="https://amzn.to/334UzdV">evaporative humidifier</a> which is basically just a fancy paper towel (called a wick) in a bucket with a fan blowing through it. Evaporative humidifiers are extremely effective. Good humidifiers include their own humidity monitor called a humidistat that automatically turns them off and on so they won&#39;t over humidify your room and start pealing the paint off the walls. I use the <a href="https://amzn.to/3rHH50d">AIRCARE Space Saver Evaporative Humidifier</a> and I&#39;m reasonably happy with it.</p>
+<p>Ultrasonic humidifiers are effective at increasing humidity but:</p>
+<ol>
+<li>ultrasonic humidifiers have a very small capacity so they need to be refilled often, and</li>
+<li>if you put tap water in an ultrasonic humidifier they will throw dust from the tap water into the air which increases PM2.5.</li>
+</ol>
+<p>I learned most of what I know about humidifiers from <a href="https://youtu.be/oHeehYYgl28">this technology connections YouTube video about them</a>.</p>
 <p>If you&#39;re building a house from scratch you can <a href="https://youtu.be/v0Ki7FplnCM">build a humidifier into your HVAC system</a>.</p>
 <p>A good target range for relative humidity is between 40% and 50%.</p>
-<p>In the Winter running a whole-house evaporative humidifier fixed my itchy eyes, dry (and sometimes bloody) nose, and upper respiratory breathing problems that felt like allergies. Low humidity in hotel rooms (especially ones in Las Vegas) is a big part of why I used to get sick while traveling.</p>
+<p>In the Winter running a whole-house evaporative humidifier fixed my itchy eyes, dry (and sometimes bloody) nose, and upper respiratory breathing problems that felt like allergies. Low humidity in hotel rooms (especially ones in Las Vegas) is a big part of why I used to get sick while traveling. I&#39;ve tried shipping myself a humidifier to my hotel room but hanging wet towels around the room is easier, cheaper, and more effective at increasing humidity.</p>
 
-      <h2 id="co2">
-        CO2
-        <a href="#co2" class="anchor">#</a>
+      <h2 id="4-co2">
+        4. CO2
+        <a href="#4-co2" class="anchor">#</a>
       </h2>
-    <p>Your body breaths in oxygen (O2) and breaths out carbon dioxide (CO2). If you stop breathing you will die. If you breathe the same air over and over then all of the O2 in that air gets replaced with CO2 and you&#39;ll suffocate and die. The larger volume of air you&#39;re breathing the longer it will take to suffocate. In the room you&#39;re in right now you might be suffocating so slowly that you don&#39;t notice it.</p>
-<p>I used to think that running my air conditioner was bringing in fresh air but air conditioners—even window units—just recirculate the air that&#39;s already inside. When all the windows and doors to a room are closed the only CO2 getting out is escaping underneath doors or through cracks in the wall. That&#39;s not how I&#39;d like to be breathing.</p>
-<p>It&#39;s easy to find yourself in a room with CO2 levels high enough to cause measurable cognitive impairment. Outside CO2 levels are about 500 parts per million (ppm). If you&#39;re in a poorly ventilated room the CO2 levels can slowly creep up to over 1,000ppm in just an hour or two. CO2 levels higher than 1,000ppm cause significant decreases in people&#39;s ability to think:</p>
+    <p>Each cell of your body needs oxygen (O2) and produces carbon dioxide (CO2) as part of <a href="https://en.wikipedia.org/wiki/Citric_acid_cycle">generating energy</a>. If your cells don&#39;t have enough O2 or if there&#39;s too much waste CO2 around then your cells&#39; functions grind to a hault.</p>
+<p>This is why you&#39;ll die if you stop breathing. You&#39;ll also die if you breathe the same air over and over because all of the O2 in that air will get replaced with CO2. The larger volume of air you&#39;re breathing the longer it will take to suffocate. In the room you&#39;re in right now you might be suffocating so slowly that you don&#39;t notice it.</p>
+<p>I used to think that running my air conditioner was bringing in fresh air but <strong>air conditioners—even window units—just recirculate the air that&#39;s already inside</strong>. When all the windows and doors to a room are closed the only CO2 getting out is escaping underneath doors or through cracks in the wall. That&#39;s not how I&#39;d like to be breathing.</p>
+<p>It&#39;s easy to find yourself in a room with CO2 levels high enough to cause measurable cognitive impairment. Outside CO2 levels are 400-600 parts per million (ppm). If you&#39;re in a poorly ventilated room the CO2 levels can slowly creep up to over 1,000ppm in just an hour or two. CO2 levels higher than 1,000ppm cause significant decreases in people&#39;s ability to think:</p>
 
       <figure>
         <blockquote cite="https://www.huxley.net/bnw/four.html">
@@ -183,10 +206,10 @@
         </blockquote>
         
       </figure>
-    <p>Keeping CO2 low is simple: just open a window. To keep CO2 extra low open one window on each side of your indoor space and put a window fan in each with one blowing in and another blowing out.</p>
-<p>If you want your indoor temperature, humidity, and PM2.5 to be different than what&#39;s outside then keeping CO2 low gets much more complicated.</p>
-<p>I thought I might be able to keep CO2 low by having more indoor plants. That was a great idea but it&#39;s impractical. I&#39;d need <a href="https://medium.com/@candidegardening/how-many-plants-would-it-take-to-produce-enough-oxygen-for-one-person-7312743ed70b">hundreds of plants</a> per person to offset the CO2 significantly.</p>
-<p>I also thought about how submarines must have figured out a way to keep CO2 low and O2 high in enclosed spaces. From a YouTube video called <a href="https://youtu.be/g3Ud6mHdhlQ">How Do Nuclear Submarines Make Oxygen?- Smarter Every Day 251</a> I got to learn how these systems work. Submarines use electrolysis on purified water to make O2 and H2. If O2 gets too low or if power fails the submarine crew can burn a candle made of Iron (Fe) and Sodium Chlorate (NaClO3) which liberates Oxygen. To scrub CO2 from the air submarines blow air through monoethanolamine (MEA) which absorbs CO2. The CO2-rich MEA can then dump it&#39;s CO2 into the ocean water.</p>
+    <p>Keeping CO2 low is simple: open a window. To keep CO2 extra low open one window on each side of your indoor space and put a window fan in each with one blowing in and another blowing out. To keep it as low as possible knock your house down and live outside.</p>
+<p>If you&#39;d like your temperature, humidity, and PM2.5 to be different than what&#39;s outside then keeping CO2 low gets much more complicated.</p>
+<p>I thought I might be able to keep CO2 low by having more indoor plants. That was a great idea but it&#39;s impractical. I&#39;d need <a href="https://medium.com/@candidegardening/how-many-plants-would-it-take-to-produce-enough-oxygen-for-one-person-7312743ed70b">about 700 plants to offset the CO2 from each person</a>.</p>
+<p>I also thought I could use the same system submarines use to keep CO2 low and O2 high in enclosed spaces. From a YouTube video called <a href="https://youtu.be/g3Ud6mHdhlQ">How Do Nuclear Submarines Make Oxygen?- Smarter Every Day 251</a> I got to learn how these systems work. Submarines use electrolysis on purified water to make O2 and H2. If O2 gets too low or if power fails the submarine crew can burn a candle made of Iron (Fe) and Sodium Chlorate (NaClO3) which liberates Oxygen. To scrub CO2 from the air submarines blow air through monoethanolamine (MEA) which absorbs CO2. The CO2-rich MEA can then dump it&#39;s CO2 into the ocean water.</p>
 <p>
         <figure>
           <img
@@ -198,8 +221,8 @@
         </figure>
       </p>
 <p>The submarine solution to keeping CO2 low seemed unnecessarily involved for what I was trying to do. I have the advantage of being surrounded by high-O2 and low-CO2 air! What I needed to figure out was how to get fresh air in, filter it, warm or cool it, and then humidity or dehumidity it.</p>
-<p>Filtering outdoor air is straight forward: just tape a HEPA filter to a window fan.</p>
-<p>But how could I control the temperature and humidity? I chewed on this problem for months until I discovered a magical machine called an Energy Recovery Ventilator (ERV). An ERV takes in outdoor air through one side and indoor air through another rubs the two airstreams together in a box with hundreds of thin paper membranes. The thin paper membranes let the two airstreams exchange temperature and humidity.</p>
+<p>Filtering outdoor air is straight forward: just tape a HEPA filter to a window fan. If the temperature and humidity outside are good then a HPA filter on a window fan is a perfect solution.</p>
+<p>But how could I control the temperature and humidity when it&#39;s uncomfortably hot or cold outside? I chewed on this problem for months until I discovered a magical machine called an <strong>Energy Recovery Ventilator</strong> (ERV). An ERV takes in outdoor air through one side and indoor air through another rubs the two airstreams together in a box with hundreds of thin paper membranes. The thin paper membranes let the two airstreams exchange temperature and humidity.</p>
 <p>
         <figure>
           <img
@@ -210,7 +233,7 @@
 </figcaption>
         </figure>
       </p>
-<p>In the summer in Texas the indoor air is typically around 75ºF and the outdoor air can be as hot as 110ºF and very humid. Outdoor air coming in through an ERV would recover about 70% of its temperature and humidity so incoming outdoor air 35ºF hotter than indoor air would come in through an ERV only 10.5ºF hotter (85.5ºF in a typical Texas summer). An ERV works just as well in the winter when you want your indoor air to stay hot and moist.</p>
+<p>In the summer in Texas the indoor air is typically around 75ºF and the outdoor air can be as hot as 110ºF and very humid. Outdoor air coming in through an ERV would recover about 70% of its temperature and humidity so incoming outdoor air 35ºF hotter than indoor air would come in through an ERV only <code>35*0.7=</code> 10.5ºF hotter (which would be <code>75+10.5=</code> 85.5ºF in a typical Texas summer). An ERV works just as well in the winter when you want your indoor air to stay hot and moist. An ERV is like an open window that brings fresh air in very quickly but temperature and humity very sowly.</p>
 <p>I&#39;ve only ever seen <a href="https://www.supplyhouse.com/Heat-and-Energy-Recovery-Ventilators-18060000">ERVs designed to be installed as part of an HVAC system</a> but I figured out a way to install them in any room with a window. You&#39;ll need a piece of foam insulation, a few feet of insulated air ducts, and some duct tape. First cut the foam insulation to fit in a gap in your open window. Then cut holes in the foam for the ducts and tape the ducts in the holes. Next tape the foam with the ducts in your window.</p>
 <p>
         <figure>
@@ -222,7 +245,7 @@
 </figcaption>
         </figure>
       </p>
-<p>Finally connect the outdoor air input and output streams from the ERV to the ducts.</p>
+<p>Finally connect the outdoor air input and output streams from the ERV to the ducts. I&#39;ve used both the <a href="https://www.supplyhouse.com/Panasonic-FV-04VE1-WhisperComfort-40-20-or-20-10-CFM-Ceiling-Spot-Energy-Recovery-Ventilator">Panasonic WhisperComfort</a> and the <a href="https://www.supplyhouse.com/Panasonic-FV-10VE2-Intelli-Balance-100-Energy-Recovery-Ventilator-Temperate-Climate">Panasonic Intelli-Balance 100</a>. These machines are overpriced for what they are (a box, two fans, and an ERV core) but I haven&#39;t yet found a better solution.</p>
 <p>
         <figure>
           <img
@@ -233,16 +256,17 @@
 </figcaption>
         </figure>
       </p>
-<p>I&#39;d like to eventually set up my ERV to turn on only if CO2 is above 800ppm but for now I just keep it on and turn it off when I leave.</p>
-<p>Setting an ERV up in my bedroom helped improve my alertness, mood, and sleep quality. High CO2 in hotel rooms is often why I think I feel groggy waking up there.</p>
+<p>I&#39;d like to eventually automate my ERV to turn on only if CO2 is above 800ppm but for now I just keep it on when I&#39;m in a room (particularly in the bedroom at night) and turn it off when I leave.</p>
+<p>Setting an ERV up in the bedroom helped improve my sleep quality. Having one in my office improves my alertness and mood.</p>
+<p>High CO2 in hotel rooms is often why I think I feel groggy waking up there. When a hotel room has a window I keep it open but often they don&#39;t. When I&#39;m in a hotel room with windows that don&#39;t open I see it as an opportunity to appreciate the times in my life when I&#39;m not slowly suffocating.</p>
 
-      <h2 id="vocs">
-        VOCs
-        <a href="#vocs" class="anchor">#</a>
+      <h2 id="5-vocs">
+        5. VOCs
+        <a href="#5-vocs" class="anchor">#</a>
       </h2>
     <p>Volatile Organic Compounds (VOCs) are a type of airborne chemical that can cause <a href="https://www.epa.gov/indoor-air-quality-iaq/volatile-organic-compounds-impact-indoor-air-quality">many adverse health effects</a>. Formaldehyde, acetone, alcohol, ozone, and pesticides are types of harmful VOCs that are commonly in the home. Formaldehyde in particular is used in the binding glue of wood products used in cheap furniture. VOCs are released as smoke when things are burned like when smoking, cooking, or burning wood in a fire. VOCs are also in aerosol sprays, air fresheners, cleaning supplies, pesticides, and paint.</p>
-<p>The ventilation solutions for keeping CO2 low also work for keeping VOCs low. If you notice VOCs are high when they shouldn&#39;t be there might be something in your house offgassing. It could be carpet, furniture, or something burning or decaying.</p>
-<p>Installing an ERV in my parent&#39;s house helped alleviate some of the allergy symptoms I was having there. I think this was caused by high VOCs but I haven&#39;t quite nailed down the source.</p>
+<p>The ventilation solutions for keeping CO2 low also work for keeping VOCs low. If you notice VOCs are high when they shouldn&#39;t be there might be something in your house offgassing. It could be carpet, furniture, or something burning or decaying. A handheld VOC monitor or a keen nose may help you track down the source of VOCs.</p>
+<p>Installing an ERV in my parent&#39;s house helped alleviate some of the allergy symptoms I was having there. I think this was caused by high VOCs but I haven&#39;t quite nailed down the source. It may be from offgassing in the uninsulated attic leaking through the can lights.</p>
 
       <h3 id="carbon-monoxide">
         Carbon Monoxide
@@ -250,12 +274,18 @@
       </h3>
     <p>Carbon Monoxide (CO) <a href="https://www.epa.gov/air-emissions-inventories/what-definition-voc">isn&#39;t technically a VOC</a> but can be treated as one. It&#39;s produced by incomplete combustion and can kill you in your sleep. If you have old gas-powered appliances in your house, or if you&#39;re just feeling extra safe, buy a CO meter and put it in your bedroom.</p>
 
+      <h3 id="smoke">
+        Smoke
+        <a href="#smoke" class="anchor">#</a>
+      </h3>
+    <p>A house fire is an extreme case of high VOCs. When there&#39;s a fire I recommend switching your health-improvement strategy from cleaning the indoor air to not burning to death. Make sure you have <a href="https://www.youtube.com/watch?v=DuAeaIcAXtg">the good kind of smoke detector</a>.</p>
+
       <h2 id="tl-dr">
         tl;dr
         <a href="#tl-dr" class="anchor">#</a>
       </h2>
     <p>Good air quality makes you smarter and healthier. Good air is a comfortable temperature (65-80ºF) and humidity (40-50%) with low PM2.5 (0ppm), CO2 (&lt;800ppm), and VOC (0ppm).</p>
-<p>Use this handy chart as a shortcut for which interventions to use with which air quality problems. ✅ means &quot;improves,&quot; ❌ means &quot;makes worse,&quot; ⬇️ means &quot;always lowers,&quot; and ⬆️ means &quot;always increases.&quot;</p>
+<p>Use this handy chart as a shortcut for which interventions to use with which air quality problems. ✅ means &quot;improves,&quot; ❌ means &quot;makes worse or more like outdoor air,&quot; ⬇️ means &quot;always lowers,&quot; and ⬆️ means &quot;always increases.&quot;</p>
 <table>
 <thead>
 <tr>
@@ -332,7 +362,8 @@
 <td>✅</td>
 </tr>
 </tbody></table>
-<p>From this chart the best combination of devices to have complete control over your air are an air conditioner for controling temperature, a dehumidifier and evaporative humidifier for controling humidity, a HEPA or MERV filter for keeping PM2.5 low, and an ERV for keeping CO2 and VOCs low.</p>
+<p>From this chart the best combination of devices to have complete control over your air are an <strong>air conditioner</strong> for controling temperature, a <strong>dehumidifier</strong> and <strong>evaporative humidifier</strong> for controling humidity, a <strong>HEPA or MERV filter</strong> for keeping PM2.5 low, and an <strong>ERV</strong> for keeping CO2 and VOCs low.</p>
+<!-- https://www.lesswrong.com/posts/pPZ27eZdBXtGuLqZC/what-is-up-with-carbon-dioxide-and-cognition-an-offer -->
 
       </article>
     </main>

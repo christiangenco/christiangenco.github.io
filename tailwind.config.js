@@ -1,18 +1,18 @@
-const round = num =>
+const round = (num) =>
   num
     .toFixed(7)
     .replace(/(\.[0-9]+?)0+$/, "$1")
     .replace(/\.0$/, "");
-const rem = px => `${round(px / 16)}rem`;
+const rem = (px) => `${round(px / 16)}rem`;
 const em = (px, base) => `${round(px / base)}em`;
 
 // comment
-function foo(arg) {
-  console.log(`hello ${arg}`);
-}
+// function foo(arg) {
+//   console.log(`hello ${arg}`);
+// }
 
 module.exports = {
-  purge: ["./src/**/*.html.ejs", "./build/**/*.html"],
+  content: ["./src/**/*.html.ejs", "./build/**/*.html"],
   darkMode: "media", // false, 'media' or 'class'
   theme: {
     fontFamily: {
@@ -44,7 +44,7 @@ module.exports = {
       screens: {
         "dark-mode": { raw: "(prefers-color-scheme: dark)" },
       },
-      typography: theme => ({
+      typography: (theme) => ({
         DEFAULT: {
           css: {
             "font-family": "triplicate",
@@ -137,6 +137,12 @@ module.exports = {
         dark: {
           css: {
             color: theme("colors.gray.300"),
+            td: {
+              color: theme("colors.gray.300"),
+            },
+            th: {
+              color: theme("colors.gray.300"),
+            },
             a: {
               color: theme("colors.red.600"),
               "&:hover": {

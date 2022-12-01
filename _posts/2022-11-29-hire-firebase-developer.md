@@ -25,7 +25,7 @@ Here's some stuff I've built for myself on Firebase:
 
 - [Fileinbox](https://fileinbox.app/): a serverless rewrite of a profitable SaaS I built in 2013 to help people send and receive files. This project uses Firebase serverless functions and Firebase Cloud Storage to upload files on the web and move them to Dropbox and Google Drive.
 - [The Video Clipper](https://thevideoclipper.com): an online video editor to make short clips from long videos and amplify them on social media
-- [Midnight Time Tracker](https://midnight.app): a time tracker that tracks all your time (this is what I'll use to calculate my effectively hourly rate for your project)
+- [Midnight Time Tracker](https://midnight.app): a time tracker that tracks all your time (this is what I'll use to calculate my effective hourly rate for your project)
 - [Textbooks Please](https://textbooksplease.com): a textbook search engine I made in college and then re-wrote on Firebase (my first online business!)
 
 I've also worked with:

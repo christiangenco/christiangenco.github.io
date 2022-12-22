@@ -96,13 +96,15 @@
         <a href="#replace-audio-in-a-video" class="anchor">#</a>
       </h1>
     <pre><code>ffmpeg -i video.mp4 -i audio.aac -c:v copy -map 0:v:0 -map 1:a:0 out.mp4</code></pre>
+<p>If your audio is getting downsampled to 128kb/s, try adding <code>-acodec libfaac -b:a 256k</code>.</p>
+<p>If your audio came from a video of the same format add <code>-c:a copy</code>.</p>
 
       <h1 id="extract-audio">
         Extract audio
         <a href="#extract-audio" class="anchor">#</a>
       </h1>
     <pre><code>ffmpeg -i video.mp4 -vn audio.mp3</code></pre>
-<p>Can use <code>-acodec copy</code> if approporiate.</p>
+<p>You can also use <code>-acodec copy</code> if approporiate.</p>
 
       <h1 id="embed-srt-subtitles-in-an-mp4">
         Embed .srt subtitles in an .mp4

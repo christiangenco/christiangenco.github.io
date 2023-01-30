@@ -102,6 +102,26 @@ CSV.parse(File.read(&quot;table.csv&quot;), headers: true).map(&amp;:to_hash).ea
   puts line[&quot;title&quot;]
 }</code></pre>
 
+      <h1 id="write-a-csv-file">
+        Write a CSV file
+        <a href="#write-a-csv-file" class="anchor">#</a>
+      </h1>
+    <pre><code class="language-ruby">require &#39;csv&#39;
+
+data = [
+  {name: &quot;John Doe&quot;, age: 30, city: &quot;New York&quot;},
+  {name: &quot;Jane Smith&quot;, age: 25, city: &quot;Los Angeles&quot;}
+]
+
+
+CSV.open(filename, &quot;wb&quot;) do |csv|
+  keys = data.map(&amp;:keys).flatten.uniq
+  csv &lt;&lt; keys
+  each do |item|
+    csv &lt;&lt; keys.map{|k| item[k]}
+  end
+end</code></pre>
+
       </article>
     </main>
 

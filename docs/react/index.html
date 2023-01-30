@@ -102,6 +102,56 @@
   onChange={(e) =&gt; setChecked(e.target.checked)}
 /&gt;</code></pre>
 
+      <h1 id="interview-questions">
+        Interview questions
+        <a href="#interview-questions" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="what-is-jsx-">
+        What is JSX?
+        <a href="#what-is-jsx-" class="anchor">#</a>
+      </h2>
+    <p>Javascript XML (JSX) is syntactic sugar for writing HTML in Javascript files, like this:</p>
+<pre><code class="language-jsx">return &lt;a href=&quot;/hi&quot;&gt;hello world&lt;/a&gt;;</code></pre>
+<p>JSX compiles down to plain ol&#39; Javascript. The above would compile down to something like <code>return React.createElement(&quot;a&quot;, { href: &quot;/hi&quot; }, &quot;hello world&quot;);</code></p>
+
+      <h2 id="react-component-lifecycle-methods">
+        React component lifecycle methods
+        <a href="#react-component-lifecycle-methods" class="anchor">#</a>
+      </h2>
+    <p>
+        <figure>
+          <img
+            src="https://res.cloudinary.com/genco/image/upload/w_1200/v1674688699/c/fvBP.png"
+            alt="React lifecycle methods cart"
+          />
+          <figcaption><p>React lifecycle methods cart</p>
+</figcaption>
+        </figure>
+      </p>
+<p>The most important lifecycle methods are:</p>
+<ul>
+<li><code>componentDidMount</code>: called once and immediately after the first render; with functional components call <code>useEffect(fn, [])</code>.</li>
+<li><code>componentDidUpdate</code>: called with each update to props, state, or a forced update with <code>forceUpdate</code> if <code>shouldComponentUpdate</code> returns true after the component has rendered; with functional components use <code>useEffect</code></li>
+<li><code>componentWillUnmount</code>: called once when the component is unmounted; with functional components return a function from the first function argument of <code>useEffect</code></li>
+</ul>
+
+      <h2 id="every-react-hook">
+        Every React hook
+        <a href="#every-react-hook" class="anchor">#</a>
+      </h2>
+    <ol>
+<li>useState</li>
+<li>useEffect</li>
+<li>useRef</li>
+<li>useMemo</li>
+<li>useCallback</li>
+<li>useContext</li>
+<li>useLayoutEffect</li>
+<li>useReducer</li>
+<li>useImperativeHandle</li>
+</ol>
+
       </article>
     </main>
 

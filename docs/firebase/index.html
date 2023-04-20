@@ -113,7 +113,19 @@
         Google Cloud Storage
         <a href="#google-cloud-storage" class="anchor">#</a>
       </h1>
-    
+    <p>Frustratingly if you include a leading <code>/</code> in the <code>path</code> of your objects you upload Google Cloud Storage will create a new folder called <code>/</code> in your root directory.</p>
+<p>Make sure you <strong>don&#39;t include a leading slash in your path</strong> or you&#39;ll be very confused for a long time when your files aren&#39;t actually where you think they are:</p>
+<pre><code class="language-js">const { Storage } = require(&quot;@google-cloud/storage&quot;);
+const gcs = new Storage();
+
+const bucketName = &quot;project-id.appspot.com&quot;;
+const bucket = gcs.bucket(bucketName);
+
+const data = &quot;important data&quot;;
+const badPath = `/no/wrong/bad/data.txt`;
+const goodPath = `yes/correct/data.txt`;
+await bucket.file(goodPath).save(data);</code></pre>
+
       <h1 id="firebase-cloud-functions">
         Firebase Cloud Functions
         <a href="#firebase-cloud-functions" class="anchor">#</a>

@@ -90,7 +90,611 @@
         Firebase
       </h1>
       <article class="prose lg:prose-xl dark-mode:prose-dark">
-        
+        <p>Firebase</p>
+
+      <h1 id="0-what-we-won-39-t-cover">
+        0. What we won&#39;t cover
+        <a href="#0-what-we-won-39-t-cover" class="anchor">#</a>
+      </h1>
+    <p>Hosting (use vercel), crashlytics, FCM, remote config, ab testing, dynamic links, predictions, app distribution, anything mobile</p>
+
+      <h1 id="1-setting-up-a-firebase-project-and-using-the-emulator">
+        1. Setting Up a Firebase Project and Using the Emulator
+        <a href="#1-setting-up-a-firebase-project-and-using-the-emulator" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="v9">
+        v9
+        <a href="#v9" class="anchor">#</a>
+      </h2>
+    <p>In August 2021 Google introduced the v9 version of the Firebase library for Javascript. This version of the SDK is designed in a more functional style which enables tree shaking to minimize unused code.</p>
+<p>In my opinion this change has been kind of a pain but here we are. You may see still see code floating around Stack Overflow in the old style that looks like this:</p>
+<pre><code class="language-js">import firebase from &quot;firebase/app&quot;;
+import &quot;firebase/firestore&quot;;
+
+const db = firebase.firestore();
+
+const userDoc = db.collection(&quot;users&quot;).doc(&quot;user1&quot;);
+userDoc.set({
+  name: &quot;John Doe&quot;,
+  email: &quot;john@example.com&quot;,
+  points: 100,
+});</code></pre>
+<p>The newer v9 version (and the version used in this post) to do the same thing would look like this:</p>
+<pre><code class="language-js">import { doc, setDoc, getFirestore } from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+
+const userDoc = doc(db, &quot;users&quot;, &quot;user1&quot;);
+setDoc(userDoc, {
+  name: &quot;John Doe&quot;,
+  email: &quot;john@example.com&quot;,
+  points: 100,
+});</code></pre>
+<p><em>Except</em>, confusingly, when using <code>firebase-admin</code> which we&#39;ll talk about in the Firebase Serverless Functions part. For that we&#39;re still on the pre-v9 style.</p>
+
+      <h1 id="2-firestore">
+        2. Firestore
+        <a href="#2-firestore" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="2-1-introduction-to-firestore">
+        2.1 Introduction to Firestore
+        <a href="#2-1-introduction-to-firestore" class="anchor">#</a>
+      </h2>
+    <p>Cloud Firestore is a NoSQL document-based scalable real-time database hosted by Google.</p>
+<p>It’s the most convenient way I’ve found to add a database to web apps. When combined with other products from Firebase it’s powerful enough to completely remove the need for a traditional backend like Rails, Django, or Laravel.</p>
+<p>When using Firestore you’ll never have to worry about scaling, uptime, replication, or other headaches you’ll run into when using traditional databases. As long as you architect your app in a way that avoids triggering recursive writes (we’ll cover this in the Cloud Functions section) Firestore will (probably) be much cheaper than using a regular database.</p>
+<p>My experience with using it has been blissful. It has some serious limits that need to be worked around but if you can design your web apps with Firestore in mind the database layer requires much less ongoing thought in the app building and maintenance process. Plus, you get real-time updates and nearly infinite scaling practically for free!</p>
+
+      <h2 id="2-2-writing-a-document">
+        2.2 Writing a Document
+        <a href="#2-2-writing-a-document" class="anchor">#</a>
+      </h2>
+    <p>Firestore holds Collections of Documents. Documents can contain Collections.</p>
+<p>You can think of a Document as a JSON object. Firestore documents can hold strings, numbers, booleans, dates, and <code>null</code> as well as maps, arrays, references to other documents, and geographical points.</p>
+<p>Here&#39;s how to write a document:</p>
+<pre><code class="language-js">import { getFirestore, doc, setDoc } from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+
+const postRef = doc(db, &quot;posts&quot;, &quot;myPostId&quot;);
+await setDoc(postRef, {
+  title: &quot;My First Blog Post&quot;,
+  views: 150,
+  isPublished: true,
+  publishedAt: new Date(),
+  owner: null,
+  metadata: {
+    author: &quot;Christian&quot;,
+  },
+  tags: [&quot;tag1&quot;, &quot;tag2&quot;, &quot;tag3&quot;],
+  // author: authorRef,
+  // location: new GeoPoint(37.422, 122.084),
+});</code></pre>
+<p>Note that we don&#39;t have to define any sort of schema for which keys in this collection will contain values that will be a certain type. We just set a JSON object at a document path! Firestore is extremely flexible in this way. You can decide to add collections or attributes to documents on the fly and it just works.</p>
+<p>Every 100k document writes costs $0.18.</p>
+<p>In the above code I specified an ID for this document (<code>myPostId</code>) but we also could’ve added a document to a Collection and gotten an automatically generated ID, like this:</p>
+<pre><code class="language-js">import { getFirestore, collection, addDoc } from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+
+const postsRef = doc(db, &quot;posts&quot;);
+await addDoc(postRef, { title: &quot;My post&quot; });</code></pre>
+
+      <h2 id="2-3-reading-a-document">
+        2.3 Reading a Document
+        <a href="#2-3-reading-a-document" class="anchor">#</a>
+      </h2>
+    <p>Uncommonly you’ll want to read a document a single time like this:</p>
+<pre><code class="language-js">import { getFirestore, doc, getDoc } from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+
+const postRef = doc(db, &quot;posts&quot;, &quot;myPostId&quot;);
+const postSnap = await getDoc(postRef);
+const post = postSnap.data();</code></pre>
+<p>More commonly you’ll want to read a document and keep it updated if it changes, like this:</p>
+<pre><code class="language-js">import { getFirestore, doc, onSnapshot } from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+
+const postRef = doc(db, &quot;posts&quot;, &quot;myPostId&quot;);
+const unsubscribe = onSnapshot(postRef, (postSnap) =&gt; {
+  const post = postSnap.data();
+});</code></pre>
+<p>Even more commonly you’ll just read data from a Firebase React hook with something like <code>const { data: post } = useDoc(/posts/myPostId&quot;)</code></p>
+
+      <h2 id="2-4-updating-a-document">
+        2.4 Updating a Document
+        <a href="#2-4-updating-a-document" class="anchor">#</a>
+      </h2>
+    <p>To upsert a Document (ie: create it if it doesn’t exist and update it if it does) use:</p>
+<pre><code class="language-js">import { getFirestore, doc, setDoc } from &quot;firebase/firestore&quot;;
+const db = getFirestore();
+
+const postRef = doc(db, &quot;posts&quot;, &quot;myPostId&quot;);
+
+await setDoc(postRef, { views: 151 }, { merge: true });</code></pre>
+<p>To update an existing document (and fail if the document doesn’t exist) use:</p>
+<pre><code class="language-js">import { getFirestore, doc, updateDoc } from &quot;firebase/firestore&quot;;
+const db = getFirestore();
+
+const postRef = doc(db, &quot;posts&quot;, &quot;myPostId&quot;);
+
+await updateDoc(postRef, { views: 151 });</code></pre>
+<p>There are a handful of special values (known as Field Values) that you can include as attributes when updating a Document to avoid race conditions. They are:</p>
+<ul>
+<li><code>increment(n)</code>: increases or decreases a numeric field by the specified amount <code>n</code>. If the field doesn&#39;t exist, it sets the field to the specified value.</li>
+<li><code>arrayUnion(...elements)</code>: adds elements to an array if they aren’t already present or (if the key doesn&#39;t exist) creates an array with the specified values</li>
+<li><code>arrayRemove(...elements)</code>: removes the specified elements from an array field. If the field doesn&#39;t exist, it does nothing.</li>
+</ul>
+<p>Two other useful Field Values are:</p>
+<ul>
+<li><code>serverTimestamp()</code>: the current server timestamp</li>
+<li><code>deleteField()</code>: deletes the key with this value</li>
+</ul>
+<p>Here&#39;s how we might use Field Values to update a document:</p>
+<pre><code class="language-js">import {
+  getFirestore,
+  doc,
+  updateDoc,
+  getFirestore,
+  deleteField,
+  serverTimestamp,
+  arrayUnion,
+  increment,
+} from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+
+const postRef = doc(db, &quot;posts&quot;, &quot;myPostId&quot;);
+updateDoc(postRef, {
+  updatedAt: serverTimestamp(),
+  tags: arrayUnion(&quot;newTag&quot;),
+  views: increment(1),
+  owner: deleteField(),
+});</code></pre>
+
+      <h2 id="2-6-writing-multiple-documents-in-a-batch-and-transaction">
+        2.6 Writing Multiple Documents in a Batch and Transaction
+        <a href="#2-6-writing-multiple-documents-in-a-batch-and-transaction" class="anchor">#</a>
+      </h2>
+    <p>There are two ways to perform bulk writes of documents to Firestore: batches and transactions. Neither is billed differently than if you wrote documents one at a time but:</p>
+<ol>
+<li>Batches and transactions are more network efficient</li>
+<li>Batches and transactions ensure that either all of the writes succeed or they all fail</li>
+</ol>
+<p>Batches simply group <code>set</code> or <code>update </code> actions:</p>
+<pre><code class="language-js">import { getFirestore, doc, writeBatch } from &quot;firebase/firestore&quot;;
+const db = getFirestore();
+
+const batch = writeBatch(db);
+
+const post1Ref = doc(db, &quot;posts&quot;, &quot;1&quot;);
+const post2Ref = doc(db, &quot;posts&quot;, &quot;2&quot;);
+
+batch.set(post1Ref, { title: &quot;Post 1&quot; });
+batch.set(post2Ref, { title: &quot;Post 2&quot; }, { merge: true });
+
+await batch.commit();</code></pre>
+<p>Transactions group reads and <code>set</code> or <code>update </code> actions for writes that depend on data from other documents:</p>
+<pre><code class="language-js">import { getFirestore, doc, runTransaction } from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+
+const fromUserRef = doc(db, &quot;users&quot;, &quot;1&quot;);
+const toUserRef = doc(db, &quot;users&quot;, &quot;2&quot;);
+
+const points = 100;
+
+await runTransaction(db, async (transaction) =&gt; {
+  const fromUserSnap = await transaction.get(fromUserRef);
+  const toUserSnap = await transaction.get(toUserRef);
+
+  if (!fromUserSnap.exists()) throw &quot;From User does not exist!&quot;;
+  if (!toUserSnap.exists()) throw &quot;To User does not exist!&quot;;
+  if (fromUserSnap.data().points &lt; points) throw &quot;Not enough points!&quot;;
+
+  transaction.update(fromUserRef, {
+    points: fromUserSnap.data().points - points,
+  });
+  transaction.update(toUserRef, { points: toUserSnap.data().points + points });
+});</code></pre>
+<p>In a transaction, if one of the read documents changes while the writes are being performed the transaction will start over.</p>
+
+      <h2 id="2-7-reading-a-collection">
+        2.7 Reading a Collection
+        <a href="#2-7-reading-a-collection" class="anchor">#</a>
+      </h2>
+    <pre><code class="language-js">const usersCollectionRef = collection(db, &quot;users&quot;);
+const userSnapshot = await getDocs(usersCollectionRef);
+
+const userList = userSnapshot.docs.map((doc) =&gt; doc.data());</code></pre>
+<p>Hook</p>
+
+      <h2 id="2-9-querying-and-sorting">
+        2.9 Querying and sorting
+        <a href="#2-9-querying-and-sorting" class="anchor">#</a>
+      </h2>
+    <p>Here’s where the limits of Firestore get spooky. If you’re coming from any sort of SQL database these limits may feel like dealbreakers. I encourage you to sit with the unfamiliarity until you’ve considered how you might get your job done with Firestore before jumping ship. In practice I haven’t yet found an application that couldn’t be modeled entirely within Firebase.</p>
+<p>If you really need a way to query data in your app that Firestore doesn’t support, most commonly full text search, you can probably get there with an extension.</p>
+<p>Alright let’s rip this bandaid off. With Firestore you can’t:</p>
+<ul>
+<li>query or sort more than two fields at a time (and querying more than one field will require explicitly creating an index)</li>
+<li>do case insensitive searches (instead, save the field again downcased under a new key)</li>
+<li>join documents (instead, denormalize the data you need)</li>
+<li>use inequality operations on more than one field at a time</li>
+<li>use OR. Instead, write two queries</li>
+</ul>
+<p>Still with me? Cool. Here’s how to do a basic query:</p>
+<pre><code class="language-js">import {
+  collection,
+  query,
+  where,
+  getDocs,
+  getFirestore,
+} from &quot;firebase/firestore&quot;;
+
+const db = getFirestore();
+const usersRef = collection(db, &quot;users&quot;);
+
+const q = query(usersRef, where(&quot;points&quot;, &quot;&gt;&quot;, 100));
+
+const querySnapshot = await getDocs(q);
+
+const users = querySnapshot.docs.map((doc) =&gt; doc.data());</code></pre>
+<p><code>where()</code> conditions:<code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>array-contains</code>, <code>array-contains-any</code>, <code>in</code>, <code>not-in</code></p>
+<p>If you try to do multiple fields you’ll get a link to make an index</p>
+<p>Ordering</p>
+
+      <h2 id="pagination">
+        Pagination
+        <a href="#pagination" class="anchor">#</a>
+      </h2>
+    <p>Limit
+Start at, startAftwe, end at, end before</p>
+<p>Document count</p>
+
+      <h2 id="2-12-creating-an-index">
+        2.12 Creating an Index
+        <a href="#2-12-creating-an-index" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="2-13-limits-of-querying">
+        2.13 Limits of Querying
+        <a href="#2-13-limits-of-querying" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="2-14-deleting-documents">
+        2.14 Deleting Documents
+        <a href="#2-14-deleting-documents" class="anchor">#</a>
+      </h2>
+    <p>TTL</p>
+
+      <h2 id="2-15-deleting-nested-collections">
+        2.15 Deleting Nested Collections
+        <a href="#2-15-deleting-nested-collections" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="2-10-data-modeling">
+        2.10 Data Modeling
+        <a href="#2-10-data-modeling" class="anchor">#</a>
+      </h2>
+    <p>A common pattern I’ve used that makes writing security rules straightforward is having a top level <code>users</code> collection that stores user Documents, then storing application data specific to that user as a sub collection on the user document.</p>
+
+      <h2 id="2-16-security-rules">
+        2.16 Security Rules
+        <a href="#2-16-security-rules" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="2-17-backups">
+        2.17 Backups
+        <a href="#2-17-backups" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="2-18-pricing">
+        2.18 Pricing
+        <a href="#2-18-pricing" class="anchor">#</a>
+      </h2>
+    
+      <h1 id="3-firebase-authentication">
+        3. Firebase Authentication
+        <a href="#3-firebase-authentication" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="3-1-introduction">
+        3.1 Introduction
+        <a href="#3-1-introduction" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-2-setting-up-firebase-authentication">
+        3.2 Setting Up Firebase Authentication
+        <a href="#3-2-setting-up-firebase-authentication" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-3-email-password-authentication">
+        3.3 Email/Password Authentication
+        <a href="#3-3-email-password-authentication" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-4-logging-out-users">
+        3.4 Logging Out Users
+        <a href="#3-4-logging-out-users" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-5-third-party-authentication-providers">
+        3.5 Third-Party Authentication Providers
+        <a href="#3-5-third-party-authentication-providers" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-6-deleting-user-accounts">
+        3.6 Deleting User Accounts
+        <a href="#3-6-deleting-user-accounts" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-7-deleting-user-data-with-accounts">
+        3.7 Deleting User Data with Accounts
+        <a href="#3-7-deleting-user-data-with-accounts" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-8-linking-authentication-with-firestore">
+        3.8 Linking Authentication with Firestore
+        <a href="#3-8-linking-authentication-with-firestore" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="3-9-understanding-and-handling-authentication-errors">
+        3.9 Understanding and Handling Authentication Errors
+        <a href="#3-9-understanding-and-handling-authentication-errors" class="anchor">#</a>
+      </h2>
+    
+      <h1 id="4-firebase-cloud-storage">
+        4. Firebase Cloud Storage
+        <a href="#4-firebase-cloud-storage" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="4-1-introduction-to-firebase-cloud-storage">
+        4.1 Introduction to Firebase Cloud Storage
+        <a href="#4-1-introduction-to-firebase-cloud-storage" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-2-creating-buckets-and-the-default-bucket">
+        4.2 Creating Buckets and the Default Bucket
+        <a href="#4-2-creating-buckets-and-the-default-bucket" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-3-understanding-bucket-tiers-and-locations">
+        4.3 Understanding Bucket Tiers and Locations
+        <a href="#4-3-understanding-bucket-tiers-and-locations" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-4-uploading-an-object">
+        4.4 Uploading an Object
+        <a href="#4-4-uploading-an-object" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-5-downloading-an-object">
+        4.5 Downloading an Object
+        <a href="#4-5-downloading-an-object" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-6-creating-public-links">
+        4.6 Creating Public Links
+        <a href="#4-6-creating-public-links" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-7-deleting-an-object">
+        4.7 Deleting an Object
+        <a href="#4-7-deleting-an-object" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-8-firebase-cloud-storage-pricing">
+        4.8 Firebase Cloud Storage Pricing
+        <a href="#4-8-firebase-cloud-storage-pricing" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="4-9-security-rules-for-firebase-cloud-storage">
+        4.9 Security Rules for Firebase Cloud Storage
+        <a href="#4-9-security-rules-for-firebase-cloud-storage" class="anchor">#</a>
+      </h2>
+    
+      <h1 id="5-firebase-serverless-functions">
+        5. Firebase Serverless Functions
+        <a href="#5-firebase-serverless-functions" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="5-1-introduction-to-firebase-serverless-functions">
+        5.1 Introduction to Firebase Serverless Functions
+        <a href="#5-1-introduction-to-firebase-serverless-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-2-setting-up-a-firebase-functions-project-and-using-the-emulator">
+        5.2 Setting Up a Firebase Functions Project and Using the Emulator
+        <a href="#5-2-setting-up-a-firebase-functions-project-and-using-the-emulator" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-3-setup-and-deployment-of-firebase-functions">
+        5.3 Setup and Deployment of Firebase Functions
+        <a href="#5-3-setup-and-deployment-of-firebase-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-4-https-triggers">
+        5.4 HTTPS Triggers
+        <a href="#5-4-https-triggers" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-5-reading-and-writing-to-firestore-from-functions">
+        5.5 Reading and Writing to Firestore from Functions
+        <a href="#5-5-reading-and-writing-to-firestore-from-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-6-firestore-triggers-oncreate-and-ondelete">
+        5.6 Firestore Triggers: onCreate and onDelete
+        <a href="#5-6-firestore-triggers-oncreate-and-ondelete" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-7-firestore-triggers-onupdate">
+        5.7 Firestore Triggers: onUpdate
+        <a href="#5-7-firestore-triggers-onupdate" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-8-auth-triggers">
+        5.8 Auth Triggers
+        <a href="#5-8-auth-triggers" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-9-callable-functions">
+        5.9 Callable Functions
+        <a href="#5-9-callable-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-10-scheduled-functions">
+        5.10 Scheduled Functions
+        <a href="#5-10-scheduled-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-11-understanding-cold-starts">
+        5.11 Understanding Cold Starts
+        <a href="#5-11-understanding-cold-starts" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-12-testing-and-debugging-functions">
+        5.12 Testing and Debugging Functions
+        <a href="#5-12-testing-and-debugging-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-13-managing-dependencies-in-firebase-functions">
+        5.13 Managing Dependencies in Firebase Functions
+        <a href="#5-13-managing-dependencies-in-firebase-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-14-error-handling-in-firebase-functions">
+        5.14 Error Handling in Firebase Functions
+        <a href="#5-14-error-handling-in-firebase-functions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-15-monitoring-and-logging">
+        5.15 Monitoring and Logging
+        <a href="#5-15-monitoring-and-logging" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="5-16-firebase-serverless-functions-pricing">
+        5.16 Firebase Serverless Functions Pricing
+        <a href="#5-16-firebase-serverless-functions-pricing" class="anchor">#</a>
+      </h2>
+    
+      <h1 id="6-firebase-analytics">
+        6. Firebase Analytics
+        <a href="#6-firebase-analytics" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="6-1-introduction-to-firebase-analytics">
+        6.1 Introduction to Firebase Analytics
+        <a href="#6-1-introduction-to-firebase-analytics" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-2-setting-up-firebase-analytics">
+        6.2 Setting Up Firebase Analytics
+        <a href="#6-2-setting-up-firebase-analytics" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-3-events-in-firebase-analytics">
+        6.3 Events in Firebase Analytics
+        <a href="#6-3-events-in-firebase-analytics" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-4-tracking-signup-conversion-percentage">
+        6.4 Tracking Signup Conversion Percentage
+        <a href="#6-4-tracking-signup-conversion-percentage" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-5-tracking-trial-to-paid-conversions">
+        6.5 Tracking Trial to Paid Conversions
+        <a href="#6-5-tracking-trial-to-paid-conversions" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-6-measuring-user-activation">
+        6.6 Measuring User Activation
+        <a href="#6-6-measuring-user-activation" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-7-monitoring-onboarding">
+        6.7 Monitoring Onboarding
+        <a href="#6-7-monitoring-onboarding" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-8-user-properties-and-audiences">
+        6.8 User Properties and Audiences
+        <a href="#6-8-user-properties-and-audiences" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-9-reporting-and-dashboards">
+        6.9 Reporting and Dashboards
+        <a href="#6-9-reporting-and-dashboards" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-10-integrations-with-other-firebase-services">
+        6.10 Integrations with Other Firebase Services
+        <a href="#6-10-integrations-with-other-firebase-services" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="6-11-firebase-analytics-pricing">
+        6.11 Firebase Analytics Pricing
+        <a href="#6-11-firebase-analytics-pricing" class="anchor">#</a>
+      </h2>
+    
+      <h1 id="7-firebase-plugins">
+        7. Firebase Plugins
+        <a href="#7-firebase-plugins" class="anchor">#</a>
+      </h1>
+    
+      <h2 id="7-1-introduction-to-firebase-plugins">
+        7.1 Introduction to Firebase Plugins
+        <a href="#7-1-introduction-to-firebase-plugins" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-2-sending-emails-with-firebase">
+        7.2 Sending Emails with Firebase
+        <a href="#7-2-sending-emails-with-firebase" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-3-making-email-templates">
+        7.3 Making Email Templates
+        <a href="#7-3-making-email-templates" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-4-sending-sms-and-mms-messages-with-twilio">
+        7.4 Sending SMS and MMS Messages with Twilio
+        <a href="#7-4-sending-sms-and-mms-messages-with-twilio" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-5-saas-billing-with-the-stripe-plugin">
+        7.5 SaaS Billing with the Stripe Plugin
+        <a href="#7-5-saas-billing-with-the-stripe-plugin" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-6-image-manipulation-with-imagemagick">
+        7.6 Image Manipulation with ImageMagick
+        <a href="#7-6-image-manipulation-with-imagemagick" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-7-full-text-search-with-algolia">
+        7.7 Full Text Search with Algolia
+        <a href="#7-7-full-text-search-with-algolia" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-8-machine-learning-with-ml-kit">
+        7.8 Machine Learning with ML Kit
+        <a href="#7-8-machine-learning-with-ml-kit" class="anchor">#</a>
+      </h2>
+    
+      <h2 id="7-9-using-firebase-cloud-messaging-for-notifications">
+        7.9 Using Firebase Cloud Messaging for Notifications
+        <a href="#7-9-using-firebase-cloud-messaging-for-notifications" class="anchor">#</a>
+      </h2>
+    <p>This complete outline should guide your comprehensive blog post on Firebase. It covers all the high-level topics, broken down into the finer details that you plan to discuss.</p>
+<hr>
+
       <h1 id="firestore">
         Firestore
         <a href="#firestore" class="anchor">#</a>

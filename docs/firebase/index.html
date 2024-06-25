@@ -90,8 +90,76 @@
         Firebase
       </h1>
       <article class="prose lg:prose-xl dark-mode:prose-dark">
-        <p>Firebase</p>
+        <p>Over the past few years I&#39;ve been migrating from building apps on Rails and deploying them on Dokku (a self-hosted Heroku alternative) to building apps on Next.js and deploying them on Firebase: a platform-as-a-service (PaaS) offering from Google to build web and mobile apps.</p>
+<p>This page includes a brief explanation of why I think these technology choices are currently the best way to build web apps. After that I&#39;ll explain with minimal necessary detail how to use the important parts of Firebase assuming you have a working knowledge of Javascript, databases, and web apps.</p>
 
+      <h1 id="why-firebase-">
+        Why Firebase?
+        <a href="#why-firebase-" class="anchor">#</a>
+      </h1>
+    <p>I first learned web development in the early 2010s with Ruby on Rails, a wonderful monolithic opinionated web framework used by companies like GitHub, Shopify, and Basecamp. I don&#39;t think Rails-like frameworks (including Laravel, Django, and Phoenix) are a bad choice if you&#39;re building an app today. I used it to build <a href="https://fileinbox.com">Fileinbox</a>, a small SaaS app that&#39;s made me $591.8K as of 2023.</p>
+<p>That said, as a mostly solo developer I&#39;ve been so much happier building apps with Next.js and Firebase. To reach the next stage of growth for Fileinbox I&#39;ve decided to completely rewrite it for Firebase.</p>
+<p>Here&#39;s why:</p>
+<ul>
+<li><strong>Ongoing maintenance is effectively zero.</strong> There are apps I&#39;ve built on this stack that I haven&#39;t touched for years that are happily chugging along, including mission-critical projects I&#39;ve built for other people as a consultant. Invariably on my Rails stack <em>something</em> would break in a project every few months in the complexity of SSL certificates, servers, Postgres databases, DNS, or the VPS. Because Firebase is completely owning the backend complexity of authentication, authorization, data storage, and hosting I don&#39;t have to think about any of it. I feel like I&#39;m free to just work on the frontend and I get backend and devops powers for free. I&#39;ve essentially hired Google to be my sysadmin and devops team.<ul>
+<li>security updates</li>
+</ul>
+</li>
+<li><strong>My costs are way down.</strong> Instead of paying a monthly fee for a certain size of database and then manually upgrading it, I just pay <a href="https://firebase.google.com/pricing/">a fraction of a penny per read and write</a>. Instead of buying a dedicated VPS I just pay a fraction of a penny per 100ms of runtime. As long as I&#39;m building things that are making money I can essentially stop thinking about what apps cost to run: as soon as the cost becomes anything meaningful (&gt;$10/month) my usage would be so incredibly high that I&#39;d be making way more than that (unless my business model was fundamentally broken).<ul>
+<li>where does this break down? high number of writes?</li>
+</ul>
+</li>
+<li><strong>I can build more complicated things.</strong> Realtime updates, backend video processing and job queueing, cron jobs, 3rd party OAuth logins, sending templated emails and SMS messages, and integrating Stripe subscriptions used to be a huge pain (I remember in particular reading <a href="https://www.masteringmodernpayments.com/">an entire book on how to properly integrate Stripe with Rails</a>). On Firebase they&#39;re trivial and fun (integrating <a href="https://extensions.dev/extensions/stripe/firestore-stripe-payments">Stripe subscriptions on Firebase</a> takes about ten minutes and just works).<ul>
+<li>what&#39;s the ramp up time to get there?</li>
+</ul>
+</li>
+</ul>
+<p>Disadvantages include:</p>
+<ul>
+<li><strong>Vendor lock-in with Google,</strong> and Google is particularly notorious for shutting down services with little notice. My backup plan here is to migrate to something like <a href="https://supabase.com/">Supabase</a> but that wouldn&#39;t be trivial.<ul>
+<li>other alternatives?</li>
+</ul>
+</li>
+<li><strong>Firestore is severely limited.</strong> You can&#39;t query documents on more than two attributes at a time, you can&#39;t run queries that join multiple documents, XXXXX. You&#39;ll need to start thinking in NoSQL: denormalize, think about the querying you&#39;ll need to do when designing your database, and XXX.<ul>
+<li>specific examples: full text search, date filtering?</li>
+</ul>
+</li>
+<li><strong>There&#39;s a danger of a gigantic bill.</strong> Everything about Firebase can scale practically to infinity. Like all serverless offerings there are horror stories of developers getting <a href="https://youtu.be/Lb-Pnytoi-8">massive bills</a> because of bugs in their code. Unfortunately there&#39;s not a straightforward way to set up a kill switch if your spending crosses a certain amount. The <a href="https://youtu.be/EoLp0WoUkoA">official guidelines for managing spending</a> recommend setting up billing alerts. I personally have these alerts going to my wife and assistant and pushed directly to my Apple Watch via. <a href="https://pushover.net/">Pushover</a> so that hopefully if there&#39;s a runaway bill it will get caught by somebody quickly.</li>
+</ul>
+<p>
+        <figure>
+          <img
+            src="https://res.cloudinary.com/genco/image/upload/w_1200/v1687797285/c/uZzt.png"
+            alt="My billing alerts include notifications every 10% after 100% up to 200%"
+          />
+          <figcaption><p>My billing alerts include notifications every 10% after 100% up to 200%</p>
+</figcaption>
+        </figure>
+      </p>
+<p>Automatically stop billing after a certain threshold, or shut down all functions:
+<a href="https://cloud.google.com/billing/docs/how-to/notify#cap_disable_billing_to_stop_usage">https://cloud.google.com/billing/docs/how-to/notify#cap_disable_billing_to_stop_usage</a></p>
+<p>
+        <div class="embed">
+          <iframe
+            src="https://www.youtube.com/embed/NWrZwXK92IM"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </p>
+<p>Discussions:</p>
+<ul>
+<li><a href="https://www.reddit.com/r/Firebase/comments/lpudjk/for_real_though_billing_limits/">https://www.reddit.com/r/Firebase/comments/lpudjk/for_real_though_billing_limits/</a></li>
+<li><a href="https://stackoverflow.com/questions/67731470/firebase-billing-kill-switch">https://stackoverflow.com/questions/67731470/firebase-billing-kill-switch</a></li>
+<li><a href="https://stackoverflow.com/questions/52324299/is-there-a-way-to-limit-firebases-blaze-plan">https://stackoverflow.com/questions/52324299/is-there-a-way-to-limit-firebases-blaze-plan</a></li>
+</ul>
+
+      <h1 id="how-to-use-firebase">
+        How to use Firebase
+        <a href="#how-to-use-firebase" class="anchor">#</a>
+      </h1>
+    
       <h1 id="0-what-we-won-39-t-cover">
         0. What we won&#39;t cover
         <a href="#0-what-we-won-39-t-cover" class="anchor">#</a>
@@ -507,7 +575,8 @@ Start at, startAftwe, end at, end before</p>
         5.1 Introduction to Firebase Serverless Functions
         <a href="#5-1-introduction-to-firebase-serverless-functions" class="anchor">#</a>
       </h2>
-    
+    <p>v1 vs. v2</p>
+
       <h2 id="5-2-setting-up-a-firebase-functions-project-and-using-the-emulator">
         5.2 Setting Up a Firebase Functions Project and Using the Emulator
         <a href="#5-2-setting-up-a-firebase-functions-project-and-using-the-emulator" class="anchor">#</a>
@@ -572,6 +641,13 @@ Start at, startAftwe, end at, end before</p>
         5.14 Error Handling in Firebase Functions
         <a href="#5-14-error-handling-in-firebase-functions" class="anchor">#</a>
       </h2>
+    
+      <figure>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+        <p>Access to fetch at &#39;<a href="http://localhost:5001/fileinbox-4e544/us-central1/gdrivegetaccountinfo&#39;">http://localhost:5001/fileinbox-4e544/us-central1/gdrivegetaccountinfo&#39;</a> from origin &#39;<a href="http://localhost:3000&#39;">http://localhost:3000&#39;</a> has been blocked by CORS policy: Response to preflight request doesn&#39;t pass access control check: No &#39;Access-Control-Allow-Origin&#39; header is present on the requested resource. If an opaque response serves your needs, set the request&#39;s mode to &#39;no-cors&#39; to fetch the resource with CORS disabled.</p>
+        </blockquote>
+        
+      </figure>
     
       <h2 id="5-15-monitoring-and-logging">
         5.15 Monitoring and Logging
@@ -692,8 +768,7 @@ Start at, startAftwe, end at, end before</p>
         7.9 Using Firebase Cloud Messaging for Notifications
         <a href="#7-9-using-firebase-cloud-messaging-for-notifications" class="anchor">#</a>
       </h2>
-    <p>This complete outline should guide your comprehensive blog post on Firebase. It covers all the high-level topics, broken down into the finer details that you plan to discuss.</p>
-<hr>
+    <hr>
 
       <h1 id="firestore">
         Firestore

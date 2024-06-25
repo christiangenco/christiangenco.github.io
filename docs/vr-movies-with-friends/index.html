@@ -1,0 +1,222 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="/css/style-081a.css
+" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    <!-- Primary Meta Tags -->
+    <title>How I Watch Movies with Friends in VR on Meta Quest 2</title>
+    <meta name="title" content="How I Watch Movies with Friends in VR on Meta Quest 2">
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christian.gen.co/vr-movies-with-friends">
+    <meta property="og:title" content="How I Watch Movies with Friends in VR on Meta Quest 2">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="null">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://christian.gen.co/vr-movies-with-friends">
+    <meta property="twitter:title" content="How I Watch Movies with Friends in VR on Meta Quest 2">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="null">
+  
+
+    <!-- Thanks https://realfavicongenerator.net/ :D -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#b91c1c">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91c1c">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#b91c1c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body class="dark:bg-gray-900">
+    <div class="container mx-auto px-4">
+      <header
+        class="border-b-4 border-red-700 font-mono my-4 md:flex items-center justify-between dark:text-white"
+        style="border-bottom-right-radius: 225px 8px"
+      >
+        <h1 class="font-bold text-xl">
+          <a href="/" class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Christian Genco</a
+          >
+        </h1>
+        <nav class="text-xs sm:text-base">
+          <a
+            href="/videos"
+            class="hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Videos</a
+          >
+          <a
+            href="/articles"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Articles</a
+          >
+          <a
+            href="/projects"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Projects
+          </a>
+          <a
+            href="/notes"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Notes
+          </a>
+          <a
+            href="/newsletter"
+            class="ml-4 hover:bg-gray-50 dark:hover:bg-gray-800 rounded"
+            >Newsletter</a
+          >
+        </nav>
+      </header>
+    </div>
+
+    <main class="container mx-auto px-4">
+      <h1
+        class="font-mono-caps text-4xl md:text-6xl mb-6 mt-8 md:mb-10 md:mt-12 dark:text-white"
+      >
+        How I Watch Movies with Friends in VR on Meta Quest 2
+      </h1>
+      <article class="prose lg:prose-xl dark-mode:prose-dark">
+        <p>Watching films in VR is an incredible experience but it&#39;s currently needlessly clunky. I have no doubt Apple&#39;s Vision Pro headset will usher in a new era of user friendliness and simplicity, but until then here&#39;s the easiest setup for the best experience I&#39;ve come up with to watch movies with friends in VR.</p>
+<p>First, everybody needs to get a <a href="https://amzn.to/3rx6Nb1">Meta Quest VR headset</a>. I&#39;ve convinced a ton of people to get the Meta Quest 2 but the Pro or 3 will also work for this. They&#39;ll all need a copy of <a href="https://www.bigscreenvr.com/">Bigscreen</a> which they can download from their headset.</p>
+<p>Next, get a copy of the film you want to watch as a file on your computer. 3D films are especially cool in VR. If you can track down a subtitle file for your film each person watching can turn subtitles on or off.</p>
+<p>To add the subtitle track to your movie file use the command line program <code>ffmpeg</code> and run <code>ffmpeg -i movie.mp4 -i subtitles.srt -map 0:v -map 0:a -map 1 -c:v copy -c:a copy -c:s mov_text movie-with-subtitles.mp4</code></p>
+<p>The standard way to watch movies together on Bigscreen is to set up a PC running the <a href="https://www.bigscreenvr.com/remotedesktop">Bigscreen Remote Desktop Client</a>, create a room on the PC, and then stream your screen to everyone watching. This is the easiest way for your guests to get set up (all they need to do is enter a code and join your room) but in practice it sucks because:</p>
+<ul>
+<li>If your primary computer runs macOS or linux you have to get a PC with a beefy graphics card to host it</li>
+<li>Your internet needs to have great upload speeds to stream to everyone</li>
+<li>Controlling playback of the film needs to happen on your computer and the interface to control your computer from your headset is clunky</li>
+</ul>
+<p>In practice setting it up this way leads to a lot of frustration and glitchy playback.</p>
+<p>There&#39;s a much better way though: you can send the movie to everyone ahead of time to download to their device, then just use Bigscreen to sync local playback. Now the film is being played back directly from everyone&#39;s device and all that needs to go through the network is the video sync information and your audio and avatar data.</p>
+<p>I like to upload the video on cloud storage like S3 or GCS but Dropbox or Google Drive work too. Use a link shortener like <a href="https://t.ly">t.ly</a> to make it easy for your friends to type in the URL.</p>
+<p>Here are the instructions I send to my technically challenged friends to get the video downloaded:</p>
+<pre><code>To download the movie to your computer:
+
+1. Open a web browser (preferably chrome)
+2. type TINY_URL in the address bar and hit enter
+3. the movie might start to download right away. If so, you&#39;re done! If not it&#39;ll probably just start playing. You can click the three dots in the bottom right corner of the video to open a menu that should include a &quot;Download&quot; option</code></pre>
+<p>Then if they have a PC I send them these instructions to get it on the headset:</p>
+<pre><code>Once the video is downloaded, to get it on your headset:
+
+1. Locate MOVIE.mp4 on your computer by clicking the up arrow on the &quot;MOVIE.mp4&quot; download in the bottom left corner of your screen. There should be an option along the lines of &quot;Show in Windows Explorer&quot;. When it opens it&#39;ll probably be in your Downloads folder. Make sure it&#39;s highlighted and press CTRL+C on your keyboard to copy it for later. Keep this window open.
+2. Plug the small end (USB C) of that cable into the Oculus and the big end (USB A) into your computer
+3. Put the headset on and &quot;Allow Connected Devise to Access Files&quot;
+4. The headset should appear as a drive on your computer in the left side of the same Windows Explorer window that had MOVIE.mp4 on it. If not let me know and we can debug
+5. Click on your headset in the left side of the Windows Explorer window, then open the Movies directory, then press CTRL+V on your keyboard to start transferring MOVIE.mp4 to your headset
+6. If you get an error saying there&#39;s not enough space try deleting some other videos from the Movies directory on your headset.</code></pre>
+<p>and if they have a Mac I send them these instructions:</p>
+<pre><code>1. Download Android File Transfer at android.com/filetransfer on your computer
+2. Locate MOVIE.mp4 on your computer by clicking the up arrow on the &quot;MOVIE.mp4&quot; download in the bottom left corner of your screen. There should be an option along the lines of &quot;Show in Finder&quot;. When it opens it&#39;ll probably be in your Downloads folder. Keep this window open for later.
+3. Plug the small end (USB C) of that cable into the Oculus and the big end (USB A) into your computer, or use the USB C to USB C cable that came with your headset if your computer has the same type of port that&#39;s on your headset.
+4. Put the headset on and &quot;Allow Connected Devise to Access Files&quot;
+5. The Android File Transfer window should automatically pop up. If it doesn&#39;t, use Spotlight to search for &quot;Android File Transfer&quot; and open it. You should see a list of folders that includes a folder caled &quot;Movies&quot;
+6. Double click the &quot;Movies&quot; folder, then drag and drop your &quot;MOVIE.mp4&quot; file from before into this window.
+7. If you get an error saying there&#39;s not enough space try deleting some other videos from the Movies directory on your headset.</code></pre>
+<p>I send these instructions out a few days before the movie night to give people time to download it and get set up.</p>
+<p>Right before the movie night remind everybody to find a comfy spot where they can keep their headset plugged in (the standard Quest batteries usually last less than 2 hours).</p>
+<p>On your headset create a room. From <code>My Home</code> click <code>Hosting</code> and change <code>Privacy</code> to <code>Private, invite only</code>. Change the <code>Max Players in Room</code> to 1 or 2 over the number of people you expect (sometimes there are bugs where people drop off and come back but bigscreen counts them twice). Hit <code>Save</code>, then <code>Show room ID</code>. Text out this room ID. To play your local video file click <code>Video Player</code> then select your local video file.</p>
+<p>To join your room your guests will need to open bigscreen and click <code>JOIN ROOM ID</code> then enter the code you texted them.</p>
+<p>If your video file is in 3D everyone will need to individually click on the screen, then click the three gear icon in the lower right, then click the <code>3D MODE</code> button until it matches the format of your 3D video (probably <code>SBS</code> for &quot;side-by-side&quot;). From the three gear icon pane they can also toggle subtitles or change the audio track if your video includes multiple audio tracks.</p>
+<hr>
+<p>Avatar 2 VR movie night is tonight! Apparently the instructions I sent don&#39;t work anymore because of some changes Meta made to how developer mode works. I&#39;ve got a new method that&#39;s a bit of a pain to set up but it&#39;ll make it easier to do future movie nights (for the next one you won&#39;t even need a computer!)</p>
+<p>The first step of the new method is to follow the instructions in this video for installing Sidequest on your headset: 
+        <div class="embed">
+          <iframe
+            src="https://www.youtube.com/embed/HD1gCEvV8N8"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </p>
+<p>...but instead of the &quot;Easy Installer&quot; use the &quot;Advanced Installer.&quot;</p>
+<p>Sidequest is a way to install 3rd party applications and games that haven&#39;t been approved by Meta so installing it will also give you access to a whole new app store of cool stuff! We&#39;ll use it to install a file manager that will let you move the downloaded Avatar2.mp4 file from the Downloads folder to the Movies folder.</p>
+<p>Once you&#39;ve followed the instructions in that video, on your computer download the &quot;app-fdroid-release.apk&quot; file for the Amaze file manager from <a href="https://github.com/TeamAmaze/AmazeFileManager/releases">https://github.com/TeamAmaze/AmazeFileManager/releases</a></p>
+<p>Next, in sidequest on your computer with your headset plugged in, click the box with the down arrow icon in the top right that says &quot;Install APK file from folder on computer.&quot; when you hover over it, then find the app-fdroid-release.apk file you downloaded in the previous step (it&#39;s probably in your Downloads folder). This will install the 3rd party file manager that will let us move files around!</p>
+<p>Once Amaze is installed you&#39;re done with this one-time setup 🥳</p>
+<p>Now this is what you&#39;ll need to do to get Avatar2 and for any future movie night:</p>
+<ol>
+<li>on your headset open the web browser (App library =&gt; Meta Quest Browser)</li>
+<li>type tinyurl.com/genco-avatar2 into the browser</li>
+<li>You&#39;ll see the movie in the web browser screen and you&#39;ll be able to play it there but it&#39;ll look weird (doubled side by side). Click the three dots in the lower right corner and select &quot;Download&quot;</li>
+<li>It won&#39;t look like anything is happening but if you click on the three dot menu in the upper right and then click &quot;Downloads&quot; you&#39;ll see the file downloading with it&#39;s progress. If you look down at your app bar you may also see that download is progressing.</li>
+<li>Keep your headset awake until the movie&#39;s downloaded.</li>
+<li>Once it&#39;s downloaded, open the Amaze file manager on your headset by going to your app library, click in the &quot;Search Apps&quot; search box, click the &quot;All&quot; dropdown at the top, click the &quot;Unknown Sources&quot; option at the bottom of that list, then open Amaze.</li>
+<li>The first time you open Amaze it may ask for permissions to access your device. Allow everything it asks for. If you need to reset the application or go back click the Home icon in the top right (not the X icon in the bottom left—that closes the application)</li>
+<li>Open the Downloads folder in Amaze. You should see Avatar2.mp4 in this folder. Click the three dots next to it and select &quot;cut&quot;</li>
+<li>Click the Home icon in the top right to go back</li>
+<li>Open the Movies folder</li>
+<li>Click Paste at the bottom of the window.</li>
+<li>You&#39;re done! Probably. To verify that the video is in the right place and works with Bigscreen, open Bigscreen and click on &quot;My Room&quot; in the bottom bar, then Watch on the sidebar, then the orange &quot;Videoplayer&quot; video in the main window, then &quot;Local Video Files&quot;, then you should see &quot;Avatar2.mp4&quot; and if you tap on it it should start playing!</li>
+</ol>
+
+      </article>
+    </main>
+
+    <div
+      class="bg-gray-100 dark:bg-gray-800 dark:text-white border-t border-gray-300 dark:border-gray-700 mt-6"
+    >
+      <div class="container mx-auto px-4">
+        <footer
+          class="py-4 font-mono text-center md:text-left flex justify-items-start"
+        >
+          <img
+            src="/images/profile.square.small.jpg"
+            alt="Christian Genco profile photo"
+            class="rounded-full w-16 h-16 block mx-auto md:inline flex-grow-0"
+          />
+          <div class="flex-grow ml-2 flex items-center flex-wrap">
+            <a href="/articles" class="hover:underline">All Articles</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/notes" class="hover:underline">All Notes</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/projects" class="hover:underline">Projects</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://twitter.com/cgenco" class="hover:underline"
+              target="_blank">Twitter</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://youtube.com/cgenco" class="hover:underline"
+              target="_blank">YouTube</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://facebook.com/cgenco" class="hover:underline"
+              target="_blank">Facebook</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://instagram.com/cgenco" class="hover:underline"
+              target="_blank">Instagram</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="https://github.com/christiangenco" class="hover:underline"
+              target="_blank">GitHub</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="http://www.linkedin.com/in/cgenco" class="hover:underline"
+              target="_blank">LinkedIn</a
+            >
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="mailto:christian@gen.co" class="hover:underline">Email</a>
+            <span class="text-red-700 mx-2">&#8226;</span>
+            <a href="/newsletter" class="hover:underline">Newsletter</a>
+            <!-- RSS -->
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

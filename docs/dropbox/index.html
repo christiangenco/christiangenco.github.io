@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link href="/css/style-081a.css
+    <link href="/css/style-e60b.css
 " rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -95,9 +95,9 @@
         Set up
         <a href="#set-up" class="anchor">#</a>
       </h1>
-    <p>First, create an app at <a href="https://www.dropbox.com/developers/apps">https://www.dropbox.com/developers/apps</a></p>
+    <p>First, create an app at <blockquote class="twitter-tweet"><a href="https://www.dropbox.com/developers/apps"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 <p>Note your app&#39;s <code>App key</code> (which can be public) and <code>App secret</code> (which, duh, needs to stay secret) and store the as environment variables <code>DROPBOX_KEY</code> and <code>DROPBOX_SECRET</code> on your server.</p>
-<p>Create a page that will exchange the Oauth2 <code>code</code> for a <code>refresh_token</code>. Note this page&#39;s URL and add it to the <code>Redirect URIs</code> section of <a href="https://www.dropbox.com/developers/apps/info/DROPBOX_KEY">https://www.dropbox.com/developers/apps/info/DROPBOX_KEY</a></p>
+<p>Create a page that will exchange the Oauth2 <code>code</code> for a <code>refresh_token</code>. Note this page&#39;s URL and add it to the <code>Redirect URIs</code> section of <blockquote class="twitter-tweet"><a href="https://www.dropbox.com/developers/apps/info/DROPBOX_KEY"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
 <p>Don&#39;t mess with any of the <code>getAuthenticationUrl</code> SDK stuff. Here&#39;s how Dropbox wants you to generate the authentication URL:</p>
 <pre><code class="language-js">const Dropbox = require(&quot;dropbox&quot;).Dropbox;
 const dropbox = new Dropbox({ clientId: process.env.DROPBOX_KEY });

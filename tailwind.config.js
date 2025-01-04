@@ -103,7 +103,7 @@ module.exports = {
             //   borderWidth: 2,
             //   padding: "2px 3px",
             //   top: "0.1em",
-            },
+            // },
             "ul > li::before": {
               backgroundColor: theme("colors.red.700"),
               // borderRadius: "50%",

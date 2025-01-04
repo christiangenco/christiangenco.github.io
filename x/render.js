@@ -87,7 +87,11 @@ const renderer = {
       href === text &&
       (href.includes("twitter.com") || href.includes("x.com"))
     ) {
-      return `<blockquote class="twitter-tweet"><a href="${href}"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`;
+      // return "LINK!!!";
+      return `<blockquote class="twitter-tweet"><a href="${href.replace(
+        "x.com",
+        "twitter.com"
+      )}"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`;
     }
 
     return `<a href="${href}"${title ? ` title="${title}"` : ""}>${text}</a>`;
@@ -120,6 +124,9 @@ const renderer = {
         ${caption}
       </figure>
     `;
+  },
+  video(params) {
+    return "VIDEO";
   },
   // code(string code, string infostring, boolean escaped)
   // html(string html)

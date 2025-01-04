@@ -82,7 +82,11 @@ const renderer = {
       }
     }
 
-    if (title === undefined && href === text && href.includes("twitter.com")) {
+    if (
+      title === undefined &&
+      href === text &&
+      (href.includes("twitter.com") || href.includes("x.com"))
+    ) {
       return `<blockquote class="twitter-tweet"><a href="${href}"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`;
     }
 
@@ -105,7 +109,7 @@ const renderer = {
     return `<img src="${href}" alt="${text}"/>`;
   },
   blockquote(quote) {
-    const parts = quote.split("<p>--").map(p => p.trim());
+    const parts = quote.split("<p>--").map((p) => p.trim());
     let caption = "";
     if (parts[1]) caption = `<figcaption><p>—${parts[1]}</figcaption>`;
     return `
@@ -224,7 +228,7 @@ async function render() {
 
   const postPaths = await glob("_*/*.md");
   await Promise.all(
-    postPaths.map(path => {
+    postPaths.map((path) => {
       const { attributes, body } = read(path);
       const dest = path
         .replace("_posts/", "build/")
@@ -251,7 +255,7 @@ async function render() {
 
   const pagePaths = await glob("src/*");
   await Promise.all(
-    pagePaths.map(path => {
+    pagePaths.map((path) => {
       const filename = Path.basename(path);
       if (filename[0] !== "_") {
         const { attributes, body } = read(path);
@@ -283,7 +287,7 @@ async function main() {
       "./",
       {
         recursive: true,
-        filter: f => {
+        filter: (f) => {
           if (/build/.test(f)) return false;
           return /\.(ejs|html|md)$/;
         },

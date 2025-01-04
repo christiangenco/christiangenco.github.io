@@ -18,7 +18,6 @@
   // "big5": "https://christian.gen.co/big5",
   // "321": "https://jamesclear.com/3-2-1/refer?rh_ref=58c4bf8e",
   // "calendly": "https://calendly.com/cgenco/chat",
-  // "gen.co/chat": "https://calendly.com/cgenco/chat",
   // "newsletter": "https://christian.gen.co/newsletter"
   // "fcp": "https://shoptly.com/i/bsve"
   // "blockfi": "https://blockfi.com/?ref=09c6e09e"
@@ -27,5 +26,7 @@
   // "mc2021": "https://christian.gen.co/video/"
   // "momxmas2021": "https://www.dropbox.com/s/fu9plwtw4saiy8a/George%20and%20Mary%20Ramatowski%20Home%20Videos.mov?dl=0"
   // "sleep": "https://christian.gen.co/sleep"
-  "air": "https://christian.gen.co/air"
+  // "air": "https://christian.gen.co/air"
+  // "chat": "https://calendly.com/cgenco/chat30"
+  "co2": "https://christian.gen.co/co2"
 }

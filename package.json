@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"mkdir -p build && pushd build && python3 -m http.server 3000\" \"x/buildAssets.sh && x/render.js --watch\""
+    "start": "concurrently \"mkdir -p build && pushd build && python -m SimpleHTTPServer\" \"x/buildAssets.sh && x/render.js --watch\""
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",

@@ -108,11 +108,3 @@ If you get stuck, or aren't sure how to reach your goals, feel free to [shoot me
 
 <!-- https://i.imgur.com/Z3n8OVc.jpg -->
 <!-- https://i.imgur.com/xH4rGNL.jpg -->
-
-## Learning the fundamentals
-
-If you're the sort of person that likes to dive in and learn things from first principles I have a few recommendations:
-
-- [Crash Course Computer Science](https://www.youtube.com/playlist?list=PLH2l6uzC4UEW0s7-KewFLBC1D0l6XRfye)
-- [The Human Resource Machine](https://tomorrowcorporation.com/humanresourcemachine) game teaches you how a CPU follows assembly instructions
-- [Building an 8-bit computer from scratch](https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU) on YouTube

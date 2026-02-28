@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplement Quiz — Evidence-Based Recommendations</title>
+  <meta name="description" content="A 2-minute evidence-based supplement quiz. No account needed. No spam. Based on 1,000+ clinical trials.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50:'#f0fdf4', 100:'#dcfce7', 200:'#bbf7d0', 500:'#22c55e', 600:'#16a34a', 700:'#15803d', 800:'#166534' },
+            medical: { 50:'#eff6ff', 100:'#dbeafe', 500:'#3b82f6', 600:'#2563eb', 700:'#1d4ed8' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .fade-in { animation: fadeIn 0.3s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .card-expand { transition: max-height 0.3s ease, padding 0.3s ease; overflow: hidden; }
+    .progress-fill { transition: width 0.4s ease; }
+    .count-transition { transition: all 0.4s ease; }
+    @media print {
+      .no-print { display: none !important; }
+      .print-break { page-break-before: always; }
+    }
+    /* Custom checkbox/radio styling */
+    .option-btn { transition: all 0.15s ease; }
+    .option-btn:hover { border-color: #3b82f6; background: #eff6ff; }
+    .option-btn.selected { border-color: #2563eb; background: #dbeafe; box-shadow: 0 0 0 2px rgba(37,99,235,0.2); }
+    .scale-btn { transition: all 0.15s ease; }
+    .scale-btn:hover { background: #dbeafe; border-color: #3b82f6; }
+    .scale-btn.selected { background: #2563eb; color: white; border-color: #2563eb; }
+    .grade-badge { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 6px; font-weight: 700; font-size: 14px; }
+    .grade-A { background: #dcfce7; color: #166534; }
+    .grade-B { background: #dbeafe; color: #1d4ed8; }
+    .grade-C { background: #fef9c3; color: #854d0e; }
+    .grade-D { background: #fee2e2; color: #991b1b; }
+    /* Live preview sidebar */
+    .live-preview-item { animation: slideIn 0.3s ease-out; }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(8px); } to { opacity: 1; transform: translateX(0); } }
+    @media (min-width: 1024px) {
+      #app-wrapper { display: flex; gap: 2rem; max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+      #app { flex: 1; max-width: 640px; }
+      #live-sidebar { width: 340px; flex-shrink: 0; position: sticky; top: 1.5rem; align-self: flex-start; max-height: calc(100vh - 3rem); overflow-y: auto; }
+    }
+    @media (max-width: 1023px) {
+      #app-wrapper { max-width: 640px; margin: 0 auto; padding: 1rem; }
+      #live-sidebar { margin-top: 1.5rem; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+
+  <div id="app-wrapper">
+    <div id="app" class="py-6 sm:py-10">
+      <!-- Views rendered by JS -->
+    </div>
+    <div id="live-sidebar" class="hidden">
+      <!-- Live supplement preview rendered by JS -->
+    </div>
+  </div>
+
+  <!-- Scoring engine (adapted from src/scoring.js for browser) -->
+  <script>
+// ─── Scoring Engine (browser-compatible) ───
+const ScoringEngine = (() => {
+  const GRADE_WEIGHT = { A: 1.0, B: 0.75, C: 0.45, D: 0.2, F: -1.0 };
+
+  function evalCondition(condition, value) {
+    const v = Number(value);
+    if (isNaN(v)) return false;
+    const expr = condition.replace(/value/g, String(v));
+    try { return Function(`"use strict"; return (${expr});`)(); } catch { return false; }
+  }
+
+  function collectSignals(answers, questions) {
+    const signals = {};
+    function addSignals(newSignals) {
+      for (const [key, val] of Object.entries(newSignals)) {
+        if (key.startsWith("_")) continue;
+        signals[key] = (signals[key] || 0) + val;
+      }
+    }
+    for (const q of questions) {
+      if (q.type === "section_header") continue;
+      const answer = answers[q.id];
+      if (answer === undefined || answer === null || answer === "") continue;
+      const sigDef = q.signals;
+      if (!sigDef || Object.keys(sigDef).length === 0) continue;
+      if (sigDef._compute) {
+        const rules = sigDef.rules || [];
+        for (const rule of rules) {
+          if (evalCondition(rule.condition, answer)) { addSignals(rule.signals); break; }
+        }
+        continue;
+      }
+      if (q.type === "multi_select" && Array.isArray(answer)) {
+        for (const selected of answer) {
+          const ss = sigDef[selected];
+          if (ss) addSignals(ss);
+        }
+        continue;
+      }
+      const ss = sigDef[answer];
+      if (ss) addSignals(ss);
+    }
+    return signals;
+  }
+
+  const SUPPLEMENT_ID_ALIASES = { fiber: "fiber-psyllium", prenatal: "prenatal-multivitamin" };
+  function resolveId(id) { return SUPPLEMENT_ID_ALIASES[id] || id; }
+
+  function scoreSupplements(signals, signalMap) {
+    const scores = {};
+    for (const [signalName, signalValue] of Object.entries(signals)) {
+      if (signalValue === 0) continue;
+      const mapping = signalMap[signalName];
+      if (!mapping) continue;
+      for (const type of ["boost", "penalize"]) {
+        if (!mapping[type]) continue;
+        for (const entry of mapping[type]) {
+          const id = resolveId(entry.supplement);
+          if (!scores[id]) scores[id] = { score: 0, reasons: [] };
+          const contrib = signalValue * entry.weight;
+          scores[id].score += contrib;
+          if (Math.abs(contrib) > 0.3) {
+            scores[id].reasons.push(type === "penalize" ? `⚠️ ${entry.reason}` : entry.reason);
+          }
+        }
+      }
+    }
+    return scores;
+  }
+
+  function checkSafety(supplement, signals, answers) {
+    const warnings = [];
+    let allowed = true;
+    const safety = supplement.safety;
+    if (!safety) return { allowed, warnings };
+    if (safety.drug_interactions && safety.drug_interactions.length > 0) {
+      const userMeds = answers.medications || [];
+      const medMap = {
+        blood_thinners: ["warfarin", "blood_thinners", "anticoagulants"],
+        statins: ["statins"], blood_pressure_meds: ["thiazide_diuretics", "ace_inhibitors", "blood_pressure_meds"],
+        thyroid_meds: ["thyroid_meds", "levothyroxine"], antidepressants: ["antidepressants", "ssris", "maois"],
+        diabetes_meds: ["diabetes_meds", "metformin"], birth_control: ["birth_control", "oral_contraceptives"],
+      };
+      for (const med of userMeds) {
+        const keys = medMap[med] || [med];
+        for (const key of keys) {
+          if (safety.drug_interactions.some(di => di.toLowerCase().includes(key.toLowerCase()) || key.toLowerCase().includes(di.toLowerCase()))) {
+            warnings.push(`${supplement.name} may interact with your ${med.replace(/_/g, " ")} — consult your doctor`);
+            break;
+          }
+        }
+      }
+    }
+    if (signals.pregnant_or_nursing && signals.pregnant_or_nursing > 0) {
+      if (safety.pregnancy === "avoid" || safety.pregnancy === "contraindicated") {
+        warnings.push(`${supplement.name} should be avoided during pregnancy/breastfeeding`);
+        allowed = false;
+      } else if (safety.pregnancy === "caution" || safety.pregnancy === "consult_doctor") {
+        warnings.push(`${supplement.name}: consult your doctor during pregnancy/breastfeeding`);
+      }
+    }
+    return { allowed, warnings };
+  }
+
+  function bestGrade(supplement) {
+    const order = ["A", "B", "C", "D", "F"];
+    let best = "F";
+    for (const e of supplement.effects || []) {
+      if (order.indexOf(e.grade) < order.indexOf(best)) best = e.grade;
+    }
+    return best;
+  }
+
+  function assignTier(score, grade) {
+    if (score >= 2.0 && (grade === "A" || grade === "B")) return "strong";
+    if (score >= 1.0 && (grade === "A" || grade === "B" || grade === "C")) return "consider";
+    if (score >= 0.5) return "maybe";
+    return "none";
+  }
+
+  function selectDose(supplement, signals) {
+    if (!supplement.effects || supplement.effects.length === 0) return null;
+    const sorted = [...supplement.effects].sort((a, b) => (GRADE_WEIGHT[b.grade] || 0) - (GRADE_WEIGHT[a.grade] || 0));
+    const dosage = sorted[0].dosage;
+    if (!dosage) return null;
+    let dose = "";
+    if (dosage.unit === "IU") dose = `${dosage.min_iu}–${dosage.max_iu} ${dosage.unit} ${dosage.frequency}`;
+    else if (dosage.min_mg != null && dosage.max_mg != null) dose = `${dosage.min_mg}–${dosage.max_mg} mg ${dosage.frequency}`;
+    else if (dosage.min_mg != null) dose = `${dosage.min_mg} mg ${dosage.frequency}`;
+    else if (dosage.notes) dose = dosage.notes;
+    if (dosage.notes && dose !== dosage.notes) dose += ` (${dosage.notes})`;
+    return dose;
+  }
+
+  function applyBudgetFilter(recs, signals) {
+    if (signals.budget_low) {
+      const all = [...recs.strong, ...recs.consider, ...recs.maybe];
+      all.sort((a, b) => { const cA = a.supplement.cost_per_month_usd||10, cB = b.supplement.cost_per_month_usd||10; return b.score/cB - a.score/cA; });
+      const topIds = new Set(all.slice(0, 5).map(r => r.supplement.id));
+      for (const t of ["strong","consider","maybe"]) recs[t] = recs[t].filter(r => topIds.has(r.supplement.id));
+    } else if (signals.budget_medium) {
+      const all = [...recs.strong, ...recs.consider, ...recs.maybe];
+      all.sort((a, b) => b.score - a.score);
+      const topIds = new Set(all.slice(0, 10).map(r => r.supplement.id));
+      for (const t of ["strong","consider","maybe"]) recs[t] = recs[t].filter(r => topIds.has(r.supplement.id));
+    }
+  }
+
+  function score(answers, questions, supplements, signalMap) {
+    const signals = collectSignals(answers, questions);
+    const rawScores = scoreSupplements(signals, signalMap);
+    const supplementMap = {};
+    for (const s of supplements) supplementMap[s.id] = s;
+    const result = { strong: [], consider: [], maybe: [], warnings: [], suggested_labs: [] };
+    const allWarnings = [];
+    for (const [suppId, scoreData] of Object.entries(rawScores)) {
+      const supplement = supplementMap[suppId];
+      if (!supplement || scoreData.score < 0.5) continue;
+      const safety = checkSafety(supplement, signals, answers);
+      allWarnings.push(...safety.warnings);
+      if (!safety.allowed) continue;
+      const grade = bestGrade(supplement);
+      const tier = assignTier(scoreData.score, grade);
+      if (tier === "none") continue;
+      result[tier].push({
+        supplement, score: Math.round(scoreData.score * 100) / 100,
+        reasons: [...new Set(scoreData.reasons)], best_grade: grade,
+        dose: selectDose(supplement, signals), warnings: safety.warnings,
+        cost: supplement.cost_per_month_usd,
+      });
+    }
+    for (const t of ["strong","consider","maybe"]) result[t].sort((a, b) => b.score - a.score);
+    applyBudgetFilter(result, signals);
+    result.warnings = [...new Set(allWarnings)];
+    const labChecks = [
+      ["vitamin_d_need", "lab_vitamin_d", "Vitamin D (25-OH)"],
+      ["iron_need", "lab_ferritin", "Ferritin"],
+      ["b12_need", "lab_b12", "Vitamin B12"],
+      ["magnesium_need", "lab_magnesium_rbc", "RBC Magnesium"],
+      ["thyroid_concern", "lab_tsh", "TSH"],
+      ["low_testosterone", "lab_testosterone", "Testosterone"],
+      ["inflammation", "lab_hscrp", "hs-CRP"],
+    ];
+    for (const [sig, ansKey, label] of labChecks) {
+      if (signals[sig] > 0 && !answers[ansKey]) result.suggested_labs.push(label);
+    }
+    return result;
+  }
+
+  return { score, collectSignals };
+})();
+  </script>
+
+  <!-- App logic -->
+  <script>
+const App = (() => {
+  let questions = [];
+  let supplements = [];
+  let signalMap = {};
+  let answers = {};
+  let currentQuestionIndex = 0;
+  let visibleQuestions = []; // filtered by show_if
+  let results = null;
+  let quizActive = false;
+  const STORAGE_KEY = 'supplement_quiz_state';
+  const app = () => document.getElementById("app");
+  const sidebar = () => document.getElementById("live-sidebar");
+
+  // ─── localStorage ───
+  function saveState() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        answers, currentQuestionIndex, quizActive
+      }));
+    } catch {}
+  }
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch { return null; }
+  }
+
+  function clearState() {
+    try { localStorage.removeItem(STORAGE_KEY); } catch {}
+  }
+
+  // ─── Data loading ───
+  async function init() {
+    try {
+      const [qRes, sRes, smRes] = await Promise.all([
+        fetch("data/questions.json"), fetch("data/supplements.json"), fetch("data/signal_map.json")
+      ]);
+      questions = await qRes.json();
+      supplements = await sRes.json();
+      signalMap = await smRes.json();
+    } catch (e) {
+      app().innerHTML = `<div class="text-red-600 p-8">Failed to load quiz data. Please refresh.</div>`;
+      return;
+    }
+
+    // Check for shared results in URL
+    const hash = window.location.hash;
+    if (hash.startsWith("#results=")) {
+      try {
+        answers = JSON.parse(atob(hash.slice(9)));
+        showResults();
+        return;
+      } catch {}
+    }
+
+    // Restore saved state
+    const saved = loadState();
+    if (saved && saved.quizActive) {
+      answers = saved.answers || {};
+      currentQuestionIndex = saved.currentQuestionIndex || 0;
+      quizActive = true;
+      computeVisibleQuestions();
+      // Clamp index in case questions changed
+      if (currentQuestionIndex >= visibleQuestions.length) currentQuestionIndex = 0;
+      showQuestion();
+      return;
+    }
+
+    showLanding();
+  }
+
+  // ─── Show_if evaluation ───
+  function evaluateShowIf(q) {
+    if (!q.show_if) return true;
+    for (const [key, condition] of Object.entries(q.show_if)) {
+      const val = answers[key];
+      if (typeof condition === "object" && condition !== null) {
+        if (condition.contains) {
+          if (!Array.isArray(val) || !val.includes(condition.contains)) return false;
+        }
+        if (condition.gte !== undefined) {
+          if (val === undefined || val === null || Number(val) < condition.gte) return false;
+        }
+      } else {
+        if (val !== condition) return false;
+      }
+    }
+    return true;
+  }
+
+  function computeVisibleQuestions() {
+    visibleQuestions = questions.filter(q => evaluateShowIf(q));
+  }
+
+  // ─── Live preview ───
+  function computeLivePreview() {
+    if (!quizActive || Object.keys(answers).length === 0) return null;
+    const preview = ScoringEngine.score(answers, questions, supplements, signalMap);
+    const all = [...preview.strong, ...preview.consider, ...preview.maybe];
+    return { items: all, strong: preview.strong.length, consider: preview.consider.length, maybe: preview.maybe.length, total: supplements.length };
+  }
+
+  function updateLivePreview() {
+    const sb = sidebar();
+    if (!sb || !quizActive) { if (sb) sb.classList.add('hidden'); return; }
+
+    const preview = computeLivePreview();
+    if (!preview || preview.items.length === 0) {
+      sb.classList.remove('hidden');
+      sb.innerHTML = `
+        <div class="bg-gray-50 rounded-xl p-4 border border-gray-100">
+          <div class="text-sm font-medium text-gray-500 mb-2 flex items-center gap-2">
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3"/></svg>
+            Live Preview
+          </div>
+          <p class="text-xs text-gray-400">Evaluating <span class="font-semibold text-gray-600">${supplements.length}</span> supplements…<br>Answer more questions to see recommendations.</p>
+        </div>`;
+      return;
+    }
+
+    sb.classList.remove('hidden');
+    const tierLabel = (item) => {
+      if (preview.items.indexOf(item) < preview.strong) return '🟢';
+      if (preview.items.indexOf(item) < preview.strong + preview.consider) return '🟡';
+      return '🔵';
+    };
+
+    sb.innerHTML = `
+      <div class="bg-gray-50 rounded-xl p-4 border border-gray-100">
+        <div class="text-sm font-medium text-gray-500 mb-3 flex items-center justify-between">
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3"/></svg>
+            Live Preview
+          </span>
+          <span class="text-xs text-gray-400">${preview.items.length} of ${preview.total} matched</span>
+        </div>
+        <div class="space-y-1.5 max-h-[60vh] overflow-y-auto">
+          ${preview.items.slice(0, 15).map(item => `
+            <div class="live-preview-item flex items-center gap-2 text-sm py-1.5 px-2 rounded-lg bg-white border border-gray-100">
+              <span class="text-xs">${tierLabel(item)}</span>
+              <span class="grade-badge grade-${item.best_grade}" style="width:22px;height:22px;font-size:11px;">${item.best_grade}</span>
+              <span class="flex-1 text-gray-700 font-medium truncate text-xs">${item.supplement.name}</span>
+              ${item.cost ? `<span class="text-xs text-gray-400">$${item.cost}</span>` : ''}
+            </div>`).join('')}
+          ${preview.items.length > 15 ? `<p class="text-xs text-gray-400 text-center pt-1">+${preview.items.length - 15} more</p>` : ''}
+        </div>
+      </div>`;
+  }
+
+  // ─── Landing page ───
+  function showLanding() {
+    quizActive = false;
+    sidebar().classList.add('hidden');
+    const hasSaved = loadState()?.quizActive;
+    app().innerHTML = `
+      <div class="fade-in text-center py-8 sm:py-16">
+        <div class="mb-8">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-100 mb-6">
+            <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+          </div>
+          <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">What supplements should you <em>actually</em> take?</h1>
+          <p class="text-lg text-gray-500 max-w-md mx-auto mb-2">A 2-minute evidence-based quiz.<br>No account needed. No spam.</p>
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <button onclick="App.startQuiz()" class="inline-flex items-center gap-2 bg-medical-600 hover:bg-medical-700 text-white font-semibold px-8 py-4 rounded-xl text-lg shadow-lg shadow-blue-200 transition-all hover:shadow-xl hover:shadow-blue-200 active:scale-[0.98]">
+            ${hasSaved ? 'Start Over' : 'Start Quiz'}
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>
+          ${hasSaved ? `
+          <button onclick="App.resumeQuiz()" class="inline-flex items-center gap-2 text-medical-600 hover:text-medical-700 font-semibold px-8 py-3 rounded-xl text-base border-2 border-medical-200 hover:border-medical-300 transition-all">
+            Resume where you left off
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </button>` : ''}
+        </div>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center text-sm text-gray-400">
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Based on 1,000+ clinical trials</span>
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/></svg> 100% private — runs in your browser</span>
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg> Takes about 2 minutes</span>
+        </div>
+        <p class="mt-12 text-xs text-gray-300 max-w-lg mx-auto">This tool provides general wellness information based on published research. It is not medical advice. Always consult a healthcare provider before starting any supplement.</p>
+      </div>
+    `;
+  }
+
+  // ─── Quiz flow ───
+  function startQuiz() {
+    answers = {};
+    currentQuestionIndex = 0;
+    quizActive = true;
+    clearState();
+    computeVisibleQuestions();
+    saveState();
+    showQuestion();
+  }
+
+  function resumeQuiz() {
+    const saved = loadState();
+    if (saved && saved.quizActive) {
+      answers = saved.answers || {};
+      currentQuestionIndex = saved.currentQuestionIndex || 0;
+      quizActive = true;
+      computeVisibleQuestions();
+      if (currentQuestionIndex >= visibleQuestions.length) currentQuestionIndex = 0;
+      showQuestion();
+    } else {
+      startQuiz();
+    }
+  }
+
+  let lastRenderedQuestionId = null;
+
+  function showQuestion(skipAnimation) {
+    computeVisibleQuestions();
+    const q = visibleQuestions[currentQuestionIndex];
+    if (!q) { showResults(); return; }
+    if (q.type === "section_header") {
+      lastRenderedQuestionId = q.id;
+      renderSectionHeader(q);
+      updateLivePreview();
+      return;
+    }
+    const sameQuestion = (q.id === lastRenderedQuestionId);
+    lastRenderedQuestionId = q.id;
+    renderQuestion(q, sameQuestion || skipAnimation);
+    updateLivePreview();
+  }
+
+  function renderSectionHeader(q) {
+    const progress = ((currentQuestionIndex) / visibleQuestions.length) * 100;
+    const isLabSection = q.id === "lab_section_intro";
+    app().innerHTML = `
+      <div class="fade-in">
+        ${progressBar(progress)}
+        <div class="text-center py-12">
+          <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 mb-4">
+            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3"/></svg>
+          </div>
+          <h2 class="text-xl font-semibold text-gray-900 mb-2">${q.text}</h2>
+          ${isLabSection ? '<p class="text-gray-500 mb-8">This is completely optional but helps us give much more accurate recommendations.</p>' : ''}
+          <div class="flex gap-3 justify-center">
+            ${isLabSection ? `<button onclick="App.skipLabs()" class="px-6 py-3 border border-gray-200 rounded-xl text-gray-500 hover:bg-gray-50 font-medium">Skip lab values</button>` : ''}
+            <button onclick="App.next()" class="px-6 py-3 bg-medical-600 text-white rounded-xl hover:bg-medical-700 font-medium">
+              ${isLabSection ? 'Enter lab values' : 'Continue'}
+            </button>
+          </div>
+        </div>
+        ${backButton()}
+      </div>
+    `;
+  }
+
+  function skipLabs() {
+    // Skip all lab questions
+    while (currentQuestionIndex < visibleQuestions.length - 1) {
+      currentQuestionIndex++;
+      const q = visibleQuestions[currentQuestionIndex];
+      if (q && !q.id.startsWith("lab_")) break;
+    }
+    if (currentQuestionIndex >= visibleQuestions.length) { showResults(); return; }
+    // We might have landed on a non-lab question or end
+    const q = visibleQuestions[currentQuestionIndex];
+    if (q && q.id.startsWith("lab_")) {
+      showResults();
+    } else {
+      showQuestion();
+    }
+  }
+
+  function progressBar(pct) {
+    return `
+      <div class="mb-8 no-print">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs text-gray-400 font-medium">${Math.round(pct)}% complete</span>
+          <span class="text-xs text-gray-400">${currentQuestionIndex + 1} of ${visibleQuestions.length}</span>
+        </div>
+        <div class="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden">
+          <div class="h-full bg-medical-500 rounded-full progress-fill" style="width:${pct}%"></div>
+        </div>
+        <div class="mt-2 text-center">${getEvalCountText()}</div>
+      </div>`;
+  }
+
+  function backButton() {
+    if (currentQuestionIndex === 0) return '';
+    return `<button onclick="App.prev()" class="mt-6 flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-600 transition no-print">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/></svg>
+      Back
+    </button>`;
+  }
+
+  function getEvalCountText() {
+    const preview = computeLivePreview();
+    const matched = preview ? preview.items.length : 0;
+    const total = supplements.length;
+    if (Object.keys(answers).length === 0) {
+      return `<span class="text-xs text-gray-400">Evaluating <span class="font-semibold text-gray-600">${total}</span> supplements</span>`;
+    }
+    return `<span class="text-xs text-gray-400"><span class="font-semibold text-gray-600">${matched}</span> of ${total} supplements match your profile</span>`;
+  }
+
+  function renderQuestion(q, skipAnimation) {
+    const progress = ((currentQuestionIndex) / visibleQuestions.length) * 100;
+    const currentAnswer = answers[q.id];
+    const isOptionalLab = q.required === false || q.id.startsWith("lab_");
+
+    let inputHtml = '';
+
+    if (q.type === "number") {
+      inputHtml = `
+        <div class="mt-6">
+          <input type="number" id="q-input" min="${q.min||''}" max="${q.max||''}"
+            placeholder="${q.placeholder||''}"
+            value="${currentAnswer !== undefined && currentAnswer !== null ? currentAnswer : ''}"
+            class="w-full px-4 py-3 text-lg border-2 border-gray-200 rounded-xl focus:border-medical-500 focus:ring-0 outline-none transition"
+            oninput="App.handleNumberInput(this)"
+            onkeydown="if(event.key==='Enter')App.next()">
+          ${isOptionalLab ? '<p class="text-sm text-gray-400 mt-2">Leave blank if you don\'t know</p>' : ''}
+        </div>`;
+    } else if (q.type === "select") {
+      inputHtml = `<div class="mt-6 space-y-2.5">${q.options.map(o => `
+        <button onclick="App.selectOption('${q.id}','${o.value}')"
+          class="option-btn w-full text-left px-4 py-3 border-2 rounded-xl font-medium text-gray-700 ${currentAnswer === o.value ? 'selected' : 'border-gray-150 bg-white'}">
+          ${o.label}
+        </button>`).join('')}
+      </div>`;
+    } else if (q.type === "multi_select") {
+      const sel = Array.isArray(currentAnswer) ? currentAnswer : [];
+      inputHtml = `<div class="mt-6 space-y-2.5">${q.options.map(o => `
+        <button onclick="App.toggleMulti('${q.id}','${o.value}',${o.exclusive||false})"
+          class="option-btn w-full text-left px-4 py-3 border-2 rounded-xl font-medium text-gray-700 flex items-center gap-3 ${sel.includes(o.value) ? 'selected' : 'border-gray-150 bg-white'}">
+          <span class="flex-shrink-0 w-5 h-5 border-2 rounded ${sel.includes(o.value) ? 'bg-medical-600 border-medical-600' : 'border-gray-300'} flex items-center justify-center">
+            ${sel.includes(o.value) ? '<svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>' : ''}
+          </span>
+          ${o.label}
+        </button>`).join('')}
+      </div>`;
+    } else if (q.type === "scale") {
+      const val = currentAnswer || null;
+      const labels = [];
+      for (let i = q.min; i <= q.max; i++) labels.push(i);
+      inputHtml = `
+        <div class="mt-6">
+          <div class="flex gap-2 justify-center">${labels.map(i => `
+            <button onclick="App.selectScale('${q.id}',${i})"
+              class="scale-btn w-14 h-14 sm:w-16 sm:h-16 border-2 rounded-xl text-lg font-semibold ${val === i ? 'selected' : 'border-gray-200 bg-white text-gray-600'}">
+              ${i}
+            </button>`).join('')}
+          </div>
+          <div class="flex justify-between mt-2 text-xs text-gray-400 px-1">
+            <span>${q.min_label}</span><span>${q.max_label}</span>
+          </div>
+        </div>`;
+    }
+
+    const canContinue = isOptionalLab || currentAnswer !== undefined;
+    const nextLabel = isOptionalLab && (currentAnswer === undefined || currentAnswer === null || currentAnswer === '') ? 'Skip' : 'Continue';
+
+    app().innerHTML = `
+      <div class="${skipAnimation ? '' : 'fade-in'}">
+        ${progressBar(progress)}
+        <h2 class="text-xl sm:text-2xl font-semibold text-gray-900 leading-snug">${q.text}</h2>
+        ${inputHtml}
+        ${q.type === 'number' || q.type === 'multi_select' ? `
+          <button id="next-btn" onclick="App.next()"
+            class="mt-6 w-full py-3 rounded-xl font-semibold text-white transition
+            ${canContinue ? 'bg-medical-600 hover:bg-medical-700' : 'bg-gray-200 text-gray-400'}"
+            ${canContinue ? '' : (isOptionalLab ? '' : 'disabled')}>
+            ${nextLabel}
+          </button>` : ''}
+        ${backButton()}
+      </div>
+    `;
+
+    // Focus number input
+    if (q.type === 'number') {
+      setTimeout(() => { const el = document.getElementById('q-input'); if (el) el.focus(); }, 100);
+    }
+  }
+
+  function handleNumberInput(el) {
+    const q = visibleQuestions[currentQuestionIndex];
+    const val = el.value === '' ? undefined : Number(el.value);
+    if (val !== undefined) answers[q.id] = val;
+    else delete answers[q.id];
+    saveState();
+    // Update button state
+    const btn = document.getElementById('next-btn');
+    if (btn) {
+      const isOptionalLab = q.required === false || q.id.startsWith("lab_");
+      if (val !== undefined || isOptionalLab) {
+        btn.disabled = false;
+        btn.className = btn.className.replace('bg-gray-200 text-gray-400', 'bg-medical-600 hover:bg-medical-700');
+        btn.textContent = val !== undefined ? 'Continue' : 'Skip';
+      }
+    }
+    updateLivePreview();
+  }
+
+  function selectOption(qid, value) {
+    answers[qid] = value;
+    saveState();
+    // Auto-advance on single select
+    setTimeout(() => next(), 200);
+  }
+
+  function selectScale(qid, value) {
+    answers[qid] = value;
+    saveState();
+    setTimeout(() => next(), 200);
+  }
+
+  function toggleMulti(qid, value, exclusive) {
+    let sel = Array.isArray(answers[qid]) ? [...answers[qid]] : [];
+    if (exclusive) {
+      sel = [value];
+    } else {
+      // Remove any exclusive selections
+      const q = visibleQuestions[currentQuestionIndex];
+      const exclusiveValues = q.options.filter(o => o.exclusive).map(o => o.value);
+      sel = sel.filter(v => !exclusiveValues.includes(v));
+      if (sel.includes(value)) sel = sel.filter(v => v !== value);
+      else sel.push(value);
+    }
+    answers[qid] = sel.length > 0 ? sel : undefined;
+    saveState();
+    showQuestion(true); // Re-render without animation to update checkmarks
+  }
+
+  function next() {
+    computeVisibleQuestions();
+    currentQuestionIndex++;
+    if (currentQuestionIndex >= visibleQuestions.length) { showResults(); return; }
+    saveState();
+    showQuestion();
+  }
+
+  function prev() {
+    if (currentQuestionIndex > 0) { currentQuestionIndex--; saveState(); showQuestion(); }
+  }
+
+  // ─── Results ───
+  function showResults() {
+    quizActive = false;
+    clearState();
+    sidebar().classList.add('hidden');
+    results = ScoringEngine.score(answers, questions, supplements, signalMap);
+    const totalCost = [...results.strong, ...results.consider, ...results.maybe]
+      .reduce((sum, r) => sum + (r.cost || 0), 0);
+    const totalCount = results.strong.length + results.consider.length + results.maybe.length;
+
+    // Build share URL
+    const shareUrl = window.location.origin + window.location.pathname + "#results=" + btoa(JSON.stringify(answers));
+
+    app().innerHTML = `
+      <div class="fade-in">
+        <div class="text-center mb-8">
+          <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-brand-100 mb-4">
+            <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+          </div>
+          <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Your Supplement Recommendations</h1>
+          <p class="text-gray-500">Based on your answers, here's what the evidence suggests.</p>
+          ${totalCount === 0 ? '<p class="mt-4 text-gray-500 bg-gray-50 rounded-xl p-4">No strong supplement recommendations based on your profile. Your diet and lifestyle may already cover your needs!</p>' : ''}
+        </div>
+
+        ${renderTier('🟢 Strongly Recommended', 'strong', results.strong, 'These have strong evidence for your specific situation.')}
+        ${renderTier('🟡 Worth Considering', 'consider', results.consider, 'Good evidence suggests these may help you.')}
+        ${renderTier('🔵 Might Help', 'maybe', results.maybe, 'Some evidence supports these for your profile.')}
+
+        ${results.warnings.length > 0 ? `
+        <div class="mt-8 bg-amber-50 border border-amber-200 rounded-xl p-5">
+          <h3 class="font-semibold text-amber-800 flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+            Important Warnings
+          </h3>
+          <ul class="space-y-1.5 text-sm text-amber-700">${results.warnings.map(w => `<li>• ${w}</li>`).join('')}</ul>
+        </div>` : ''}
+
+        ${results.suggested_labs.length > 0 ? `
+        <div class="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-5">
+          <h3 class="font-semibold text-blue-800 flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3"/></svg>
+            Suggested Lab Tests
+          </h3>
+          <p class="text-sm text-blue-600 mb-2">These tests would help refine your recommendations:</p>
+          <ul class="space-y-1 text-sm text-blue-700">${results.suggested_labs.map(l => `<li>• ${l}</li>`).join('')}</ul>
+        </div>` : ''}
+
+        ${totalCount > 0 ? `
+        <div class="mt-6 bg-gray-50 rounded-xl p-5 flex items-center justify-between">
+          <div>
+            <span class="text-sm text-gray-500">Estimated monthly cost</span>
+            <p class="text-2xl font-bold text-gray-900">~$${totalCost}<span class="text-sm font-normal text-gray-400">/mo</span></p>
+          </div>
+          <div class="text-right">
+            <span class="text-sm text-gray-500">${totalCount} supplement${totalCount !== 1 ? 's' : ''}</span>
+          </div>
+        </div>` : ''}
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3 no-print">
+          <button onclick="window.print()" class="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-gray-200 rounded-xl font-medium text-gray-600 hover:bg-gray-50 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m0 0a48.159 48.159 0 0 1 10.5 0m-10.5 0V5.625A2.625 2.625 0 0 1 9.375 3h5.25a2.625 2.625 0 0 1 2.625 2.625v3.582"/></svg>
+            Save as PDF
+          </button>
+          <button onclick="App.copyShareLink('${shareUrl.replace(/'/g, "\\'")}')" id="share-btn" class="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-gray-200 rounded-xl font-medium text-gray-600 hover:bg-gray-50 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.935-2.186 2.25 2.25 0 0 0-3.935 2.186Z"/></svg>
+            Share Results
+          </button>
+          <button onclick="App.startQuiz()" class="flex-1 flex items-center justify-center gap-2 py-3 bg-medical-600 text-white rounded-xl font-medium hover:bg-medical-700 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182"/></svg>
+            Retake Quiz
+          </button>
+        </div>
+
+        <div class="mt-10 mb-4">
+          <button onclick="App.toggleMethodology()" class="text-sm text-gray-400 hover:text-gray-600 flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg>
+            About our methodology
+          </button>
+          <div id="methodology" class="hidden mt-4 bg-gray-50 rounded-xl p-5 text-sm text-gray-600 space-y-3">
+            <h3 class="font-semibold text-gray-900">Evidence Grading Scale</h3>
+            <div class="grid grid-cols-2 gap-2">
+              <div class="flex items-center gap-2"><span class="grade-badge grade-A">A</span> Strong: consistent RCTs</div>
+              <div class="flex items-center gap-2"><span class="grade-badge grade-B">B</span> Good: moderate effect</div>
+              <div class="flex items-center gap-2"><span class="grade-badge grade-C">C</span> Mixed: may help some</div>
+              <div class="flex items-center gap-2"><span class="grade-badge grade-D">D</span> Weak: preliminary only</div>
+            </div>
+            <p>All recommendations are based on peer-reviewed research from PubMed. Each supplement has been evaluated across multiple outcomes, populations, and dosage ranges. Citations link directly to original studies.</p>
+            <p class="text-gray-400">Data sources include Cochrane reviews, NIH Office of Dietary Supplements, and individual RCTs. Last updated February 2026.</p>
+          </div>
+        </div>
+
+        <p class="text-xs text-gray-300 text-center mt-6 mb-8">This tool provides general wellness information. It is not medical advice. Always consult a healthcare provider before starting any supplement regimen.</p>
+      </div>
+    `;
+  }
+
+  function renderTier(title, tierKey, items, subtitle) {
+    if (items.length === 0) return '';
+    return `
+      <div class="mt-8">
+        <h2 class="text-lg font-bold text-gray-900 mb-1">${title}</h2>
+        <p class="text-sm text-gray-400 mb-4">${subtitle}</p>
+        <div class="space-y-3">
+          ${items.map((r, i) => renderCard(r, `${tierKey}-${i}`)).join('')}
+        </div>
+      </div>`;
+  }
+
+  function renderCard(r, id) {
+    const s = r.supplement;
+    const reasons = r.reasons.filter(r => !r.startsWith('⚠️'));
+    const citations = (s.effects || []).flatMap(e => e.citations || []).slice(0, 3);
+    const warningHtml = r.warnings.length > 0
+      ? `<div class="mt-3 text-sm text-amber-700 bg-amber-50 rounded-lg p-2">${r.warnings.map(w => `<div>⚠️ ${w}</div>`).join('')}</div>` : '';
+
+    return `
+      <div class="border border-gray-150 rounded-xl overflow-hidden">
+        <button onclick="App.toggleCard('${id}')" class="w-full px-4 py-3.5 flex items-center gap-3 text-left hover:bg-gray-50 transition">
+          <span class="grade-badge grade-${r.best_grade}">${r.best_grade}</span>
+          <div class="flex-1 min-w-0">
+            <div class="font-semibold text-gray-900">${s.name}</div>
+            <div class="text-sm text-gray-500 truncate">${r.dose || ''}</div>
+          </div>
+          <div class="text-right flex-shrink-0">
+            ${r.cost ? `<div class="text-sm font-medium text-gray-500">~$${r.cost}/mo</div>` : ''}
+          </div>
+          <svg id="chevron-${id}" class="w-5 h-5 text-gray-300 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+        </button>
+        <div id="detail-${id}" class="hidden px-4 pb-4 border-t border-gray-100">
+          <div class="pt-3 space-y-3">
+            ${reasons.length > 0 ? `
+            <div>
+              <div class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Why this was recommended</div>
+              <ul class="text-sm text-gray-600 space-y-0.5">${reasons.map(r => `<li>• ${r}</li>`).join('')}</ul>
+            </div>` : ''}
+            ${s.form_notes ? `
+            <div>
+              <div class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Form & timing</div>
+              <p class="text-sm text-gray-600">${s.form_notes}</p>
+            </div>` : ''}
+            ${citations.length > 0 ? `
+            <div>
+              <div class="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">Key evidence</div>
+              <ul class="text-sm text-gray-500 space-y-1">${citations.map(c => `
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/${c.pmid}/" target="_blank" rel="noopener" class="text-medical-600 hover:underline">${c.title}</a> <span class="text-gray-300">(${c.year}, ${c.type})</span></li>`).join('')}
+              </ul>
+            </div>` : ''}
+            ${warningHtml}
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function toggleCard(id) {
+    const el = document.getElementById(`detail-${id}`);
+    const chevron = document.getElementById(`chevron-${id}`);
+    if (el.classList.contains('hidden')) {
+      el.classList.remove('hidden');
+      chevron.style.transform = 'rotate(180deg)';
+    } else {
+      el.classList.add('hidden');
+      chevron.style.transform = '';
+    }
+  }
+
+  function toggleMethodology() {
+    const el = document.getElementById('methodology');
+    el.classList.toggle('hidden');
+  }
+
+  function copyShareLink(url) {
+    navigator.clipboard.writeText(url).then(() => {
+      const btn = document.getElementById('share-btn');
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg> Copied!';
+      setTimeout(() => { btn.innerHTML = orig; }, 2000);
+    });
+  }
+
+  return {
+    init, startQuiz, resumeQuiz, next, prev, showResults, selectOption, selectScale,
+    toggleMulti, handleNumberInput, toggleCard, toggleMethodology,
+    copyShareLink, skipLabs,
+  };
+})();
+
+document.addEventListener("DOMContentLoaded", App.init);
+  </script>
+</body>
+</html>

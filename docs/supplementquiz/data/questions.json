@@ -1,0 +1,1014 @@
+[
+  {
+    "id": "age",
+    "text": "How old are you?",
+    "type": "number",
+    "min": 13,
+    "max": 100,
+    "placeholder": "Enter your age",
+    "show_if": null,
+    "signals": {
+      "_compute": "age_ranges",
+      "rules": [
+        {
+          "condition": "value < 30",
+          "signals": {
+            "young_adult": 1.0
+          }
+        },
+        {
+          "condition": "value >= 30 && value < 50",
+          "signals": {
+            "adult_30_50": 1.0
+          }
+        },
+        {
+          "condition": "value >= 50 && value < 65",
+          "signals": {
+            "adult_50_plus": 1.0,
+            "aging_concern": 1.0
+          }
+        },
+        {
+          "condition": "value >= 65",
+          "signals": {
+            "adult_50_plus": 1.0,
+            "aging_concern": 1.5,
+            "senior": 1.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "biological_sex",
+    "text": "What is your biological sex?",
+    "type": "select",
+    "options": [
+      {
+        "value": "male",
+        "label": "Male"
+      },
+      {
+        "value": "female",
+        "label": "Female"
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "male": {
+        "is_male": 1.0
+      },
+      "female": {
+        "is_female": 1.0
+      }
+    }
+  },
+  {
+    "id": "pregnant_or_breastfeeding",
+    "text": "Are you currently pregnant or breastfeeding?",
+    "type": "select",
+    "options": [
+      {
+        "value": "yes",
+        "label": "Yes"
+      },
+      {
+        "value": "no",
+        "label": "No"
+      }
+    ],
+    "show_if": {
+      "biological_sex": "female"
+    },
+    "signals": {
+      "yes": {
+        "pregnant_or_nursing": 2.0
+      },
+      "no": {}
+    }
+  },
+  {
+    "id": "medications",
+    "text": "Are you currently taking any of these medications? (Select all that apply)",
+    "type": "multi_select",
+    "options": [
+      {
+        "value": "blood_pressure_meds",
+        "label": "Blood pressure medications"
+      },
+      {
+        "value": "blood_thinners",
+        "label": "Blood thinners (e.g. warfarin, aspirin)"
+      },
+      {
+        "value": "statins",
+        "label": "Statins (cholesterol medication)"
+      },
+      {
+        "value": "thyroid_meds",
+        "label": "Thyroid medications"
+      },
+      {
+        "value": "antidepressants",
+        "label": "Antidepressants / SSRIs"
+      },
+      {
+        "value": "diabetes_meds",
+        "label": "Diabetes medications"
+      },
+      {
+        "value": "birth_control",
+        "label": "Birth control"
+      },
+      {
+        "value": "none",
+        "label": "None",
+        "exclusive": true
+      },
+      {
+        "value": "other",
+        "label": "Other",
+        "has_free_text": true
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "blood_pressure_meds": {
+        "on_bp_meds": 1.0,
+        "heart_risk": 1.0
+      },
+      "blood_thinners": {
+        "on_blood_thinners": 1.0,
+        "heart_risk": 1.0
+      },
+      "statins": {
+        "on_statins": 1.5,
+        "heart_risk": 1.0
+      },
+      "thyroid_meds": {
+        "on_thyroid_meds": 1.0
+      },
+      "antidepressants": {
+        "on_antidepressants": 1.0,
+        "mood_concern": 0.5
+      },
+      "diabetes_meds": {
+        "on_diabetes_meds": 1.0,
+        "metabolic_concern": 1.0
+      },
+      "birth_control": {
+        "on_birth_control": 1.0
+      },
+      "none": {},
+      "other": {}
+    }
+  },
+  {
+    "id": "diet_type",
+    "text": "How would you describe your diet?",
+    "type": "select",
+    "options": [
+      {
+        "value": "omnivore",
+        "label": "Omnivore (eat everything)"
+      },
+      {
+        "value": "pescatarian",
+        "label": "Pescatarian (fish but no meat)"
+      },
+      {
+        "value": "vegetarian",
+        "label": "Vegetarian (no meat or fish)"
+      },
+      {
+        "value": "vegan",
+        "label": "Vegan (no animal products)"
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "omnivore": {},
+      "pescatarian": {
+        "low_meat": 1.0,
+        "b12_need": 0.5,
+        "iron_need": 0.5,
+        "zinc_need": 0.5
+      },
+      "vegetarian": {
+        "low_meat": 1.5,
+        "b12_need": 1.5,
+        "iron_need": 1.5,
+        "zinc_need": 1.0,
+        "creatine_need": 1.0
+      },
+      "vegan": {
+        "low_meat": 2.0,
+        "b12_need": 2.5,
+        "iron_need": 2.0,
+        "zinc_need": 1.5,
+        "omega3_need": 1.5,
+        "creatine_need": 1.5,
+        "calcium_need": 1.0,
+        "iodine_need": 1.0
+      }
+    }
+  },
+  {
+    "id": "sun_exposure",
+    "text": "How much direct sunlight do you get most days?",
+    "type": "select",
+    "options": [
+      {
+        "value": "low",
+        "label": "Less than 15 minutes"
+      },
+      {
+        "value": "moderate",
+        "label": "15\u201330 minutes"
+      },
+      {
+        "value": "high",
+        "label": "More than 30 minutes"
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "low": {
+        "vitamin_d_need": 2.0
+      },
+      "moderate": {
+        "vitamin_d_need": 1.0
+      },
+      "high": {
+        "vitamin_d_need": 0.3
+      }
+    }
+  },
+  {
+    "id": "exercise_type",
+    "text": "What type of exercise do you do most often?",
+    "type": "select",
+    "options": [
+      {
+        "value": "none",
+        "label": "I don't exercise regularly"
+      },
+      {
+        "value": "cardio",
+        "label": "Mostly cardio (running, cycling, swimming)"
+      },
+      {
+        "value": "strength",
+        "label": "Mostly strength training (weights, resistance)"
+      },
+      {
+        "value": "both",
+        "label": "Both cardio and strength training"
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "none": {
+        "sedentary": 1.5
+      },
+      "cardio": {
+        "does_cardio": 1.0,
+        "electrolyte_need": 1.0
+      },
+      "strength": {
+        "does_strength": 1.5,
+        "protein_need": 1.0,
+        "creatine_need": 1.0
+      },
+      "both": {
+        "does_cardio": 1.0,
+        "does_strength": 1.0,
+        "protein_need": 1.0,
+        "creatine_need": 1.0,
+        "electrolyte_need": 1.0
+      }
+    }
+  },
+  {
+    "id": "exercise_frequency",
+    "text": "How often do you exercise per week?",
+    "type": "select",
+    "options": [
+      {
+        "value": "none",
+        "label": "Not regularly"
+      },
+      {
+        "value": "1_2",
+        "label": "1\u20132 times per week"
+      },
+      {
+        "value": "3_4",
+        "label": "3\u20134 times per week"
+      },
+      {
+        "value": "5_plus",
+        "label": "5 or more times per week"
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "none": {
+        "sedentary": 1.5
+      },
+      "1_2": {
+        "moderate_exercise": 0.5
+      },
+      "3_4": {
+        "moderate_exercise": 1.0,
+        "electrolyte_need": 0.5,
+        "magnesium_need": 0.5
+      },
+      "5_plus": {
+        "high_exercise": 1.5,
+        "electrolyte_need": 1.0,
+        "magnesium_need": 1.0,
+        "protein_need": 0.5
+      }
+    }
+  },
+  {
+    "id": "sleep_quality",
+    "text": "How would you rate your sleep quality?",
+    "type": "scale",
+    "min": 1,
+    "max": 5,
+    "min_label": "Very poor",
+    "max_label": "Excellent",
+    "show_if": null,
+    "signals": {
+      "_compute": "scale",
+      "rules": [
+        {
+          "condition": "value <= 2",
+          "signals": {
+            "poor_sleep": 2.0,
+            "magnesium_need": 0.5
+          }
+        },
+        {
+          "condition": "value == 3",
+          "signals": {
+            "poor_sleep": 1.0
+          }
+        },
+        {
+          "condition": "value >= 4",
+          "signals": {}
+        }
+      ]
+    }
+  },
+  {
+    "id": "stress_level",
+    "text": "How would you rate your current stress level?",
+    "type": "scale",
+    "min": 1,
+    "max": 5,
+    "min_label": "Very low",
+    "max_label": "Very high",
+    "show_if": null,
+    "signals": {
+      "_compute": "scale",
+      "rules": [
+        {
+          "condition": "value <= 2",
+          "signals": {}
+        },
+        {
+          "condition": "value == 3",
+          "signals": {
+            "high_stress": 0.5
+          }
+        },
+        {
+          "condition": "value >= 4",
+          "signals": {
+            "high_stress": 1.5,
+            "magnesium_need": 0.5,
+            "mood_concern": 0.5
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "health_goals",
+    "text": "What are your top health goals? (Select all that apply)",
+    "type": "multi_select",
+    "options": [
+      {
+        "value": "energy",
+        "label": "Energy & daily performance"
+      },
+      {
+        "value": "sleep",
+        "label": "Sleep quality"
+      },
+      {
+        "value": "athletic",
+        "label": "Muscle & athletic performance"
+      },
+      {
+        "value": "joint",
+        "label": "Joint & mobility"
+      },
+      {
+        "value": "heart",
+        "label": "Heart & cardiovascular health"
+      },
+      {
+        "value": "immune",
+        "label": "Immune support"
+      },
+      {
+        "value": "mood",
+        "label": "Mood & stress management"
+      },
+      {
+        "value": "skin_hair_nails",
+        "label": "Skin, hair & nails"
+      },
+      {
+        "value": "gut",
+        "label": "Gut health & digestion"
+      },
+      {
+        "value": "bone",
+        "label": "Bone health"
+      },
+      {
+        "value": "brain",
+        "label": "Brain & memory"
+      },
+      {
+        "value": "longevity",
+        "label": "Healthy aging & longevity"
+      },
+      {
+        "value": "hormone",
+        "label": "Hormone health"
+      },
+      {
+        "value": "weight",
+        "label": "Weight management"
+      },
+      {
+        "value": "eye",
+        "label": "Eye health"
+      },
+      {
+        "value": "fertility",
+        "label": "Fertility"
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "energy": {
+        "goal_energy": 1.5
+      },
+      "sleep": {
+        "goal_sleep": 1.5
+      },
+      "athletic": {
+        "goal_athletic": 1.5,
+        "protein_need": 1.0,
+        "creatine_need": 1.0
+      },
+      "joint": {
+        "goal_joint": 1.5
+      },
+      "heart": {
+        "goal_heart": 1.5
+      },
+      "immune": {
+        "goal_immune": 1.5
+      },
+      "mood": {
+        "goal_mood": 1.5,
+        "mood_concern": 1.0
+      },
+      "skin_hair_nails": {
+        "goal_skin": 1.5
+      },
+      "gut": {
+        "goal_gut": 1.5
+      },
+      "bone": {
+        "goal_bone": 1.5,
+        "calcium_need": 0.5
+      },
+      "brain": {
+        "goal_brain": 1.5
+      },
+      "longevity": {
+        "goal_longevity": 1.5
+      },
+      "hormone": {
+        "goal_hormone": 1.5
+      },
+      "weight": {
+        "goal_weight": 1.5
+      },
+      "eye": {
+        "goal_eye": 1.5
+      },
+      "fertility": {
+        "goal_fertility": 1.5
+      }
+    }
+  },
+  {
+    "id": "budget",
+    "text": "How much are you willing to spend on supplements per month?",
+    "type": "select",
+    "options": [
+      {
+        "value": "low",
+        "label": "Under $25/month"
+      },
+      {
+        "value": "medium",
+        "label": "$25\u2013$60/month"
+      },
+      {
+        "value": "high",
+        "label": "$60+ /month"
+      }
+    ],
+    "show_if": null,
+    "signals": {
+      "low": {
+        "budget_low": 1.0
+      },
+      "medium": {
+        "budget_medium": 1.0
+      },
+      "high": {
+        "budget_high": 1.0
+      }
+    }
+  },
+  {
+    "id": "blood_pressure",
+    "text": "Do you know your blood pressure status?",
+    "type": "select",
+    "options": [
+      {
+        "value": "normal",
+        "label": "Normal"
+      },
+      {
+        "value": "high",
+        "label": "High / borderline high"
+      },
+      {
+        "value": "unknown",
+        "label": "I don't know"
+      }
+    ],
+    "show_if": {
+      "health_goals": {
+        "contains": "heart"
+      }
+    },
+    "signals": {
+      "normal": {},
+      "high": {
+        "high_bp": 1.5,
+        "heart_risk": 1.0
+      },
+      "unknown": {
+        "heart_risk": 0.3
+      }
+    }
+  },
+  {
+    "id": "cholesterol",
+    "text": "Do you know your cholesterol status?",
+    "type": "select",
+    "options": [
+      {
+        "value": "normal",
+        "label": "Normal"
+      },
+      {
+        "value": "high",
+        "label": "High / borderline high"
+      },
+      {
+        "value": "unknown",
+        "label": "I don't know"
+      }
+    ],
+    "show_if": {
+      "health_goals": {
+        "contains": "heart"
+      }
+    },
+    "signals": {
+      "normal": {},
+      "high": {
+        "high_cholesterol": 1.5,
+        "heart_risk": 1.0
+      },
+      "unknown": {
+        "heart_risk": 0.3
+      }
+    }
+  },
+  {
+    "id": "osteoporosis_history",
+    "text": "Is there a family history of osteoporosis?",
+    "type": "select",
+    "options": [
+      {
+        "value": "yes",
+        "label": "Yes"
+      },
+      {
+        "value": "no",
+        "label": "No"
+      },
+      {
+        "value": "unknown",
+        "label": "I don't know"
+      }
+    ],
+    "show_if": {
+      "health_goals": {
+        "contains": "bone"
+      },
+      "age": {
+        "gte": 45
+      }
+    },
+    "signals": {
+      "yes": {
+        "osteoporosis_risk": 1.5,
+        "calcium_need": 1.0,
+        "vitamin_d_need": 0.5
+      },
+      "no": {},
+      "unknown": {
+        "osteoporosis_risk": 0.3
+      }
+    }
+  },
+  {
+    "id": "trying_to_conceive",
+    "text": "Are you currently trying to conceive?",
+    "type": "select",
+    "options": [
+      {
+        "value": "yes",
+        "label": "Yes, actively trying"
+      },
+      {
+        "value": "planning",
+        "label": "Planning to in the near future"
+      },
+      {
+        "value": "no",
+        "label": "No"
+      }
+    ],
+    "show_if": {
+      "health_goals": {
+        "contains": "fertility"
+      }
+    },
+    "signals": {
+      "yes": {
+        "trying_to_conceive": 2.0,
+        "folate_need": 1.5
+      },
+      "planning": {
+        "trying_to_conceive": 1.0,
+        "folate_need": 1.0
+      },
+      "no": {
+        "general_fertility": 0.5
+      }
+    }
+  },
+  {
+    "id": "mood_type",
+    "text": "Which best describes what you'd like help with?",
+    "type": "select",
+    "options": [
+      {
+        "value": "anxiety",
+        "label": "Primarily anxiety or feeling wired"
+      },
+      {
+        "value": "low_mood",
+        "label": "Primarily low mood or low motivation"
+      },
+      {
+        "value": "both",
+        "label": "Both anxiety and low mood"
+      },
+      {
+        "value": "neither",
+        "label": "Neither \u2014 just general stress management"
+      }
+    ],
+    "show_if": {
+      "health_goals": {
+        "contains": "mood"
+      }
+    },
+    "signals": {
+      "anxiety": {
+        "anxiety_concern": 1.5,
+        "calming_need": 1.5
+      },
+      "low_mood": {
+        "low_mood_concern": 1.5,
+        "mood_lift_need": 1.5
+      },
+      "both": {
+        "anxiety_concern": 1.0,
+        "low_mood_concern": 1.0,
+        "calming_need": 1.0,
+        "mood_lift_need": 1.0
+      },
+      "neither": {
+        "general_stress": 1.0
+      }
+    }
+  },
+  {
+    "id": "lab_section_intro",
+    "text": "Have recent blood work? Adding lab values dramatically improves recommendations.",
+    "type": "section_header",
+    "show_if": null,
+    "signals": {}
+  },
+  {
+    "id": "lab_vitamin_d",
+    "text": "Vitamin D level (ng/mL)",
+    "type": "number",
+    "min": 5,
+    "max": 150,
+    "placeholder": "e.g. 32",
+    "required": false,
+    "show_if": null,
+    "signals": {
+      "_compute": "lab_ranges",
+      "rules": [
+        {
+          "condition": "value < 20",
+          "signals": {
+            "vitamin_d_need": 2.5,
+            "vitamin_d_deficient": 1.0
+          }
+        },
+        {
+          "condition": "value >= 20 && value < 30",
+          "signals": {
+            "vitamin_d_need": 1.5
+          }
+        },
+        {
+          "condition": "value >= 30 && value < 50",
+          "signals": {
+            "vitamin_d_need": 0.5
+          }
+        },
+        {
+          "condition": "value >= 50",
+          "signals": {
+            "vitamin_d_need": 0.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "lab_ferritin",
+    "text": "Ferritin level (ng/mL)",
+    "type": "number",
+    "min": 1,
+    "max": 1000,
+    "placeholder": "e.g. 45",
+    "required": false,
+    "show_if": null,
+    "signals": {
+      "_compute": "lab_ranges",
+      "rules": [
+        {
+          "condition": "value < 15",
+          "signals": {
+            "iron_need": 2.5,
+            "iron_deficient": 1.0
+          }
+        },
+        {
+          "condition": "value >= 15 && value < 30",
+          "signals": {
+            "iron_need": 1.5
+          }
+        },
+        {
+          "condition": "value >= 30 && value < 100",
+          "signals": {
+            "iron_need": 0.0
+          }
+        },
+        {
+          "condition": "value >= 100",
+          "signals": {
+            "iron_need": -1.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "lab_b12",
+    "text": "Vitamin B12 level (pg/mL)",
+    "type": "number",
+    "min": 50,
+    "max": 2000,
+    "placeholder": "e.g. 450",
+    "required": false,
+    "show_if": null,
+    "signals": {
+      "_compute": "lab_ranges",
+      "rules": [
+        {
+          "condition": "value < 200",
+          "signals": {
+            "b12_need": 2.5,
+            "b12_deficient": 1.0
+          }
+        },
+        {
+          "condition": "value >= 200 && value < 400",
+          "signals": {
+            "b12_need": 1.5
+          }
+        },
+        {
+          "condition": "value >= 400 && value < 800",
+          "signals": {
+            "b12_need": 0.3
+          }
+        },
+        {
+          "condition": "value >= 800",
+          "signals": {
+            "b12_need": 0.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "lab_magnesium_rbc",
+    "text": "RBC Magnesium level (mg/dL)",
+    "type": "number",
+    "min": 1,
+    "max": 10,
+    "placeholder": "e.g. 5.2",
+    "required": false,
+    "show_if": null,
+    "signals": {
+      "_compute": "lab_ranges",
+      "rules": [
+        {
+          "condition": "value < 4.2",
+          "signals": {
+            "magnesium_need": 2.0,
+            "magnesium_deficient": 1.0
+          }
+        },
+        {
+          "condition": "value >= 4.2 && value < 5.0",
+          "signals": {
+            "magnesium_need": 1.0
+          }
+        },
+        {
+          "condition": "value >= 5.0 && value < 6.5",
+          "signals": {
+            "magnesium_need": 0.3
+          }
+        },
+        {
+          "condition": "value >= 6.5",
+          "signals": {
+            "magnesium_need": 0.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "lab_tsh",
+    "text": "TSH level (mIU/L)",
+    "type": "number",
+    "min": 0.01,
+    "max": 50,
+    "placeholder": "e.g. 2.1",
+    "required": false,
+    "show_if": null,
+    "signals": {
+      "_compute": "lab_ranges",
+      "rules": [
+        {
+          "condition": "value < 0.5",
+          "signals": {
+            "thyroid_concern": 1.0
+          }
+        },
+        {
+          "condition": "value >= 0.5 && value <= 4.0",
+          "signals": {}
+        },
+        {
+          "condition": "value > 4.0",
+          "signals": {
+            "thyroid_concern": 1.5,
+            "iodine_need": 1.0,
+            "selenium_need": 1.0
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "lab_testosterone",
+    "text": "Testosterone level (ng/dL)",
+    "type": "number",
+    "min": 10,
+    "max": 1500,
+    "placeholder": "e.g. 550",
+    "required": false,
+    "show_if": {
+      "biological_sex": "male"
+    },
+    "signals": {
+      "_compute": "lab_ranges",
+      "rules": [
+        {
+          "condition": "value < 300",
+          "signals": {
+            "low_testosterone": 1.5,
+            "goal_hormone": 1.0
+          }
+        },
+        {
+          "condition": "value >= 300 && value < 500",
+          "signals": {
+            "low_testosterone": 0.5
+          }
+        },
+        {
+          "condition": "value >= 500",
+          "signals": {}
+        }
+      ]
+    }
+  },
+  {
+    "id": "lab_hscrp",
+    "text": "hs-CRP level (mg/L)",
+    "type": "number",
+    "min": 0.1,
+    "max": 50,
+    "placeholder": "e.g. 1.2",
+    "required": false,
+    "show_if": null,
+    "signals": {
+      "_compute": "lab_ranges",
+      "rules": [
+        {
+          "condition": "value < 1.0",
+          "signals": {}
+        },
+        {
+          "condition": "value >= 1.0 && value < 3.0",
+          "signals": {
+            "inflammation": 1.0
+          }
+        },
+        {
+          "condition": "value >= 3.0",
+          "signals": {
+            "inflammation": 2.0,
+            "heart_risk": 0.5
+          }
+        }
+      ]
+    }
+  }
+]

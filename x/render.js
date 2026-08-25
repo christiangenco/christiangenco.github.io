@@ -207,6 +207,49 @@ async function renderRedirects() {
   });
 }
 
+function personJsonLd() {
+  return `
+    <script type="application/ld+json">
+${JSON.stringify(
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "https://christian.gen.co/#person",
+      name: "Christian Genco",
+      url: "https://christian.gen.co",
+      image: "https://christian.gen.co/images/profile.square.small.jpg",
+      email: "christian@gen.co",
+      jobTitle: "Co-Founder and CTO",
+      description:
+        "AI consultant. Cofounder of GXB. Founder of Fileinbox.",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Dallas",
+        addressRegion: "TX",
+        addressCountry: "US",
+      },
+      alumniOf: {
+        "@type": "CollegeOrUniversity",
+        name: "Southern Methodist University",
+      },
+      worksFor: { "@id": "https://gxb.vc/#organization" },
+      affiliation: { "@id": "https://fileinbox.com/#organization" },
+      sameAs: [
+        "https://x.com/cgenco",
+        "https://www.linkedin.com/in/cgenco",
+        "https://github.com/christiangenco",
+        "https://www.youtube.com/channel/UCZIsQYzVIB4QGMTs5TdqmsA",
+        "https://instagram.com/cgenco",
+        "https://facebook.com/cgenco",
+      ],
+    },
+    null,
+    2
+  )}
+    </script>
+`;
+}
+
 function renderHead({ title, excerpt, image, url, type = "website" }) {
   return `
     <!-- Primary Meta Tags -->
@@ -269,18 +312,28 @@ async function render() {
         const html = ejs.render(body, {
           posts,
         });
-        const output = template({ attributes, html });
         const dest = path
           .replace("src/", "build/")
           .replace(".html.ejs", "/index.html")
           .replace("index/index.html", "index.html");
+        const isHome = dest === "build/index.html";
+        const head = isHome
+          ? renderHead({
+              title: "Christian Genco",
+              excerpt: attributes.excerpt,
+              image:
+                "https://christian.gen.co/images/profile.square.small.jpg",
+              url: "https://christian.gen.co/",
+            }) + personJsonLd()
+          : "";
+        const output = template({ attributes, html, head });
         write(dest, output);
         // console.log({ dest });
       }
     })
   );
 
-  await refreshChrome();
+  await refreshChrome().catch(() => {});
   return posts;
 }
 
